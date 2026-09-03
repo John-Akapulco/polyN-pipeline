@@ -1,0 +1,24 @@
+.DS_Store
+__pycache__/
+*.pyc
+*.log
+
+# Gros artefacts generes (raw xyz par candidat, packages figes, doublons v2)
+resultats/seeds_pubchem/work/
+resultats/seeds_pubchem/best_structures/
+resultats/seeds_pubchem/best_structures_clean/
+resultats/seeds_pubchem/xyz_clean/
+resultats/seeds_pubchem/report_images/
+resultats/seeds_pubchem/structures_grid.png
+resultats/seeds_pubchem/*.aux
+resultats/seeds_pubchem/*.out
+resultats/seeds_pubchem/*.toc
+resultats/seeds_pubchem_OLD/
+results/work/
+v2/resultats/
+v2/resultats_test/
+v2/maygen_output/
+v2/maygen_output_test/
+OLD/
+maygen_output/
+maygen_output_test/

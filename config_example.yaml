@@ -1,0 +1,241 @@
+# =============================================================================
+# Example configuration for polyN_pipeline.py
+# Adapt paths and the reference system to your own study.
+#
+# METHODOLOGY NOTE: species of different total charge (neutral / cation /
+# anion) are NEVER compared on the same convex hull. The pipeline
+# automatically splits systems into three families by charge and builds one
+# hull per family (convex_hull_neutral.*, convex_hull_cation.*,
+# convex_hull_anion.*). This is required because (1) a real decomposition
+# pathway conserves total charge, and (2) GFN2-xTB/DFTB energies are not
+# guaranteed to be on a consistent absolute scale across different charge
+# states (ionization energies / electron affinities are a known weak point
+# of these semi-empirical methods).
+# =============================================================================
+
+project_name: "polyN_screening"
+
+input_dir: "./maygen_output"
+input_format: "smi"          # "smi" (MAYGEN -smi) or "sdf" (MAYGEN -sdf)
+
+# Formulas to study, grouped by charge family. Odd-N systems (N3, N5, N7, ...)
+# have no neutral closed-shell isomers (see manual Sec 4.2); their MAYGEN .smi
+# files must be prepared as manually-written ring/chain topologies (or via
+# -setElements where that MAYGEN option doesn't crash), then reused here
+# for both the +1 and -1 entries, with the actual charge/spin applied at the
+# xtb/DFTB+ level, not by MAYGEN.
+systems:
+  # --- Neutral family (even N) ---------------------------------------------
+  N2:
+    charge: 0
+    n_conformers: 1
+  N4:
+    charge: 0
+    n_conformers: 3
+  N6:
+    charge: 0
+    n_conformers: 3
+  N8:
+    charge: 0
+    n_conformers: 3
+  N10:
+    charge: 0
+    n_conformers: 3
+  N12:
+    charge: 0
+    n_conformers: 4
+  N14:
+    charge: 0
+    n_conformers: 4
+
+  # --- Cation family (odd N, charge +1) ------------------------------------
+  N3_cation:
+    file: "N3.smi"
+    charge: 1
+    uhf: 0
+    n_conformers: 3
+  N5_cation:
+    file: "N5.smi"
+    charge: 1
+    uhf: 0
+    n_conformers: 3
+  N7_cation:
+    file: "N7.smi"
+    charge: 1
+    uhf: 0
+    n_conformers: 3
+  N9_cation:
+    file: "N9.smi"
+    charge: 1
+    uhf: 0
+    n_conformers: 4
+  N11_cation:
+    file: "N11.smi"
+    charge: 1
+    uhf: 0
+    n_conformers: 4
+  N13_cation:
+    file: "N13.smi"
+    charge: 1
+    uhf: 0
+    n_conformers: 5
+  N15_cation:
+    file: "N15.smi"
+    charge: 1
+    uhf: 0
+    n_conformers: 5
+
+  # --- Anion family (odd N, charge -1) -------------------------------------
+  N3_anion:
+    file: "N3.smi"
+    charge: -1
+    uhf: 0
+    n_conformers: 3
+  N5_anion:
+    file: "N5.smi"
+    charge: -1
+    uhf: 0
+    n_conformers: 3
+  N7_anion:
+    file: "N7.smi"
+    charge: -1
+    uhf: 0
+    n_conformers: 3
+  N9_anion:
+    file: "N9.smi"
+    charge: -1
+    uhf: 0
+    n_conformers: 4
+  N11_anion:
+    file: "N11.smi"
+    charge: -1
+    uhf: 0
+    n_conformers: 4
+  N13_anion:
+    file: "N13.smi"
+    charge: -1
+    uhf: 0
+    n_conformers: 5
+  N15_anion:
+    file: "N15.smi"
+    charge: -1
+    uhf: 0
+    n_conformers: 5
+
+selection:
+  mode: "top_n"                # "top_n" or "energy_window"
+  top_n: 10                    # base value; see top_n_scaling below
+  energy_window_kcal: 5.0      # used if mode == energy_window
+
+  # The number of accessible isomers/conformers grows combinatorially with
+  # cluster size (3N-6 vibrational degrees of freedom), so a fixed top_n
+  # undersamples larger N. When enabled, the effective top_n for a formula
+  # with n_atoms atoms is scaled as:
+  #     max(minimum, round(top_n * n_atoms / ref_n_atoms))
+  top_n_scaling:
+    enabled: true
+    ref_n_atoms: 4              # top_n applies as-is at this size
+    minimum: 10
+
+xtb:
+  gfn: 2                       # GFN2-xTB (via the tblite Python/ASE binding)
+  opt_level: "tight"           # crude|sloppy|loose|lax|normal|tight|vtight|extreme
+  n_jobs: 4                    # parallel optimizations
+  max_steps: 500
+
+  # Cheap checkpoint pass used PURELY AS A RANKING PROBE: same Hamiltonian
+  # as the refinement below (GFN2-xTB by default), just capped at very few
+  # steps and a loose threshold. Benchmarking showed that (a) GFN1-xTB is
+  # NOT meaningfully faster than GFN2-xTB per call in tblite, so switching
+  # Hamiltonian for the cheap pass buys nothing, and (b) restarting/warm-
+  # starting the refinement from this checkpoint's partially-relaxed
+  # geometry is actually SLOWER than a fresh optimization (ASE's LBFGS loses
+  # useful curvature history when a new optimizer object is created partway
+  # to the minimum) -- so the refinement stage always restarts from the
+  # original RDKit embedding, never from this checkpoint. The real saving
+  # comes entirely from not fully converging the large majority of
+  # candidates that get discarded after this cheap ranking step.
+  prefilter:
+    enabled: true
+    gfn: 2
+    opt_level: "loose"
+    max_steps: 30                # deliberately low: a ranking probe, not a real optimization
+    keep_top_n: 30                # base shortlist size per formula
+    keep_top_n_scaling:         # same 3N-6 scaling idea as selection.top_n_scaling
+      enabled: true
+      ref_n_atoms: 4
+      minimum: 30
+
+
+convex_hull:
+  reference:
+    formula: "N2"               # neutral-family reference system
+    charge: 0
+    # smiles: "N#N"              # optional override
+  mode: "auto"                  # "auto" | "size" (single element) | "composition" (binary)
+  # Charged-family reaction references (points 3b/3c). Reaction energies:
+  #   cation: E(Nx+) - [ (x-5)/2 E(N2) + E(N5+) ]
+  #   anion:  E(Nx-) - [ (x-5)/2 E(N2) + E(N5-) ]
+  # If N2 / N5+ / N5- are present in the run, their lowest-energy members
+  # are used automatically. Otherwise supply pre-computed values (Hartree);
+  # MANDATORY when the N5 charged reference is not in the run, else the
+  # charged reaction energies are reported as NaN:
+  # charged_references:
+  #   e_n2: -5.763935
+  #   e_n5_cation: -13.8169
+  #   e_n5_anion:  -14.7609
+
+# Topology generator settings (only the ones you actually pass to
+# --generators are used). isolobal is the default when --generators is
+# omitted.
+generators:
+  isolobal:
+    min_c: 4
+    max_c: 16
+    max_abs_charge: 1
+    # force_reharvest: false
+  random:
+    k_per_system: 200
+    seed: 42
+  maygen:
+    jar: "/path/to/MAYGEN.jar"      # required only if you use --generators maygen
+  geng:
+    # Exhaustive connected-graph enumeration via nauty's geng, with bond
+    # orders assigned and formal charges set at the graph stage (no phantom
+    # hydrogens). Requires the `geng` executable on PATH (brew/apt: nauty).
+    max_abs_charge: 1
+    # max_graphs: 500     # cap the graph sample (omit for fully exhaustive;
+    #                       recommended for N >= 9, where the graph count and
+    #                       the 3^(edges) bond-order search both explode)
+    seed: 42
+
+# Deduplication: when several generators (or several conformers) yield the
+# same structure, keep only one. Two candidates with identical formula+charge
+# whose optimized energies agree within dedup_tol_kcalmol are duplicates.
+# Applied after optimization and again after frequency verification.
+deduplicate: true
+dedup_tol_kcalmol: 0.5
+
+# Fragmentation filter: reject structures whose optimized geometry is not a
+# single connected molecule -- e.g. an "Nx" that fell apart into Nx-2 + N2
+# with the N2 sitting in van der Waals contact. Two atoms count as bonded if
+# closer than fragment_bond_threshold (angstrom); a real N-N bond is <=~1.6 A,
+# a van der Waals N...N contact ~3 A, so 2.0 A cleanly separates them. Such
+# fragmented "molecules" are not genuine Nx allotropes and would pollute a
+# training set.
+reject_fragmented: true
+fragment_bond_threshold: 2.0
+
+# Frequency verification: for each selected candidate, compute the Hessian
+# and confirm it is a genuine local minimum (not a saddle point hiding
+# behind a symmetric zero gradient -- e.g. regular tetrahedral N4). If
+# imaginary modes are found, follow the largest downhill and re-optimize,
+# up to max_hops times.
+frequency:
+  enabled: true
+  gfn: 2
+  max_hops: 5
+  fmax: 0.0005
+  step_size: 0.3
+
+output_dir: "./results"

@@ -1,0 +1,191 @@
+rank,formula,family,charge,n_atoms,e_reaction_kcalmol,reference_reaction,is_true_minimum,n_imaginary_freq,xyz
+1,N5_anion,anion,-1,5,-6.707137206158152e-05,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/xtb/N5_anion_iso0003_conf1/xtbopt.xyz
+2,N5_anion,anion,-1,5,45.00669431222477,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/xtb/N5_anion_iso0000_conf1/xtbopt.xyz
+3,N5_anion,anion,-1,5,45.77844301087975,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/xtb/N5_anion_iso0006_conf0/xtbopt.xyz
+4,N5_anion,anion,-1,5,85.94060913162282,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/xtb/N5_anion_iso0012_conf0/xtbopt.xyz
+5,N5_anion,anion,-1,5,101.12841637705662,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/xtb/N5_anion_iso0002_conf0/xtbopt.xyz
+6,N5_anion,anion,-1,5,104.25326703264697,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/xtb/N5_anion_iso0019_conf1/xtbopt.xyz
+7,N5_anion,anion,-1,5,110.20405997306057,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/frequency/N5_anion_iso0015_conf1/post_freq_minimum.xyz
+8,N5_anion,anion,-1,5,118.6448715203235,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/xtb/N5_anion_iso0009_conf0/xtbopt.xyz
+9,N5_anion,anion,-1,5,119.67318798415248,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/frequency/N5_anion_iso0014_conf0/post_freq_minimum.xyz
+10,N5_anion,anion,-1,5,143.36102235177248,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/xtb/N5_anion_iso0023_conf0/xtbopt.xyz
+1,N7_anion,anion,-1,7,2.0810677928906403,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/frequency/N7_anion_iso0076_conf1/post_freq_minimum.xyz
+2,N7_anion,anion,-1,7,4.8522173206117305,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/frequency/N7_anion_iso0045_conf1/post_freq_minimum.xyz
+3,N7_anion,anion,-1,7,10.019793807105886,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/xtb/N7_anion_iso0054_conf1/xtbopt.xyz
+4,N7_anion,anion,-1,7,11.201958426682047,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/xtb/N7_anion_iso0127_conf0/xtbopt.xyz
+5,N7_anion,anion,-1,7,24.31252467768734,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/frequency/N7_anion_iso0023_conf1/post_freq_minimum.xyz
+6,N7_anion,anion,-1,7,32.948831761086076,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/xtb/N7_anion_iso0122_conf0/xtbopt.xyz
+7,N7_anion,anion,-1,7,43.733853219832035,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/xtb/N7_anion_iso0164_conf1/xtbopt.xyz
+8,N7_anion,anion,-1,7,48.29306571356092,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/xtb/N7_anion_iso0059_conf1/xtbopt.xyz
+9,N7_anion,anion,-1,7,49.53719365542833,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/xtb/N7_anion_iso0146_conf0/xtbopt.xyz
+10,N7_anion,anion,-1,7,52.475074012002814,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/xtb/N7_anion_iso0223_conf1/xtbopt.xyz
+11,N7_anion,anion,-1,7,53.7762725044712,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/xtb/N7_anion_iso0080_conf0/xtbopt.xyz
+12,N7_anion,anion,-1,7,54.41713050302697,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/xtb/N7_anion_iso0201_conf0/xtbopt.xyz
+13,N7_anion,anion,-1,7,56.188950819587625,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/xtb/N7_anion_iso0051_conf1/xtbopt.xyz
+14,N7_anion,anion,-1,7,62.014146605462294,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/xtb/N7_anion_iso0084_conf0/xtbopt.xyz
+15,N7_anion,anion,-1,7,73.68552420487502,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/xtb/N7_anion_iso0083_conf0/xtbopt.xyz
+16,N7_anion,anion,-1,7,76.36713744744911,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/frequency/N7_anion_iso0025_conf0/post_freq_minimum.xyz
+17,N7_anion,anion,-1,7,84.08995163480981,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/xtb/N7_anion_iso0129_conf1/xtbopt.xyz
+18,N7_anion,anion,-1,7,99.04532434176569,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/xtb/N7_anion_iso0075_conf0/xtbopt.xyz
+19,N7_anion,anion,-1,7,104.43319894782339,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/frequency/N7_anion_iso0024_conf0/post_freq_minimum.xyz
+20,N7_anion,anion,-1,7,147.00584648560056,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/xtb/N7_anion_iso0182_conf0/xtbopt.xyz
+1,N9_anion,anion,-1,9,-67.23727059746777,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/xtb/N9_anion_iso0162_conf0/xtbopt.xyz
+2,N9_anion,anion,-1,9,-47.874176355598344,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/frequency/N9_anion_iso0022_conf1/post_freq_minimum.xyz
+3,N9_anion,anion,-1,9,-43.62499896964517,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/xtb/N9_anion_iso0036_conf1/xtbopt.xyz
+4,N9_anion,anion,-1,9,-37.76537021268252,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/frequency/N9_anion_iso0159_conf1/post_freq_minimum.xyz
+5,N9_anion,anion,-1,9,-34.16178995005573,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/frequency/N9_anion_iso0017_conf1/post_freq_minimum.xyz
+6,N9_anion,anion,-1,9,-31.287540428628805,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/xtb/N9_anion_iso0035_conf1/xtbopt.xyz
+7,N9_anion,anion,-1,9,-20.860349378150648,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/xtb/N9_anion_iso0000_conf1/xtbopt.xyz
+8,N9_anion,anion,-1,9,-13.328753867157088,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/frequency/N9_anion_iso0023_conf0/post_freq_minimum.xyz
+9,N9_anion,anion,-1,9,-11.323619629579952,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/xtb/N9_anion_iso0106_conf1/xtbopt.xyz
+10,N9_anion,anion,-1,9,-10.170938419092296,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/xtb/N9_anion_iso0127_conf1/xtbopt.xyz
+11,N9_anion,anion,-1,9,-7.237487444647079,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/xtb/N9_anion_iso0044_conf0/xtbopt.xyz
+12,N9_anion,anion,-1,9,19.550105916950958,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/frequency/N9_anion_iso0011_conf1/post_freq_minimum.xyz
+13,N9_anion,anion,-1,9,20.160166384580194,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/xtb/N9_anion_iso0047_conf0/xtbopt.xyz
+14,N9_anion,anion,-1,9,21.168077260101505,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/frequency/N9_anion_iso0129_conf1/post_freq_minimum.xyz
+15,N9_anion,anion,-1,9,37.74979435155867,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/frequency/N9_anion_iso0026_conf1/post_freq_minimum.xyz
+16,N9_anion,anion,-1,9,58.82520221501762,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/xtb/N9_anion_iso0043_conf0/xtbopt.xyz
+17,N9_anion,anion,-1,9,60.809395419053445,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/xtb/N9_anion_iso0015_conf1/xtbopt.xyz
+18,N9_anion,anion,-1,9,74.07414491610481,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/frequency/N9_anion_iso0139_conf0/post_freq_minimum.xyz
+19,N9_anion,anion,-1,9,86.71838826696015,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/frequency/N9_anion_iso0051_conf1/post_freq_minimum.xyz
+20,N9_anion,anion,-1,9,138.160635679039,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/xtb/N9_anion_iso0014_conf1/xtbopt.xyz
+1,N11_anion,anion,-1,11,-126.1936617966266,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/frequency/N11_anion_iso0132_conf0/post_freq_minimum.xyz
+2,N11_anion,anion,-1,11,-86.74726241220566,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/frequency/N11_anion_iso0009_conf0/post_freq_minimum.xyz
+3,N11_anion,anion,-1,11,-81.97492089621159,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/xtb/N11_anion_iso0006_conf0/xtbopt.xyz
+4,N11_anion,anion,-1,11,-76.3648821542595,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/xtb/N11_anion_iso0144_conf0/xtbopt.xyz
+5,N11_anion,anion,-1,11,-74.54373955301143,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/frequency/N11_anion_iso0024_conf0/post_freq_minimum.xyz
+6,N11_anion,anion,-1,11,-68.76545911605804,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/xtb/N11_anion_iso0024_conf1/xtbopt.xyz
+7,N11_anion,anion,-1,11,-56.37212526648364,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/frequency/N11_anion_iso0130_conf0/post_freq_minimum.xyz
+8,N11_anion,anion,-1,11,-48.77215982749859,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/xtb/N11_anion_iso0175_conf0/xtbopt.xyz
+9,N11_anion,anion,-1,11,-46.888276621905234,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/frequency/N11_anion_iso0214_conf1/post_freq_minimum.xyz
+10,N11_anion,anion,-1,11,-36.69169294040466,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/xtb/N11_anion_iso0025_conf0/xtbopt.xyz
+11,N11_anion,anion,-1,11,-33.522643771511746,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/xtb/N11_anion_iso0005_conf0/xtbopt.xyz
+12,N11_anion,anion,-1,11,-17.469455257633822,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/frequency/N11_anion_iso0040_conf0/post_freq_minimum.xyz
+13,N11_anion,anion,-1,11,-10.279194106683518,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/frequency/N11_anion_iso0110_conf0/post_freq_minimum.xyz
+14,N11_anion,anion,-1,11,-6.493298641643787,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/frequency/N11_anion_iso0115_conf1/post_freq_minimum.xyz
+15,N11_anion,anion,-1,11,19.847626172990363,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/frequency/N11_anion_iso0200_conf1/post_freq_minimum.xyz
+16,N11_anion,anion,-1,11,37.82947912135711,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/frequency/N11_anion_iso0164_conf1/post_freq_minimum.xyz
+17,N11_anion,anion,-1,11,38.70917641493265,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/frequency/N11_anion_iso0083_conf1/post_freq_minimum.xyz
+18,N11_anion,anion,-1,11,58.9828356910164,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/frequency/N11_anion_iso0176_conf0/post_freq_minimum.xyz
+1,N13_anion,anion,-1,13,-92.59554140850643,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/frequency/N13_anion_iso0244_conf1/post_freq_minimum.xyz
+2,N13_anion,anion,-1,13,22.403337399437426,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/xtb/N13_anion_iso0246_conf1/xtbopt.xyz
+3,N13_anion,anion,-1,13,24.00637823230512,Nx- -> (x-5)/2 N2 + N5-,True,0,resultats/seeds_pubchem/work/frequency/N13_anion_iso0246_conf0/post_freq_minimum.xyz
+1,N5_cation,cation,1,5,-105.62835010413654,Nx+ -> (x-5)/2 N2 + N5+,True,0,resultats/seeds_pubchem/work/xtb/N5_cation_iso0004_conf1/xtbopt.xyz
+2,N5_cation,cation,1,5,-31.468012554338095,Nx+ -> (x-5)/2 N2 + N5+,True,0,resultats/seeds_pubchem/work/xtb/N5_cation_iso0008_conf1/xtbopt.xyz
+3,N5_cation,cation,1,5,-0.7787268978207325,Nx+ -> (x-5)/2 N2 + N5+,True,0,resultats/seeds_pubchem/work/xtb/N5_cation_iso0018_conf1/xtbopt.xyz
+4,N5_cation,cation,1,5,0.00030253842396853035,Nx+ -> (x-5)/2 N2 + N5+,True,0,resultats/seeds_pubchem/work/xtb/N5_cation_iso0015_conf1/xtbopt.xyz
+5,N5_cation,cation,1,5,28.37441940949486,Nx+ -> (x-5)/2 N2 + N5+,True,0,resultats/seeds_pubchem/work/frequency/N5_cation_iso0005_conf0/post_freq_minimum.xyz
+6,N5_cation,cation,1,5,78.70396460512441,Nx+ -> (x-5)/2 N2 + N5+,True,0,resultats/seeds_pubchem/work/xtb/N5_cation_iso0009_conf1/xtbopt.xyz
+7,N5_cation,cation,1,5,79.95444440290632,Nx+ -> (x-5)/2 N2 + N5+,True,0,resultats/seeds_pubchem/work/xtb/N5_cation_iso0012_conf1/xtbopt.xyz
+1,N7_cation,cation,1,7,-133.41573169723185,Nx+ -> (x-5)/2 N2 + N5+,True,0,resultats/seeds_pubchem/work/xtb/N7_cation_iso0057_conf1/xtbopt.xyz
+2,N7_cation,cation,1,7,-127.22137517547527,Nx+ -> (x-5)/2 N2 + N5+,True,0,resultats/seeds_pubchem/work/frequency/N7_cation_iso0113_conf0/post_freq_minimum.xyz
+3,N7_cation,cation,1,7,-106.40752284416594,Nx+ -> (x-5)/2 N2 + N5+,True,0,resultats/seeds_pubchem/work/xtb/N7_cation_iso0002_conf1/xtbopt.xyz
+4,N7_cation,cation,1,7,-42.15591971996591,Nx+ -> (x-5)/2 N2 + N5+,True,0,resultats/seeds_pubchem/work/xtb/N7_cation_iso0005_conf0/xtbopt.xyz
+5,N7_cation,cation,1,7,-8.483097008578104,Nx+ -> (x-5)/2 N2 + N5+,True,0,resultats/seeds_pubchem/work/xtb/N7_cation_iso0068_conf1/xtbopt.xyz
+6,N7_cation,cation,1,7,45.40808875473649,Nx+ -> (x-5)/2 N2 + N5+,True,0,resultats/seeds_pubchem/work/xtb/N7_cation_iso0030_conf1/xtbopt.xyz
+1,N9_cation,cation,1,9,-174.43070738574804,Nx+ -> (x-5)/2 N2 + N5+,True,0,resultats/seeds_pubchem/work/frequency/N9_cation_iso0105_conf0/post_freq_minimum.xyz
+2,N9_cation,cation,1,9,-144.98958231697293,Nx+ -> (x-5)/2 N2 + N5+,True,0,resultats/seeds_pubchem/work/frequency/N9_cation_iso0037_conf0/post_freq_minimum.xyz
+3,N9_cation,cation,1,9,-142.4638401303715,Nx+ -> (x-5)/2 N2 + N5+,True,0,resultats/seeds_pubchem/work/frequency/N9_cation_iso0007_conf0/post_freq_minimum.xyz
+4,N9_cation,cation,1,9,-140.23455875774442,Nx+ -> (x-5)/2 N2 + N5+,True,0,resultats/seeds_pubchem/work/frequency/N9_cation_iso0001_conf1/post_freq_minimum.xyz
+5,N9_cation,cation,1,9,-73.83129359184942,Nx+ -> (x-5)/2 N2 + N5+,True,0,resultats/seeds_pubchem/work/frequency/N9_cation_iso0017_conf0/post_freq_minimum.xyz
+6,N9_cation,cation,1,9,-69.89352005391277,Nx+ -> (x-5)/2 N2 + N5+,True,0,resultats/seeds_pubchem/work/xtb/N9_cation_iso0025_conf0/xtbopt.xyz
+7,N9_cation,cation,1,9,-60.559192092292456,Nx+ -> (x-5)/2 N2 + N5+,True,0,resultats/seeds_pubchem/work/xtb/N9_cation_iso0178_conf0/xtbopt.xyz
+8,N9_cation,cation,1,9,-59.544151634272396,Nx+ -> (x-5)/2 N2 + N5+,True,0,resultats/seeds_pubchem/work/xtb/N9_cation_iso0160_conf1/xtbopt.xyz
+9,N9_cation,cation,1,9,-57.08373786449137,Nx+ -> (x-5)/2 N2 + N5+,True,0,resultats/seeds_pubchem/work/xtb/N9_cation_iso0152_conf0/xtbopt.xyz
+10,N9_cation,cation,1,9,-42.121339538996615,Nx+ -> (x-5)/2 N2 + N5+,True,0,resultats/seeds_pubchem/work/xtb/N9_cation_iso0126_conf1/xtbopt.xyz
+11,N9_cation,cation,1,9,-0.27118687610561865,Nx+ -> (x-5)/2 N2 + N5+,True,0,resultats/seeds_pubchem/work/xtb/N9_cation_iso0136_conf0/xtbopt.xyz
+12,N9_cation,cation,1,9,2.416279876163717,Nx+ -> (x-5)/2 N2 + N5+,True,0,resultats/seeds_pubchem/work/xtb/N9_cation_iso0036_conf0/xtbopt.xyz
+1,N11_cation,cation,1,11,-200.51786939197078,Nx+ -> (x-5)/2 N2 + N5+,True,0,resultats/seeds_pubchem/work/xtb/N11_cation_iso0105_conf1/xtbopt.xyz
+2,N11_cation,cation,1,11,-197.8526896632841,Nx+ -> (x-5)/2 N2 + N5+,True,0,resultats/seeds_pubchem/work/xtb/N11_cation_iso0225_conf1/xtbopt.xyz
+3,N11_cation,cation,1,11,-154.43539513229996,Nx+ -> (x-5)/2 N2 + N5+,True,0,resultats/seeds_pubchem/work/frequency/N11_cation_iso0042_conf1/post_freq_minimum.xyz
+4,N11_cation,cation,1,11,-139.15024097301668,Nx+ -> (x-5)/2 N2 + N5+,True,0,resultats/seeds_pubchem/work/frequency/N11_cation_iso0102_conf0/post_freq_minimum.xyz
+5,N11_cation,cation,1,11,-126.89523388392658,Nx+ -> (x-5)/2 N2 + N5+,True,0,resultats/seeds_pubchem/work/xtb/N11_cation_iso0100_conf0/xtbopt.xyz
+6,N11_cation,cation,1,11,-100.24975107856238,Nx+ -> (x-5)/2 N2 + N5+,True,0,resultats/seeds_pubchem/work/frequency/N11_cation_iso0062_conf1/post_freq_minimum.xyz
+7,N11_cation,cation,1,11,-72.44814128171402,Nx+ -> (x-5)/2 N2 + N5+,True,0,resultats/seeds_pubchem/work/xtb/N11_cation_iso0078_conf0/xtbopt.xyz
+8,N11_cation,cation,1,11,-5.120540717244404,Nx+ -> (x-5)/2 N2 + N5+,True,0,resultats/seeds_pubchem/work/xtb/N11_cation_iso0209_conf1/xtbopt.xyz
+9,N11_cation,cation,1,11,39.21423997888504,Nx+ -> (x-5)/2 N2 + N5+,True,0,resultats/seeds_pubchem/work/xtb/N11_cation_iso0148_conf0/xtbopt.xyz
+1,N13_cation,cation,1,13,-213.34273265182077,Nx+ -> (x-5)/2 N2 + N5+,True,0,resultats/seeds_pubchem/work/xtb/N13_cation_iso0119_conf1/xtbopt.xyz
+2,N13_cation,cation,1,13,-172.87812402723284,Nx+ -> (x-5)/2 N2 + N5+,True,0,resultats/seeds_pubchem/work/xtb/N13_cation_iso0005_conf0/xtbopt.xyz
+3,N13_cation,cation,1,13,-156.8110613903768,Nx+ -> (x-5)/2 N2 + N5+,True,0,resultats/seeds_pubchem/work/frequency/N13_cation_iso0070_conf1/post_freq_minimum.xyz
+4,N13_cation,cation,1,13,-19.239966884099903,Nx+ -> (x-5)/2 N2 + N5+,True,0,resultats/seeds_pubchem/work/xtb/N13_cation_iso0068_conf1/xtbopt.xyz
+1,N15_cation,cation,1,15,-252.47845187421703,Nx+ -> (x-5)/2 N2 + N5+,True,0,resultats/seeds_pubchem/work/frequency/N15_cation_iso0132_conf0/post_freq_minimum.xyz
+2,N15_cation,cation,1,15,6.793146481751982,Nx+ -> (x-5)/2 N2 + N5+,True,0,resultats/seeds_pubchem/work/xtb/N15_cation_iso0114_conf1/xtbopt.xyz
+1,N4_neutral,neutral,0,4,27.321254845457855,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N4_neutral_iso0006_conf1/xtbopt.xyz
+2,N4_neutral,neutral,0,4,53.79245191338969,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N4_neutral_iso0002_conf1/xtbopt.xyz
+3,N4_neutral,neutral,0,4,58.33452751404744,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/frequency/N4_neutral_iso0008_conf0/post_freq_minimum.xyz
+4,N4_neutral,neutral,0,4,68.95743442326932,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/frequency/N4_neutral_iso0004_conf0/post_freq_minimum.xyz
+1,N6_neutral,neutral,0,6,-63.70760812453905,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N6_neutral_iso0017_conf1/xtbopt.xyz
+2,N6_neutral,neutral,0,6,-39.62263803455806,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N6_neutral_iso0055_conf1/xtbopt.xyz
+3,N6_neutral,neutral,0,6,-8.712527106534086,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N6_neutral_iso0110_conf1/xtbopt.xyz
+4,N6_neutral,neutral,0,6,-3.1247564393944107,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N6_neutral_iso0008_conf1/xtbopt.xyz
+5,N6_neutral,neutral,0,6,0.9082051303605122,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N6_neutral_iso0099_conf1/xtbopt.xyz
+6,N6_neutral,neutral,0,6,15.085337088996223,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N6_neutral_iso0075_conf0/xtbopt.xyz
+7,N6_neutral,neutral,0,6,19.91903580139864,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N6_neutral_iso0092_conf0/xtbopt.xyz
+8,N6_neutral,neutral,0,6,20.807220838173926,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N6_neutral_iso0009_conf0/xtbopt.xyz
+9,N6_neutral,neutral,0,6,47.09418706856321,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/frequency/N6_neutral_iso0114_conf0/post_freq_minimum.xyz
+10,N6_neutral,neutral,0,6,50.61547482646587,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N6_neutral_iso0060_conf1/xtbopt.xyz
+11,N6_neutral,neutral,0,6,55.86434495509827,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N6_neutral_iso0076_conf1/xtbopt.xyz
+12,N6_neutral,neutral,0,6,72.95052755023191,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N6_neutral_iso0020_conf1/xtbopt.xyz
+1,N8_neutral,neutral,0,8,-113.38107044283487,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N8_neutral_iso0077_conf0/xtbopt.xyz
+2,N8_neutral,neutral,0,8,-103.46646134529364,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N8_neutral_iso0034_conf0/xtbopt.xyz
+3,N8_neutral,neutral,0,8,-93.11717257161519,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N8_neutral_iso0172_conf1/xtbopt.xyz
+4,N8_neutral,neutral,0,8,-85.28532966018521,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N8_neutral_iso0038_conf0/xtbopt.xyz
+5,N8_neutral,neutral,0,8,-83.97298153836245,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N8_neutral_iso0172_conf0/xtbopt.xyz
+6,N8_neutral,neutral,0,8,-56.850470937238384,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/frequency/N8_neutral_iso0076_conf0/post_freq_minimum.xyz
+7,N8_neutral,neutral,0,8,-47.00167307541667,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N8_neutral_iso0001_conf1/xtbopt.xyz
+8,N8_neutral,neutral,0,8,-46.158438485324965,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/frequency/N8_neutral_iso0227_conf1/post_freq_minimum.xyz
+9,N8_neutral,neutral,0,8,-39.676953779218955,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N8_neutral_iso0039_conf1/xtbopt.xyz
+10,N8_neutral,neutral,0,8,-29.315849497997437,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N8_neutral_iso0136_conf0/xtbopt.xyz
+11,N8_neutral,neutral,0,8,-28.618986959824202,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N8_neutral_iso0169_conf0/xtbopt.xyz
+12,N8_neutral,neutral,0,8,-19.41217914098664,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N8_neutral_iso0009_conf0/xtbopt.xyz
+13,N8_neutral,neutral,0,8,-10.476360161175963,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N8_neutral_iso0037_conf1/xtbopt.xyz
+14,N8_neutral,neutral,0,8,-0.1458943334440058,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/frequency/N8_neutral_iso0049_conf0/post_freq_minimum.xyz
+15,N8_neutral,neutral,0,8,12.880027360992992,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N8_neutral_iso0130_conf1/xtbopt.xyz
+16,N8_neutral,neutral,0,8,19.40126357096165,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N8_neutral_iso0145_conf1/xtbopt.xyz
+17,N8_neutral,neutral,0,8,25.662385022549888,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/frequency/N8_neutral_iso0052_conf1/post_freq_minimum.xyz
+18,N8_neutral,neutral,0,8,26.827205780467327,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/frequency/N8_neutral_iso0219_conf0/post_freq_minimum.xyz
+19,N8_neutral,neutral,0,8,36.92414074732108,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N8_neutral_iso0063_conf1/xtbopt.xyz
+20,N8_neutral,neutral,0,8,39.548468829839784,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N8_neutral_iso0080_conf1/xtbopt.xyz
+21,N8_neutral,neutral,0,8,42.27867579834939,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N8_neutral_iso0141_conf1/xtbopt.xyz
+22,N8_neutral,neutral,0,8,48.47217289054798,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N8_neutral_iso0203_conf0/xtbopt.xyz
+23,N8_neutral,neutral,0,8,51.29724822421837,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N8_neutral_iso0036_conf0/xtbopt.xyz
+24,N8_neutral,neutral,0,8,69.67197830439152,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N8_neutral_iso0223_conf0/xtbopt.xyz
+25,N8_neutral,neutral,0,8,92.31855269958399,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N8_neutral_iso0005_conf1/xtbopt.xyz
+1,N10_neutral,neutral,0,10,-134.2045748484491,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N10_neutral_iso0057_conf0/xtbopt.xyz
+2,N10_neutral,neutral,0,10,-123.69870672710918,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N10_neutral_iso0027_conf0/xtbopt.xyz
+3,N10_neutral,neutral,0,10,-110.70320970692603,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/frequency/N10_neutral_iso0056_conf0/post_freq_minimum.xyz
+4,N10_neutral,neutral,0,10,-100.84190367508548,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/frequency/N10_neutral_iso0018_conf0/post_freq_minimum.xyz
+5,N10_neutral,neutral,0,10,-97.64235872649354,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/frequency/N10_neutral_iso0001_conf0/post_freq_minimum.xyz
+6,N10_neutral,neutral,0,10,-95.64366284158729,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N10_neutral_iso0042_conf0/xtbopt.xyz
+7,N10_neutral,neutral,0,10,-80.55173745944333,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/frequency/N10_neutral_iso0059_conf1/post_freq_minimum.xyz
+8,N10_neutral,neutral,0,10,-74.9075455175776,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N10_neutral_iso0183_conf0/xtbopt.xyz
+9,N10_neutral,neutral,0,10,-70.73219395435503,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/frequency/N10_neutral_iso0034_conf0/post_freq_minimum.xyz
+10,N10_neutral,neutral,0,10,-45.58133686494791,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/frequency/N10_neutral_iso0055_conf1/post_freq_minimum.xyz
+11,N10_neutral,neutral,0,10,-41.24669008928636,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/frequency/N10_neutral_iso0048_conf0/post_freq_minimum.xyz
+12,N10_neutral,neutral,0,10,-35.419454935561575,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N10_neutral_iso0008_conf0/xtbopt.xyz
+13,N10_neutral,neutral,0,10,-34.64951443238805,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N10_neutral_iso0029_conf0/xtbopt.xyz
+14,N10_neutral,neutral,0,10,-33.70290609855377,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/frequency/N10_neutral_iso0044_conf0/post_freq_minimum.xyz
+15,N10_neutral,neutral,0,10,-22.964024125371594,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N10_neutral_iso0099_conf1/xtbopt.xyz
+16,N10_neutral,neutral,0,10,-20.37318485912619,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N10_neutral_iso0159_conf0/xtbopt.xyz
+17,N10_neutral,neutral,0,10,-3.7374478938331728,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N10_neutral_iso0051_conf1/xtbopt.xyz
+18,N10_neutral,neutral,0,10,8.820290210928198,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N10_neutral_iso0206_conf1/xtbopt.xyz
+19,N10_neutral,neutral,0,10,13.767552693254551,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N10_neutral_iso0235_conf1/xtbopt.xyz
+20,N10_neutral,neutral,0,10,34.25868604868658,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N10_neutral_iso0040_conf1/xtbopt.xyz
+21,N10_neutral,neutral,0,10,40.40092388488803,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N10_neutral_iso0190_conf0/xtbopt.xyz
+22,N10_neutral,neutral,0,10,49.743038489404434,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N10_neutral_iso0045_conf1/xtbopt.xyz
+1,N12_neutral,neutral,0,12,-147.91893506595295,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/frequency/N12_neutral_iso0000_conf1/post_freq_minimum.xyz
+2,N12_neutral,neutral,0,12,-134.68134587853166,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/frequency/N12_neutral_iso0179_conf1/post_freq_minimum.xyz
+3,N12_neutral,neutral,0,12,-112.00658563938768,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/frequency/N12_neutral_iso0199_conf1/post_freq_minimum.xyz
+4,N12_neutral,neutral,0,12,-102.33515544121417,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/frequency/N12_neutral_iso0093_conf0/post_freq_minimum.xyz
+5,N12_neutral,neutral,0,12,-79.38867006682413,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/frequency/N12_neutral_iso0112_conf1/post_freq_minimum.xyz
+6,N12_neutral,neutral,0,12,-71.55991392038565,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/frequency/N12_neutral_iso0028_conf0/post_freq_minimum.xyz
+7,N12_neutral,neutral,0,12,-46.958648160994976,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N12_neutral_iso0127_conf1/xtbopt.xyz
+8,N12_neutral,neutral,0,12,-14.757721966850802,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/frequency/N12_neutral_iso0021_conf1/post_freq_minimum.xyz
+9,N12_neutral,neutral,0,12,94.51315335069611,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N12_neutral_iso0086_conf0/xtbopt.xyz
+1,N14_neutral,neutral,0,14,-140.2079907888028,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/frequency/N14_neutral_iso0060_conf0/post_freq_minimum.xyz
+2,N14_neutral,neutral,0,14,-99.45354555931173,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N14_neutral_iso0137_conf0/xtbopt.xyz
+3,N14_neutral,neutral,0,14,-62.31841836214803,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N14_neutral_iso0134_conf0/xtbopt.xyz
+4,N14_neutral,neutral,0,14,-38.6479824736443,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/frequency/N14_neutral_iso0015_conf1/post_freq_minimum.xyz
+5,N14_neutral,neutral,0,14,-6.874578736760553,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/frequency/N14_neutral_iso0095_conf1/post_freq_minimum.xyz
+1,N16_neutral,neutral,0,16,-188.29996856093538,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/xtb/N16_neutral_iso0002_conf1/xtbopt.xyz
+2,N16_neutral,neutral,0,16,-151.60053468287845,Nx -> (x/2) N2,True,0,resultats/seeds_pubchem/work/frequency/N16_neutral_iso0001_conf0/post_freq_minimum.xyz

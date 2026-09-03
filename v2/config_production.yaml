@@ -1,0 +1,153 @@
+
+# =============================================================================
+# Configuration de production - etude polyN (N2-N16 neutre, N3-N15 cation/anion)
+# =============================================================================
+
+project_name: "polyN_screening"
+
+input_dir: "./maygen_output"
+input_format: "smi"
+
+systems:
+  # --- Neutral family (even N) ---------------------------------------------
+  N2:
+    charge: 0
+    n_conformers: 1
+  N4:
+    charge: 0
+    n_conformers: 3
+  N6:
+    charge: 0
+    n_conformers: 3
+  N8:
+    charge: 0
+    n_conformers: 3
+  N10:
+    charge: 0
+    n_conformers: 3
+  N12:
+    charge: 0
+    n_conformers: 4
+  N14:
+    charge: 0
+    n_conformers: 4
+  N16:
+    charge: 0
+    n_conformers: 4
+
+  # --- Cation family (odd N, charge +1) -- topologies fusionnees ----------
+  N3_cation:
+    file: "N3_cation_all.smi"
+    charge: 1
+    uhf: 0
+    n_conformers: 3
+  N5_cation:
+    file: "N5_cation_all.smi"
+    charge: 1
+    uhf: 0
+    n_conformers: 3
+  N7_cation:
+    file: "N7_cation_all.smi"
+    charge: 1
+    uhf: 0
+    n_conformers: 3
+  N9_cation:
+    file: "N9_cation_all.smi"
+    charge: 1
+    uhf: 0
+    n_conformers: 4
+  N11_cation:
+    file: "N11_cation_all.smi"
+    charge: 1
+    uhf: 0
+    n_conformers: 4
+  N13_cation:
+    file: "N13_cation_all.smi"
+    charge: 1
+    uhf: 0
+    n_conformers: 5
+  N15_cation:
+    file: "N15_cation_all.smi"
+    charge: 1
+    uhf: 0
+    n_conformers: 5
+
+  # --- Anion family (odd N, charge -1) -- topologies fusionnees -----------
+  N3_anion:
+    file: "N3_anion_all.smi"
+    charge: -1
+    uhf: 0
+    n_conformers: 3
+  N5_anion:
+    file: "N5_anion_all.smi"
+    charge: -1
+    uhf: 0
+    n_conformers: 3
+  N7_anion:
+    file: "N7_anion_all.smi"
+    charge: -1
+    uhf: 0
+    n_conformers: 3
+  N9_anion:
+    file: "N9_anion_all.smi"
+    charge: -1
+    uhf: 0
+    n_conformers: 4
+  N11_anion:
+    file: "N11_anion_all.smi"
+    charge: -1
+    uhf: 0
+    n_conformers: 4
+  N13_anion:
+    file: "N13_anion_all.smi"
+    charge: -1
+    uhf: 0
+    n_conformers: 5
+  N15_anion:
+    file: "N15_anion_all.smi"
+    charge: -1
+    uhf: 0
+    n_conformers: 5
+
+selection:
+  mode: "top_n"
+  top_n: 10
+  energy_window_kcal: 5.0
+  top_n_scaling:
+    enabled: true
+    ref_n_atoms: 4
+    minimum: 10
+
+xtb:
+  gfn: 2
+  opt_level: "tight"
+  n_jobs: 4
+  max_steps: 500
+  prefilter:
+    enabled: true
+    gfn: 2
+    opt_level: "loose"
+    max_steps: 30
+    keep_top_n: 30
+    keep_top_n_scaling:
+      enabled: true
+      ref_n_atoms: 4
+      minimum: 30
+
+dftb:
+  enabled: false
+  binary: "dftb+"
+  skf_dir: "/path/to/slater-koster/3ob-3-1"
+  max_angular_momenta:
+    N: "p"
+  scc_tolerance: 1.0e-7
+  max_steps: 500
+  grad_conv: 1.0e-4
+
+convex_hull:
+  reference:
+    formula: "N2"
+    charge: 0
+  mode: "auto"
+
+output_dir: "./resultats/production_2026-07-03"

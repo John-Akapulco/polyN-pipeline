@@ -1,0 +1,24 @@
+input_dir: "./maygen_output_test"
+input_format: "smi"
+systems:
+  N2: {charge: 0, n_conformers: 1}
+  N4: {charge: 0, n_conformers: 2}
+selection:
+  mode: top_n
+  top_n: 5
+xtb:
+  gfn: 2
+  opt_level: tight
+  n_jobs: 2
+  prefilter:
+    enabled: true
+    gfn: 2
+    opt_level: loose
+    max_steps: 30
+    keep_top_n: 3
+dftb:
+  enabled: false
+convex_hull:
+  reference: {formula: "N2", charge: 0}
+  mode: auto
+output_dir: "./resultats_test/essai1"
