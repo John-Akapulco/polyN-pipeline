@@ -232,3 +232,102 @@ tail -f run.log
 
 # 4. Vérifier la pureté des géométries produites
 python3 check_xyz_purity.py --results-csv resultats/seeds_pubchem/results.csv
+```
+
+---
+
+## Différences méthodologiques avec polyN_adapt
+
+Ce dépôt (`polyN-pipeline`) et [`polyN`](https://github.com/John-Akapulco/polyN)
+(surrogate adaptatif) abordent le même problème — peupler un jeu d'isomères
+Nx stables/métastables — avec des philosophies opposées : **criblage
+exhaustif** ici, **recherche adaptative guidée par surrogate** là-bas.
+
+### 1. Génération de topologies
+
+**Ici** : pool de graines **fixe et statique**, constitué en amont par
+plusieurs sources indépendantes (`geng_enumerate.py` exhaustif,
+`cxhx_to_nx.py` par substitution isolobale C→N sur des hydrocarbures
+PubChem, `random_structure_generator.py` par modèle de configuration). Une
+fois les graines rassemblées, elles sont toutes soumises au pipeline en un
+seul passage batch.
+
+**polyN_adapt** : génération **incrémentale, génération par génération** —
+`geng` en streaming tant que l'énumération exhaustive reste praticable
+(n≲14-16), puis bascule vers des mutations locales de l'archive courante
+(`add_edge`/`remove_edge`/`double_edge_swap`) au-delà, en reciblant les
+voisins des meilleurs survivants.
+
+### 2. Filtrage avant calcul coûteux
+
+**Ici** : **aucun filtre prédictif** — toute topologie générée passe par
+l'optimisation GFN2-xTB complète (en deux temps : checkpoint bon marché →
+affinement précis sur liste courte). Le criblage se fait *après* calcul,
+pas avant.
+
+**polyN_adapt** : un `AdaptiveSurrogate` à trois volets (régresseur
+gradient boosting, classificateur de réarrangement, règle interprétable
+sur graphes finaux), ré-entraîné à chaque génération sur l'archive
+accumulée, filtre les candidats **avant** toute relaxation xTB — objectif
+explicite de minimiser le nombre de calculs réellement nécessaires. Un
+apprentissage actif priorise l'évaluation réelle près de la frontière de
+la fenêtre plutôt que tous les candidats acceptés indistinctement.
+
+### 3. Critère de rétention
+
+**Ici** : sélection des `top_n` structures **par stœchiométrie** (mise à
+l'échelle 3N−6), puis construction d'**enveloppes convexes de formation
+séparées par famille de charge** (neutre/cation/anion, jamais mélangées)
+via des réactions de référence équilibrées.
+
+**polyN_adapt** : **fenêtre d'énergie glissante** (0.2 eV/atome par
+défaut) recalculée dynamiquement par rapport au meilleur minimum connu à
+ce jour — pas une enveloppe convexe thermodynamique, mais un voisinage du
+minimum courant, avec élagage continu à chaque génération quand la
+référence baisse.
+
+### 4. Déduplication
+
+**Ici** : critère **énergétique** — deux structures de même formule/charge
+fusionnées si leurs énergies coïncident à `dedup_tol_kcalmol` près.
+
+**polyN_adapt** : critère **topologique strict** — isomorphisme du graphe
+final relaxé (pas le candidat de départ), via hash Weisfeiler-Lehman, sans
+tolérance d'énergie par défaut. Choix motivé empiriquement (44 entrées
+brutes → seulement 18 topologies réellement distinctes pour N11⁻ avec un
+critère énergétique).
+
+### 5. Boucle vs exécution unique
+
+**Ici** : pipeline en 6 étapes séquentielles, une seule passe batch sur les
+graines fournies, pas de rétroaction.
+
+**polyN_adapt** : boucle orchestrée avec rétroaction — le surrogate est
+ré-entraîné à chaque génération sur l'archive mise à jour ; un échantillon
+de contrôle (candidats rejetés mais évalués quand même) mesure le taux de
+faux rejets pour détecter un filtre trop agressif.
+
+### 6. Évaluation 3D / xTB
+
+**Ici** : un seul embedding RDKit ETKDGv3 par structure.
+
+**polyN_adapt** : évaluation multiseed (plusieurs graines d'embedding,
+garde la plus basse), motivée par un écart mesuré de 0.44 eV/atome entre
+seeds sur un candidat n=8 réel — au prix d'un budget multiplié par le
+nombre de seeds.
+
+### 7. Finalité
+
+**Ici** : constituer un jeu de données propre en vue d'une méthode
+générative, avec un livrable humain (rapport LaTeX/PDF, dépictions 2D —
+`generate_report.py`).
+
+**polyN_adapt** : peupler efficacement une fenêtre de métastabilité en
+économisant le calcul, avec une sortie orientée pipeline
+(`Archive.to_serializable()`, file de priorité pour raffinement ORCA/DFT)
+plutôt qu'un rapport humain.
+
+En résumé : `polyN-pipeline` est un **cribleur exhaustif à jeu de graines
+fixe**, `polyN_adapt` est un **algorithme d'apprentissage actif
+auto-alimenté** conçu pour passer à l'échelle là où l'énumération devient
+impraticable.
