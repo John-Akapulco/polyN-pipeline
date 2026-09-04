@@ -1,0 +1,409 @@
+id,formula,n_atoms,topology_label,n_edges,n_rings,ring_sizes,degree_sequence,max_degree_actual,conformer_id,ff_energy_au,mace_energy_eV,mace_energy_eV_per_atom,delta_E_eV_per_atom_vs_N2,is_stability_candidate,converged,n_opt_steps,spacegroup,sg_number,xyz_file,cif_file
+1,N3,3,chain,2,0,[],"[2, 1, 1]",2,1,1.683631,-4470.844331,-1490.281444,0.0812,True,True,7,C2/m,12,xyz/N3_0000_chain.xyz,cif/N3_0000_chain.cif
+2,N3,3,ring-3,3,1,[3],"[2, 2, 2]",2,4,300.000000,-4467.522947,-1489.174316,1.1884,True,True,1,P1,1,xyz/N3_0001_ring-3.xyz,cif/N3_0001_ring-3.cif
+3,N4,4,branched-tree,3,0,[],"[3, 1, 1, 1]",3,2,7.665765,-5954.395836,-1488.598959,1.7637,True,True,8,P1,1,xyz/N4_0000_branched-tree.xyz,cif/N4_0000_branched-tree.cif
+4,N4,4,chain,3,0,[],"[2, 2, 1, 1]",2,2,3.337345,-5961.451417,-1490.362854,-0.0002,False,True,17,P-1,2,xyz/N4_0001_chain.xyz,cif/N4_0001_chain.cif
+5,N4,4,ring-3-substituted,4,1,[3],"[3, 2, 2, 1]",3,3,273.556738,-5961.490257,-1490.372564,-0.0099,False,True,89,P1,1,xyz/N4_0002_ring-3-substituted.xyz,cif/N4_0002_ring-3-substituted.cif
+6,N4,4,ring-4,4,1,[4],"[2, 2, 2, 2]",2,2,118.178538,-5961.451688,-1490.362922,-0.0002,False,True,82,P-1,2,xyz/N4_0003_ring-4.xyz,cif/N4_0003_ring-4.cif
+7,N4,4,bicyclic-3-3,5,2,"[3, 3]","[3, 3, 2, 2]",3,2,478.641915,-5956.744702,-1489.186175,1.1765,True,True,4,P1,1,xyz/N4_0004_bicyclic-3-3.xyz,cif/N4_0004_bicyclic-3-3.cif
+8,N4,4,bicyclic-3-3-3,6,3,"[3, 3, 3]","[3, 3, 3, 3]",3,1,834.280654,-18292.690312,-4573.172578,-3082.8099,False,False,500,P1,1,xyz/N4_0005_bicyclic-3-3-3.xyz,cif/N4_0005_bicyclic-3-3-3.cif
+9,N5,5,branched-tree,4,0,[],"[3, 2, 1, 1, 1]",3,2,9.322561,-7451.544887,-1490.308977,0.0537,True,True,40,P1,1,xyz/N5_0000_branched-tree.xyz,cif/N5_0000_branched-tree.cif
+10,N5,5,chain,4,0,[],"[2, 2, 2, 1, 1]",2,0,4.994738,-7449.736899,-1489.947380,0.4153,True,True,15,P1,1,xyz/N5_0001_chain.xyz,cif/N5_0001_chain.cif
+11,N5,5,ring-3-substituted,5,1,[3],"[3, 3, 2, 1, 1]",3,3,249.292067,-7449.736902,-1489.947380,0.4153,True,True,39,P1,1,xyz/N5_0002_ring-3-substituted.xyz,cif/N5_0002_ring-3-substituted.cif
+12,N5,5,ring-3-substituted,5,1,[3],"[3, 2, 2, 2, 1]",3,2,275.161591,-7448.617340,-1489.723468,0.6392,True,True,21,P1,1,xyz/N5_0003_ring-3-substituted.xyz,cif/N5_0003_ring-3-substituted.cif
+13,N5,5,ring-4-substituted,5,1,[4],"[3, 2, 2, 2, 1]",3,4,107.835085,-7448.555794,-1489.711159,0.6515,True,True,18,P1,1,xyz/N5_0004_ring-4-substituted.xyz,cif/N5_0004_ring-4-substituted.cif
+14,N5,5,ring-5,5,1,[5],"[2, 2, 2, 2, 2]",2,3,32.782107,-7450.008277,-1490.001655,0.3610,True,True,3,P1,1,xyz/N5_0005_ring-5.xyz,cif/N5_0005_ring-5.cif
+15,N5,5,bicyclic-3-3,6,2,"[3, 3]","[3, 3, 3, 2, 1]",3,2,455.185316,-20214.762349,-4042.952470,-2552.5898,False,False,500,P1,1,xyz/N5_0006_bicyclic-3-3.xyz,cif/N5_0006_bicyclic-3-3.cif
+16,N5,5,bicyclic-3-4,6,2,"[3, 4]","[3, 3, 2, 2, 2]",3,1,330.905579,-7447.210917,-1489.442183,0.9205,True,True,8,P1,1,xyz/N5_0007_bicyclic-3-4.xyz,cif/N5_0007_bicyclic-3-4.cif
+17,N5,5,bicyclic-4-4,6,2,"[4, 4]","[3, 3, 2, 2, 2]",3,1,316.590593,-7442.281217,-1488.456243,1.9064,True,True,29,P1,1,xyz/N5_0008_bicyclic-4-4.xyz,cif/N5_0008_bicyclic-4-4.cif
+18,N5,5,bicyclic-3-4-4,7,3,"[3, 4, 4]","[3, 3, 3, 3, 2]",3,4,572.533527,-15478.539587,-3095.707917,-1605.3452,False,False,500,P1,1,xyz/N5_0009_bicyclic-3-4-4.xyz,cif/N5_0009_bicyclic-3-4-4.cif
+19,N6,6,branched-tree,5,0,[],"[3, 3, 1, 1, 1, 1]",3,0,15.932477,-8941.693362,-1490.282227,0.0805,True,True,31,P-1,2,xyz/N6_0000_branched-tree.xyz,cif/N6_0000_branched-tree.cif
+20,N6,6,branched-tree,5,0,[],"[3, 2, 2, 1, 1, 1]",3,0,10.990373,-8942.404238,-1490.400706,-0.0380,False,True,216,P1,1,xyz/N6_0001_branched-tree.xyz,cif/N6_0001_branched-tree.cif
+21,N6,6,branched-tree,5,0,[],"[3, 2, 2, 1, 1, 1]",3,0,10.986865,-8941.706964,-1490.284494,0.0782,True,True,24,P1,1,xyz/N6_0002_branched-tree.xyz,cif/N6_0002_branched-tree.cif
+22,N6,6,chain,5,0,[],"[2, 2, 2, 2, 1, 1]",2,2,6.652379,-8942.556953,-1490.426159,-0.0635,False,True,64,P1,1,xyz/N6_0003_chain.xyz,cif/N6_0003_chain.cif
+23,N6,6,ring-3-substituted,6,1,[3],"[3, 3, 3, 1, 1, 1]",3,2,225.217747,-8942.343494,-1490.390582,-0.0279,False,True,96,P1,1,xyz/N6_0004_ring-3-substituted.xyz,cif/N6_0004_ring-3-substituted.cif
+24,N6,6,ring-3-substituted,6,1,[3],"[3, 3, 2, 2, 1, 1]",3,3,250.909429,-8940.309227,-1490.051538,0.3111,True,True,50,P1,1,xyz/N6_0005_ring-3-substituted.xyz,cif/N6_0005_ring-3-substituted.cif
+25,N6,6,ring-3-substituted,6,1,[3],"[3, 3, 2, 2, 1, 1]",3,0,281.247760,-8937.341567,-1489.556928,0.8057,True,True,12,P1,1,xyz/N6_0006_ring-3-substituted.xyz,cif/N6_0006_ring-3-substituted.cif
+26,N6,6,ring-3-substituted,6,1,[3],"[3, 2, 2, 2, 2, 1]",3,4,276.824761,-8939.010308,-1489.835051,0.5276,True,True,17,P1,1,xyz/N6_0007_ring-3-substituted.xyz,cif/N6_0007_ring-3-substituted.cif
+27,N6,6,ring-4-substituted,6,1,[4],"[3, 3, 2, 2, 1, 1]",3,3,99.358972,-8942.354447,-1490.392408,-0.0297,False,True,98,P1,1,xyz/N6_0008_ring-4-substituted.xyz,cif/N6_0008_ring-4-substituted.cif
+28,N6,6,ring-4-substituted,6,1,[4],"[3, 2, 2, 2, 2, 1]",3,2,109.477213,-8938.522437,-1489.753740,0.6089,True,True,16,P1,1,xyz/N6_0009_ring-4-substituted.xyz,cif/N6_0009_ring-4-substituted.cif
+29,N6,6,ring-4-substituted,6,1,[4],"[3, 3, 2, 2, 1, 1]",3,2,97.849392,-8938.075518,-1489.679253,0.6834,True,True,36,P-1,2,xyz/N6_0010_ring-4-substituted.xyz,cif/N6_0010_ring-4-substituted.cif
+30,N6,6,ring-5-substituted,6,1,[5],"[3, 2, 2, 2, 2, 1]",3,2,32.710782,-8939.809261,-1489.968210,0.3945,True,True,13,P1,1,xyz/N6_0011_ring-5-substituted.xyz,cif/N6_0011_ring-5-substituted.cif
+31,N6,6,ring-6,6,1,[6],"[2, 2, 2, 2, 2, 2]",2,3,11.289098,-8939.201374,-1489.866896,0.4958,True,True,3,P-1,2,xyz/N6_0012_ring-6.xyz,cif/N6_0012_ring-6.cif
+32,N6,6,bicyclic-3-3,7,2,"[3, 3]","[3, 3, 3, 3, 1, 1]",3,4,431.501285,-11303.633843,-1883.938974,-393.5763,False,False,500,P1,1,xyz/N6_0013_bicyclic-3-3.xyz,cif/N6_0013_bicyclic-3-3.cif
+33,N6,6,bicyclic-3-3,7,2,"[3, 3]","[3, 3, 3, 2, 2, 1]",3,3,456.793606,-8939.844312,-1489.974052,0.3886,True,True,16,P1,1,xyz/N6_0014_bicyclic-3-3.xyz,cif/N6_0014_bicyclic-3-3.cif
+34,N6,6,bicyclic-3-4,7,2,"[3, 4]","[3, 3, 3, 2, 2, 1]",3,4,309.509104,-8937.397667,-1489.566278,0.7964,True,True,14,P1,1,xyz/N6_0015_bicyclic-3-4.xyz,cif/N6_0015_bicyclic-3-4.cif
+35,N6,6,bicyclic-3-4,7,2,"[3, 4]","[3, 3, 3, 2, 2, 1]",3,0,321.921075,-8942.398037,-1490.399673,-0.0370,False,True,137,P1,1,xyz/N6_0016_bicyclic-3-4.xyz,cif/N6_0016_bicyclic-3-4.cif
+36,N6,6,bicyclic-3-5,7,2,"[3, 5]","[3, 3, 2, 2, 2, 2]",3,3,266.975447,-8937.710528,-1489.618421,0.7443,True,True,6,P1,1,xyz/N6_0017_bicyclic-3-5.xyz,cif/N6_0017_bicyclic-3-5.cif
+37,N6,6,bicyclic-3-3,7,2,"[3, 3]","[3, 3, 2, 2, 2, 2]",3,1,546.915854,-8937.367163,-1489.561194,0.8015,True,True,7,P-1,2,xyz/N6_0018_bicyclic-3-3.xyz,cif/N6_0018_bicyclic-3-3.cif
+38,N6,6,bicyclic-4-4,7,2,"[4, 4]","[3, 3, 3, 2, 2, 1]",3,4,300.935213,-43905.743119,-7317.623853,-5827.2612,False,False,500,P1,1,xyz/N6_0019_bicyclic-4-4.xyz,cif/N6_0019_bicyclic-4-4.cif
+39,N6,6,bicyclic-4-4,7,2,"[4, 4]","[3, 3, 2, 2, 2, 2]",3,2,180.862831,-8936.620685,-1489.436781,0.9259,True,True,9,P1,1,xyz/N6_0020_bicyclic-4-4.xyz,cif/N6_0020_bicyclic-4-4.cif
+40,N6,6,bicyclic-4-5,7,2,"[4, 5]","[3, 3, 2, 2, 2, 2]",3,4,181.661980,-37315.777223,-6219.296204,-4728.9335,False,False,500,P1,1,xyz/N6_0021_bicyclic-4-5.xyz,cif/N6_0021_bicyclic-4-5.cif
+41,N6,6,bicyclic-3-4-4,8,3,"[3, 4, 4]","[3, 3, 3, 3, 3, 1]",3,2,558.639343,-8942.820985,-1490.470164,-0.1075,False,True,69,P1,1,xyz/N6_0022_bicyclic-3-4-4.xyz,cif/N6_0022_bicyclic-3-4-4.cif
+42,N6,6,bicyclic-3-5-5,8,3,"[3, 5, 5]","[3, 3, 3, 3, 2, 2]",3,3,464.860729,-21943.576177,-3657.262696,-2166.9000,False,False,500,P1,1,xyz/N6_0023_bicyclic-3-5-5.xyz,cif/N6_0023_bicyclic-3-5-5.cif
+43,N6,6,bicyclic-4-4-5,8,3,"[4, 4, 5]","[3, 3, 3, 3, 2, 2]",3,3,394.168056,-13258.186751,-2209.697792,-719.3351,False,False,500,P1,1,xyz/N6_0024_bicyclic-4-4-5.xyz,cif/N6_0024_bicyclic-4-4-5.cif
+44,N6,6,bicyclic-3-3-4,8,3,"[3, 3, 4]","[3, 3, 3, 3, 2, 2]",3,2,546.594702,-8935.716014,-1489.286002,1.0767,True,True,8,P-1,2,xyz/N6_0025_bicyclic-3-3-4.xyz,cif/N6_0025_bicyclic-3-3-4.cif
+45,N6,6,bicyclic-4-4-4,8,3,"[4, 4, 4]","[3, 3, 3, 3, 2, 2]",3,2,398.830515,-8942.283208,-1490.380535,-0.0179,False,True,138,P1,1,xyz/N6_0026_bicyclic-4-4-4.xyz,cif/N6_0026_bicyclic-4-4-4.cif
+46,N6,6,bicyclic-3-3-4-4,9,4,"[3, 3, 4, 4]","[3, 3, 3, 3, 3, 3]",3,4,601.459231,-1433886.873159,-238981.145527,-237490.7828,False,False,500,P1,1,xyz/N6_0027_bicyclic-3-3-4-4.xyz,cif/N6_0027_bicyclic-3-3-4-4.cif
+47,N6,6,bicyclic-4-4-4-4,9,4,"[4, 4, 4, 4]","[3, 3, 3, 3, 3, 3]",3,2,1011.754866,-8937.851838,-1489.641973,0.7207,True,True,75,P1,1,xyz/N6_0028_bicyclic-4-4-4-4.xyz,cif/N6_0028_bicyclic-4-4-4-4.cif
+48,N7,7,ring-3-substituted,7,1,[3],"[3, 3, 2, 2, 2, 1, 1]",3,4,252.576464,-10429.938185,-1489.991169,0.3715,True,True,32,P1,1,xyz/N7_0000_ring-3-substituted.xyz,cif/N7_0000_ring-3-substituted.cif
+49,N7,7,bicyclic-3-4,8,2,"[3, 4]","[3, 3, 3, 3, 2, 1, 1]",3,1,314.915339,-10429.266117,-1489.895160,0.4675,True,True,47,P1,1,xyz/N7_0001_bicyclic-3-4.xyz,cif/N7_0001_bicyclic-3-4.cif
+50,N7,7,ring-4-substituted,7,1,[4],"[3, 2, 2, 2, 2, 2, 1]",3,0,111.141005,-10428.316151,-1489.759450,0.6032,True,True,23,P1,1,xyz/N7_0002_ring-4-substituted.xyz,cif/N7_0002_ring-4-substituted.cif
+51,N7,7,bicyclic-3-4,8,2,"[3, 4]","[3, 3, 2, 2, 2, 2, 2]",3,4,381.318814,-10426.344764,-1489.477823,0.8849,True,True,13,P1,1,xyz/N7_0003_bicyclic-3-4.xyz,cif/N7_0003_bicyclic-3-4.cif
+52,N7,7,ring-3-substituted,7,1,[3],"[3, 3, 3, 2, 1, 1, 1]",3,4,229.166829,-10432.467292,-1490.352470,0.0102,True,True,95,P1,1,xyz/N7_0004_ring-3-substituted.xyz,cif/N7_0004_ring-3-substituted.cif
+53,N7,7,bicyclic-3-3,8,2,"[3, 3]","[3, 3, 3, 2, 2, 2, 1]",3,4,458.458351,-10427.886583,-1489.698083,0.6646,True,True,18,P1,1,xyz/N7_0005_bicyclic-3-3.xyz,cif/N7_0005_bicyclic-3-3.cif
+54,N7,7,bicyclic-3-3-6,9,3,"[3, 3, 6]","[3, 3, 3, 3, 2, 2, 2]",3,1,438.093064,-14085.661853,-2012.237408,-521.8747,False,False,500,P1,1,xyz/N7_0006_bicyclic-3-3-6.xyz,cif/N7_0006_bicyclic-3-3-6.cif
+55,N7,7,branched-tree,6,0,[],"[3, 2, 2, 2, 1, 1, 1]",3,0,12.645181,-10432.319685,-1490.331384,0.0313,True,True,76,P1,1,xyz/N7_0007_branched-tree.xyz,cif/N7_0007_branched-tree.cif
+56,N7,7,bicyclic-4-4,8,2,"[4, 4]","[3, 3, 3, 2, 2, 2, 1]",3,0,172.146686,-10426.693897,-1489.527700,0.8350,True,True,25,P1,1,xyz/N7_0008_bicyclic-4-4.xyz,cif/N7_0008_bicyclic-4-4.cif
+57,N7,7,bicyclic-4-4-5,9,3,"[4, 4, 5]","[3, 3, 3, 3, 2, 2, 2]",3,4,739.124290,-44074.865374,-6296.409339,-4806.0467,False,False,500,P1,1,xyz/N7_0009_bicyclic-4-4-5.xyz,cif/N7_0009_bicyclic-4-4-5.cif
+58,N7,7,ring-4-substituted,7,1,[4],"[3, 3, 3, 2, 1, 1, 1]",3,0,89.413177,-10430.557660,-1490.079666,0.2830,True,True,84,P1,1,xyz/N7_0010_ring-4-substituted.xyz,cif/N7_0010_ring-4-substituted.cif
+59,N7,7,bicyclic-4-4-4,9,3,"[4, 4, 4]","[3, 3, 3, 3, 2, 2, 2]",3,4,238.205873,-10656.098965,-1522.299852,-31.9372,False,False,500,P1,1,xyz/N7_0011_bicyclic-4-4-4.xyz,cif/N7_0011_bicyclic-4-4-4.cif
+60,N7,7,ring-5-substituted,7,1,[5],"[3, 2, 2, 2, 2, 2, 1]",3,3,34.849665,-10430.504151,-1490.072022,0.2907,True,True,22,P1,1,xyz/N7_0012_ring-5-substituted.xyz,cif/N7_0012_ring-5-substituted.cif
+61,N7,7,branched-tree,6,0,[],"[3, 2, 2, 2, 1, 1, 1]",3,0,13.000326,-10430.611295,-1490.087328,0.2753,True,True,42,P1,1,xyz/N7_0013_branched-tree.xyz,cif/N7_0013_branched-tree.cif
+62,N7,7,bicyclic-3-4,8,2,"[3, 4]","[3, 3, 3, 3, 2, 1, 1]",3,1,301.961040,-10429.614379,-1489.944911,0.4178,True,True,44,P1,1,xyz/N7_0014_bicyclic-3-4.xyz,cif/N7_0014_bicyclic-3-4.cif
+63,N7,7,bicyclic-5-5,8,2,"[5, 5]","[3, 3, 2, 2, 2, 2, 2]",3,4,89.892363,-10428.370880,-1489.767269,0.5954,True,True,12,P1,1,xyz/N7_0015_bicyclic-5-5.xyz,cif/N7_0015_bicyclic-5-5.cif
+64,N7,7,bicyclic-3-5,8,2,"[3, 5]","[3, 3, 3, 2, 2, 2, 1]",3,1,268.241627,-10428.518040,-1489.788291,0.5744,True,True,52,P1,1,xyz/N7_0016_bicyclic-3-5.xyz,cif/N7_0016_bicyclic-3-5.cif
+65,N7,7,bicyclic-3-3,8,2,"[3, 3]","[3, 3, 3, 2, 2, 2, 1]",3,0,521.615580,-10429.715094,-1489.959299,0.4034,True,True,65,P1,1,xyz/N7_0017_bicyclic-3-3.xyz,cif/N7_0017_bicyclic-3-3.cif
+66,N7,7,bicyclic-3-3,8,2,"[3, 3]","[3, 3, 3, 3, 2, 1, 1]",3,0,431.969397,-11705.414445,-1672.202064,-181.8394,False,False,500,P1,1,xyz/N7_0018_bicyclic-3-3.xyz,cif/N7_0018_bicyclic-3-3.cif
+67,N7,7,ring-4-substituted,7,1,[4],"[3, 3, 2, 2, 2, 1, 1]",3,0,115.784881,-10426.644200,-1489.520600,0.8421,True,True,14,P1,1,xyz/N7_0019_ring-4-substituted.xyz,cif/N7_0019_ring-4-substituted.cif
+68,N7,7,ring-3-substituted,7,1,[3],"[3, 3, 2, 2, 2, 1, 1]",3,1,282.939166,-10429.537451,-1489.933922,0.4288,True,True,89,P1,1,xyz/N7_0020_ring-3-substituted.xyz,cif/N7_0020_ring-3-substituted.cif
+69,N7,7,ring-5-substituted,7,1,[5],"[3, 3, 2, 2, 2, 1, 1]",3,3,32.758329,-10428.135154,-1489.733593,0.6291,True,True,17,P1,1,xyz/N7_0021_ring-5-substituted.xyz,cif/N7_0021_ring-5-substituted.cif
+70,N7,7,branched-tree,6,0,[],"[3, 3, 2, 1, 1, 1, 1]",3,0,17.656568,-10432.301548,-1490.328793,0.0339,True,True,42,P1,1,xyz/N7_0022_branched-tree.xyz,cif/N7_0022_branched-tree.cif
+71,N7,7,ring-5-substituted,7,1,[5],"[3, 3, 2, 2, 2, 1, 1]",3,2,34.790790,-10429.643427,-1489.949061,0.4136,True,True,137,P1,1,xyz/N7_0023_ring-5-substituted.xyz,cif/N7_0023_ring-5-substituted.cif
+72,N7,7,ring-4-substituted,7,1,[4],"[3, 3, 2, 2, 2, 1, 1]",3,3,101.023137,-10432.450326,-1490.350047,0.0126,True,True,172,P1,1,xyz/N7_0024_ring-4-substituted.xyz,cif/N7_0024_ring-4-substituted.cif
+73,N7,7,ring-3-substituted,7,1,[3],"[3, 3, 3, 2, 1, 1, 1]",3,3,259.486884,-10432.359208,-1490.337030,0.0256,True,True,81,P1,1,xyz/N7_0025_ring-3-substituted.xyz,cif/N7_0025_ring-3-substituted.cif
+74,N7,7,ring-6-substituted,7,1,[6],"[3, 2, 2, 2, 2, 2, 1]",3,4,17.349086,-10428.800685,-1489.828669,0.5340,True,True,20,P1,1,xyz/N7_0026_ring-6-substituted.xyz,cif/N7_0026_ring-6-substituted.cif
+75,N7,7,bicyclic-4-5,8,2,"[4, 5]","[3, 3, 3, 2, 2, 2, 1]",3,1,178.079545,-10428.205201,-1489.743600,0.6191,True,True,34,P1,1,xyz/N7_0027_bicyclic-4-5.xyz,cif/N7_0027_bicyclic-4-5.cif
+76,N7,7,ring-3-substituted,7,1,[3],"[3, 3, 2, 2, 2, 1, 1]",3,0,282.829230,-10432.456502,-1490.350929,0.0117,True,True,391,P1,1,xyz/N7_0028_ring-3-substituted.xyz,cif/N7_0028_ring-3-substituted.cif
+77,N7,7,bicyclic-3-6,8,2,"[3, 6]","[3, 3, 2, 2, 2, 2, 2]",3,1,257.738321,-10426.915038,-1489.559291,0.8034,True,True,18,P1,1,xyz/N7_0029_bicyclic-3-6.xyz,cif/N7_0029_bicyclic-3-6.cif
+78,N7,7,bicyclic-4-4,8,2,"[4, 4]","[3, 3, 3, 3, 2, 1, 1]",3,1,285.362701,-10432.336157,-1490.333737,0.0289,True,True,62,P1,1,xyz/N7_0030_bicyclic-4-4.xyz,cif/N7_0030_bicyclic-4-4.cif
+79,N7,7,branched-tree,6,0,[],"[3, 3, 2, 1, 1, 1, 1]",3,2,17.404667,-10429.109576,-1489.872797,0.4899,True,True,28,P1,1,xyz/N7_0031_branched-tree.xyz,cif/N7_0031_branched-tree.cif
+80,N7,7,branched-tree,6,0,[],"[3, 2, 2, 2, 1, 1, 1]",3,1,13.011701,-10432.295336,-1490.327905,0.0348,True,True,197,P1,1,xyz/N7_0032_branched-tree.xyz,cif/N7_0032_branched-tree.cif
+81,N7,7,bicyclic-3-4,8,2,"[3, 4]","[3, 3, 3, 2, 2, 2, 1]",3,1,323.928794,-10429.924411,-1489.989202,0.3735,True,True,194,P1,1,xyz/N7_0033_bicyclic-3-4.xyz,cif/N7_0033_bicyclic-3-4.cif
+82,N7,7,bicyclic-3-3-5,9,3,"[3, 3, 5]","[3, 3, 3, 3, 3, 2, 1]",3,0,463.599428,-21555.577996,-3079.368285,-1589.0056,False,False,500,P1,1,xyz/N7_0034_bicyclic-3-3-5.xyz,cif/N7_0034_bicyclic-3-3-5.cif
+83,N7,7,bicyclic-4-4-5,9,3,"[4, 4, 5]","[3, 3, 3, 3, 3, 2, 1]",3,1,384.177002,-10428.040642,-1489.720092,0.6426,True,True,27,P1,1,xyz/N7_0035_bicyclic-4-4-5.xyz,cif/N7_0035_bicyclic-4-4-5.cif
+84,N7,7,ring-3-substituted,7,1,[3],"[3, 2, 2, 2, 2, 2, 1]",3,2,278.482744,-10427.983132,-1489.711876,0.6508,True,True,17,P1,1,xyz/N7_0036_ring-3-substituted.xyz,cif/N7_0036_ring-3-substituted.cif
+85,N7,7,ring-3-substituted,7,1,[3],"[3, 3, 2, 2, 2, 1, 1]",3,4,252.528687,-10427.974491,-1489.710642,0.6520,True,True,28,P1,1,xyz/N7_0037_ring-3-substituted.xyz,cif/N7_0037_ring-3-substituted.cif
+86,N7,7,bicyclic-3-4-5,9,3,"[3, 4, 5]","[3, 3, 3, 3, 2, 2, 2]",3,4,322.096302,-10426.872294,-1489.553185,0.8095,True,True,10,P1,1,xyz/N7_0038_bicyclic-3-4-5.xyz,cif/N7_0038_bicyclic-3-4-5.cif
+87,N7,7,bicyclic-3-3,8,2,"[3, 3]","[3, 3, 3, 3, 2, 1, 1]",3,1,462.926016,-10425.870362,-1489.410052,0.9526,True,True,31,P1,1,xyz/N7_0039_bicyclic-3-3.xyz,cif/N7_0039_bicyclic-3-3.cif
+88,N7,7,bicyclic-3-4,8,2,"[3, 4]","[3, 3, 3, 2, 2, 2, 1]",3,3,311.135042,-10427.364463,-1489.623495,0.7392,True,True,21,P1,1,xyz/N7_0040_bicyclic-3-4.xyz,cif/N7_0040_bicyclic-3-4.cif
+89,N7,7,bicyclic-3-5,8,2,"[3, 5]","[3, 3, 3, 2, 2, 2, 1]",3,2,267.221336,-10428.267880,-1489.752554,0.6101,True,True,29,P1,1,xyz/N7_0041_bicyclic-3-5.xyz,cif/N7_0041_bicyclic-3-5.cif
+90,N7,7,bicyclic-4-5,8,2,"[4, 5]","[3, 3, 3, 2, 2, 2, 1]",3,1,170.497841,-10430.933825,-1490.133404,0.2293,True,True,38,P1,1,xyz/N7_0042_bicyclic-4-5.xyz,cif/N7_0042_bicyclic-4-5.cif
+91,N7,7,bicyclic-3-5-5,9,3,"[3, 5, 5]","[3, 3, 3, 3, 2, 2, 2]",3,4,293.601702,-10427.415636,-1489.630805,0.7319,True,True,7,P1,1,xyz/N7_0043_bicyclic-3-5-5.xyz,cif/N7_0043_bicyclic-3-5-5.cif
+92,N7,7,ring-4-substituted,7,1,[4],"[3, 3, 2, 2, 2, 1, 1]",3,3,99.489630,-10429.410619,-1489.915803,0.4469,True,True,20,P1,1,xyz/N7_0044_ring-4-substituted.xyz,cif/N7_0044_ring-4-substituted.cif
+93,N7,7,bicyclic-3-3-4,9,3,"[3, 3, 4]","[3, 3, 3, 3, 3, 2, 1]",3,0,560.287524,-42137.454755,-6019.636394,-4529.2737,False,False,500,P1,1,xyz/N7_0045_bicyclic-3-3-4.xyz,cif/N7_0045_bicyclic-3-3-4.cif
+94,N7,7,chain,6,0,[],"[2, 2, 2, 2, 2, 1, 1]",2,3,8.310088,-10429.762937,-1489.966134,0.3965,True,True,38,P1,1,xyz/N7_0046_chain.xyz,cif/N7_0046_chain.cif
+95,N7,7,bicyclic-4-5,8,2,"[4, 5]","[3, 3, 2, 2, 2, 2, 2]",3,2,116.618183,-10431.006528,-1490.143790,0.2189,True,True,22,P1,1,xyz/N7_0047_bicyclic-4-5.xyz,cif/N7_0047_bicyclic-4-5.cif
+96,N7,7,bicyclic-3-3-3,9,3,"[3, 3, 3]","[3, 3, 3, 3, 2, 2, 2]",3,0,728.306241,-11439.895433,-1634.270776,-143.9081,False,False,500,P1,1,xyz/N7_0048_bicyclic-3-3-3.xyz,cif/N7_0048_bicyclic-3-3-3.cif
+97,N7,7,bicyclic-3-4-5,9,3,"[3, 4, 5]","[3, 3, 3, 3, 2, 2, 2]",3,4,410.304392,-21210.441010,-3030.063001,-1539.7003,False,False,500,P1,1,xyz/N7_0049_bicyclic-3-4-5.xyz,cif/N7_0049_bicyclic-3-4-5.cif
+98,N7,7,bicyclic-4-5-5,9,3,"[4, 5, 5]","[3, 3, 3, 3, 2, 2, 2]",3,0,310.225367,-52238.149013,-7462.592716,-5972.2300,False,False,500,P1,1,xyz/N7_0050_bicyclic-4-5-5.xyz,cif/N7_0050_bicyclic-4-5-5.cif
+99,N7,7,bicyclic-3-5,8,2,"[3, 5]","[3, 3, 3, 2, 2, 2, 1]",3,4,246.187797,-10431.025974,-1490.146568,0.2161,True,True,40,P1,1,xyz/N7_0051_bicyclic-3-5.xyz,cif/N7_0051_bicyclic-3-5.cif
+100,N7,7,ring-7,7,1,[7],"[2, 2, 2, 2, 2, 2, 2]",2,0,12.831282,-10428.089422,-1489.727060,0.6356,True,True,24,P1,1,xyz/N7_0052_ring-7.xyz,cif/N7_0052_ring-7.cif
+101,N7,7,bicyclic-3-4-4,9,3,"[3, 4, 4]","[3, 3, 3, 3, 2, 2, 2]",3,4,398.516266,-10425.192905,-1489.313272,1.0494,True,True,18,P1,1,xyz/N7_0053_bicyclic-3-4-4.xyz,cif/N7_0053_bicyclic-3-4-4.cif
+102,N7,7,bicyclic-3-3-4,9,3,"[3, 3, 4]","[3, 3, 3, 3, 3, 2, 1]",3,2,529.067875,-11863.821367,-1694.831624,-204.4689,False,False,500,P1,1,xyz/N7_0054_bicyclic-3-3-4.xyz,cif/N7_0054_bicyclic-3-3-4.cif
+103,N7,7,bicyclic-4-4-4,9,3,"[4, 4, 4]","[3, 3, 3, 3, 3, 2, 1]",3,4,384.801360,-10428.045486,-1489.720784,0.6419,True,True,51,P1,1,xyz/N7_0055_bicyclic-4-4-4.xyz,cif/N7_0055_bicyclic-4-4-4.cif
+104,N7,7,bicyclic-4-6,8,2,"[4, 6]","[3, 3, 2, 2, 2, 2, 2]",3,1,125.040735,-13074.797061,-1867.828152,-377.4655,False,False,500,P1,1,xyz/N7_0056_bicyclic-4-6.xyz,cif/N7_0056_bicyclic-4-6.cif
+105,N7,7,bicyclic-3-4-4-4,10,4,"[3, 4, 4, 4]","[3, 3, 3, 3, 3, 3, 2]",3,2,452.047513,-10425.099495,-1489.299928,1.0627,True,True,13,P1,1,xyz/N7_0057_bicyclic-3-4-4-4.xyz,cif/N7_0057_bicyclic-3-4-4-4.cif
+106,N7,7,bicyclic-4-4,8,2,"[4, 4]","[3, 3, 3, 2, 2, 2, 1]",3,3,302.577998,-98924.909184,-14132.129883,-12641.7672,False,False,500,P1,1,xyz/N7_0058_bicyclic-4-4.xyz,cif/N7_0058_bicyclic-4-4.cif
+107,N7,7,bicyclic-3-3-5-5,10,4,"[3, 3, 5, 5]","[3, 3, 3, 3, 3, 3, 2]",3,1,697.324679,-21984.453216,-3140.636174,-1650.2735,False,False,500,P1,1,xyz/N7_0059_bicyclic-3-3-5-5.xyz,cif/N7_0059_bicyclic-3-3-5-5.cif
+108,N7,7,bicyclic-3-3-4-5,10,4,"[3, 3, 4, 5]","[3, 3, 3, 3, 3, 3, 2]",3,4,875.204210,-10430.462006,-1490.066001,0.2967,True,True,92,P1,1,xyz/N7_0060_bicyclic-3-3-4-5.xyz,cif/N7_0060_bicyclic-3-3-4-5.cif
+109,N8,8,bicyclic-4-4,9,2,"[4, 4]","[3, 3, 3, 2, 2, 2, 2, 1]",3,2,174.659823,-11917.819489,-1489.727436,0.6352,True,True,65,P1,1,xyz/N8_0000_bicyclic-4-4.xyz,cif/N8_0000_bicyclic-4-4.cif
+110,N8,8,bicyclic-3-3-5,10,3,"[3, 3, 5]","[3, 3, 3, 3, 3, 2, 2, 1]",3,1,506.674252,-11918.601566,-1489.825196,0.5375,True,True,150,P1,1,xyz/N8_0001_bicyclic-3-3-5.xyz,cif/N8_0001_bicyclic-3-3-5.cif
+111,N8,8,bicyclic-3-6,9,2,"[3, 6]","[3, 3, 3, 2, 2, 2, 2, 1]",3,3,263.564051,-11919.882504,-1489.985313,0.3774,True,True,80,P1,1,xyz/N8_0002_bicyclic-3-6.xyz,cif/N8_0002_bicyclic-3-6.cif
+112,N8,8,ring-3-substituted,8,1,[3],"[3, 3, 2, 2, 2, 2, 1, 1]",3,0,253.177570,-11920.641019,-1490.080127,0.2826,True,True,71,P-1,2,xyz/N8_0003_ring-3-substituted.xyz,cif/N8_0003_ring-3-substituted.cif
+113,N8,8,bicyclic-5-5,9,2,"[5, 5]","[3, 3, 3, 3, 2, 2, 1, 1]",3,4,170.175967,-11921.124801,-1490.140600,0.2221,True,True,118,P1,1,xyz/N8_0004_bicyclic-5-5.xyz,cif/N8_0004_bicyclic-5-5.cif
+114,N8,8,bicyclic-4-5-6,10,3,"[4, 5, 6]","[3, 3, 3, 3, 3, 2, 2, 1]",3,1,313.652208,-11918.756640,-1489.844580,0.5181,True,True,149,P1,1,xyz/N8_0005_bicyclic-4-5-6.xyz,cif/N8_0005_bicyclic-4-5-6.cif
+115,N8,8,bicyclic-3-5,9,2,"[3, 5]","[3, 3, 3, 3, 2, 2, 1, 1]",3,4,248.648159,-11920.760328,-1490.095041,0.2676,True,True,35,P1,1,xyz/N8_0006_bicyclic-3-5.xyz,cif/N8_0006_bicyclic-3-5.cif
+116,N8,8,bicyclic-5-5,9,2,"[5, 5]","[3, 3, 3, 2, 2, 2, 2, 1]",3,4,179.743694,-11914.594506,-1489.324313,1.0384,True,True,22,P1,1,xyz/N8_0007_bicyclic-5-5.xyz,cif/N8_0007_bicyclic-5-5.cif
+117,N8,8,ring-4-substituted,8,1,[4],"[3, 3, 2, 2, 2, 2, 1, 1]",3,1,101.747730,-11918.838108,-1489.854764,0.5079,True,True,50,P1,1,xyz/N8_0008_ring-4-substituted.xyz,cif/N8_0008_ring-4-substituted.cif
+118,N8,8,bicyclic-3-4,9,2,"[3, 4]","[3, 3, 3, 3, 3, 1, 1, 1]",3,3,293.706631,-11921.107185,-1490.138398,0.2243,True,True,87,P1,1,xyz/N8_0009_bicyclic-3-4.xyz,cif/N8_0009_bicyclic-3-4.cif
+119,N8,8,bicyclic-4-6,9,2,"[4, 6]","[3, 3, 2, 2, 2, 2, 2, 2]",3,3,107.521133,-11917.695162,-1489.711895,0.6508,True,True,19,P1,1,xyz/N8_0010_bicyclic-4-6.xyz,cif/N8_0010_bicyclic-4-6.cif
+120,N8,8,ring-3-substituted,8,1,[3],"[3, 2, 2, 2, 2, 2, 2, 1]",3,0,280.140549,-11918.997852,-1489.874732,0.4879,True,True,25,P1,1,xyz/N8_0011_ring-3-substituted.xyz,cif/N8_0011_ring-3-substituted.cif
+121,N8,8,branched-tree,7,0,[],"[3, 2, 2, 2, 2, 1, 1, 1]",3,4,15.147865,-11919.732927,-1489.966616,0.3961,True,True,45,P1,1,xyz/N8_0012_branched-tree.xyz,cif/N8_0012_branched-tree.cif
+122,N8,8,ring-4-substituted,8,1,[4],"[3, 3, 3, 3, 1, 1, 1, 1]",3,4,83.351063,-11923.140922,-1490.392615,-0.0299,False,True,86,P1,1,xyz/N8_0013_ring-4-substituted.xyz,cif/N8_0013_ring-4-substituted.cif
+123,N8,8,ring-5-substituted,8,1,[5],"[3, 3, 2, 2, 2, 2, 1, 1]",3,1,35.962633,-11920.773023,-1490.096628,0.2660,True,True,67,P1,1,xyz/N8_0014_ring-5-substituted.xyz,cif/N8_0014_ring-5-substituted.cif
+124,N8,8,bicyclic-3-6-6,10,3,"[3, 6, 6]","[3, 3, 3, 3, 3, 2, 2, 1]",3,1,443.756551,-26871.416497,-3358.927062,-1868.5644,False,False,500,P1,1,xyz/N8_0015_bicyclic-3-6-6.xyz,cif/N8_0015_bicyclic-3-6-6.cif
+125,N8,8,ring-3-substituted,8,1,[3],"[3, 3, 2, 2, 2, 2, 1, 1]",3,4,284.849061,-11919.884119,-1489.985515,0.3772,True,True,69,P1,1,xyz/N8_0016_ring-3-substituted.xyz,cif/N8_0016_ring-3-substituted.cif
+126,N8,8,bicyclic-3-6,9,2,"[3, 6]","[3, 3, 3, 2, 2, 2, 2, 1]",3,1,234.418296,-11920.149100,-1490.018637,0.3440,True,True,68,P1,1,xyz/N8_0017_bicyclic-3-6.xyz,cif/N8_0017_bicyclic-3-6.cif
+127,N8,8,ring-4-substituted,8,1,[4],"[3, 2, 2, 2, 2, 2, 2, 1]",3,4,113.454975,-11917.029493,-1489.628687,0.7340,True,True,16,P1,1,xyz/N8_0018_ring-4-substituted.xyz,cif/N8_0018_ring-4-substituted.cif
+128,N8,8,ring-3-substituted,8,1,[3],"[3, 3, 2, 2, 2, 2, 1, 1]",3,0,253.127213,-11919.835925,-1489.979491,0.3832,True,True,29,P1,1,xyz/N8_0019_ring-3-substituted.xyz,cif/N8_0019_ring-3-substituted.cif
+129,N8,8,ring-5-substituted,8,1,[5],"[3, 3, 2, 2, 2, 2, 1, 1]",3,0,34.887666,-11920.732170,-1490.091521,0.2712,True,True,47,P1,1,xyz/N8_0020_ring-5-substituted.xyz,cif/N8_0020_ring-5-substituted.cif
+130,N8,8,ring-4-substituted,8,1,[4],"[3, 3, 2, 2, 2, 2, 1, 1]",3,1,117.486811,-11919.417824,-1489.927228,0.4354,True,True,77,P1,1,xyz/N8_0021_ring-4-substituted.xyz,cif/N8_0021_ring-4-substituted.cif
+131,N8,8,ring-4-substituted,8,1,[4],"[3, 3, 3, 2, 2, 1, 1, 1]",3,1,91.985487,-11919.070637,-1489.883830,0.4788,True,True,48,P1,1,xyz/N8_0022_ring-4-substituted.xyz,cif/N8_0022_ring-4-substituted.cif
+132,N8,8,ring-5-substituted,8,1,[5],"[3, 3, 3, 2, 2, 1, 1, 1]",3,2,34.019474,-11919.193113,-1489.899139,0.4635,True,True,75,P1,1,xyz/N8_0023_ring-5-substituted.xyz,cif/N8_0023_ring-5-substituted.cif
+133,N8,8,bicyclic-5-6,9,2,"[5, 6]","[3, 3, 3, 2, 2, 2, 2, 1]",3,4,89.330943,-11921.619756,-1490.202469,0.1602,True,True,41,P1,1,xyz/N8_0024_bicyclic-5-6.xyz,cif/N8_0024_bicyclic-5-6.cif
+134,N8,8,branched-tree,7,0,[],"[3, 3, 2, 2, 1, 1, 1, 1]",3,0,19.074935,-11922.412177,-1490.301522,0.0612,True,True,44,P1,1,xyz/N8_0025_branched-tree.xyz,cif/N8_0025_branched-tree.cif
+135,N8,8,bicyclic-3-5,9,2,"[3, 5]","[3, 3, 3, 3, 2, 2, 1, 1]",3,0,269.676860,-11917.543194,-1489.692899,0.6698,True,True,30,P1,1,xyz/N8_0026_bicyclic-3-5.xyz,cif/N8_0026_bicyclic-3-5.cif
+136,N8,8,bicyclic-3-4,9,2,"[3, 4]","[3, 3, 3, 3, 2, 2, 1, 1]",3,1,301.890490,-11920.370918,-1490.046365,0.3163,True,True,67,P1,1,xyz/N8_0027_bicyclic-3-4.xyz,cif/N8_0027_bicyclic-3-4.cif
+137,N8,8,ring-3-substituted,8,1,[3],"[3, 3, 3, 2, 2, 1, 1, 1]",3,3,258.762666,-11919.536133,-1489.942017,0.4207,True,True,57,P1,1,xyz/N8_0028_ring-3-substituted.xyz,cif/N8_0028_ring-3-substituted.cif
+138,N8,8,branched-tree,7,0,[],"[3, 2, 2, 2, 2, 1, 1, 1]",3,0,14.314098,-11923.219362,-1490.402420,-0.0397,False,True,149,P1,1,xyz/N8_0029_branched-tree.xyz,cif/N8_0029_branched-tree.cif
+139,N8,8,ring-5-substituted,8,1,[5],"[3, 3, 3, 2, 2, 1, 1, 1]",3,1,35.086952,-11923.122036,-1490.390255,-0.0276,False,True,111,P1,1,xyz/N8_0030_ring-5-substituted.xyz,cif/N8_0030_ring-5-substituted.cif
+140,N8,8,bicyclic-4-4-6,10,3,"[4, 4, 6]","[3, 3, 3, 3, 2, 2, 2, 2]",3,2,294.315370,-11914.013303,-1489.251663,1.1110,True,True,6,P1,1,xyz/N8_0031_bicyclic-4-4-6.xyz,cif/N8_0031_bicyclic-4-4-6.cif
+141,N8,8,bicyclic-3-5-6,10,3,"[3, 5, 6]","[3, 3, 3, 3, 2, 2, 2, 2]",3,0,323.283007,-11916.604721,-1489.575590,0.7871,True,True,9,P1,1,xyz/N8_0032_bicyclic-3-5-6.xyz,cif/N8_0032_bicyclic-3-5-6.cif
+142,N8,8,bicyclic-4-5,9,2,"[4, 5]","[3, 3, 3, 2, 2, 2, 2, 1]",3,2,117.139766,-11917.560642,-1489.695080,0.6676,True,True,19,P1,1,xyz/N8_0033_bicyclic-4-5.xyz,cif/N8_0033_bicyclic-4-5.cif
+143,N8,8,bicyclic-3-3-5,10,3,"[3, 3, 5]","[3, 3, 3, 3, 3, 3, 1, 1]",3,2,463.443640,-39575.100782,-4946.887598,-3456.5249,False,False,500,P1,1,xyz/N8_0034_bicyclic-3-3-5.xyz,cif/N8_0034_bicyclic-3-3-5.cif
+144,N8,8,bicyclic-4-4,9,2,"[4, 4]","[3, 3, 3, 2, 2, 2, 2, 1]",3,4,304.243829,-13975.639717,-1746.954965,-256.5923,False,False,500,P1,1,xyz/N8_0035_bicyclic-4-4.xyz,cif/N8_0035_bicyclic-4-4.cif
+145,N8,8,bicyclic-3-3,9,2,"[3, 3]","[3, 3, 3, 3, 2, 2, 1, 1]",3,4,466.251771,-11920.763443,-1490.095430,0.2672,True,True,117,P1,1,xyz/N8_0036_bicyclic-3-3.xyz,cif/N8_0036_bicyclic-3-3.cif
+146,N8,8,branched-tree,7,0,[],"[3, 3, 2, 2, 1, 1, 1, 1]",3,4,19.872498,-11923.316134,-1490.414517,-0.0518,False,True,160,P1,1,xyz/N8_0037_branched-tree.xyz,cif/N8_0037_branched-tree.cif
+147,N8,8,chain,7,0,[],"[2, 2, 2, 2, 2, 2, 1, 1]",2,2,9.967815,-11918.729280,-1489.841160,0.5215,True,True,17,P-1,2,xyz/N8_0038_chain.xyz,cif/N8_0038_chain.cif
+148,N8,8,bicyclic-3-4-4,10,3,"[3, 4, 4]","[3, 3, 3, 3, 3, 2, 2, 1]",3,2,374.980486,-11915.980732,-1489.497591,0.8651,True,True,19,P1,1,xyz/N8_0039_bicyclic-3-4-4.xyz,cif/N8_0039_bicyclic-3-4-4.cif
+149,N8,8,bicyclic-3-4,9,2,"[3, 4]","[3, 3, 3, 2, 2, 2, 2, 1]",3,0,325.228872,-11921.662252,-1490.207782,0.1549,True,True,50,P1,1,xyz/N8_0040_bicyclic-3-4.xyz,cif/N8_0040_bicyclic-3-4.cif
+150,N8,8,bicyclic-3-4-6,10,3,"[3, 4, 6]","[3, 3, 3, 3, 2, 2, 2, 2]",3,3,307.148254,-11917.694093,-1489.711762,0.6509,True,True,28,P1,1,xyz/N8_0041_bicyclic-3-4-6.xyz,cif/N8_0041_bicyclic-3-4-6.cif
+151,N8,8,bicyclic-3-4-4,10,3,"[3, 4, 4]","[3, 3, 3, 3, 2, 2, 2, 2]",3,3,574.399270,-32669.280756,-4083.660094,-2593.2974,False,False,500,P1,1,xyz/N8_0042_bicyclic-3-4-4.xyz,cif/N8_0042_bicyclic-3-4-4.cif
+152,N8,8,bicyclic-4-4-5,10,3,"[4, 4, 5]","[3, 3, 3, 3, 3, 2, 2, 1]",3,4,308.169755,-57879.650466,-7234.956308,-5744.5936,False,False,500,P1,1,xyz/N8_0043_bicyclic-4-4-5.xyz,cif/N8_0043_bicyclic-4-4-5.cif
+153,N8,8,bicyclic-4-4,9,2,"[4, 4]","[3, 3, 3, 3, 2, 2, 1, 1]",3,0,163.313376,-11922.538303,-1490.317288,0.0454,True,True,95,P1,1,xyz/N8_0044_bicyclic-4-4.xyz,cif/N8_0044_bicyclic-4-4.cif
+154,N8,8,bicyclic-3-3,9,2,"[3, 3]","[3, 3, 3, 2, 2, 2, 2, 1]",3,2,460.116519,-11920.831075,-1490.103884,0.2588,True,True,67,P1,1,xyz/N8_0045_bicyclic-3-3.xyz,cif/N8_0045_bicyclic-3-3.cif
+155,N8,8,bicyclic-4-6,9,2,"[4, 6]","[3, 3, 3, 2, 2, 2, 2, 1]",3,1,115.786044,-11920.083660,-1490.010457,0.3522,True,True,29,P1,1,xyz/N8_0046_bicyclic-4-6.xyz,cif/N8_0046_bicyclic-4-6.cif
+156,N8,8,ring-3-substituted,8,1,[3],"[3, 3, 3, 3, 1, 1, 1, 1]",3,4,241.617608,-11922.482634,-1490.310329,0.0523,True,True,156,P1,1,xyz/N8_0047_ring-3-substituted.xyz,cif/N8_0047_ring-3-substituted.cif
+157,N8,8,ring-3-substituted,8,1,[3],"[3, 3, 3, 2, 2, 1, 1, 1]",3,2,258.588239,-11922.536406,-1490.317051,0.0456,True,True,178,P1,1,xyz/N8_0048_ring-3-substituted.xyz,cif/N8_0048_ring-3-substituted.cif
+158,N8,8,bicyclic-3-4,9,2,"[3, 4]","[3, 3, 3, 3, 2, 2, 1, 1]",3,2,316.583290,-11919.893876,-1489.986735,0.3759,True,True,60,P1,1,xyz/N8_0049_bicyclic-3-4.xyz,cif/N8_0049_bicyclic-3-4.cif
+159,N8,8,branched-tree,7,0,[],"[3, 3, 2, 2, 1, 1, 1, 1]",3,2,18.640008,-11922.362070,-1490.295259,0.0674,True,True,31,P-1,2,xyz/N8_0050_branched-tree.xyz,cif/N8_0050_branched-tree.cif
+160,N8,8,branched-tree,7,0,[],"[3, 3, 2, 2, 1, 1, 1, 1]",3,2,19.325438,-11920.719283,-1490.089910,0.2728,True,True,68,P1,1,xyz/N8_0051_branched-tree.xyz,cif/N8_0051_branched-tree.cif
+161,N8,8,ring-4-substituted,8,1,[4],"[3, 3, 2, 2, 2, 2, 1, 1]",3,1,101.111203,-11918.749363,-1489.843670,0.5190,True,True,31,P1,1,xyz/N8_0052_ring-4-substituted.xyz,cif/N8_0052_ring-4-substituted.cif
+162,N8,8,bicyclic-3-3,9,2,"[3, 3]","[3, 3, 2, 2, 2, 2, 2, 2]",3,1,550.313597,-11917.236647,-1489.654581,0.7081,True,True,10,P-1,2,xyz/N8_0053_bicyclic-3-3.xyz,cif/N8_0053_bicyclic-3-3.cif
+163,N8,8,ring-7-substituted,8,1,[7],"[3, 2, 2, 2, 2, 2, 2, 1]",3,0,18.718459,-11920.370620,-1490.046327,0.3164,True,True,72,P1,1,xyz/N8_0054_ring-7-substituted.xyz,cif/N8_0054_ring-7-substituted.cif
+164,N8,8,ring-8,8,1,[8],"[2, 2, 2, 2, 2, 2, 2, 2]",2,0,14.594135,-11923.230434,-1490.403804,-0.0411,False,True,155,P1,1,xyz/N8_0055_ring-8.xyz,cif/N8_0055_ring-8.cif
+165,N8,8,bicyclic-3-4-5,10,3,"[3, 4, 5]","[3, 3, 3, 3, 3, 2, 2, 1]",3,3,386.964307,-15537.521816,-1942.190227,-451.8275,False,False,500,P1,1,xyz/N8_0056_bicyclic-3-4-5.xyz,cif/N8_0056_bicyclic-3-4-5.cif
+166,N8,8,ring-3-substituted,8,1,[3],"[3, 3, 3, 2, 2, 1, 1, 1]",3,1,230.838435,-11923.128411,-1490.391051,-0.0284,False,True,171,P1,1,xyz/N8_0057_ring-3-substituted.xyz,cif/N8_0057_ring-3-substituted.cif
+167,N8,8,bicyclic-3-3-5,10,3,"[3, 3, 5]","[3, 3, 3, 3, 3, 2, 2, 1]",3,1,465.876371,-14784.781070,-1848.097634,-357.7350,False,False,500,P1,1,xyz/N8_0058_bicyclic-3-3-5.xyz,cif/N8_0058_bicyclic-3-3-5.cif
+168,N8,8,bicyclic-3-6,9,2,"[3, 6]","[3, 3, 3, 2, 2, 2, 2, 1]",3,4,265.225343,-11919.017948,-1489.877244,0.4854,True,True,117,P1,1,xyz/N8_0059_bicyclic-3-6.xyz,cif/N8_0059_bicyclic-3-6.cif
+169,N8,8,ring-4-substituted,8,1,[4],"[3, 3, 2, 2, 2, 2, 1, 1]",3,1,117.151506,-11922.536277,-1490.317035,0.0456,True,True,185,P1,1,xyz/N8_0060_ring-4-substituted.xyz,cif/N8_0060_ring-4-substituted.cif
+170,N8,8,bicyclic-3-3-5-6,11,4,"[3, 3, 5, 6]","[3, 3, 3, 3, 3, 3, 2, 2]",3,2,560.871493,-11915.607917,-1489.450990,0.9117,True,True,14,P1,1,xyz/N8_0061_bicyclic-3-3-5-6.xyz,cif/N8_0061_bicyclic-3-3-5-6.cif
+171,N8,8,bicyclic-3-4-5,10,3,"[3, 4, 5]","[3, 3, 3, 3, 2, 2, 2, 2]",3,1,352.924824,-11916.691369,-1489.586421,0.7763,True,True,14,P1,1,xyz/N8_0062_bicyclic-3-4-5.xyz,cif/N8_0062_bicyclic-3-4-5.cif
+172,N8,8,branched-tree,7,0,[],"[3, 2, 2, 2, 2, 1, 1, 1]",3,4,14.653740,-11920.681474,-1490.085184,0.2775,True,True,52,P1,1,xyz/N8_0063_branched-tree.xyz,cif/N8_0063_branched-tree.cif
+173,N8,8,bicyclic-4-4-4,10,3,"[4, 4, 4]","[3, 3, 3, 3, 2, 2, 2, 2]",3,1,247.474397,-11917.889582,-1489.736198,0.6265,True,True,21,P-1,2,xyz/N8_0064_bicyclic-4-4-4.xyz,cif/N8_0064_bicyclic-4-4-4.cif
+174,N8,8,bicyclic-3-5,9,2,"[3, 5]","[3, 3, 3, 2, 2, 2, 2, 1]",3,0,270.276118,-11917.598990,-1489.699874,0.6628,True,True,34,P1,1,xyz/N8_0065_bicyclic-3-5.xyz,cif/N8_0065_bicyclic-3-5.cif
+175,N8,8,bicyclic-3-4-5,10,3,"[3, 4, 5]","[3, 3, 3, 3, 3, 2, 2, 1]",3,0,321.770759,-11917.505001,-1489.688125,0.6746,True,True,24,P1,1,xyz/N8_0066_bicyclic-3-4-5.xyz,cif/N8_0066_bicyclic-3-4-5.cif
+176,N8,8,bicyclic-3-3,9,2,"[3, 3]","[3, 3, 3, 3, 2, 2, 1, 1]",3,2,498.456723,-11922.996434,-1490.374554,-0.0119,False,True,308,P1,1,xyz/N8_0067_bicyclic-3-3.xyz,cif/N8_0067_bicyclic-3-3.cif
+177,N8,8,bicyclic-3-3,9,2,"[3, 3]","[3, 3, 3, 2, 2, 2, 2, 1]",3,0,523.224159,-11918.211549,-1489.776444,0.5862,True,True,45,P1,1,xyz/N8_0068_bicyclic-3-3.xyz,cif/N8_0068_bicyclic-3-3.cif
+178,N8,8,bicyclic-3-4,9,2,"[3, 4]","[3, 3, 3, 3, 2, 2, 1, 1]",3,0,315.629473,-11918.127303,-1489.765913,0.5968,True,True,25,P1,1,xyz/N8_0069_bicyclic-3-4.xyz,cif/N8_0069_bicyclic-3-4.cif
+179,N8,8,bicyclic-3-3-7,10,3,"[3, 3, 7]","[3, 3, 3, 3, 2, 2, 2, 2]",3,0,439.596404,-17920.592283,-2240.074035,-749.7114,False,False,500,P1,1,xyz/N8_0070_bicyclic-3-3-7.xyz,cif/N8_0070_bicyclic-3-3-7.cif
+180,N8,8,bicyclic-3-5-5,10,3,"[3, 5, 5]","[3, 3, 3, 3, 3, 2, 2, 1]",3,1,399.002695,-27535.257268,-3441.907159,-1951.5445,False,False,500,P1,1,xyz/N8_0071_bicyclic-3-5-5.xyz,cif/N8_0071_bicyclic-3-5-5.cif
+181,N8,8,bicyclic-3-3,9,2,"[3, 3]","[3, 3, 3, 3, 2, 2, 1, 1]",3,3,500.980797,-11923.219841,-1490.402480,-0.0398,False,True,187,P1,1,xyz/N8_0072_bicyclic-3-3.xyz,cif/N8_0072_bicyclic-3-3.cif
+182,N8,8,bicyclic-3-4-5,10,3,"[3, 4, 5]","[3, 3, 3, 3, 3, 2, 2, 1]",3,3,323.444518,-11916.472331,-1489.559041,0.8036,True,True,20,P1,1,xyz/N8_0073_bicyclic-3-4-5.xyz,cif/N8_0073_bicyclic-3-4-5.cif
+183,N8,8,ring-4-substituted,8,1,[4],"[3, 3, 3, 2, 2, 1, 1, 1]",3,4,106.511836,-11919.760959,-1489.970120,0.3926,True,True,43,P1,1,xyz/N8_0074_ring-4-substituted.xyz,cif/N8_0074_ring-4-substituted.cif
+184,N8,8,bicyclic-3-4,9,2,"[3, 4]","[3, 3, 3, 3, 2, 2, 1, 1]",3,0,300.556819,-11920.680285,-1490.085036,0.2776,True,True,65,P1,1,xyz/N8_0075_bicyclic-3-4.xyz,cif/N8_0075_bicyclic-3-4.cif
+185,N8,8,ring-6-substituted,8,1,[6],"[3, 3, 2, 2, 2, 2, 1, 1]",3,3,23.733563,-11920.033581,-1490.004198,0.3585,True,True,49,P1,1,xyz/N8_0076_ring-6-substituted.xyz,cif/N8_0076_ring-6-substituted.cif
+186,N8,8,branched-tree,7,0,[],"[3, 3, 2, 2, 1, 1, 1, 1]",3,1,19.818724,-11922.533826,-1490.316728,0.0459,True,True,102,P1,1,xyz/N8_0077_branched-tree.xyz,cif/N8_0077_branched-tree.cif
+187,N8,8,bicyclic-4-6,9,2,"[4, 6]","[3, 3, 3, 2, 2, 2, 2, 1]",3,0,128.335081,-21648.078280,-2706.009785,-1215.6471,False,False,500,P1,1,xyz/N8_0078_bicyclic-4-6.xyz,cif/N8_0078_bicyclic-4-6.cif
+188,N8,8,bicyclic-3-4-5,10,3,"[3, 4, 5]","[3, 3, 3, 3, 2, 2, 2, 2]",3,3,333.647201,-11917.534812,-1489.691851,0.6708,True,True,16,P1,1,xyz/N8_0079_bicyclic-3-4-5.xyz,cif/N8_0079_bicyclic-3-4-5.cif
+189,N8,8,bicyclic-3-4,9,2,"[3, 4]","[3, 3, 3, 3, 2, 2, 1, 1]",3,4,331.766083,-11915.702752,-1489.462844,0.8998,True,True,25,P1,1,xyz/N8_0080_bicyclic-3-4.xyz,cif/N8_0080_bicyclic-3-4.cif
+190,N8,8,bicyclic-3-4-4,10,3,"[3, 4, 4]","[3, 3, 3, 3, 3, 2, 2, 1]",3,0,388.117885,-11921.664991,-1490.208124,0.1546,True,True,240,P1,1,xyz/N8_0081_bicyclic-3-4-4.xyz,cif/N8_0081_bicyclic-3-4-4.cif
+191,N8,8,bicyclic-3-4-4-5,11,4,"[3, 4, 4, 5]","[3, 3, 3, 3, 3, 3, 2, 2]",3,3,541.260076,-11920.086821,-1490.010853,0.3518,True,True,60,P1,1,xyz/N8_0082_bicyclic-3-4-4-5.xyz,cif/N8_0082_bicyclic-3-4-4-5.cif
+192,N8,8,ring-5-substituted,8,1,[5],"[3, 2, 2, 2, 2, 2, 2, 1]",3,0,36.033493,-11921.618841,-1490.202355,0.1603,True,True,25,P1,1,xyz/N8_0083_ring-5-substituted.xyz,cif/N8_0083_ring-5-substituted.cif
+193,N8,8,branched-tree,7,0,[],"[3, 3, 3, 1, 1, 1, 1, 1]",3,0,24.557425,-11922.538039,-1490.317255,0.0454,True,True,126,P1,1,xyz/N8_0084_branched-tree.xyz,cif/N8_0084_branched-tree.cif
+194,N8,8,bicyclic-3-5,9,2,"[3, 5]","[3, 3, 3, 2, 2, 2, 2, 1]",3,0,245.061700,-11921.663704,-1490.207963,0.1547,True,True,82,P1,1,xyz/N8_0085_bicyclic-3-5.xyz,cif/N8_0085_bicyclic-3-5.cif
+195,N8,8,ring-6-substituted,8,1,[6],"[3, 2, 2, 2, 2, 2, 2, 1]",3,3,19.459002,-11920.142096,-1490.017762,0.3449,True,True,21,P1,1,xyz/N8_0086_ring-6-substituted.xyz,cif/N8_0086_ring-6-substituted.cif
+196,N8,8,bicyclic-4-4,9,2,"[4, 4]","[3, 3, 3, 3, 2, 2, 1, 1]",3,2,290.942780,-14898.956072,-1862.369509,-372.0068,False,False,500,P1,1,xyz/N8_0087_bicyclic-4-4.xyz,cif/N8_0087_bicyclic-4-4.cif
+197,N8,8,bicyclic-3-3-6,10,3,"[3, 3, 6]","[3, 3, 3, 3, 2, 2, 2, 2]",3,4,535.970527,-11919.033622,-1489.879203,0.4835,True,True,61,P1,1,xyz/N8_0088_bicyclic-3-3-6.xyz,cif/N8_0088_bicyclic-3-3-6.cif
+198,N8,8,bicyclic-3-3,9,2,"[3, 3]","[3, 3, 3, 3, 3, 1, 1, 1]",3,0,438.387844,-12920.747001,-1615.093375,-124.7307,False,False,500,P1,1,xyz/N8_0089_bicyclic-3-3.xyz,cif/N8_0089_bicyclic-3-3.cif
+199,N8,8,bicyclic-3-3-4,10,3,"[3, 3, 4]","[3, 3, 3, 3, 3, 3, 1, 1]",3,3,523.629888,-17150.356396,-2143.794550,-653.4319,False,False,500,P1,1,xyz/N8_0090_bicyclic-3-3-4.xyz,cif/N8_0090_bicyclic-3-3-4.cif
+200,N8,8,ring-4-substituted,8,1,[4],"[3, 3, 2, 2, 2, 2, 1, 1]",3,4,101.130100,-11917.623641,-1489.702955,0.6597,True,True,30,P1,1,xyz/N8_0091_ring-4-substituted.xyz,cif/N8_0091_ring-4-substituted.cif
+201,N8,8,ring-3-substituted,8,1,[3],"[3, 3, 3, 2, 2, 1, 1, 1]",3,1,258.866697,-11923.315730,-1490.414466,-0.0518,False,True,97,P1,1,xyz/N8_0092_ring-3-substituted.xyz,cif/N8_0092_ring-3-substituted.cif
+202,N8,8,ring-6-substituted,8,1,[6],"[3, 3, 2, 2, 2, 2, 1, 1]",3,4,22.967754,-11916.892326,-1489.611541,0.7511,True,True,38,P1,1,xyz/N8_0093_ring-6-substituted.xyz,cif/N8_0093_ring-6-substituted.cif
+203,N8,8,bicyclic-3-3-6,10,3,"[3, 3, 6]","[3, 3, 3, 3, 3, 2, 2, 1]",3,3,443.384007,-94805.294639,-11850.661830,-10360.2992,False,False,500,P1,1,xyz/N8_0094_bicyclic-3-3-6.xyz,cif/N8_0094_bicyclic-3-3-6.cif
+204,N8,8,ring-4-substituted,8,1,[4],"[3, 3, 2, 2, 2, 2, 1, 1]",3,1,102.367558,-11917.990544,-1489.748818,0.6139,True,True,63,P1,1,xyz/N8_0095_ring-4-substituted.xyz,cif/N8_0095_ring-4-substituted.cif
+205,N8,8,bicyclic-5-5,9,2,"[5, 5]","[3, 3, 3, 3, 2, 2, 1, 1]",3,0,160.578788,-11923.318341,-1490.414793,-0.0521,False,True,137,P1,1,xyz/N8_0096_bicyclic-5-5.xyz,cif/N8_0096_bicyclic-5-5.cif
+206,N8,8,bicyclic-3-4,9,2,"[3, 4]","[3, 3, 3, 2, 2, 2, 2, 1]",3,2,312.804190,-11917.769735,-1489.721217,0.6415,True,True,23,P1,1,xyz/N8_0097_bicyclic-3-4.xyz,cif/N8_0097_bicyclic-3-4.cif
+207,N8,8,bicyclic-3-5,9,2,"[3, 5]","[3, 3, 3, 3, 2, 2, 1, 1]",3,3,271.063982,-11919.835886,-1489.979486,0.3832,True,True,163,P1,1,xyz/N8_0098_bicyclic-3-5.xyz,cif/N8_0098_bicyclic-3-5.cif
+208,N8,8,bicyclic-4-5-5,10,3,"[4, 5, 5]","[3, 3, 3, 3, 2, 2, 2, 2]",3,1,193.460060,-25056.013529,-3132.001691,-1641.6390,False,False,500,P1,1,xyz/N8_0099_bicyclic-4-5-5.xyz,cif/N8_0099_bicyclic-4-5-5.cif
+209,N9,9,ring-6-substituted,9,1,[6],"[3, 3, 3, 2, 2, 2, 1, 1, 1]",3,0,28.916515,-13413.254697,-1490.361633,0.0010,True,True,147,P1,1,xyz/N9_0000_ring-6-substituted.xyz,cif/N9_0000_ring-6-substituted.cif
+210,N9,9,bicyclic-3-4-6-6,12,4,"[3, 4, 6, 6]","[3, 3, 3, 3, 3, 3, 2, 2, 2]",3,0,329.177623,-14756.623663,-1639.624851,-149.2622,False,False,500,P1,1,xyz/N9_0001_bicyclic-3-4-6-6.xyz,cif/N9_0001_bicyclic-3-4-6-6.cif
+211,N9,9,bicyclic-5-5,10,2,"[5, 5]","[3, 3, 3, 2, 2, 2, 2, 2, 1]",3,0,181.409322,-13405.666044,-1489.518449,0.8442,True,True,49,P1,1,xyz/N9_0002_bicyclic-5-5.xyz,cif/N9_0002_bicyclic-5-5.cif
+212,N9,9,ring-3-substituted,9,1,[3],"[3, 3, 3, 2, 2, 2, 1, 1, 1]",3,0,260.500199,-13410.679065,-1490.075452,0.2872,True,True,107,P1,1,xyz/N9_0003_ring-3-substituted.xyz,cif/N9_0003_ring-3-substituted.cif
+213,N9,9,bicyclic-3-3-5,11,3,"[3, 3, 5]","[3, 3, 3, 3, 3, 2, 2, 2, 1]",3,4,467.550250,-13732.651289,-1525.850143,-35.4875,False,False,500,P1,1,xyz/N9_0004_bicyclic-3-3-5.xyz,cif/N9_0004_bicyclic-3-3-5.cif
+214,N9,9,ring-3-substituted,9,1,[3],"[3, 3, 2, 2, 2, 2, 2, 1, 1]",3,1,254.785334,-13408.838688,-1489.870965,0.4917,True,True,61,P1,1,xyz/N9_0005_ring-3-substituted.xyz,cif/N9_0005_ring-3-substituted.cif
+215,N9,9,bicyclic-3-6,10,2,"[3, 6]","[3, 3, 3, 3, 2, 2, 2, 1, 1]",3,3,241.051802,-13409.788061,-1489.976451,0.3862,True,True,89,P1,1,xyz/N9_0006_bicyclic-3-6.xyz,cif/N9_0006_bicyclic-3-6.cif
+216,N9,9,bicyclic-3-4,10,2,"[3, 4]","[3, 3, 3, 3, 2, 2, 2, 1, 1]",3,0,331.601302,-13411.744856,-1490.193873,0.1688,True,True,68,P1,1,xyz/N9_0007_bicyclic-3-4.xyz,cif/N9_0007_bicyclic-3-4.cif
+217,N9,9,bicyclic-3-5-5,11,3,"[3, 5, 5]","[3, 3, 3, 3, 3, 2, 2, 2, 1]",3,4,814.434482,-13413.342006,-1490.371334,-0.0087,False,True,143,P1,1,xyz/N9_0008_bicyclic-3-5-5.xyz,cif/N9_0008_bicyclic-3-5-5.cif
+218,N9,9,bicyclic-5-5,10,2,"[5, 5]","[3, 3, 3, 2, 2, 2, 2, 2, 1]",3,2,52.547983,-13409.017619,-1489.890847,0.4718,True,True,27,P1,1,xyz/N9_0009_bicyclic-5-5.xyz,cif/N9_0009_bicyclic-5-5.cif
+219,N9,9,branched-tree,8,0,[],"[3, 2, 2, 2, 2, 2, 1, 1, 1]",3,3,16.817697,-13410.822161,-1490.091351,0.2713,True,True,121,P1,1,xyz/N9_0010_branched-tree.xyz,cif/N9_0010_branched-tree.cif
+220,N9,9,ring-4-substituted,9,1,[4],"[3, 3, 3, 3, 2, 1, 1, 1, 1]",3,2,87.266045,-16498.968174,-1833.218686,-342.8560,False,False,500,P1,1,xyz/N9_0011_ring-4-substituted.xyz,cif/N9_0011_ring-4-substituted.cif
+221,N9,9,ring-3-substituted,9,1,[3],"[3, 3, 2, 2, 2, 2, 2, 1, 1]",3,0,254.791120,-13410.217643,-1490.024183,0.3385,True,True,64,P1,1,xyz/N9_0012_ring-3-substituted.xyz,cif/N9_0012_ring-3-substituted.cif
+222,N9,9,ring-4-substituted,9,1,[4],"[3, 3, 2, 2, 2, 2, 2, 1, 1]",3,3,104.349776,-13409.878697,-1489.986522,0.3762,True,True,141,P1,1,xyz/N9_0013_ring-4-substituted.xyz,cif/N9_0013_ring-4-substituted.cif
+223,N9,9,ring-6-substituted,9,1,[6],"[3, 3, 2, 2, 2, 2, 2, 1, 1]",3,2,25.808827,-13410.164763,-1490.018307,0.3444,True,True,48,P1,1,xyz/N9_0014_ring-6-substituted.xyz,cif/N9_0014_ring-6-substituted.cif
+224,N9,9,ring-3-substituted,9,1,[3],"[3, 3, 2, 2, 2, 2, 2, 1, 1]",3,0,286.133686,-13409.911500,-1489.990167,0.3725,True,True,223,P1,1,xyz/N9_0015_ring-3-substituted.xyz,cif/N9_0015_ring-3-substituted.cif
+225,N9,9,bicyclic-4-4,10,2,"[4, 4]","[3, 3, 3, 3, 2, 2, 2, 1, 1]",3,1,166.993833,-13409.329700,-1489.925522,0.4372,True,True,109,P1,1,xyz/N9_0016_bicyclic-4-4.xyz,cif/N9_0016_bicyclic-4-4.cif
+226,N9,9,ring-3-substituted,9,1,[3],"[3, 3, 3, 2, 2, 2, 1, 1, 1]",3,4,232.479185,-13410.803400,-1490.089267,0.2734,True,True,179,P1,1,xyz/N9_0017_ring-3-substituted.xyz,cif/N9_0017_ring-3-substituted.cif
+227,N9,9,bicyclic-3-7,10,2,"[3, 7]","[3, 3, 3, 2, 2, 2, 2, 2, 1]",3,2,266.527521,-13410.782969,-1490.086997,0.2757,True,True,93,P1,1,xyz/N9_0018_bicyclic-3-7.xyz,cif/N9_0018_bicyclic-3-7.cif
+228,N9,9,ring-4-substituted,9,1,[4],"[3, 3, 2, 2, 2, 2, 2, 1, 1]",3,2,102.794728,-13408.623390,-1489.847043,0.5156,True,True,41,P1,1,xyz/N9_0019_ring-4-substituted.xyz,cif/N9_0019_ring-4-substituted.cif
+229,N9,9,bicyclic-3-3,10,2,"[3, 3]","[3, 3, 3, 2, 2, 2, 2, 2, 1]",3,4,525.974864,-13407.053195,-1489.672577,0.6901,True,True,64,P1,1,xyz/N9_0020_bicyclic-3-3.xyz,cif/N9_0020_bicyclic-3-3.cif
+230,N9,9,branched-tree,8,0,[],"[3, 3, 2, 2, 2, 1, 1, 1, 1]",3,4,21.720065,-13411.568823,-1490.174314,0.1884,True,True,196,P1,1,xyz/N9_0021_branched-tree.xyz,cif/N9_0021_branched-tree.cif
+231,N9,9,bicyclic-3-4,10,2,"[3, 4]","[3, 3, 3, 3, 2, 2, 2, 1, 1]",3,4,946.551234,-13413.231849,-1490.359094,0.0036,True,True,250,P1,1,xyz/N9_0022_bicyclic-3-4.xyz,cif/N9_0022_bicyclic-3-4.cif
+232,N9,9,ring-3-substituted,9,1,[3],"[3, 3, 3, 2, 2, 2, 1, 1, 1]",3,1,230.082191,-13408.014177,-1489.779353,0.5833,True,True,39,P1,1,xyz/N9_0023_ring-3-substituted.xyz,cif/N9_0023_ring-3-substituted.cif
+233,N9,9,ring-4-substituted,9,1,[4],"[3, 3, 3, 2, 2, 2, 1, 1, 1]",3,3,107.846505,-13410.584206,-1490.064912,0.2978,True,True,78,P1,1,xyz/N9_0024_ring-4-substituted.xyz,cif/N9_0024_ring-4-substituted.cif
+234,N9,9,bicyclic-4-6,10,2,"[4, 6]","[3, 3, 3, 2, 2, 2, 2, 2, 1]",3,3,113.256530,-13407.149943,-1489.683327,0.6794,True,True,16,P1,1,xyz/N9_0025_bicyclic-4-6.xyz,cif/N9_0025_bicyclic-4-6.cif
+235,N9,9,ring-4-substituted,9,1,[4],"[3, 3, 3, 2, 2, 2, 1, 1, 1]",3,4,94.664308,-13410.664789,-1490.073865,0.2888,True,True,188,P1,1,xyz/N9_0026_ring-4-substituted.xyz,cif/N9_0026_ring-4-substituted.cif
+236,N9,9,bicyclic-3-5,10,2,"[3, 5]","[3, 3, 3, 3, 2, 2, 2, 1, 1]",3,1,246.577285,-13409.712581,-1489.968065,0.3946,True,True,82,P1,1,xyz/N9_0027_bicyclic-3-5.xyz,cif/N9_0027_bicyclic-3-5.cif
+237,N9,9,bicyclic-4-4-4,11,3,"[4, 4, 4]","[3, 3, 3, 3, 3, 2, 2, 2, 1]",3,4,244.992079,-13408.575207,-1489.841690,0.5210,True,True,146,P1,1,xyz/N9_0028_bicyclic-4-4-4.xyz,cif/N9_0028_bicyclic-4-4-4.cif
+238,N9,9,ring-3-substituted,9,1,[3],"[3, 3, 3, 2, 2, 2, 1, 1, 1]",3,4,291.734497,-13410.398363,-1490.044263,0.3184,True,True,120,P1,1,xyz/N9_0029_ring-3-substituted.xyz,cif/N9_0029_ring-3-substituted.cif
+239,N9,9,ring-3-substituted,9,1,[3],"[3, 3, 2, 2, 2, 2, 2, 1, 1]",3,2,286.645222,-13410.644618,-1490.071624,0.2911,True,True,122,P1,1,xyz/N9_0030_ring-3-substituted.xyz,cif/N9_0030_ring-3-substituted.cif
+240,N9,9,bicyclic-3-4,10,2,"[3, 4]","[3, 3, 3, 2, 2, 2, 2, 2, 1]",3,0,373.598473,-13407.159028,-1489.684336,0.6783,True,True,60,P1,1,xyz/N9_0031_bicyclic-3-4.xyz,cif/N9_0031_bicyclic-3-4.cif
+241,N9,9,ring-3-substituted,9,1,[3],"[3, 3, 3, 2, 2, 2, 1, 1, 1]",3,4,291.886188,-13413.209158,-1490.356573,0.0061,True,True,190,P1,1,xyz/N9_0032_ring-3-substituted.xyz,cif/N9_0032_ring-3-substituted.cif
+242,N9,9,bicyclic-4-5-6,11,3,"[4, 5, 6]","[3, 3, 3, 3, 2, 2, 2, 2, 2]",3,3,127.719110,-18870.739886,-2096.748876,-606.3862,False,False,500,P1,1,xyz/N9_0033_bicyclic-4-5-6.xyz,cif/N9_0033_bicyclic-4-5-6.cif
+243,N9,9,bicyclic-3-3,10,2,"[3, 3]","[3, 3, 3, 3, 2, 2, 2, 1, 1]",3,4,500.201627,-13410.284199,-1490.031578,0.3311,True,True,39,P1,1,xyz/N9_0034_bicyclic-3-3.xyz,cif/N9_0034_bicyclic-3-3.cif
+244,N9,9,bicyclic-4-4-4,11,3,"[4, 4, 4]","[3, 3, 3, 3, 3, 3, 2, 1, 1]",3,0,221.950302,-13410.617252,-1490.068584,0.2941,True,True,219,P1,1,xyz/N9_0035_bicyclic-4-4-4.xyz,cif/N9_0035_bicyclic-4-4-4.cif
+245,N9,9,branched-tree,8,0,[],"[3, 3, 2, 2, 2, 1, 1, 1, 1]",3,2,21.545781,-13411.533213,-1490.170357,0.1923,True,True,87,P1,1,xyz/N9_0036_branched-tree.xyz,cif/N9_0036_branched-tree.cif
+246,N9,9,bicyclic-5-5-5-5,12,4,"[5, 5, 5, 5]","[3, 3, 3, 3, 3, 3, 2, 2, 2]",3,4,638.059860,-13412.079940,-1490.231104,0.1316,True,True,145,P1,1,xyz/N9_0037_bicyclic-5-5-5-5.xyz,cif/N9_0037_bicyclic-5-5-5-5.cif
+247,N9,9,ring-4-substituted,9,1,[4],"[3, 3, 3, 2, 2, 2, 1, 1, 1]",3,4,93.650329,-13409.654189,-1489.961577,0.4011,True,True,67,P1,1,xyz/N9_0038_ring-4-substituted.xyz,cif/N9_0038_ring-4-substituted.cif
+248,N9,9,ring-3-substituted,9,1,[3],"[3, 3, 3, 3, 2, 1, 1, 1, 1]",3,0,234.737323,-13411.227400,-1490.136378,0.2263,True,True,99,P1,1,xyz/N9_0039_ring-3-substituted.xyz,cif/N9_0039_ring-3-substituted.cif
+249,N9,9,bicyclic-4-4-4,11,3,"[4, 4, 4]","[3, 3, 3, 3, 3, 2, 2, 2, 1]",3,3,232.454317,-13407.688349,-1489.743150,0.6195,True,True,106,P1,1,xyz/N9_0040_bicyclic-4-4-4.xyz,cif/N9_0040_bicyclic-4-4-4.cif
+250,N9,9,bicyclic-3-4,10,2,"[3, 4]","[3, 3, 3, 3, 2, 2, 2, 1, 1]",3,4,305.305793,-13409.941760,-1489.993529,0.3691,True,True,93,P1,1,xyz/N9_0041_bicyclic-3-4.xyz,cif/N9_0041_bicyclic-3-4.cif
+251,N9,9,ring-5-substituted,9,1,[5],"[3, 3, 3, 2, 2, 2, 1, 1, 1]",3,4,41.291634,-13410.868387,-1490.096487,0.2662,True,True,111,P1,1,xyz/N9_0042_ring-5-substituted.xyz,cif/N9_0042_ring-5-substituted.cif
+252,N9,9,bicyclic-3-3-4,11,3,"[3, 3, 4]","[3, 3, 3, 3, 3, 2, 2, 2, 1]",3,3,575.503089,-13407.912544,-1489.768060,0.5946,True,True,166,P1,1,xyz/N9_0043_bicyclic-3-3-4.xyz,cif/N9_0043_bicyclic-3-3-4.cif
+253,N9,9,ring-4-substituted,9,1,[4],"[3, 3, 2, 2, 2, 2, 2, 1, 1]",3,1,103.399695,-13408.784319,-1489.864924,0.4978,True,True,32,P1,1,xyz/N9_0044_ring-4-substituted.xyz,cif/N9_0044_ring-4-substituted.cif
+254,N9,9,bicyclic-3-5,10,2,"[3, 5]","[3, 3, 3, 3, 2, 2, 2, 1, 1]",3,3,272.078993,-13410.809897,-1490.089989,0.2727,True,True,120,P1,1,xyz/N9_0045_bicyclic-3-5.xyz,cif/N9_0045_bicyclic-3-5.cif
+255,N9,9,bicyclic-3-5,10,2,"[3, 5]","[3, 3, 3, 3, 2, 2, 2, 1, 1]",3,4,811.503034,-13410.358019,-1490.039780,0.3229,True,True,151,P1,1,xyz/N9_0046_bicyclic-3-5.xyz,cif/N9_0046_bicyclic-3-5.cif
+256,N9,9,bicyclic-3-4,10,2,"[3, 4]","[3, 3, 3, 3, 3, 2, 1, 1, 1]",3,1,295.374336,-13407.854428,-1489.761603,0.6011,True,True,47,P1,1,xyz/N9_0047_bicyclic-3-4.xyz,cif/N9_0047_bicyclic-3-4.cif
+257,N9,9,bicyclic-3-4-5,11,3,"[3, 4, 5]","[3, 3, 3, 3, 3, 2, 2, 2, 1]",3,2,402.680118,-14196.082515,-1577.342502,-86.9798,False,False,500,P1,1,xyz/N9_0048_bicyclic-3-4-5.xyz,cif/N9_0048_bicyclic-3-4-5.cif
+258,N9,9,ring-3-substituted,9,1,[3],"[3, 3, 3, 3, 2, 1, 1, 1, 1]",3,3,237.715670,-13413.268417,-1490.363157,-0.0005,False,True,156,P1,1,xyz/N9_0049_ring-3-substituted.xyz,cif/N9_0049_ring-3-substituted.cif
+259,N9,9,bicyclic-3-4-5-7,12,4,"[3, 4, 5, 7]","[3, 3, 3, 3, 3, 3, 2, 2, 2]",3,4,335.035302,-469695.310022,-52188.367780,-50698.0051,False,False,500,P1,1,xyz/N9_0050_bicyclic-3-4-5-7.xyz,cif/N9_0050_bicyclic-3-4-5-7.cif
+260,N9,9,ring-3-substituted,9,1,[3],"[3, 3, 3, 2, 2, 2, 1, 1, 1]",3,1,260.508334,-13413.350177,-1490.372242,-0.0096,False,True,153,P1,1,xyz/N9_0051_ring-3-substituted.xyz,cif/N9_0051_ring-3-substituted.cif
+261,N9,9,ring-4-substituted,9,1,[4],"[3, 3, 3, 2, 2, 2, 1, 1, 1]",3,2,124.365665,-13409.459512,-1489.939946,0.4227,True,True,51,P1,1,xyz/N9_0052_ring-4-substituted.xyz,cif/N9_0052_ring-4-substituted.cif
+262,N9,9,bicyclic-3-5,10,2,"[3, 5]","[3, 3, 3, 2, 2, 2, 2, 2, 1]",3,4,285.777611,-13411.187784,-1490.131976,0.2307,True,True,230,P1,1,xyz/N9_0053_bicyclic-3-5.xyz,cif/N9_0053_bicyclic-3-5.cif
+263,N9,9,bicyclic-3-4,10,2,"[3, 4]","[3, 3, 3, 3, 2, 2, 2, 1, 1]",3,2,318.254521,-13408.853196,-1489.872577,0.4901,True,True,82,P1,1,xyz/N9_0054_bicyclic-3-4.xyz,cif/N9_0054_bicyclic-3-4.cif
+264,N9,9,ring-4-substituted,9,1,[4],"[3, 3, 2, 2, 2, 2, 2, 1, 1]",3,3,118.793794,-13409.403063,-1489.933674,0.4290,True,True,32,P1,1,xyz/N9_0055_ring-4-substituted.xyz,cif/N9_0055_ring-4-substituted.cif
+265,N9,9,ring-4-substituted,9,1,[4],"[3, 3, 3, 2, 2, 2, 1, 1, 1]",3,1,93.678326,-13410.559886,-1490.062210,0.3005,True,True,148,P1,1,xyz/N9_0056_ring-4-substituted.xyz,cif/N9_0056_ring-4-substituted.cif
+266,N9,9,ring-4-substituted,9,1,[4],"[3, 3, 3, 2, 2, 2, 1, 1, 1]",3,2,109.630639,-13413.260655,-1490.362295,0.0004,True,True,149,P1,1,xyz/N9_0057_ring-4-substituted.xyz,cif/N9_0057_ring-4-substituted.cif
+267,N9,9,bicyclic-3-3,10,2,"[3, 3]","[3, 3, 3, 3, 3, 2, 1, 1, 1]",3,1,474.436030,-13413.244708,-1490.360523,0.0022,True,True,158,P1,1,xyz/N9_0058_bicyclic-3-3.xyz,cif/N9_0058_bicyclic-3-3.cif
+268,N9,9,bicyclic-3-3-4-6,12,4,"[3, 3, 4, 6]","[3, 3, 3, 3, 3, 3, 3, 2, 1]",3,1,537.033862,-63150.258494,-7016.695388,-5526.3327,False,False,500,P1,1,xyz/N9_0059_bicyclic-3-3-4-6.xyz,cif/N9_0059_bicyclic-3-3-4-6.cif
+269,N9,9,ring-5-substituted,9,1,[5],"[3, 3, 2, 2, 2, 2, 2, 1, 1]",3,4,37.181213,-13412.119001,-1490.235445,0.1272,True,True,24,P1,1,xyz/N9_0060_ring-5-substituted.xyz,cif/N9_0060_ring-5-substituted.cif
+270,N9,9,ring-4-substituted,9,1,[4],"[3, 3, 3, 2, 2, 2, 1, 1, 1]",3,0,107.761196,-13413.247468,-1490.360830,0.0018,True,True,161,P1,1,xyz/N9_0061_ring-4-substituted.xyz,cif/N9_0061_ring-4-substituted.cif
+271,N9,9,bicyclic-4-4,10,2,"[4, 4]","[3, 3, 3, 2, 2, 2, 2, 2, 1]",3,0,175.457563,-13408.613310,-1489.845923,0.5168,True,True,43,P1,1,xyz/N9_0062_bicyclic-4-4.xyz,cif/N9_0062_bicyclic-4-4.cif
+272,N9,9,ring-3-substituted,9,1,[3],"[3, 3, 2, 2, 2, 2, 2, 1, 1]",3,3,287.001017,-13409.942136,-1489.993571,0.3691,True,True,128,P1,1,xyz/N9_0063_ring-3-substituted.xyz,cif/N9_0063_ring-3-substituted.cif
+273,N9,9,ring-7-substituted,9,1,[7],"[3, 3, 2, 2, 2, 2, 2, 1, 1]",3,2,25.242537,-13413.348228,-1490.372025,-0.0093,False,True,36,P1,1,xyz/N9_0064_ring-7-substituted.xyz,cif/N9_0064_ring-7-substituted.cif
+274,N9,9,ring-5-substituted,9,1,[5],"[3, 2, 2, 2, 2, 2, 2, 2, 1]",3,0,37.691917,-13410.524160,-1490.058240,0.3044,True,True,28,P1,1,xyz/N9_0065_ring-5-substituted.xyz,cif/N9_0065_ring-5-substituted.cif
+275,N9,9,ring-8-substituted,9,1,[8],"[3, 2, 2, 2, 2, 2, 2, 2, 1]",3,0,20.795608,-13411.496359,-1490.166262,0.1964,True,True,183,P1,1,xyz/N9_0066_ring-8-substituted.xyz,cif/N9_0066_ring-8-substituted.cif
+276,N9,9,bicyclic-3-3-5-5,12,4,"[3, 3, 5, 5]","[3, 3, 3, 3, 3, 3, 2, 2, 2]",3,0,481.902372,-13415.388693,-1490.598744,-0.2361,False,True,53,P1,1,xyz/N9_0067_bicyclic-3-3-5-5.xyz,cif/N9_0067_bicyclic-3-3-5-5.cif
+277,N9,9,bicyclic-4-5,10,2,"[4, 5]","[3, 3, 3, 3, 2, 2, 2, 1, 1]",3,4,644.353104,-13413.058133,-1490.339793,0.0229,True,True,39,P1,1,xyz/N9_0068_bicyclic-4-5.xyz,cif/N9_0068_bicyclic-4-5.cif
+278,N9,9,bicyclic-5-6,10,2,"[5, 6]","[3, 3, 3, 2, 2, 2, 2, 2, 1]",3,4,478.102395,-13411.263620,-1490.140402,0.2223,True,True,63,P1,1,xyz/N9_0069_bicyclic-5-6.xyz,cif/N9_0069_bicyclic-5-6.cif
+279,N9,9,bicyclic-3-5-6,11,3,"[3, 5, 6]","[3, 3, 3, 3, 3, 2, 2, 2, 1]",3,1,325.116322,-13411.713474,-1490.190386,0.1723,True,True,149,P1,1,xyz/N9_0070_bicyclic-3-5-6.xyz,cif/N9_0070_bicyclic-3-5-6.cif
+280,N9,9,bicyclic-3-5-5-5,12,4,"[3, 5, 5, 5]","[3, 3, 3, 3, 3, 3, 2, 2, 2]",3,0,319.392601,-13413.223053,-1490.358117,0.0046,True,True,209,P1,1,xyz/N9_0071_bicyclic-3-5-5-5.xyz,cif/N9_0071_bicyclic-3-5-5-5.cif
+281,N9,9,bicyclic-3-3-4,11,3,"[3, 3, 4]","[3, 3, 3, 3, 3, 2, 2, 2, 1]",3,3,552.985213,-16288.902779,-1809.878087,-319.5154,False,False,500,P1,1,xyz/N9_0072_bicyclic-3-3-4.xyz,cif/N9_0072_bicyclic-3-3-4.cif
+282,N9,9,bicyclic-3-5-6,11,3,"[3, 5, 6]","[3, 3, 3, 3, 3, 2, 2, 2, 1]",3,4,895.704697,-13415.388680,-1490.598742,-0.2361,False,True,104,P1,1,xyz/N9_0073_bicyclic-3-5-6.xyz,cif/N9_0073_bicyclic-3-5-6.cif
+283,N9,9,bicyclic-4-4-5,11,3,"[4, 4, 5]","[3, 3, 3, 3, 3, 2, 2, 2, 1]",3,0,309.824148,-14415.804181,-1601.756020,-111.3933,False,False,500,P1,1,xyz/N9_0074_bicyclic-4-4-5.xyz,cif/N9_0074_bicyclic-4-4-5.cif
+284,N9,9,bicyclic-3-3,10,2,"[3, 3]","[3, 3, 3, 3, 2, 2, 2, 1, 1]",3,4,502.625226,-13410.709650,-1490.078850,0.2838,True,True,71,P1,1,xyz/N9_0075_bicyclic-3-3.xyz,cif/N9_0075_bicyclic-3-3.cif
+285,N9,9,bicyclic-5-6,10,2,"[5, 6]","[3, 3, 3, 2, 2, 2, 2, 2, 1]",3,4,654.817868,-13412.133007,-1490.237001,0.1257,True,True,173,P1,1,xyz/N9_0076_bicyclic-5-6.xyz,cif/N9_0076_bicyclic-5-6.cif
+286,N9,9,bicyclic-3-5,10,2,"[3, 5]","[3, 3, 3, 3, 2, 2, 2, 1, 1]",3,1,245.650242,-13412.059819,-1490.228869,0.1338,True,True,126,P1,1,xyz/N9_0077_bicyclic-3-5.xyz,cif/N9_0077_bicyclic-3-5.cif
+287,N9,9,bicyclic-4-4-5,11,3,"[4, 4, 5]","[3, 3, 3, 3, 3, 2, 2, 2, 1]",3,2,296.874072,-17431.425076,-1936.825008,-446.4623,False,False,500,P1,1,xyz/N9_0078_bicyclic-4-4-5.xyz,cif/N9_0078_bicyclic-4-4-5.cif
+288,N9,9,bicyclic-3-3-4,11,3,"[3, 3, 4]","[3, 3, 3, 3, 3, 2, 2, 2, 1]",3,2,576.148757,-13411.006345,-1490.111816,0.2509,True,True,75,P1,1,xyz/N9_0079_bicyclic-3-3-4.xyz,cif/N9_0079_bicyclic-3-3-4.cif
+289,N9,9,bicyclic-3-5,10,2,"[3, 5]","[3, 3, 3, 3, 2, 2, 2, 1, 1]",3,1,272.341695,-13408.402623,-1489.822514,0.5402,True,True,53,P1,1,xyz/N9_0080_bicyclic-3-5.xyz,cif/N9_0080_bicyclic-3-5.cif
+290,N9,9,bicyclic-3-4,10,2,"[3, 4]","[3, 3, 3, 3, 2, 2, 2, 1, 1]",3,4,348.771091,-13413.224218,-1490.358246,0.0044,True,True,233,P1,1,xyz/N9_0081_bicyclic-3-4.xyz,cif/N9_0081_bicyclic-3-4.cif
+291,N9,9,bicyclic-3-6-7,11,3,"[3, 6, 7]","[3, 3, 3, 3, 2, 2, 2, 2, 2]",3,3,250.433448,-13406.983360,-1489.664818,0.6979,True,True,17,P1,1,xyz/N9_0082_bicyclic-3-6-7.xyz,cif/N9_0082_bicyclic-3-6-7.cif
+292,N9,9,bicyclic-4-4,10,2,"[4, 4]","[3, 3, 3, 3, 2, 2, 2, 1, 1]",3,2,288.650132,-17016.037128,-1890.670792,-400.3081,False,False,500,P1,1,xyz/N9_0083_bicyclic-4-4.xyz,cif/N9_0083_bicyclic-4-4.cif
+293,N9,9,branched-tree,8,0,[],"[3, 2, 2, 2, 2, 2, 1, 1, 1]",3,3,16.320082,-13410.650122,-1490.072236,0.2904,True,True,102,P1,1,xyz/N9_0084_branched-tree.xyz,cif/N9_0084_branched-tree.cif
+294,N9,9,bicyclic-4-4-5,11,3,"[4, 4, 5]","[3, 3, 3, 3, 2, 2, 2, 2, 2]",3,3,185.293153,-13407.425676,-1489.713964,0.6487,True,True,14,P1,1,xyz/N9_0085_bicyclic-4-4-5.xyz,cif/N9_0085_bicyclic-4-4-5.cif
+295,N9,9,ring-3-substituted,9,1,[3],"[3, 3, 3, 2, 2, 2, 1, 1, 1]",3,4,261.088804,-13411.457845,-1490.161983,0.2007,True,True,97,P1,1,xyz/N9_0086_ring-3-substituted.xyz,cif/N9_0086_ring-3-substituted.cif
+296,N9,9,ring-5-substituted,9,1,[5],"[3, 3, 2, 2, 2, 2, 2, 1, 1]",3,0,37.633710,-13409.712805,-1489.968089,0.3946,True,True,46,P1,1,xyz/N9_0087_ring-5-substituted.xyz,cif/N9_0087_ring-5-substituted.cif
+297,N9,9,bicyclic-3-4,10,2,"[3, 4]","[3, 3, 3, 2, 2, 2, 2, 2, 1]",3,4,374.540084,-13410.612512,-1490.068057,0.2946,True,True,174,P1,1,xyz/N9_0088_bicyclic-3-4.xyz,cif/N9_0088_bicyclic-3-4.cif
+298,N9,9,bicyclic-3-4-4,11,3,"[3, 4, 4]","[3, 3, 3, 3, 3, 3, 2, 1, 1]",3,4,567.962797,-46238.206262,-5137.578474,-3647.2158,False,False,500,P1,1,xyz/N9_0089_bicyclic-3-4-4.xyz,cif/N9_0089_bicyclic-3-4-4.cif
+299,N9,9,bicyclic-3-4-5,11,3,"[3, 4, 5]","[3, 3, 3, 3, 3, 2, 2, 2, 1]",3,4,317.580278,-14951.803561,-1661.311507,-170.9488,False,False,500,P1,1,xyz/N9_0090_bicyclic-3-4-5.xyz,cif/N9_0090_bicyclic-3-4-5.cif
+300,N9,9,branched-tree,8,0,[],"[3, 3, 2, 2, 2, 1, 1, 1, 1]",3,0,20.654244,-13413.302178,-1490.366909,-0.0042,False,True,171,P1,1,xyz/N9_0091_branched-tree.xyz,cif/N9_0091_branched-tree.cif
+301,N9,9,branched-tree,8,0,[],"[3, 3, 3, 2, 1, 1, 1, 1, 1]",3,2,26.339792,-13413.346070,-1490.371786,-0.0091,False,True,158,P1,1,xyz/N9_0092_branched-tree.xyz,cif/N9_0092_branched-tree.cif
+302,N9,9,ring-5-substituted,9,1,[5],"[3, 3, 3, 2, 2, 2, 1, 1, 1]",3,4,44.412388,-13410.876011,-1490.097335,0.2653,True,True,56,P1,1,xyz/N9_0093_ring-5-substituted.xyz,cif/N9_0093_ring-5-substituted.cif
+303,N9,9,ring-5-substituted,9,1,[5],"[3, 3, 3, 2, 2, 2, 1, 1, 1]",3,3,38.709180,-13410.681016,-1490.075668,0.2870,True,True,121,P1,1,xyz/N9_0094_ring-5-substituted.xyz,cif/N9_0094_ring-5-substituted.cif
+304,N9,9,bicyclic-3-3,10,2,"[3, 3]","[3, 3, 3, 3, 2, 2, 2, 1, 1]",3,3,500.079839,-13410.283833,-1490.031537,0.3311,True,True,76,P1,1,xyz/N9_0095_bicyclic-3-3.xyz,cif/N9_0095_bicyclic-3-3.cif
+305,N9,9,ring-5-substituted,9,1,[5],"[3, 3, 2, 2, 2, 2, 2, 1, 1]",3,1,36.067677,-13409.565117,-1489.951680,0.4110,True,True,59,P1,1,xyz/N9_0096_ring-5-substituted.xyz,cif/N9_0096_ring-5-substituted.cif
+306,N9,9,ring-4-substituted,9,1,[4],"[3, 3, 2, 2, 2, 2, 2, 1, 1]",3,4,119.674720,-13409.197848,-1489.910872,0.4518,True,True,55,P1,1,xyz/N9_0097_ring-4-substituted.xyz,cif/N9_0097_ring-4-substituted.cif
+307,N9,9,ring-6-substituted,9,1,[6],"[3, 3, 2, 2, 2, 2, 2, 1, 1]",3,2,26.231362,-13409.718459,-1489.968718,0.3940,True,True,64,P1,1,xyz/N9_0098_ring-6-substituted.xyz,cif/N9_0098_ring-6-substituted.cif
+308,N9,9,branched-tree,8,0,[],"[3, 3, 3, 2, 1, 1, 1, 1, 1]",3,1,26.272183,-13412.567025,-1490.285225,0.0775,True,True,38,P1,1,xyz/N9_0099_branched-tree.xyz,cif/N9_0099_branched-tree.cif
+309,N10,10,ring-4-substituted,10,1,[4],"[3, 3, 3, 2, 2, 2, 2, 1, 1, 1]",3,4,112.660225,-14900.798920,-1490.079892,0.2828,True,True,115,P1,1,xyz/N10_0000_ring-4-substituted.xyz,cif/N10_0000_ring-4-substituted.cif
+310,N10,10,bicyclic-3-5-6-8,13,4,"[3, 5, 6, 8]","[3, 3, 3, 3, 3, 3, 2, 2, 2, 2]",3,0,499.387892,-17450.063003,-1745.006300,-254.6436,False,False,500,P1,1,xyz/N10_0001_bicyclic-3-5-6-8.xyz,cif/N10_0001_bicyclic-3-5-6-8.cif
+311,N10,10,bicyclic-3-5,11,2,"[3, 5]","[3, 3, 3, 2, 2, 2, 2, 2, 2, 1]",3,3,314.823687,-14898.784454,-1489.878445,0.4842,True,True,41,P1,1,xyz/N10_0002_bicyclic-3-5.xyz,cif/N10_0002_bicyclic-3-5.cif
+312,N10,10,bicyclic-3-4,11,2,"[3, 4]","[3, 3, 3, 3, 3, 2, 2, 1, 1, 1]",3,1,325.699303,-14902.411039,-1490.241104,0.1216,True,False,500,P1,1,xyz/N10_0003_bicyclic-3-4.xyz,cif/N10_0003_bicyclic-3-4.cif
+313,N10,10,bicyclic-4-5-6,12,3,"[4, 5, 6]","[3, 3, 3, 3, 3, 2, 2, 2, 2, 1]",3,1,164.445029,-14895.757501,-1489.575750,0.7869,True,True,22,P1,1,xyz/N10_0004_bicyclic-4-5-6.xyz,cif/N10_0004_bicyclic-4-5-6.cif
+314,N10,10,bicyclic-4-4-4,12,3,"[4, 4, 4]","[3, 3, 3, 3, 3, 2, 2, 2, 2, 1]",3,4,246.703221,-14903.894025,-1490.389402,-0.0267,False,True,204,P1,1,xyz/N10_0005_bicyclic-4-4-4.xyz,cif/N10_0005_bicyclic-4-4-4.cif
+315,N10,10,ring-5-substituted,10,1,[5],"[3, 3, 3, 2, 2, 2, 2, 1, 1, 1]",3,2,38.909268,-14901.989038,-1490.198904,0.1638,True,True,142,P1,1,xyz/N10_0006_ring-5-substituted.xyz,cif/N10_0006_ring-5-substituted.cif
+316,N10,10,bicyclic-4-5,11,2,"[4, 5]","[3, 3, 3, 3, 2, 2, 2, 2, 1, 1]",3,0,178.911114,-16268.452348,-1626.845235,-136.4826,False,False,500,P1,1,xyz/N10_0007_bicyclic-4-5.xyz,cif/N10_0007_bicyclic-4-5.cif
+317,N10,10,bicyclic-4-5-5,12,3,"[4, 5, 5]","[3, 3, 3, 3, 3, 3, 2, 2, 1, 1]",3,4,564.678784,-14902.581813,-1490.258181,0.1045,True,True,111,P1,1,xyz/N10_0008_bicyclic-4-5-5.xyz,cif/N10_0008_bicyclic-4-5-5.cif
+318,N10,10,bicyclic-3-6,11,2,"[3, 6]","[3, 3, 3, 3, 3, 2, 2, 1, 1, 1]",3,4,307.315416,-14901.520917,-1490.152092,0.2106,True,True,135,P1,1,xyz/N10_0009_bicyclic-3-6.xyz,cif/N10_0009_bicyclic-3-6.cif
+319,N10,10,bicyclic-4-8,11,2,"[4, 8]","[3, 3, 3, 2, 2, 2, 2, 2, 2, 1]",3,0,114.068395,-32319.668490,-3231.966849,-1741.6042,False,False,500,P1,1,xyz/N10_0010_bicyclic-4-8.xyz,cif/N10_0010_bicyclic-4-8.cif
+320,N10,10,branched-tree,9,0,[],"[3, 3, 2, 2, 2, 2, 1, 1, 1, 1]",3,1,22.330191,-14904.003440,-1490.400344,-0.0377,False,True,236,P1,1,xyz/N10_0011_branched-tree.xyz,cif/N10_0011_branched-tree.cif
+321,N10,10,bicyclic-3-6,11,2,"[3, 6]","[3, 3, 3, 3, 3, 2, 2, 1, 1, 1]",3,3,277.579290,-14898.660509,-1489.866051,0.4966,True,True,79,P1,1,xyz/N10_0012_bicyclic-3-6.xyz,cif/N10_0012_bicyclic-3-6.cif
+322,N10,10,bicyclic-5-8,11,2,"[5, 8]","[3, 3, 2, 2, 2, 2, 2, 2, 2, 2]",3,1,43.608435,-14900.355589,-1490.035559,0.3271,True,True,59,P1,1,xyz/N10_0013_bicyclic-5-8.xyz,cif/N10_0013_bicyclic-5-8.cif
+323,N10,10,ring-4-substituted,10,1,[4],"[3, 3, 3, 3, 2, 2, 1, 1, 1, 1]",3,3,86.723556,-14904.098554,-1490.409855,-0.0472,False,True,212,P1,1,xyz/N10_0014_ring-4-substituted.xyz,cif/N10_0014_ring-4-substituted.cif
+324,N10,10,bicyclic-4-5,11,2,"[4, 5]","[3, 3, 3, 3, 2, 2, 2, 2, 1, 1]",3,3,173.563444,-17625.423138,-1762.542314,-272.1796,False,False,500,P1,1,xyz/N10_0015_bicyclic-4-5.xyz,cif/N10_0015_bicyclic-4-5.cif
+325,N10,10,ring-7-substituted,10,1,[7],"[3, 3, 2, 2, 2, 2, 2, 2, 1, 1]",3,4,27.597473,-14903.212742,-1490.321274,0.0414,True,True,70,P1,1,xyz/N10_0016_ring-7-substituted.xyz,cif/N10_0016_ring-7-substituted.cif
+326,N10,10,bicyclic-3-4-6,12,3,"[3, 4, 6]","[3, 3, 3, 3, 3, 2, 2, 2, 2, 1]",3,2,375.177618,-14894.664802,-1489.466480,0.8962,True,True,40,P1,1,xyz/N10_0017_bicyclic-3-4-6.xyz,cif/N10_0017_bicyclic-3-4-6.cif
+327,N10,10,ring-4-substituted,10,1,[4],"[3, 3, 3, 3, 2, 2, 1, 1, 1, 1]",3,4,117.643286,-14903.366641,-1490.336664,0.0260,True,True,153,P1,1,xyz/N10_0018_ring-4-substituted.xyz,cif/N10_0018_ring-4-substituted.cif
+328,N10,10,ring-3-substituted,10,1,[3],"[3, 3, 3, 2, 2, 2, 2, 1, 1, 1]",3,3,264.512113,-14900.827308,-1490.082731,0.2799,True,True,50,P1,1,xyz/N10_0019_ring-3-substituted.xyz,cif/N10_0019_ring-3-substituted.cif
+329,N10,10,branched-tree,9,0,[],"[3, 3, 2, 2, 2, 2, 1, 1, 1, 1]",3,4,23.295381,-14903.309327,-1490.330933,0.0317,True,True,161,P1,1,xyz/N10_0020_branched-tree.xyz,cif/N10_0020_branched-tree.cif
+330,N10,10,ring-5-substituted,10,1,[5],"[3, 3, 2, 2, 2, 2, 2, 2, 1, 1]",3,4,39.850148,-14902.576145,-1490.257614,0.1051,True,True,82,P1,1,xyz/N10_0021_ring-5-substituted.xyz,cif/N10_0021_ring-5-substituted.cif
+331,N10,10,ring-6-substituted,10,1,[6],"[3, 3, 2, 2, 2, 2, 2, 2, 1, 1]",3,2,27.336484,-14898.594881,-1489.859488,0.5032,True,True,71,P1,1,xyz/N10_0022_ring-6-substituted.xyz,cif/N10_0022_ring-6-substituted.cif
+332,N10,10,ring-5-substituted,10,1,[5],"[3, 3, 2, 2, 2, 2, 2, 2, 1, 1]",3,4,38.256983,-14899.279283,-1489.927928,0.4347,True,True,79,P1,1,xyz/N10_0023_ring-5-substituted.xyz,cif/N10_0023_ring-5-substituted.cif
+333,N10,10,branched-tree,9,0,[],"[3, 3, 2, 2, 2, 2, 1, 1, 1, 1]",3,1,23.102584,-14901.577605,-1490.157760,0.2049,True,True,100,P1,1,xyz/N10_0024_branched-tree.xyz,cif/N10_0024_branched-tree.cif
+334,N10,10,branched-tree,9,0,[],"[3, 3, 3, 2, 2, 1, 1, 1, 1, 1]",3,3,28.393116,-14900.794589,-1490.079459,0.2832,True,True,61,P1,1,xyz/N10_0025_branched-tree.xyz,cif/N10_0025_branched-tree.cif
+335,N10,10,branched-tree,9,0,[],"[3, 3, 3, 2, 2, 1, 1, 1, 1, 1]",3,0,27.022058,-14903.318918,-1490.331892,0.0308,True,True,84,P1,1,xyz/N10_0026_branched-tree.xyz,cif/N10_0026_branched-tree.cif
+336,N10,10,bicyclic-3-4,11,2,"[3, 4]","[3, 3, 3, 3, 2, 2, 2, 2, 1, 1]",3,1,381.227126,-14897.861092,-1489.786109,0.5766,True,True,256,P1,1,xyz/N10_0027_bicyclic-3-4.xyz,cif/N10_0027_bicyclic-3-4.cif
+337,N10,10,ring-4-substituted,10,1,[4],"[3, 3, 3, 2, 2, 2, 2, 1, 1, 1]",3,0,94.389122,-14900.429938,-1490.042994,0.3197,True,True,75,P1,1,xyz/N10_0028_ring-4-substituted.xyz,cif/N10_0028_ring-4-substituted.cif
+338,N10,10,bicyclic-3-4-7,12,3,"[3, 4, 7]","[3, 3, 3, 3, 3, 3, 2, 2, 1, 1]",3,1,303.901492,-14900.371476,-1490.037148,0.3255,True,True,103,P1,1,xyz/N10_0029_bicyclic-3-4-7.xyz,cif/N10_0029_bicyclic-3-4-7.cif
+339,N10,10,bicyclic-3-3,11,2,"[3, 3]","[3, 3, 3, 3, 3, 2, 2, 1, 1, 1]",3,4,478.419730,-14901.987160,-1490.198716,0.1640,True,True,157,P1,1,xyz/N10_0030_bicyclic-3-3.xyz,cif/N10_0030_bicyclic-3-3.cif
+340,N10,10,bicyclic-4-4-7,12,3,"[4, 4, 7]","[3, 3, 3, 3, 3, 2, 2, 2, 2, 1]",3,4,224.832658,-20952.931200,-2095.293120,-604.9304,False,False,500,P1,1,xyz/N10_0031_bicyclic-4-4-7.xyz,cif/N10_0031_bicyclic-4-4-7.cif
+341,N10,10,branched-tree,9,0,[],"[3, 3, 2, 2, 2, 2, 1, 1, 1, 1]",3,3,23.234230,-14900.895863,-1490.089586,0.2731,True,True,88,P1,1,xyz/N10_0032_branched-tree.xyz,cif/N10_0032_branched-tree.cif
+342,N10,10,ring-5-substituted,10,1,[5],"[3, 3, 3, 2, 2, 2, 2, 1, 1, 1]",3,4,43.377998,-14902.145674,-1490.214567,0.1481,True,True,47,P1,1,xyz/N10_0033_ring-5-substituted.xyz,cif/N10_0033_ring-5-substituted.cif
+343,N10,10,bicyclic-3-3,11,2,"[3, 3]","[3, 3, 3, 3, 3, 2, 2, 1, 1, 1]",3,1,441.689831,-16086.884931,-1608.688493,-118.3258,False,False,500,P1,1,xyz/N10_0034_bicyclic-3-3.xyz,cif/N10_0034_bicyclic-3-3.cif
+344,N10,10,ring-3-substituted,10,1,[3],"[3, 3, 3, 2, 2, 2, 2, 1, 1, 1]",3,4,294.644725,-14900.858458,-1490.085846,0.2768,True,True,105,P1,1,xyz/N10_0035_ring-3-substituted.xyz,cif/N10_0035_ring-3-substituted.cif
+345,N10,10,bicyclic-3-5-6,12,3,"[3, 5, 6]","[3, 3, 3, 3, 2, 2, 2, 2, 2, 2]",3,2,362.917259,-14900.872594,-1490.087259,0.2754,True,True,64,P1,1,xyz/N10_0036_bicyclic-3-5-6.xyz,cif/N10_0036_bicyclic-3-5-6.cif
+346,N10,10,ring-5-substituted,10,1,[5],"[3, 3, 3, 2, 2, 2, 2, 1, 1, 1]",3,1,39.468511,-14901.687202,-1490.168720,0.1940,True,True,137,P1,1,xyz/N10_0037_ring-5-substituted.xyz,cif/N10_0037_ring-5-substituted.cif
+347,N10,10,bicyclic-3-3,11,2,"[3, 3]","[3, 3, 3, 3, 3, 2, 2, 1, 1, 1]",3,0,506.389156,-14900.726002,-1490.072600,0.2901,True,True,80,P1,1,xyz/N10_0038_bicyclic-3-3.xyz,cif/N10_0038_bicyclic-3-3.cif
+348,N10,10,branched-tree,9,0,[],"[3, 3, 2, 2, 2, 2, 1, 1, 1, 1]",3,0,22.610800,-14900.710083,-1490.071008,0.2917,True,True,72,P1,1,xyz/N10_0039_branched-tree.xyz,cif/N10_0039_branched-tree.cif
+349,N10,10,branched-tree,9,0,[],"[3, 3, 2, 2, 2, 2, 1, 1, 1, 1]",3,4,23.177603,-14899.890363,-1489.989036,0.3736,True,True,109,P1,1,xyz/N10_0040_branched-tree.xyz,cif/N10_0040_branched-tree.cif
+350,N10,10,bicyclic-3-5-5-5,13,4,"[3, 5, 5, 5]","[3, 3, 3, 3, 3, 3, 3, 2, 2, 1]",3,2,907.765738,-14901.621414,-1490.162141,0.2005,True,True,93,P1,1,xyz/N10_0041_bicyclic-3-5-5-5.xyz,cif/N10_0041_bicyclic-3-5-5-5.cif
+351,N10,10,bicyclic-3-4-5,12,3,"[3, 4, 5]","[3, 3, 3, 3, 3, 3, 2, 2, 1, 1]",3,1,336.504845,-14898.932250,-1489.893225,0.4695,True,True,102,P1,1,xyz/N10_0042_bicyclic-3-4-5.xyz,cif/N10_0042_bicyclic-3-4-5.cif
+352,N10,10,bicyclic-3-3,11,2,"[3, 3]","[3, 3, 3, 3, 2, 2, 2, 2, 1, 1]",3,0,500.671574,-14900.674617,-1490.067462,0.2952,True,True,79,P1,1,xyz/N10_0043_bicyclic-3-3.xyz,cif/N10_0043_bicyclic-3-3.cif
+353,N10,10,bicyclic-3-3-5,12,3,"[3, 3, 5]","[3, 3, 3, 3, 3, 2, 2, 2, 2, 1]",3,1,463.407137,-15918.799862,-1591.879986,-101.5173,False,False,500,P1,1,xyz/N10_0044_bicyclic-3-3-5.xyz,cif/N10_0044_bicyclic-3-3-5.cif
+354,N10,10,ring-3-substituted,10,1,[3],"[3, 3, 2, 2, 2, 2, 2, 2, 1, 1]",3,3,288.173252,-14900.716865,-1490.071687,0.2910,True,True,152,P1,1,xyz/N10_0045_ring-3-substituted.xyz,cif/N10_0045_ring-3-substituted.cif
+355,N10,10,bicyclic-5-5-6-6,13,4,"[5, 5, 6, 6]","[3, 3, 3, 3, 3, 3, 2, 2, 2, 2]",3,0,578.219072,-38605.495182,-3860.549518,-2370.1868,False,False,500,P1,1,xyz/N10_0046_bicyclic-5-5-6-6.xyz,cif/N10_0046_bicyclic-5-5-6-6.cif
+356,N10,10,bicyclic-4-6,11,2,"[4, 6]","[3, 3, 3, 2, 2, 2, 2, 2, 2, 1]",3,3,114.929665,-14900.036828,-1490.003683,0.3590,True,True,88,P1,1,xyz/N10_0047_bicyclic-4-6.xyz,cif/N10_0047_bicyclic-4-6.cif
+357,N10,10,ring-5-substituted,10,1,[5],"[3, 3, 3, 3, 2, 2, 1, 1, 1, 1]",3,4,560.602431,-14901.572692,-1490.157269,0.2054,True,True,59,P1,1,xyz/N10_0048_ring-5-substituted.xyz,cif/N10_0048_ring-5-substituted.cif
+358,N10,10,bicyclic-6-6,11,2,"[6, 6]","[3, 3, 3, 2, 2, 2, 2, 2, 2, 1]",3,3,38.601680,-14899.053707,-1489.905371,0.4573,True,True,83,P1,1,xyz/N10_0049_bicyclic-6-6.xyz,cif/N10_0049_bicyclic-6-6.cif
+359,N10,10,bicyclic-3-3-4-5,13,4,"[3, 3, 4, 5]","[3, 3, 3, 3, 3, 3, 2, 2, 2, 2]",3,1,587.171666,-14895.805209,-1489.580521,0.7822,True,True,19,P1,1,xyz/N10_0050_bicyclic-3-3-4-5.xyz,cif/N10_0050_bicyclic-3-3-4-5.cif
+360,N10,10,branched-tree,9,0,[],"[3, 3, 2, 2, 2, 2, 1, 1, 1, 1]",3,0,22.020590,-14900.565833,-1490.056583,0.3061,True,True,100,P1,1,xyz/N10_0051_branched-tree.xyz,cif/N10_0051_branched-tree.cif
+361,N10,10,bicyclic-3-3,11,2,"[3, 3]","[3, 3, 3, 2, 2, 2, 2, 2, 2, 1]",3,4,558.692383,-14897.084536,-1489.708454,0.6542,True,True,24,P1,1,xyz/N10_0052_bicyclic-3-3.xyz,cif/N10_0052_bicyclic-3-3.cif
+362,N10,10,bicyclic-3-4,11,2,"[3, 4]","[3, 3, 3, 3, 2, 2, 2, 2, 1, 1]",3,0,303.913758,-14898.276568,-1489.827657,0.5350,True,True,64,P1,1,xyz/N10_0053_bicyclic-3-4.xyz,cif/N10_0053_bicyclic-3-4.cif
+363,N10,10,bicyclic-3-4-7,12,3,"[3, 4, 7]","[3, 3, 3, 3, 3, 2, 2, 2, 2, 1]",3,0,352.989274,-24391.670288,-2439.167029,-948.8044,False,False,500,P1,1,xyz/N10_0054_bicyclic-3-4-7.xyz,cif/N10_0054_bicyclic-3-4-7.cif
+364,N10,10,bicyclic-5-6-7,12,3,"[5, 6, 7]","[3, 3, 3, 3, 3, 2, 2, 2, 2, 1]",3,2,517.300106,-16363.302123,-1636.330212,-145.9675,False,False,500,P1,1,xyz/N10_0055_bicyclic-5-6-7.xyz,cif/N10_0055_bicyclic-5-6-7.cif
+365,N10,10,bicyclic-3-6,11,2,"[3, 6]","[3, 3, 3, 3, 2, 2, 2, 2, 1, 1]",3,3,275.510800,-14900.371589,-1490.037159,0.3255,True,True,110,P1,1,xyz/N10_0056_bicyclic-3-6.xyz,cif/N10_0056_bicyclic-3-6.cif
+366,N10,10,bicyclic-4-5,11,2,"[4, 5]","[3, 3, 3, 3, 3, 2, 2, 1, 1, 1]",3,4,173.151995,-14902.069403,-1490.206940,0.1557,True,True,69,P1,1,xyz/N10_0057_bicyclic-4-5.xyz,cif/N10_0057_bicyclic-4-5.cif
+367,N10,10,ring-3-substituted,10,1,[3],"[3, 3, 3, 2, 2, 2, 2, 1, 1, 1]",3,4,262.208883,-14900.291210,-1490.029121,0.3336,True,True,70,P1,1,xyz/N10_0058_ring-3-substituted.xyz,cif/N10_0058_ring-3-substituted.cif
+368,N10,10,bicyclic-3-3-5,12,3,"[3, 3, 5]","[3, 3, 3, 3, 3, 3, 2, 2, 1, 1]",3,1,464.308814,-14902.576758,-1490.257676,0.1050,True,True,112,P1,1,xyz/N10_0059_bicyclic-3-3-5.xyz,cif/N10_0059_bicyclic-3-3-5.cif
+369,N10,10,ring-3-substituted,10,1,[3],"[3, 3, 3, 2, 2, 2, 2, 1, 1, 1]",3,4,262.228185,-14899.467543,-1489.946754,0.4159,True,True,84,P1,1,xyz/N10_0060_ring-3-substituted.xyz,cif/N10_0060_ring-3-substituted.cif
+370,N10,10,ring-3-substituted,10,1,[3],"[3, 3, 3, 3, 2, 2, 1, 1, 1, 1]",3,0,266.629122,-14903.355703,-1490.335570,0.0271,True,True,170,P1,1,xyz/N10_0061_ring-3-substituted.xyz,cif/N10_0061_ring-3-substituted.cif
+371,N10,10,bicyclic-3-5,11,2,"[3, 5]","[3, 3, 3, 3, 3, 2, 2, 1, 1, 1]",3,1,251.109434,-14898.525819,-1489.852582,0.5101,True,True,81,P1,1,xyz/N10_0062_bicyclic-3-5.xyz,cif/N10_0062_bicyclic-3-5.cif
+372,N10,10,bicyclic-4-5-5-5-5,14,5,"[4, 5, 5, 5, 5]","[3, 3, 3, 3, 3, 3, 3, 3, 3, 1]",3,2,781.098659,-42273.242756,-4227.324276,-2736.9616,False,False,500,P1,1,xyz/N10_0063_bicyclic-4-5-5-5-5.xyz,cif/N10_0063_bicyclic-4-5-5-5-5.cif
+373,N10,10,ring-4-substituted,10,1,[4],"[3, 3, 3, 2, 2, 2, 2, 1, 1, 1]",3,0,109.401053,-14900.787514,-1490.078751,0.2839,True,True,87,P1,1,xyz/N10_0064_ring-4-substituted.xyz,cif/N10_0064_ring-4-substituted.cif
+374,N10,10,bicyclic-4-5,11,2,"[4, 5]","[3, 3, 3, 2, 2, 2, 2, 2, 2, 1]",3,3,140.818217,-14897.404618,-1489.740462,0.6222,True,True,53,P1,1,xyz/N10_0065_bicyclic-4-5.xyz,cif/N10_0065_bicyclic-4-5.cif
+375,N10,10,ring-3-substituted,10,1,[3],"[3, 3, 3, 2, 2, 2, 2, 1, 1, 1]",3,4,292.615925,-14900.389754,-1490.038975,0.3237,True,True,90,P1,1,xyz/N10_0066_ring-3-substituted.xyz,cif/N10_0066_ring-3-substituted.cif
+376,N10,10,ring-7-substituted,10,1,[7],"[3, 3, 3, 2, 2, 2, 2, 1, 1, 1]",3,2,32.205223,-14903.371344,-1490.337134,0.0255,True,True,150,P1,1,xyz/N10_0067_ring-7-substituted.xyz,cif/N10_0067_ring-7-substituted.cif
+377,N10,10,bicyclic-4-5,11,2,"[4, 5]","[3, 3, 3, 2, 2, 2, 2, 2, 2, 1]",3,4,629.895566,-15972.914151,-1597.291415,-106.9287,False,False,500,P1,1,xyz/N10_0068_bicyclic-4-5.xyz,cif/N10_0068_bicyclic-4-5.cif
+378,N10,10,ring-7-substituted,10,1,[7],"[3, 2, 2, 2, 2, 2, 2, 2, 2, 1]",3,4,265.758154,-16211.534131,-1621.153413,-130.7907,False,False,500,P1,1,xyz/N10_0069_ring-7-substituted.xyz,cif/N10_0069_ring-7-substituted.cif
+379,N10,10,ring-5-substituted,10,1,[5],"[3, 2, 2, 2, 2, 2, 2, 2, 2, 1]",3,2,39.349855,-14901.856187,-1490.185619,0.1771,True,True,81,P1,1,xyz/N10_0070_ring-5-substituted.xyz,cif/N10_0070_ring-5-substituted.cif
+380,N10,10,bicyclic-3-6-7,12,3,"[3, 6, 7]","[3, 3, 3, 3, 3, 2, 2, 2, 2, 1]",3,0,314.011026,-14896.647502,-1489.664750,0.6979,True,True,39,P1,1,xyz/N10_0071_bicyclic-3-6-7.xyz,cif/N10_0071_bicyclic-3-6-7.cif
+381,N10,10,ring-4-substituted,10,1,[4],"[3, 3, 3, 2, 2, 2, 2, 1, 1, 1]",3,4,112.652657,-14898.751911,-1489.875191,0.4875,True,True,89,P1,1,xyz/N10_0072_ring-4-substituted.xyz,cif/N10_0072_ring-4-substituted.cif
+382,N10,10,bicyclic-3-3-5,12,3,"[3, 3, 5]","[3, 3, 3, 3, 3, 2, 2, 2, 2, 1]",3,4,1028.566292,-14903.300125,-1490.330012,0.0327,True,True,165,P1,1,xyz/N10_0073_bicyclic-3-3-5.xyz,cif/N10_0073_bicyclic-3-3-5.cif
+383,N10,10,branched-tree,9,0,[],"[3, 3, 2, 2, 2, 2, 1, 1, 1, 1]",3,0,22.656305,-14904.100407,-1490.410041,-0.0474,False,True,100,P1,1,xyz/N10_0074_branched-tree.xyz,cif/N10_0074_branched-tree.cif
+384,N10,10,bicyclic-3-5-7,12,3,"[3, 5, 7]","[3, 3, 3, 3, 3, 2, 2, 2, 2, 1]",3,2,270.204505,-14899.070407,-1489.907041,0.4556,True,True,78,P1,1,xyz/N10_0075_bicyclic-3-5-7.xyz,cif/N10_0075_bicyclic-3-5-7.cif
+385,N10,10,ring-3-substituted,10,1,[3],"[3, 3, 3, 2, 2, 2, 2, 1, 1, 1]",3,2,292.760889,-14900.289767,-1490.028977,0.3337,True,True,91,P1,1,xyz/N10_0076_ring-3-substituted.xyz,cif/N10_0076_ring-3-substituted.cif
+386,N10,10,bicyclic-3-4-6-7,13,4,"[3, 4, 6, 7]","[3, 3, 3, 3, 3, 3, 3, 2, 2, 1]",3,0,418.442683,-17520.377747,-1752.037775,-261.6751,False,False,500,P1,1,xyz/N10_0077_bicyclic-3-4-6-7.xyz,cif/N10_0077_bicyclic-3-4-6-7.cif
+387,N10,10,ring-5-substituted,10,1,[5],"[3, 3, 3, 2, 2, 2, 2, 1, 1, 1]",3,1,44.024547,-14901.621796,-1490.162180,0.2005,True,True,46,P1,1,xyz/N10_0078_ring-5-substituted.xyz,cif/N10_0078_ring-5-substituted.cif
+388,N10,10,branched-tree,9,0,[],"[3, 3, 2, 2, 2, 2, 1, 1, 1, 1]",3,0,22.447829,-14904.177494,-1490.417749,-0.0551,False,True,136,P1,1,xyz/N10_0079_branched-tree.xyz,cif/N10_0079_branched-tree.cif
+389,N10,10,bicyclic-4-4,11,2,"[4, 4]","[3, 3, 3, 3, 2, 2, 2, 2, 1, 1]",3,1,171.461318,-15966.350603,-1596.635060,-106.2724,False,False,500,P1,1,xyz/N10_0080_bicyclic-4-4.xyz,cif/N10_0080_bicyclic-4-4.cif
+390,N10,10,bicyclic-3-3-5,12,3,"[3, 3, 5]","[3, 3, 3, 3, 3, 2, 2, 2, 2, 1]",3,2,483.270872,-14898.158609,-1489.815861,0.5468,True,True,67,P1,1,xyz/N10_0081_bicyclic-3-3-5.xyz,cif/N10_0081_bicyclic-3-3-5.cif
+391,N10,10,bicyclic-3-5-6,12,3,"[3, 5, 6]","[3, 3, 3, 3, 2, 2, 2, 2, 2, 2]",3,3,279.644423,-14899.101267,-1489.910127,0.4526,True,True,88,P1,1,xyz/N10_0082_bicyclic-3-5-6.xyz,cif/N10_0082_bicyclic-3-5-6.cif
+392,N10,10,bicyclic-6-9,11,2,"[6, 9]","[3, 3, 2, 2, 2, 2, 2, 2, 2, 2]",3,2,31.384012,-14900.018628,-1490.001863,0.3608,True,True,59,P1,1,xyz/N10_0083_bicyclic-6-9.xyz,cif/N10_0083_bicyclic-6-9.cif
+393,N10,10,ring-3-substituted,10,1,[3],"[3, 3, 2, 2, 2, 2, 2, 2, 1, 1]",3,1,257.522648,-14897.939725,-1489.793972,0.5687,True,True,51,P1,1,xyz/N10_0084_ring-3-substituted.xyz,cif/N10_0084_ring-3-substituted.cif
+394,N10,10,bicyclic-3-5-6,12,3,"[3, 5, 6]","[3, 3, 3, 3, 3, 2, 2, 2, 2, 1]",3,3,265.671684,-14900.286944,-1490.028694,0.3340,True,True,125,P1,1,xyz/N10_0085_bicyclic-3-5-6.xyz,cif/N10_0085_bicyclic-3-5-6.cif
+395,N10,10,bicyclic-4-7,11,2,"[4, 7]","[3, 3, 3, 3, 2, 2, 2, 2, 1, 1]",3,0,122.386720,-34349.141401,-3434.914140,-1944.5515,False,False,500,P1,1,xyz/N10_0086_bicyclic-4-7.xyz,cif/N10_0086_bicyclic-4-7.cif
+396,N10,10,bicyclic-3-4,11,2,"[3, 4]","[3, 3, 3, 3, 2, 2, 2, 2, 1, 1]",3,0,304.130628,-14899.869799,-1489.986980,0.3757,True,True,231,P1,1,xyz/N10_0087_bicyclic-3-4.xyz,cif/N10_0087_bicyclic-3-4.cif
+397,N10,10,ring-3-substituted,10,1,[3],"[3, 3, 3, 2, 2, 2, 2, 1, 1, 1]",3,4,261.877211,-14900.825713,-1490.082571,0.2801,True,True,33,P1,1,xyz/N10_0088_ring-3-substituted.xyz,cif/N10_0088_ring-3-substituted.cif
+398,N10,10,bicyclic-3-5,11,2,"[3, 5]","[3, 3, 3, 3, 2, 2, 2, 2, 1, 1]",3,1,256.059638,-14902.109860,-1490.210986,0.1517,True,True,88,P1,1,xyz/N10_0089_bicyclic-3-5.xyz,cif/N10_0089_bicyclic-3-5.cif
+399,N10,10,ring-3-substituted,10,1,[3],"[3, 3, 3, 3, 2, 2, 1, 1, 1, 1]",3,4,239.374744,-14901.916132,-1490.191613,0.1711,True,True,149,P1,1,xyz/N10_0090_ring-3-substituted.xyz,cif/N10_0090_ring-3-substituted.cif
+400,N10,10,bicyclic-3-5-5,12,3,"[3, 5, 5]","[3, 3, 3, 3, 3, 2, 2, 2, 2, 1]",3,3,848.429663,-55263.553061,-5526.355306,-4035.9926,False,False,500,P1,1,xyz/N10_0091_bicyclic-3-5-5.xyz,cif/N10_0091_bicyclic-3-5-5.cif
+401,N10,10,bicyclic-5-5,11,2,"[5, 5]","[3, 3, 3, 3, 2, 2, 2, 2, 1, 1]",3,2,170.207280,-14902.579736,-1490.257974,0.1047,True,True,158,P1,1,xyz/N10_0092_bicyclic-5-5.xyz,cif/N10_0092_bicyclic-5-5.cif
+402,N10,10,bicyclic-4-5-5,12,3,"[4, 5, 5]","[3, 3, 3, 3, 3, 2, 2, 2, 2, 1]",3,0,184.453623,-14899.381872,-1489.938187,0.4245,True,True,53,P1,1,xyz/N10_0093_bicyclic-4-5-5.xyz,cif/N10_0093_bicyclic-4-5-5.cif
+403,N10,10,ring-3-substituted,10,1,[3],"[3, 3, 3, 3, 2, 2, 1, 1, 1, 1]",3,3,267.128754,-14903.365745,-1490.336574,0.0261,True,True,150,P1,1,xyz/N10_0094_ring-3-substituted.xyz,cif/N10_0094_ring-3-substituted.cif
+404,N10,10,bicyclic-3-4-7,12,3,"[3, 4, 7]","[3, 3, 3, 3, 2, 2, 2, 2, 2, 2]",3,4,334.481949,-14897.497496,-1489.749750,0.6129,True,True,83,P1,1,xyz/N10_0095_bicyclic-3-4-7.xyz,cif/N10_0095_bicyclic-3-4-7.cif
+405,N10,10,bicyclic-5-6,11,2,"[5, 6]","[3, 3, 3, 3, 2, 2, 2, 2, 1, 1]",3,3,91.697524,-14902.570371,-1490.257037,0.1056,True,True,106,P1,1,xyz/N10_0096_bicyclic-5-6.xyz,cif/N10_0096_bicyclic-5-6.cif
+406,N10,10,ring-7-substituted,10,1,[7],"[3, 3, 2, 2, 2, 2, 2, 2, 1, 1]",3,3,27.667554,-14899.153350,-1489.915335,0.4473,True,True,38,P1,1,xyz/N10_0097_ring-7-substituted.xyz,cif/N10_0097_ring-7-substituted.cif
+407,N10,10,bicyclic-4-6-6,12,3,"[4, 6, 6]","[3, 3, 3, 3, 3, 2, 2, 2, 2, 1]",3,0,208.261589,-47754.739653,-4775.473965,-3285.1113,False,False,500,P1,1,xyz/N10_0098_bicyclic-4-6-6.xyz,cif/N10_0098_bicyclic-4-6-6.cif
+408,N10,10,bicyclic-3-5,11,2,"[3, 5]","[3, 3, 3, 3, 2, 2, 2, 2, 1, 1]",3,4,249.791850,-14897.693920,-1489.769392,0.5933,True,True,34,P1,1,xyz/N10_0099_bicyclic-3-5.xyz,cif/N10_0099_bicyclic-3-5.cif
