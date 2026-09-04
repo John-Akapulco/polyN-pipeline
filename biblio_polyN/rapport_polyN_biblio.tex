@@ -121,6 +121,7 @@ correspond \`a la valeur annonc\'ee (\'ecart maximal report\'e dans
 attribuables aux arrondis des valeurs publi\'ees).
 
 \subsection{Niveau 2 --- topologie publi\'ee, g\'eom\'etrie relax\'ee par GFN2-xTB}
+\label{sec:niveau2}
 
 Pour les 25 structures restantes -- cages non planes (``log carrier'',
 ``book'', ``cap'', ``ladder'', papillon N$_4$, cycles fusionn\'es de type
@@ -143,7 +144,7 @@ GFN2 ne converge pas directement depuis le d\'epart g\'en\'erique.
 fid\`eles, mais leurs longueurs de liaison exactes peuvent diff\'erer
 l\'eg\`erement des valeurs DFT/CCSD(T) publi\'ees.} Elles sont clairement
 identifi\'ees dans le tableau \ref{tab:structures} (colonne ``Statut'') et
-dans le commentaire (2\up{e} ligne) de chaque fichier \texttt{.xyz}.
+dans le commentaire (2\textsuperscript{e} ligne) de chaque fichier \texttt{.xyz}.
 
 \subsection{Validation}
 
@@ -218,6 +219,86 @@ Esp\`eces couvertes & N$_2$ \`a N$_{20}$ \\
 \end{tabular}
 \end{center}
 
+\subsection{R\'epartition par formule et \'etat de charge}
+
+Le tableau ci-dessous d\'etaille, pour chaque composition N$_n$,
+le nombre de structures neutres, anioniques et cationiques extraites --
+N$_n^{-}$ \'etant compt\'e s\'epar\'ement de N$_n^{+}$, les deux esp\`eces
+diff\'erant souvent fortement de g\'eom\'etrie et de sym\'etrie.
+
+\begin{center}
+\begin{tabular}{lrrrr}
+\toprule
+Formule & Neutre & Anion (N$^{-}$) & Cation (N$^{+}$) & Total \\
+\midrule
+N$_2$    & 1  & --  & 1   & 2  \\
+N$_3$    & 1  & 3   & 2   & 6  \\
+N$_4$    & 5  & 2   & 1   & 8  \\
+N$_5$    & 1  & 2   & 1   & 4  \\
+N$_6$    & 4  & 2   & 3   & 9  \\
+N$_7$    & 3  & 1   & 1   & 5  \\
+N$_8$    & 15 & 2   & --  & 17 \\
+N$_9$    & 2  & 3   & 2   & 7  \\
+N$_{10}$ & 7  & 1   & 2   & 10 \\
+N$_{12}$ & 1  & --  & --  & 1  \\
+N$_{20}$ & 1  & --  & --  & 1  \\
+\midrule
+\textbf{Total} & \textbf{41} & \textbf{16} & \textbf{13} & \textbf{70} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+D\'etail des isom\`eres retenus pour chaque couple (formule, charge) :
+
+\begin{description}[leftmargin=1.4cm,itemsep=2pt,style=nextline]
+\item[N$_2$] Neutre : \texttt{N2}. --- Cation : \texttt{N2+}.
+\item[N$_3$] Neutre (radicalaire) : \texttt{N3\_radical}. --- Anion (3) :
+  \texttt{N3-\_bent}, \texttt{N3-\_linear}, \texttt{N3-\_triangle}. ---
+  Cation (2) : \texttt{N3+\_linear}, \texttt{N3+\_triangle}.
+\item[N$_4$] Neutre (5) : \texttt{N4\_C2h\_chain}, \texttt{N4\_C2v\_butterfly},
+  \texttt{N4\_D2d\_puckered}, \texttt{N4\_D2h\_rectangle\_planar},
+  \texttt{N4\_Td}. --- Anion (2) : \texttt{N4-\_chain\_planar},
+  \texttt{N4-\_rectangle}. --- Cation : \texttt{N4+\_rectangle}.
+\item[N$_5$] Neutre (protoné, pentazole) : \texttt{N5H\_pentazole}. ---
+  Anion (2) : \texttt{N5-\_bipyramid}, \texttt{N5-\_pentagon}. ---
+  Cation : \texttt{N5+\_Vchain}.
+\item[N$_6$] Neutre (4) : \texttt{N6\_C2\_book}, \texttt{N6\_C2h\_chain},
+  \texttt{N6\_D2\_twisted}, \texttt{N6\_D3h\_prism}. --- Anion (2) :
+  \texttt{N6-\_C2\_linked\_triangles}, \texttt{N6-\_Cs\_chain}. --- Cation
+  (3) : \texttt{N6+\_C2h\_nonplanar}, \texttt{N6+\_C2h\_planar},
+  \texttt{N6+\_C2v}.
+\item[N$_7$] Neutre (3) : \texttt{N7\_C2\_linearZZ}, \texttt{N7\_C2v\_logcarrier},
+  \texttt{N7\_Cs\_ring\_chain}. --- Anion : \texttt{N7-\_chain}. --- Cation :
+  \texttt{N7+\_chain}.
+\item[N$_8$] Neutre (15) : \texttt{N8\_C1\_ZZE}, \texttt{N8\_C2h\_EEE},
+  \texttt{N8\_C2h\_ladder}, \texttt{N8\_C2h\_ZEZ}, \texttt{N8\_C2v\_branched},
+  \texttt{N8\_C2v\_EZE}, \texttt{N8\_C2v\_ring},
+  \texttt{N8\_Cs\_azidopentazole}, \texttt{N8\_Cs\_pentagonal},
+  \texttt{N8\_Cs\_ZEE}, \texttt{N8\_D2d\_octaazacyclooctatetraene},
+  \texttt{N8\_D2h\_pentalene}, \texttt{N8\_D2h\_ring\_pendant},
+  \texttt{N8\_Oh\_cubane\_GS}, \texttt{N8\_Oh\_cube}. --- Anion (2) :
+  \texttt{N8-\_C2h\_chain}, \texttt{N8-\_C2h\_ZEZ}. --- Cation : aucun.
+\item[N$_9$] Neutre (2) : \texttt{N9\_chain}, \texttt{N9\_fused\_rings}. ---
+  Anion (3) : \texttt{N9-\_chain}, \texttt{N9-\_chain\_twistedW},
+  \texttt{N9-\_ring\_chain}. --- Cation (2) : \texttt{N9+\_chain},
+  \texttt{N9+\_fused\_rings}.
+\item[N$_{10}$] Neutre (7) : \texttt{N10\_C3\_cap}, \texttt{N10\_cage\_C2v},
+  \texttt{N10\_Cs\_ring\_chain}, \texttt{N10\_D10h\_ring},
+  \texttt{N10\_D2d\_bispentazole\_GS}, \texttt{N10\_D2d\_linked5rings},
+  \texttt{N10\_D5h\_prism}. --- Anion : \texttt{N10-\_D2h\_perp\_rings}. ---
+  Cation (2) : \texttt{N10+\_chain}, \texttt{N10+\_rings}.
+\item[N$_{12}$] Neutre : \texttt{N12\_C2h\_dipentazolyldiazene}. --- Ni
+  anion ni cation dans le jeu extrait.
+\item[N$_{20}$] Neutre : \texttt{N20\_Ih\_dodecahedrane}. --- Ni anion ni
+  cation dans le jeu extrait.
+\end{description}
+
+On note que N$_8$ concentre \`a lui seul 17 des 70 structures (tous les
+isom\`eres de conformation E/Z de la chaine octaazot\'ee de [B]), sans
+cation recens\'e pour cette formule, tandis que N$_{12}$ et N$_{20}$
+n'apparaissent qu'au travers d'une unique esp\`ece neutre embl\'ematique
+(le dipentazolyldiaz\`ene et le dodeca\`edre, respectivement).
+
 \subsection{Table compl\`ete des structures}
 
 Le tableau~\ref{tab:structures} liste l'ensemble des 70 fichiers
@@ -231,7 +312,136 @@ r\'ef\'erence et le statut de reconstruction.
 \endgroup
 \label{tab:structures}
 
+\section{Comparaison avec les structures identifi\'ees par le pipeline de criblage}
+\label{sec:comparaison-code}
+
+Les 70 g\'eom\'etries extraites de la bibliographie constituent une
+r\'ef\'erence ind\'ependante pour \'evaluer ce que le pipeline de criblage
+du d\'ep\^ot (\texttt{polyN\_pipeline.py}) retrouve par lui-m\^eme, sans
+aucune connaissance pr\'ealable de [GS] ni [B]. Deux campagnes de
+production d\'ej\`a ex\'ecut\'ees ont \'et\'e utilis\'ees comme
+``ensemble code'' : \texttt{v2/resultats/production\_2026-07-03/}
+(topologies g\'en\'er\'ees par \texttt{geng}/\texttt{maygen}) et
+\texttt{resultats/seeds\_pubchem/} (topologies amorc\'ees \`a partir de
+squelettes carbon\'es PubChem convertis en N$_x$ via
+\texttt{cxhx\_to\_nx.py}), soit 579 candidats optimis\'es GFN2-xTB au
+total.
+
+\subsection{M\'ethode}
+
+Pour chaque structure (biblio et code), un graphe de connectivit\'e est
+construit \`a partir des coordonn\'ees optimis\'ees en reliant deux atomes
+N s\'epar\'es de moins de 1{,}9~\AA\ (m\^eme seuil que
+\texttt{build/render.py}, s\'eparant sans ambigu\"it\'e liaisons N--N
+covalentes et contacts non-liants). Deux structures de m\^eme formule et
+m\^eme signe de charge sont consid\'er\'ees comme la \textbf{m\^eme
+topologie} si leurs graphes sont isomorphes (test exact
+\texttt{networkx.is\_isomorphic}). Cette comparaison porte donc
+uniquement sur la \textbf{connectivit\'e} : deux conformations E/Z d'une
+m\^eme chaine, ou un cycle exactement plan et son analogue l\'eg\`erement
+pliss\'e, sont compt\'es comme une topologie identique (limites
+discut\'ees \`a la fin de cette section).
+
+Le fichier \texttt{N5H\_pentazole} (seule structure biblio non purement
+azot\'ee) est exclu de la comparaison, le pipeline ne traitant que des
+syst\`emes N$_x$. Par ailleurs, la configuration de production ne calcule
+\textbf{que les esp\`eces neutres \`a $n$ pair et les ions (cation/anion)
+\`a $n$ impair} (voir \texttt{v2/config\_production.yaml} et
+\texttt{config\_seeds.yaml}) : il n'existe donc structurellement aucun
+candidat ``code'' pour les radicaux neutres \`a $n$ impair, ni pour les
+ions \`a $n$ pair.
+
+\subsection{Groupes hors p\'erim\`etre du pipeline actuel}
+
+21 des 69 structures compar\'ees (30~\%) tombent hors de ce p\'erim\`etre
+par construction -- il ne s'agit pas d'un \'echec de recherche mais d'une
+lacune de couverture du fichier de configuration :
+\begin{itemize}
+  \item \textbf{Radicaux neutres \`a $n$ impair} : N$_3$ (1), N$_7$ (3),
+  N$_9$ (2) ;
+  \item \textbf{Ions \`a $n$ pair} : N$_2^{+}$ (1), N$_4^{-}$ (2) /
+  N$_4^{+}$ (1), N$_6^{-}$ (2) / N$_6^{+}$ (3), N$_8^{-}$ (2),
+  N$_{10}^{-}$ (1) / N$_{10}^{+}$ (2) ;
+  \item \textbf{Hors gamme} : N$_{20}$ neutre (1, au-del\`a de $n=16$).
+\end{itemize}
+
+\subsection{R\'esultats sur les 48 structures comparables}
+
+\begin{center}
+\begin{tabular}{lrrrr}
+\toprule
+Formule / charge & Biblio & Retrouv\'ees & Manqu\'ees & Topos. code en plus \\
+\midrule
+N$_2$ neutre     & 1  & 1  & 0 & 0  \\
+N$_3^{-}$        & 3  & 3  & 0 & 0  \\
+N$_3^{+}$        & 2  & 2  & 0 & 0  \\
+N$_4$ neutre     & 5  & 3  & 2 & 2  \\
+N$_5^{-}$        & 2  & 1  & 1 & 6  \\
+N$_5^{+}$        & 1  & 1  & 0 & 5  \\
+N$_6$ neutre     & 4  & 4  & 0 & 8  \\
+N$_7^{-}$        & 1  & 1  & 0 & 18 \\
+N$_7^{+}$        & 1  & 1  & 0 & 6  \\
+N$_8$ neutre     & 15 & 13 & 2 & 17 \\
+N$_9^{-}$        & 3  & \textbf{0} & 3 & 24 \\
+N$_9^{+}$        & 2  & 1  & 1 & 15 \\
+N$_{10}$ neutre  & 7  & 5  & 2 & 22 \\
+N$_{12}$ neutre  & 1  & 0  & 1 & 15 \\
+\midrule
+\textbf{Total}   & \textbf{48} & \textbf{36 (75\,\%)} & \textbf{12} & -- \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Structures biblio non retrouv\'ees (topologiquement absentes de l'ensemble
+code) : N$_4$ (\texttt{C2h\_chain}, \texttt{C2v\_butterfly}), N$_5^{-}$
+(\texttt{bipyramid}), N$_8$ (\texttt{C2v\_branched},
+\texttt{D2h\_ring\_pendant}), N$_9^{-}$ (les trois : \texttt{chain},
+\texttt{chain\_twistedW}, \texttt{ring\_chain}), N$_9^{+}$
+(\texttt{fused\_rings}), N$_{10}$ (\texttt{bispentazole\_GS},
+\texttt{linked5rings}), N$_{12}$ (\texttt{dipentazolyldiazene}).
+
+\subsection{Synth\`ese qualitative}
+
+Le pipeline retrouve tr\`es bien les topologies canoniques peu
+contraintes di\'edralement -- chaines ioniques N$_3$/N$_7$/N$_9^{+}$,
+prisme et livre N$_6$, cube/pental\`ene/azidopentazole N$_8$ -- avec un
+taux de reconnaissance global de 75~\% sur les 48 structures
+comparables, proche de 100~\% d\`es que la topologie biblio est simple
+(chaine, cycle, cage haute-sym\'etrie). Les \'echecs se concentrent sur
+les topologies \textbf{bicycliques ou pont\'ees \`a faible connectivit\'e}
+(bispentazole N$_{10}$, dipentazolyldiaz\`ene N$_{12}$, l'ensemble des
+N$_9^{-}$) : soit le g\'en\'erateur de topologies (\texttt{geng} /
+squelettes PubChem) ne produit tout simplement pas ce graphe pr\'ecis
+parmi les isom\`eres test\'es, soit la reconstruction biblio de Niveau~2
+elle-m\^eme s'av\`ere fragile -- c'est le cas frappant de N$_{12}$, dont
+la relaxation GFN2-xTB (\S\ref{sec:niveau2}, m\^eme protocole que
+le pipeline) dissocie le pont diaz\`ene et fait s'\'ecarter les deux
+cycles N$_6$ \`a 2{,}88~\AA, questionnant la stabilit\'e de ce compos\'e
+\`a ce niveau de th\'eorie ind\'ependamment du code.
+
+Deux limites m\'ethodologiques doivent temp\'erer la lecture du
+tableau : (i) le test de connectivit\'e est \textbf{aveugle aux
+st\'er\'eoisom\`eres} -- les cinq variantes E/Z de N$_8$
+(ZZE, EEE, ZEZ, EZE, ZEE) et plusieurs
+isom\`eres N$_8$ (cycle, cyclooctat\'etra\`ene, pental\`ene) partagent un
+m\^eme graphe sous ce seuil : une structure ``retrouv\'ee'' valide donc la
+connectivit\'e, pas la conformation di\`edrale exacte ; (ii) pour N$_4$,
+le seuil unique de 1{,}9~\AA\ capture aussi le contact transannulaire
+faible du papillon C$_{2v}$ pliss\'e (1{,}58~\AA\ dans la reconstruction
+GFN2-xTB), le rendant indiscernable du t\'etra\`edre T$_d$ -- une
+fronti\`ere cage/cycle r\'eelle mais que la m\'ethode de graphe seule ne
+peut trancher.
+
+Dans l'autre sens, le pipeline g\'en\`ere syst\'ematiquement beaucoup plus
+de topologies distinctes que les deux articles sources n'en documentent
+(jusqu'\`a 24 pour N$_9^{-}$), ce qui sugg\`ere un espace conformationnel
+largement sous-\'echantillonn\'e par [GS] et [B] -- un vivier de
+candidats N$_9^{-}$/N$_{10}$ non rapport\'es dans la litt\'erature, \`a
+confirmer par un niveau de th\'eorie sup\'erieur (DFT ou CCSD(T)) avant de
+les consid\'erer comme physiquement pertinents.
+
 \section{Limites connues}
+\label{sec:limites}
 
 \begin{itemize}
   \item Les 25 structures ``GFN2-xTB'' du tableau reproduisent la
@@ -278,5 +488,137 @@ peuvent \^etre consid\'er\'ees comme fid\`eles aux g\'eom\'etries publi\'ees
 dans [GS] et [B] ; les autres constituent des mod\`eles topologiquement
 corrects mais g\'eom\'etriquement approximatifs, faute d'information
 di\`edrale disponible dans les sources.
+
+\appendix
+
+\section{Repr\'esentations compar\'ees biblio / code}
+\label{sec:annexe-comparaison}
+
+Cette annexe illustre par le rendu boules-b\^atonnets (m\^eme convention
+que la figure~\ref{fig:gallery} : azote en sph\`eres bleues, liaison
+trac\'ee pour toute paire d'atomes N s\'epar\'es de moins de
+1{,}9~\AA) une s\'election de dix cas repr\'esentatifs de la comparaison
+topologique de la section~\ref{sec:comparaison-code}, m\'elangeant
+topologies retrouv\'ees par le pipeline et topologies manqu\'ees --
+auquel cas une ou deux alternatives r\'eellement trouv\'ees par le code
+pour la m\^eme formule/charge sont montr\'ees \`a titre de comparaison
+(ce ne sont pas des reconstructions de la structure biblio, mais
+d'autres topologies pr\'esentes dans les runs de production).
+
+\subsection{Cas retrouv\'es}
+
+\begin{center}
+\begin{tabular}{cc}
+\includegraphics[width=3.4cm]{figures/N3-_triangle.png} &
+\includegraphics[width=3.4cm]{figures/code_N3_anion_triangle.png} \\
+Biblio \texttt{N3-\_triangle} & Code \texttt{N3\_anion\_iso0002\_conf2} (v2) \\[2mm]
+\includegraphics[width=3.4cm]{figures/N6_D3h_prism.png} &
+\includegraphics[width=3.4cm]{figures/code_N6_neutral_prism.png} \\
+Biblio \texttt{N6\_D3h\_prism} & Code \texttt{N6\_iso0004\_conf1} (v2) \\[2mm]
+\includegraphics[width=3.4cm]{figures/N8_Oh_cube.png} &
+\includegraphics[width=3.4cm]{figures/code_N8_neutral_cube.png} \\
+Biblio \texttt{N8\_Oh\_cube} & Code \texttt{N8\_neutral\_iso0005\_conf1} (seeds\_pubchem) \\[2mm]
+\includegraphics[width=3.4cm]{figures/N7-_chain.png} &
+\includegraphics[width=3.4cm]{figures/code_N7_anion_chain.png} \\
+Biblio \texttt{N7-\_chain} & Code \texttt{N7\_anion\_iso0076\_conf1} (seeds\_pubchem) \\
+\end{tabular}
+\end{center}
+
+Dans les quatre cas, le graphe optimis\'e par le pipeline est isomorphe
+au graphe de la structure biblio (m\^eme nombre de liaisons, m\^eme
+s\'equence de degr\'es) : triangle N$_3^{-}$, prisme trigonal N$_6$,
+cube N$_8$ et cha\^ine N$_7^{-}$ sont retrouv\'es sans aucune information
+issue de [GS]/[B].
+
+\subsection{Cas manqu\'es}
+
+\begin{center}
+\begin{tabular}{ccc}
+\includegraphics[width=2.7cm]{figures/N4_C2v_butterfly.png} &
+\includegraphics[width=2.7cm]{figures/code_N4_neutral_tetrahedral.png} &
+\includegraphics[width=2.7cm]{figures/code_N4_neutral_branched_alt.png} \\
+Biblio \texttt{N4\_C2v\_butterfly} & Code \texttt{N4\_iso0001\_conf1} (v2) & Code \texttt{N4\_neutral\_iso0002\_conf1} (seeds) \\
+\end{tabular}
+\end{center}
+Le papillon N$_4$ (C$_{2v}$) n'a pas d'\'equivalent topologique dans les
+candidats du code pour cette formule. Le premier candidat affich\'e
+correspond en fait au t\'etra\`edre N$_4$ (T$_d$, autre structure biblio,
+d\'ej\`a compt\'ee comme retrouv\'ee) ; le second est un arbre ramifi\'e
+(degr\'es 1/2/2/3) distinct des deux topologies biblio.
+
+\begin{center}
+\begin{tabular}{ccc}
+\includegraphics[width=2.7cm]{figures/N5-_bipyramid.png} &
+\includegraphics[width=2.7cm]{figures/code_N5_anion_pentagon.png} &
+\includegraphics[width=2.7cm]{figures/code_N5_anion_alt_branched.png} \\
+Biblio \texttt{N5-\_bipyramid} & Code \texttt{N5\_anion\_iso0002\_conf0} (v2) & Code \texttt{N5\_anion\_iso0005\_conf2} (v2) \\
+\end{tabular}
+\end{center}
+La bipyramide N$_5^{-}$ (9 liaisons, sommets de degr\'e 3--4) n'est pas
+retrouv\'ee. Le premier candidat affich\'e correspond en fait au
+pentagone N$_5^{-}$ (autre structure biblio, d\'ej\`a compt\'ee comme
+retrouv\'ee) ; le second, topologie la plus stable trouv\'ee par le code
+pour ce groupe, est une structure ramifi\'ee \`a 5 liaisons nettement
+moins connect\'ee que la bipyramide.
+
+\begin{center}
+\begin{tabular}{ccc}
+\includegraphics[width=2.7cm]{figures/N9-_chain.png} &
+\includegraphics[width=2.7cm]{figures/code_N9_anion_cyclic_alt1.png} &
+\includegraphics[width=2.7cm]{figures/code_N9_anion_branched_alt2.png} \\
+Biblio \texttt{N9-\_chain} & Code \texttt{N9\_anion\_iso0091\_conf1} (v2) & Code \texttt{N9\_anion\_iso0091\_conf3} (v2) \\
+\end{tabular}
+\end{center}
+Les trois isom\`eres N$_9^{-}$ de la biblio (dont la cha\^ine simple
+ci-dessus, 8 liaisons) sont absents des 24 topologies distinctes que le
+code trouve pour ce groupe -- le plus proche en connectivit\'e
+(troisi\`eme image, arbre ramifi\'e \`a 9 liaisons) reste non isomorphe ;
+le premier candidat, cyclique \`a 11 liaisons, illustre l'autre extr\^eme
+de l'espace explor\'e par le code.
+
+\begin{center}
+\begin{tabular}{cc}
+\includegraphics[width=3.4cm]{figures/N10_D2d_bispentazole_GS.png} &
+\includegraphics[width=3.4cm]{figures/code_N10_neutral_alt.png} \\
+Biblio \texttt{N10\_D2d\_bispentazole\_GS} & Code \texttt{N10\_neutral\_iso0057\_conf0} (seeds\_pubchem) \\
+\end{tabular}
+\end{center}
+Le bispentazole N$_{10}$ (14 liaisons) n'a pas d'\'equivalent : la
+topologie neutre N$_{10}$ la plus stable trouv\'ee par le code (11
+liaisons) n'est pas isomorphe.
+
+\begin{center}
+\begin{tabular}{cc}
+\includegraphics[width=3.4cm]{figures/N12_C2h_dipentazolyldiazene.png} &
+\includegraphics[width=3.4cm]{figures/code_N12_neutral_alt.png} \\
+Biblio \texttt{N12\_C2h\_dipentazolyldiazene} & Code \texttt{N12\_iso0184\_conf0} (v2) \\
+\end{tabular}
+\end{center}
+Point notable : le fichier \texttt{.xyz} biblio publi\'e pour N$_{12}$
+est lui-m\^eme d\'econnect\'e sous le seuil de 1{,}9~\AA\ (deux cycles
+N$_6$ s\'epar\'es de 2{,}88~\AA, visibles sur l'image) -- il ne s'agit
+donc pas d'une dissociation survenue \emph{apr\`es coup} dans un fichier
+interm\'ediaire distinct, mais de l'\'etat final report\'e dans
+\texttt{xyz/}. La topologie N$_{12}$ neutre la plus stable trouv\'ee par
+le code (13 liaisons, connexe) n'est de toute fa\c{c}on pas isomorphe \`a
+deux cycles s\'epar\'es.
+
+\subsection{Aveuglement du crit\`ere de graphe aux st\'er\'eoisom\`eres}
+
+\begin{center}
+\begin{tabular}{ccc}
+\includegraphics[width=2.7cm]{figures/N8_C2h_EEE.png} &
+\includegraphics[width=2.7cm]{figures/N8_C2h_ZEZ.png} &
+\includegraphics[width=2.7cm]{figures/N8_Cs_ZEE.png} \\
+\texttt{N8\_C2h\_EEE} & \texttt{N8\_C2h\_ZEZ} & \texttt{N8\_Cs\_ZEE} \\
+\end{tabular}
+\end{center}
+Ces trois isom\`eres de conformation E/Z de la cha\^ine N$_8$, g\'eom\'etriquement
+et exp\'erimentalement distincts dans [B], partagent le m\^eme graphe de
+connectivit\'e (cha\^ine \`a 7 liaisons) sous le seuil de 1{,}9~\AA : la
+m\'ethode de comparaison de la section~\ref{sec:comparaison-code} les
+compte comme une seule et m\^eme topologie ``retrouv\'ee'' d\`es que le
+code identifie l'une d'entre elles, ce qui rappelle que l'accord porte
+sur la connectivit\'e et non sur la conformation di\`edrale.
 
 \end{document}
