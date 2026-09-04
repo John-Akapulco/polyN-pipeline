@@ -25,3 +25,6 @@ maygen_output_test/
 # PDF sources tiers (biblio_polyN)
 biblio_polyN/poly-N.pdf
 biblio_polyN/polynitrogen1.pdf
+biblio_polyN/*.aux
+biblio_polyN/*.out
+biblio_polyN/*.toc

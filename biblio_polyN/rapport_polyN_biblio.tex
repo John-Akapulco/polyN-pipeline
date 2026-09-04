@@ -621,4 +621,127 @@ compte comme une seule et m\^eme topologie ``retrouv\'ee'' d\`es que le
 code identifie l'une d'entre elles, ce qui rappelle que l'accord porte
 sur la connectivit\'e et non sur la conformation di\`edrale.
 
+\section{Comparaison \`a trois sources (biblio / N\_csp / polyN\_study)}
+\label{sec:comparaison-3sources}
+
+Au-del\`a des structures extraites des deux articles de r\'ef\'erence
+(section~\ref{sec:comparaison-code}) et de celles retrouv\'ees par
+\texttt{polyN\_pipeline.py}, deux autres jeux de structures N$_x$ neutres
+produits par des codes de g\'en\'eration ant\'erieurs de ce d\'epot ont
+\'et\'e localis\'es dans d'autres r\'epertoires \texttt{poly*} et import\'es
+dans \texttt{structures\_externes/} :
+
+\begin{itemize}
+  \item \textbf{N\_csp} (408 structures, N$_3$--N$_{10}$) : \'energies
+  initiales MACE, sp\'ecifie un groupe d'espace / fichier CIF par structure
+  -- vraisemblablement issu d'un code de pr\'ediction de structure
+  cristalline appliqu\'e \`a des clusters isol\'es.
+  \item \textbf{polyN\_study} (50 structures, N$_4$--N$_{12}$) : issues de
+  \texttt{polynitrogen\_minimahopping.py} (recherche de minima par
+  \emph{minima hopping}, \'energies MACE-OFF).
+\end{itemize}
+
+\subsection{Protocole}
+
+Les 458 structures import\'ees ont \'et\'e relax\'ees ici avec le m\^eme
+niveau GFN2-xTB que le reste du d\'ep\^ot, via le binding Python
+\texttt{tblite} (script \texttt{relax\_imported\_structures.py}, m\^eme
+routine \texttt{\_tblite\_optimize} que \texttt{polyN\_pipeline.py} --
+charge 0, multiplicit\'e doublet si le nombre d'atomes est impair, sinon
+singulet), en local sur 9 processus paral\`eles (Apple M5, 10 c\oe urs).
+\textbf{312 / 458 structures (68\%)} ont converg\'e en moins de 500 pas
+LBFGS (743~s au total) ; les \'echecs se r\'epartissent en 89 erreurs
+d'\'evaluation SCF d\`es le point de d\'epart et 57 non-convergences --
+notamment, 87 structures marqu\'ees ``converg\'ees'' par le filtre MACE
+d'origine \'echouent en r\'ealit\'e sous GFN2-xTB, signe d'un d\'esaccord
+notable entre les deux niveaux de th\'eorie sur la stabilit\'e de ces
+isom\`eres.
+
+Les structures biblio (section~\ref{sec:comparaison-code}) avaient d\'ej\`a
+\'et\'e relax\'ees en GFN2-xTB via le binaire \texttt{xtb} en ligne de
+commande (m\^eme hamiltonien, impl\'ementation diff\'erente de la m\^eme
+m\'ethode). Les 337 structures converg\'ees des trois sources sont
+group\'ees par (formule, charge) et class\'ees par \'energie GFN2-xTB
+crois sante (eV/atome) ; tableau complet dans
+\texttt{biblio\_polyN/comparison\_table\_3sources.csv}.
+
+\subsection{Vainqueur par groupe (formule neutre)}
+
+Sur les 7 groupes o\`u au moins une structure import\'ee coexiste avec une
+structure biblio de m\^eme formule/charge, la structure la plus stable
+(rang~1) provient d'un des codes de g\'en\'eration dans 6 cas sur 7 :
+
+\begin{center}
+\small
+\begin{tabular}{lllrlrr}
+\toprule
+Formule & Origine du vainqueur & Topologie (vainqueur) & $E$ (eV/at.) & Meilleure biblio (rang) & $E$ biblio (eV/at.) & $\Delta$ (meV/at.) \\
+\midrule
+N$_4$  & polyN\_study & chain              & $-78{,}4278$ & C2v\_butterfly (10) & $-78{,}2786$ & 149{,}2 \\
+N$_6$  & N\_csp       & ring-3-substituted & $-78{,}8828$ & C2\_book (14)       & $-78{,}7087$ & 174{,}1 \\
+N$_7$  & N\_csp       & chain              & $-78{,}8040$ & Cs\_ring\_chain (14)& $-78{,}6998$ & 104{,}3 \\
+N$_8$  & biblio       & C2v\_ring          & $-79{,}0369$ & C2v\_ring (1)       & $-79{,}0369$ & 0{,}0 \\
+N$_9$  & N\_csp       & ring-5-substituted & $-78{,}8963$ & fused\_rings (14)   & $-78{,}8260$ & 70{,}4 \\
+N$_{10}$ & N\_csp     & ring-5-substituted & $-78{,}9383$ & C3\_cap (10)        & $-78{,}8978$ & 40{,}5 \\
+N$_{12}$ & polyN\_study & ring-3-subst     & $-78{,}7110$ & C2h\_dipentazolyldiazene (2) & $-78{,}3628$ & 348{,}2 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+$\Delta$ = \'ecart entre la meilleure structure biblio du groupe et le
+vainqueur toutes origines confondues (positif = le vainqueur importé est
+plus stable). Pour N$_8$, le vainqueur \emph{est} la structure biblio
+(\texttt{C2v\_ring}) -- aucune structure import\'ee ne fait mieux dans ce
+groupe.
+
+Les six familles charg\'ees document\'ees dans les articles (N$_6^\pm$,
+N$_9^\pm$, N$_{10}^\pm$) n'ont pas de comparateur ici : les deux sources
+import\'ees ne contiennent que des clusters neutres.
+
+\subsection{Repr\'esentations compar\'ees}
+
+\begin{center}
+\begin{tabular}{cc}
+\includegraphics[width=3.0cm]{figures/win_N4_polyN_study.png} &
+\includegraphics[width=3.0cm]{figures/win_N4_biblio.png} \\
+\includegraphics[width=3.0cm]{figures/win_N6_N_csp.png} &
+\includegraphics[width=3.0cm]{figures/win_N6_biblio.png} \\
+\includegraphics[width=3.0cm]{figures/win_N7_N_csp.png} &
+\includegraphics[width=3.0cm]{figures/win_N7_biblio.png} \\
+\end{tabular}
+
+\begin{tabular}{cc}
+\includegraphics[width=3.0cm]{figures/win_N9_N_csp.png} &
+\includegraphics[width=3.0cm]{figures/win_N9_biblio.png} \\
+\includegraphics[width=3.0cm]{figures/win_N10_N_csp.png} &
+\includegraphics[width=3.0cm]{figures/win_N10_biblio.png} \\
+\includegraphics[width=3.0cm]{figures/win_N12_polyN_study.png} &
+\includegraphics[width=3.0cm]{figures/win_N12_biblio.png} \\
+\end{tabular}
+
+\includegraphics[width=3.0cm]{figures/win_N8_biblio.png}
+\end{center}
+
+Colonne de gauche : vainqueur (import\'e), sauf N$_8$ (biblio, seul et
+unique). Colonne de droite : meilleure structure biblio du m\^eme groupe,
+pour comparaison visuelle directe.
+
+\subsection{Synth\`ese}
+
+Sur les formules neutres o\`u les trois sources se recoupent, les codes de
+g\'en\'eration de ce d\'ep\^ot (pipeline d'\'enum\'eration, CSP et minima
+hopping combin\'es) retrouvent syst\'ematiquement des isom\`eres plus bas
+en \'energie GFN2-xTB que les structures publi\'ees dans les deux articles
+de r\'ef\'erence -- \'ecarts de 40 \`a 350~meV/atome selon la formule, avec
+le plus grand \'ecart sur N$_{12}$. Ceci ne remet pas en cause la
+pertinence des structures biblio (souvent choisies pour leur sym\'etrie,
+leur int\'er\^et spectroscopique ou leur accessibilit\'e synth\'etique
+plut\^ot que pour \^etre le minimum global GFN2-xTB), mais confirme que
+l'espace topologique explor\'e par \'enum\'eration/CSP/minima-hopping est
+plus large que l'\'echantillon document\'e dans la litt\'erature pour ces
+tailles. Le cas N$_8$, seul groupe o\`u la biblio reste devant, m\'eriterait
+une recherche compl\'ementaire côt\'e code (le pipeline principal ne
+retrouve d'ailleurs pas cette topologie exacte, cf.
+section~\ref{sec:comparaison-code}).
+
 \end{document}
