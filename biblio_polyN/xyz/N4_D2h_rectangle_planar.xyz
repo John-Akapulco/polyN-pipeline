@@ -1,0 +1,6 @@
+4
+N4 charge=0 mult=1 PG=D2h | B3LYP/aug-cc-pVDZ | src: [B] p.20 (B3LYP/aug-cc-pVDZ, non-minimum a plus haut niveau)
+N        0.000000       0.000000       0.000000
+N        1.537200       0.000000       0.000000
+N        1.537200       1.256200       0.000000
+N        0.000000       1.256200       0.000000

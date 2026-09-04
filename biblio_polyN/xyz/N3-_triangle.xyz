@@ -1,0 +1,5 @@
+3
+N3 charge=-1 mult=3 PG=D3h | B3LYP/aug-cc-pVDZ | src: [B] p.14 (B3LYP/aug-cc-pVDZ, triplet 3A1')
+N        0.811466       0.000000       0.000000
+N       -0.405733       0.702750       0.000000
+N       -0.405733      -0.702750       0.000000

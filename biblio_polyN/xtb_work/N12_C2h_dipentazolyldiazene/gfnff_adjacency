@@ -1,0 +1,13 @@
+# indices of neighbouring atoms (max seven)
+2 5
+1 3
+2 4
+3 5
+1 4
+7 10
+6 8 12
+7 9 12
+8 10 12
+6 9 12
+
+7 8 9 10

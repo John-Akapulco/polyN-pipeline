@@ -1,0 +1,6 @@
+4
+N4 charge=0 mult=1 PG=Td | CCSD(T)/aug-cc-pVTZ | src: [B] p.19 (CCSD(T)/aug-cc-pVTZ) - tetraazatetrahedrane
+N        0.516648       0.516648       0.516648
+N        0.516648      -0.516648      -0.516648
+N       -0.516648       0.516648      -0.516648
+N       -0.516648      -0.516648       0.516648
