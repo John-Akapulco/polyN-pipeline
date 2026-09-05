@@ -28,3 +28,8 @@ biblio_polyN/polynitrogen1.pdf
 biblio_polyN/*.aux
 biblio_polyN/*.out
 biblio_polyN/*.toc
+
+# Cache intermediaire des calculs de frequences (ASE Vibrations) -- pas
+# de valeur une fois le resultat final ecrit dans le manifeste/xyz
+**/freq_work/
+**/freq_verify/
