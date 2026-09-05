@@ -58,6 +58,22 @@ EV_TO_KCALMOL = 23.060548
 IMAGINARY_NOISE_THRESHOLD_CM1 = 30.0
 
 
+def _apply_spin(atoms: Atoms, uhf: int) -> None:
+    """Write the number of unpaired electrons onto the atoms via
+    set_initial_magnetic_moments (sum = uhf). VERIFIED: tblite.ase.TBLite
+    reads spin state ONLY from atoms.get_initial_magnetic_moments().sum()
+    (see tblite/ase.py) -- the calculator's multiplicity= kwarg is silently
+    IGNORED (confirmed: requesting multiplicity=1 vs 3 on the same charge-0
+    geometry with no magnetic moment set gives IDENTICAL energy). Without
+    this call, every calculation silently runs at whatever spin state
+    tblite defaults to (uhf=0 unless the electron count makes that
+    impossible), regardless of the uhf actually requested."""
+    if uhf != 0:
+        init = [0.0] * len(atoms)
+        init[0] = float(uhf)
+        atoms.set_initial_magnetic_moments(init)
+
+
 def _apply_charge(atoms: Atoms, charge: int) -> None:
     """Write the net charge onto the atoms via set_initial_charges (sum =
     net charge). Some tblite versions silently ignore the calculator's
@@ -99,6 +115,7 @@ def verify_and_relax_to_minimum(atoms: Atoms, charge: int = 0, uhf: int = 0, gfn
     work_dir = work_dir or Path("./freq_work")
     atoms = atoms.copy()
     _apply_charge(atoms, charge)
+    _apply_spin(atoms, uhf)
     atoms.calc = _make_calc(charge, uhf, gfn)
 
     history = []

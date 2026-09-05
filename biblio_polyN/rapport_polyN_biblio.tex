@@ -792,13 +792,75 @@ inchang\'es. Le classement de la section~\ref{sec:comparaison-3sources} est
 d\'epassent la meilleure structure biblio de leur groupe sont bien de vrais
 minima locaux, pas des artefacts d'une optimisation de gradient incompl\`ete.
 
+\subsection{Extension aux 25 structures biblio}
+
+Les 25 structures extraites des articles (section~\ref{sec:comparaison-code})
+ont \'egalement \'et\'e repass\'ees par ce contr\^ole de Hessienne, en
+reprenant la charge et la multiplicit\'e de spin exactement telles que
+d\'eclar\'ees dans \texttt{biblio\_polyN/build/molecules.py} (pas devin\'ees
+par une r\`egle de parit\'e) :
+
+\begin{center}
+\begin{tabular}{lr}
+\toprule
+Calculs r\'eussis & 25 / 25 \\
+Minima v\'erifi\'es d\`es le premier calcul (0 saut) & 19 \\
+Minima atteints apr\`es correction (1--2 sauts) & 6 \\
+Points-selles non r\'esolus & 0 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsubsection{Bug d\'ecouvert et corrig\'e : multiplicit\'e de spin ignor\'ee par tblite}
+\label{sssec:bug-multiplicity}
+
+Un premier passage a produit un r\'esultat suspect : \texttt{N4\_C2v\_butterfly}
+(triplet document\'e, mult=3, seule structure du lot dont la multiplicit\'e
+d\'eclar\'ee d\'evie de l'\'etat par d\'efaut/impos\'e par la parit\'e
+\'electronique) convergeait apr\`es un saut vers une \'energie quasi
+identique au singulet N$_4$ le plus stable du tableau de la
+section~\ref{sec:comparaison-3sources}. V\'erification directe : sur une
+m\^eme g\'eom\'etrie, demander \texttt{multiplicity=1} ou
+\texttt{multiplicity=3} au constructeur \texttt{TBLite(...)} donne une
+\'energie \emph{identique}. Le binding \texttt{tblite.ase.TBLite} lit en
+r\'ealit\'e l'\'etat de spin uniquement via
+\texttt{atoms.get\_initial\_magnetic\_moments().sum()} -- le mot-cl\'e
+\texttt{multiplicity=} du constructeur est silencieusement ignor\'e (m\^eme
+classe de bug que celui d\'ej\`a document\'e pour \texttt{charge=}, corrig\'e
+dans le pipeline principal via \texttt{set\_initial\_charges}).
+
+Port\'ee r\'eelle de l'impact, v\'erifi\'ee cas par cas sur les 25
+structures : seule \texttt{N4\_C2v\_butterfly} est concern\'ee. Toutes les
+autres ont soit un nombre d'\'electrons pair avec singulet d\'eclar\'e (\'etat
+par d\'efaut, bug sans effet), soit un nombre d'\'electrons impair
+(mol\'ecule ou ion \`a charge impaire) o\`u un doublet est physiquement
+impos\'e (aucun autre choix possible, bug sans effet non plus). Correctif
+appliqu\'e dans \texttt{frequency\_check.py} (\texttt{\_apply\_spin}, nouvelle
+fonction) et dans le \texttt{\_tblite\_optimize} de
+\texttt{polyN\_pipeline.py} : les deux appellent d\'esormais
+\texttt{atoms.set\_initial\_magnetic\_moments(...)} avant de cr\'eer le
+calculateur, sym\'etriquement au m\'ecanisme d\'ej\`a en place pour la
+charge. Apr\`es correction, \texttt{N4\_C2v\_butterfly} converge d\`es le
+premier calcul (0 saut) vers $-78{,}2786$~eV/atome, quasi identique \`a sa
+valeur d'origine ($-78{,}2786$~eV/atome, calcul CLI \texttt{xtb} --
+correcte de bout en bout, ind\'ependante de ce bug specifique \`a
+\texttt{tblite}) : le triplet document\'e dans l'article est bien confirm\'e
+comme un vrai minimum.
+
+Ce bug \'etant localis\'e dans une routine partag\'ee, il aurait pu affecter
+silencieusement tout calcul futur demandant un \'etat de spin non
+par d\'efaut (candidats du pipeline principal, familles charg\'ees explor\'ees
+avec une multiplicit\'e non minimale) -- corrig\'e avant que cela ne se
+produise ici, mais \`a garder en t\^ete pour toute extension du criblage aux
+\'etats de charge/spin des familles N$_x^\pm$.
+
 \subsection{Limite}
 
-Cette v\'erification n'a port\'e que sur les structures import\'ees
-(N\_csp, polyN\_study) ; les structures extraites des articles
-(section~\ref{sec:comparaison-code}), relax\'ees ind\'ependamment via le
-binaire \texttt{xtb} en ligne de commande, n'ont pas encore \'et\'e
-repass\'ees par ce m\^eme contr\^ole de Hessienne -- \`a faire pour une
-couverture compl\`ete des trois sources.
+Le classement de la section~\ref{sec:comparaison-3sources} ne porte que sur
+les formules neutres (seule charge commune aux trois sources) : les
+vainqueurs report\'es y sont donc inchang\'es par cette extension aux
+structures charg\'ees biblio. Une comparaison \`a trois sources sur les
+familles charg\'ees resterait \`a construire une fois N\_csp/polyN\_study
+\'etendus aux ions.
 
 \end{document}

@@ -425,6 +425,16 @@ def _tblite_optimize(xyz_in: str, run_dir: Path, charge: int, uhf: int,
             init_charges = [0.0] * len(atoms)
             init_charges[0] = float(charge)   # sum = net charge
             atoms.set_initial_charges(init_charges)
+        # Same issue for spin: tblite.ase.TBLite reads the spin state ONLY
+        # from atoms.get_initial_magnetic_moments().sum(), never from the
+        # multiplicity= kwarg below (verified: multiplicity=1 vs 3 on the
+        # same charge-0 geometry with no magnetic moment set give IDENTICAL
+        # energy). Without this, any candidate requesting uhf!=0 silently
+        # runs at whatever spin tblite defaults to instead.
+        if uhf != 0:
+            init_moments = [0.0] * len(atoms)
+            init_moments[0] = float(uhf)
+            atoms.set_initial_magnetic_moments(init_moments)
         calc = TBLite(method=method, charge=charge, multiplicity=multiplicity, verbosity=0)
         atoms.calc = calc
     except Exception as exc:
