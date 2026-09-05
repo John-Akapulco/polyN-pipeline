@@ -1,0 +1,30 @@
+[
+ {
+  "id": "https://openalex.org/W1996358108",
+  "title": "Perturbation theory treatment of pseudorotation in cyclic-N3",
+  "year": 2011,
+  "doi": "https://doi.org/10.1063/1.3563634",
+  "abstract": "A relatively simple treatment using perturbation theory is proposed to describe spectrum of pseudorotational states in cyclic-N(3). The purpose is to develop an analytical expression that could be used to fit the experimentally determined spectrum of cyclic-N(3), with purpose of identifying this molecule in the laboratory and deriving parameters of its potential energy surface directly from the experimental data. The perturbation theory expression derived in this work is used to fit the spectrum calculated numerically in the previous work [D. Babikov and B. Kendrick, J. Chem. Phys. 133, 174310 (2010)]. It is found that the second order of perturbation theory works well, giving a very good fit of the spectrum, with the rms deviation of only 0.26 cm(-1). Analysis reveals that important characteristics of the potential energy surface, such as equilibrium geometry and pseudorotation barriers, are directly related to the features of spectrum, such as splittings, and can be readily derived from experimental data, when those become available."
+ },
+ {
+  "id": "https://openalex.org/W191207703",
+  "title": "All-Nitrogen Compounds as High Energy Density Materials",
+  "year": 2005,
+  "doi": null,
+  "abstract": "There is a continuing need for safe, versatile rocket propellants, which are stable, nonvolatile, energetic, and easily demilitarized. Ionic liquids constitute a research area that is little explored for propellant ingredients and provides potential to meet these requirements. Enhanced dissolving power, density and compatibilities with a wide range of propellant ingredients make ionic liquids a very attractive class of materials for advanced state-of-the-art propulsion systems. The extreme polarity of these unique liquid media opens the door to novel burn-rate and ballistic attenuation technologies. The objective of this Phase I SBIR program is to canvass and select the most promising candidates for development of energetic ionic liquid and other high-nitrogen energetic ingredients."
+ },
+ {
+  "id": "https://openalex.org/W2889125095",
+  "title": "Ab-initio classical trajectory study the dissociation of ClN3: The pathway lead to cyclic-N3",
+  "year": 2018,
+  "doi": "https://doi.org/10.1016/j.cplett.2018.08.063",
+  "abstract": ""
+ },
+ {
+  "id": "https://openalex.org/W2885712841",
+  "title": "Pentazole anion cyclo-N5\u2212: a rising star in nitrogen chemistry and energetic materials",
+  "year": 2018,
+  "doi": "https://doi.org/10.1007/s11426-018-9276-1",
+  "abstract": ""
+ }
+]
