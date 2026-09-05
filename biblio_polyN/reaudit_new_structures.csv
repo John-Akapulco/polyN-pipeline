@@ -1,0 +1,2 @@
+id,formula,charge,mult,point_group,method,e_eV_per_atom,ref,source_file,note
+N10_C1_pentaazopentazole,N10,0,1,C1,HF/6-31G(d) and MP2(FC)/6-311G(d),-78.973973,A20,N12-N8.json,"Nouvelle topologie explicitement signalee par les auteurs (jamais rapportee avant leur etude) -- exclue par erreur du premier tri (topology_only) ; reconstruite a partir de la connectivite confirmee visuellement (Fig. 1 : cycle pentazole + chaine N5 exocyclique), corrigee lors de l'audit de completude."

@@ -81,6 +81,7 @@ N9_chain,N9,0,9,C2v,-78.842642,0.0,B,B3LYP/aug-cc-pVDZ
 N9_fused_rings,N9,0,9,C2v,-78.832388,2.13,B,B3LYP/aug-cc-pVDZ (topologie)
 N10_D2d_linked5rings,N10,0,10,D2d,-79.004302,0.0,B,B3LYP/6-31G*
 N10_D2d_bispentazole_GS,N10,0,10,D2d,-79.004302,0.0,GS,Becke3LYP/6-31G*
+N10_C1_pentaazopentazole,N10,0,10,C1,-78.973973,6.99,A20,HF/6-31G(d) and MP2(FC)/6-311G(d)
 N10_cage_C2v,N10,0,10,C2v,-78.897797,24.56,B,B3LYP/aug-cc-pVDZ (topologie)
 N10_C3_cap,N10,0,10,C3,-78.897797,24.56,B,B3LYP/aug-cc-pVDZ (topologie)
 N10_Cs_ring_chain,N10,0,10,Cs,-78.859332,33.43,B,B3LYP/aug-cc-pVDZ (topologie)

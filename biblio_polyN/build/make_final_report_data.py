@@ -139,6 +139,29 @@ with open(ROOT / "gs_n4n6_results.csv") as fh:
             orig_method=r["method"],
         ))
 
+# ---------------------------------------------------------------------
+# 2ter. Complements trouves lors de l'audit de completude des 38 articles
+#       (entrees topology_only ecartees a tort du premier tri, reconstruites
+#       depuis une connectivite confirmee visuellement sur une figure)
+# ---------------------------------------------------------------------
+reaudit_path = ROOT / "reaudit_new_structures.csv"
+if reaudit_path.exists():
+    with open(reaudit_path) as fh:
+        for r in csv.DictReader(fh):
+            pdf_name = r["source_file"].replace(".json", ".pdf")
+            cat = catalog.get(pdf_name, {})
+            ref = ref_key_for(r["source_file"])
+            REF_CITATIONS[ref] = (
+                f"{cat.get('authors', '?')}, \\emph{{{cat.get('title', pdf_name)}}}, "
+                f"{cat.get('journal_year', '?')}."
+            )
+            records.append(dict(
+                name=r["id"], formula=r["formula"], charge=int(r["charge"]),
+                n_atoms=n_atoms_of(r["formula"]), point_group=clean_pg(r["point_group"]),
+                e_eV_per_atom=float(r["e_eV_per_atom"]), ref=ref,
+                orig_method=r["method"],
+            ))
+
 print(f"{len(records)} structures consolidees (energie GFN2-xTB + reference).")
 
 # ---------------------------------------------------------------------
