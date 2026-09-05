@@ -1,0 +1,7 @@
+id,formula,charge,mult,point_group,method,is_true_minimum,hops,e_eV_per_atom,note
+N4_C2h_chain_GS,N4,0,3,C2h,Becke3LYP/6-311+G*,True,0,-78.278569,
+N4_Td_GS,N4,0,1,Td,Becke3LYP/6-311+G*,True,0,-78.126145,
+N4_D2h_tetrazete_GS,N4,0,1,D2h,Becke3LYP/6-311+G*,True,1,-77.674767,
+N6_D6h_hexagon_GS,N6,0,1,D6h,Becke3LYP/6-311+G*,True,2,-78.708703,"point-selle du 2e ordre d'apres [GS] (2 freq. imaginaires, e2u=272i cm-1)"
+N6_D2_twistboat_GS,N6,0,1,D2,Becke3LYP/6-311+G*,True,1,-78.708703,
+N6_C2h_openchain_GS,N6,0,1,C2h,Becke3LYP/6-311+G*,True,0,-78.882773,

@@ -119,6 +119,26 @@ with open(ROOT / "archive_new_structures_results.csv") as fh:
             orig_method=r["method"],
         ))
 
+# ---------------------------------------------------------------------
+# 2bis. Complement [GS] : isomeres N4/N6 (Table 1/3, Fig. 1-2) manques a
+#       l'extraction initiale. N6_D6h_hexagon_GS exclu : c'est un
+#       point-selle du 2e ordre d'apres [GS] lui-meme, et notre correction
+#       de frequence l'a fait basculer hors de la symetrie D6h -- son
+#       energie finale ne represente plus la structure D6h annoncee.
+# ---------------------------------------------------------------------
+with open(ROOT / "gs_n4n6_results.csv") as fh:
+    for r in csv.DictReader(fh):
+        if r["id"] == "N6_D6h_hexagon_GS":
+            continue
+        if r["is_true_minimum"] != "True":
+            continue
+        records.append(dict(
+            name=r["id"], formula=r["formula"], charge=int(r["charge"]),
+            n_atoms=n_atoms_of(r["formula"]), point_group=clean_pg(r["point_group"]),
+            e_eV_per_atom=float(r["e_eV_per_atom"]), ref="GS",
+            orig_method=r["method"],
+        ))
+
 print(f"{len(records)} structures consolidees (energie GFN2-xTB + reference).")
 
 # ---------------------------------------------------------------------

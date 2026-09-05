@@ -24,12 +24,15 @@ N4_C2v_butterfly,N4,0,4,C2v,-78.278561,0.0,B,CCSD(T)/aug-cc-pVDZ (topologie)
 N4_C2h_chain,N4,0,4,C2h,-78.278569,0.0,B,CCSD(T)/aug-cc-pVDZ
 N4_Cs_triplet_4_openchain,N4,0,4,Cs,-78.27857,0.0,A4,"CCSD(T)/DZP (also B3LYP/DZP, B3LYP/cc-pVTZ, CAS(12,12)/DZP, CAS(12,12)/cc-pVTZ reported)"
 N4_Cs_triplet_5_openchain,N4,0,4,Cs,-78.27857,0.0,A6,MP2(full)/6-31G(d); CISD(fc)/6-31G(d) values in parentheses
+N4_C2h_chain_GS,N4,0,4,C2h,-78.278569,0.0,GS,Becke3LYP/6-311+G*
 N4_Td,N4,0,4,Td,-78.126145,14.06,B,CCSD(T)/aug-cc-pVTZ
 N4_Td_tetrahedrane_CCSDT,N4,0,4,Td,-78.12615,14.06,A3,CCSD(T)/TZ2Pf (highest level in paper)
 N4_Td_singlet_1,N4,0,4,Td,-78.12615,14.06,A4,"CCSD(T)/DZP (also B3LYP/DZP, B3LYP/cc-pVTZ, CAS(12,12) reported)"
 N4_Td_tetraazatetrahedrane,N4,0,4,Td,-78.12615,14.06,A6,"MP2/6-31G(d) (cross-compared to CASSCF/DZP: 1.471 A, and CCSD/DZP: ~0.020 A shorter)"
+N4_Td_GS,N4,0,4,Td,-78.126145,14.06,GS,Becke3LYP/6-311+G*
 N4_D2h_rectangle_planar,N4,0,4,D2h,-77.674767,55.7,B,B3LYP/aug-cc-pVDZ
 N4_D2h_rectangle_cyclobutadiene_analog,N4,0,4,D2h,-77.67477,55.7,A5,MP2/6-31G*
+N4_D2h_tetrazete_GS,N4,0,4,D2h,-77.674767,55.7,GS,Becke3LYP/6-311+G*
 N4_D2d_puckered,N4,0,4,D2d,-77.315254,88.86,B,CCSD(T)/aug-cc-pVDZ
 N4_D2d_triplet_5,N4,0,4,D2d,-77.31525,88.86,A4,"CCSD(T)/DZP (also B3LYP/DZP, B3LYP/cc-pVTZ, CAS(12,12)/DZP, CAS(12,12)/cc-pVTZ reported)"
 N5_C2v_radical_2A1,N5,0,5,C2v,-78.61039,0.0,A7,"UCCSD(T)/6-31G(d) (also UMP2/6-311+G(d), UMP2/6-311+G(3df), UB3LYP/6-311+G(d) reported)"
@@ -37,6 +40,8 @@ N5_C2v_radical_2B2,N5,0,5,C2v,-78.61039,0.0,A7,"UB3LYP/6-311+G(d) (UMP2/6-311+G(
 N6_C2h_chain,N6,0,6,C2h,-78.882773,0.0,B,CCSD(T)/cc-pVDZ
 N6_C2h_trans_diazide_v2,N6,0,6,C2h,-78.88277,0.0,A9,"CASPT2 / 3s2p1d ANO basis (also SCF/vdzp, MP2/vdzp, DFT/vdzp, DFT/vtzp reported)"
 N6_C2h_diazide_synthesis_product,N6,0,6,C2h,-78.88277,0.0,A16,"B3LYP/6-311++G** (also HF/6-31G**, B3LYP/6-31G** reported)"
+N6_C2h_openchain_GS,N6,0,6,C2h,-78.882773,0.0,GS,Becke3LYP/6-311+G*
+N6_D2_twistboat_GS,N6,0,6,D2,-78.708703,24.08,GS,Becke3LYP/6-311+G*
 N6_C2_book,N6,0,6,C2,-78.708699,24.09,B,B3LYP/aug-cc-pVDZ (topologie)
 N6_D2_twisted,N6,0,6,D2,-78.708698,24.09,B,B3LYP/aug-cc-pVDZ (topologie)
 N6_D6h_hexagon_aromatic,N6,0,6,D6h,-78.7087,24.09,A5,not explicitly stated for this value (paper-wide RHF/MP2 6-31G*)
