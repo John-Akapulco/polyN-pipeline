@@ -304,18 +304,60 @@ plusieurs se distinguent nettement pour une extraction future
 
 \input{table_citation_search.tex}
 
+\subsection{G\'en\'eration 2 : qui cite les candidats de g\'en\'eration 1 ?}
+\label{sec:citation-search-gen2}
+
+Pour prolonger la couverture au-del\`a des seuls citants directs de nos
+40 sources, les citations des 135 candidats de g\'en\'eration~1 ont
+\'et\'e r\'ecup\'er\'ees \`a leur tour (2\,310 citations uniques, hors
+recoupement avec la g\'en\'eration~1). Le m\^eme filtrage automatique
+(compos\'es exclusivement azot\'es) en retient 64, mais une relecture
+manuelle des titres montre que le taux de pertinence chute nettement par
+rapport \`a la g\'en\'eration~1 : \textbf{14~\% de citations pertinentes
+en g\'en\'eration~1 (135/977) contre 4~\% en g\'en\'eration~2 (97/2\,310),
+et une part croissante de faux positifs} m\^eme apr\`es filtrage (nitrures
+m\'etalliques sous pression FeN$_x$/GaN/ScN/ErN, sels et cocristaux de
+pentazole, mat\'eriaux \'energ\'etiques organiques riches en azote mais
+non exclusivement azot\'es). Ceci s'explique : la g\'en\'eration~2
+\'echantillonne surtout la communaut\'e plus large des mat\'eriaux
+\'energ\'etiques (HEDM), dont les polyazot\'es purs ne sont qu'un
+sous-ensemble, plut\^ot que la recherche sur les clusters N$_x$ purs
+sp\'ecifiquement.
+
+Apr\`es curation manuelle, \textbf{19 candidats} sont retenus
+(tableau~\ref{tab:citation-search-gen2}) -- notamment une s\'erie
+d'\'etudes sur la surface d'\'energie potentielle de N$_3$ cyclique
+(2004-2011), la d\'etection du cation N$_4^{+}$ dans l'azote solide par
+IR (2026), une surface d'\'energie potentielle N$_4$ par r\'eseau de
+neurones (2020, tr\`es probablement plus pr\'ecise que GFN2-xTB), et
+plusieurs articles r\'ecents (2023-2025) sur l'instabilit\'e de
+l'hexazine N$_6$ cyclique et un nouveau cristal mol\'eculaire N$_{10}$.
+
+\input{table_citation_search_gen2.tex}
+
+\subsection{Recommandation : arr\^et de l'expansion r\'ecursive \`a la g\'en\'eration 2}
+
+La demande initiale \'etait de poursuivre ``en boucle vertueuse'' jusqu'en
+2026 -- objectif atteint : les g\'en\'erations 1 et 2 couvrent toutes deux
+l'int\'egralit\'e de la p\'eriode 1996-2026. \'Etant donn\'e la chute nette
+du taux de pertinence (14~\% $\to$ 4~\%) et la d\'erive th\'ematique vers
+les mat\'eriaux \'energ\'etiques au sens large plut\^ot que les clusters
+N$_x$ purs, une g\'en\'eration~3 (citations des 19 candidats ci-dessus)
+risque de retourner un volume important pour un rendement marginal encore
+plus faible. \textbf{Cette recherche s'arr\^ete donc \`a la g\'en\'eration
+2}, sauf demande explicite de poursuivre.
+
 \subsection{Travail restant}
 
-Cette annexe couvre la \textbf{g\'en\'eration 1} (qui cite nos 40 sources)
-pour 38 d'entre elles. Restent \`a traiter : (i) \texttt{N7d.pdf} et [B]
-(non r\'esolus dans OpenAlex, \`a rechercher manuellement ou via un autre
-identifiant) ; (ii) la \textbf{g\'en\'eration 2} -- rechercher qui cite,
-\`a leur tour, les 135 candidats retenus ici, pour prolonger la couverture
-bibliographique sur les 30 ann\'ees compl\`etes sans se limiter aux seuls
-citants directs de nos sources ; (iii) l'extraction effective des
-structures/\'energies des candidats prioritaires list\'es ci-dessus,
-suivie de la construction 3D, relaxation GFN2-xTB et v\'erification de
-fr\'equence, selon le m\^eme protocole que le reste de ce recueil.
+(i) \texttt{N7d.pdf} et [B] restent non r\'esolus dans OpenAlex (\`a
+rechercher manuellement ou via un autre identifiant) ; (ii) l'extraction
+effective des structures/\'energies des candidats prioritaires (sections
+\ref{sec:citation-search-suite} et \ref{sec:citation-search-gen2}) est
+bloqu\'ee par un blocage r\'eseau (403) sur les principaux \'editeurs
+(ACS, RSC, MDPI, ChemRxiv) depuis cet environnement -- l'acc\`es aux PDF
+sources n\'ecessite soit leur d\'ep\^ot manuel par l'utilisateur, soit une
+extraction limit\'ee aux seuls r\'esum\'es (formule et parfois sym\'etrie,
+jamais la g\'eom\'etrie compl\`ete).
 
 \section{R\'ef\'erences}
 
