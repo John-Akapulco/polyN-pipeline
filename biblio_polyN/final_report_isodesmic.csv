@@ -59,6 +59,7 @@ N8_D2d_octaazacyclooctatetraene,N8,0,8,D2d,-79.036919,0.0,GS,Becke3LYP/6-31G* (t
 N8_pentalene_dianion_analog_struct11,N8,0,8,n.d.,-79.03692,0.0,A5,MP2/6-31G*,-113.4
 N8_D2h_octaazapentalene,N8,0,8,D2h,-79.03692,0.0,A14,MP2/6-31G*,-113.4
 N8_D2h_pentalene_v3,N8,0,8,D2h,-79.03692,0.0,A15,MP2/(9s5p1d)/[3s2p1d]; also HF and DFT,-113.4
+N8_D2h_pentalene_B,N8,0,8,D2h,-79.036918,0.0,B,B3LYP/aug-cc-pVDZ,-113.4
 N8_Cs_pentagonal,N8,0,8,Cs,-78.983174,9.92,B,B3LYP/aug-cc-pVDZ (topologie),-103.5
 N8_Cs_azidopentazole,N8,0,8,Cs,-78.983174,9.92,GS,Becke3LYP/6-31G* (topologie),-103.5
 N8_C2h_ZEZ,N8,0,8,C2h,-78.927079,20.26,B,B3LYP/aug-cc-pVDZ,-93.1

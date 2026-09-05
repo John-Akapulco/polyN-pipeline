@@ -162,6 +162,21 @@ if reaudit_path.exists():
                 orig_method=r["method"],
             ))
 
+# ---------------------------------------------------------------------
+# 2quinquies. Audit de completude de [B] (table maitresse p.71-72,
+#       "Absolute and Relative Electronic Energies") : 62 especes
+#       distinctes chez [B] contre 61 extraites -- il manquait la
+#       deuxieme espece N8 D2h (l'octaazapentalene, p.50 ; l'autre D2h,
+#       "N8_D2h_ring_pendant", correspond a la structure de p.43, tres
+#       instable, deja bien distincte). Meme geometrie/energie GFN2-xTB
+#       que l'entree [GS] deja au corpus (topologie identique).
+# ---------------------------------------------------------------------
+records.append(dict(
+    name="N8_D2h_pentalene_B", formula="N8", charge=0, n_atoms=8,
+    point_group="D2h", e_eV_per_atom=-79.036918, ref="B",
+    orig_method="B3LYP/aug-cc-pVDZ",
+))
+
 print(f"{len(records)} structures consolidees (energie GFN2-xTB + reference).")
 
 # ---------------------------------------------------------------------
