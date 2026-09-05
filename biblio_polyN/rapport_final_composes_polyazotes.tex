@@ -353,19 +353,40 @@ compl\'eter la documentation d\'ej\`a riche sur N$_3$/N$_5^{-}$, sans
 apporter de structure ou d'\'etat de charge absent des g\'en\'erations
 pr\'ec\'edentes.
 
-\subsection{Recommandation : arr\^et de l'expansion r\'ecursive \`a la g\'en\'eration 3}
+\subsection{G\'en\'eration 4 : convergence totale}
+\label{sec:citation-search-gen4}
 
-Les g\'en\'erations 1, 2 et 3 couvrent toutes l'int\'egralit\'e de la
-p\'eriode 1996-2026 demand\'ee. La d\'ecroissance du taux de pertinence
-(14~\% $\to$ 4~\% $\to$ 1~\%) et du volume de candidats nouveaux (135
-$\to$ 19 $\to$ 4) sur seulement 3 g\'en\'erations indique une
-\textbf{convergence nette} : le graphe des citations vers l'amont de nos
-40 sources est d\'esormais quasi \'epuis\'e pour ce qui concerne les
-structures polyazot\'ees pures. Une g\'en\'eration~4 (citations des 4
-candidats ci-dessus) ne devrait raisonnablement produire que 0 \`a 2
-nouveaux candidats, pour un co\^ut de recherche similaire aux
-g\'en\'erations pr\'ec\'edentes. \textbf{Cette recherche s'arr\^ete donc
-\`a la g\'en\'eration 3}, sauf demande explicite de poursuivre.
+Les citations des 4 candidats de g\'en\'eration~3 ont \'et\'e
+r\'ecup\'er\'ees (36 citations uniques, un ensemble d\'ej\`a tr\`es
+restreint) : \textbf{aucune ne passe le filtre de pertinence apr\`es
+d\'edoublonnage contre les g\'en\'erations 1 \`a 3} -- 0 nouveau
+candidat.
+
+\subsection{Bilan et arr\^et de la recherche par citations}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lrrr}
+\toprule
+G\'en\'eration & Citations uniques & Candidats retenus & Taux \\
+\midrule
+1 (nos 40 sources) & 977 & 135 & 14\,\% \\
+2 & 2\,310 & 19 & 0{,}8\,\% \\
+3 & 421 & 4 & 1\,\% \\
+4 & 36 & 0 & 0\,\% \\
+\bottomrule
+\end{tabular}
+\caption{Convergence de la recherche par citations sur 4 g\'en\'erations.}
+\label{tab:citation-convergence}
+\end{table}
+
+Les 4 g\'en\'erations couvrent int\'egralement la p\'eriode 1996-2026
+demand\'ee, et la g\'en\'eration~4 apporte la preuve d\'efinitive de
+convergence : le graphe de citations en amont de nos 40 sources est
+\'epuis\'e pour ce qui concerne les structures polyazot\'ees pures.
+\textbf{La recherche par citations s'arr\^ete ici}, sur arr\^et
+explicitement demand\'e \`a la g\'en\'eration~4 -- une g\'en\'eration~5
+serait construite sur un ensemble vide et ne pourrait rien retourner.
 
 \subsection{Travail restant}
 
