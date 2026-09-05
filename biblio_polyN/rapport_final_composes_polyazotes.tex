@@ -187,6 +187,136 @@ DFT/CCSD(T) \'evoqu\'ee ci-dessus.
 \subsection{Anions}
 \input{table_isodesmic_anion.tex}
 
+\section{Annexe : recherche bibliographique par citations (OpenAlex)}
+\label{sec:citation-search}
+
+Au-del\`a des 40 articles sources de ce recueil, une recherche
+bibliographique syst\'ematique a \'et\'e men\'ee \`a partir des articles
+qui \textbf{citent} ces sources, afin d'identifier des structures
+polyazot\'ees plus r\'ecentes ou non encore recens\'ees ici. Cette
+d\'emarche est men\'ee de fa\c{c}on incr\'ementale (du plus ancien article
+source au plus r\'ecent) et s'appuiera, dans un second temps, sur les
+citations des articles eux-m\^emes jug\'es pertinents \`a l'issue de cette
+premi\`ere passe (``g\'en\'eration 2'').
+
+\subsection{M\'ethode}
+
+Chaque article source a \'et\'e r\'esolu dans la base ouverte
+\textbf{OpenAlex} (\url{https://openalex.org}, interrogation par titre via
+son API REST), puis l'ensemble de ses citations a \'et\'e r\'ecup\'er\'e.
+Sur les 39 articles de l'archive compl\'ementaire plus [GS], \textbf{37 +
+[GS] ont \'et\'e r\'esolus et interrog\'es} ; deux n'ont pu \^etre trait\'es
+\`a ce stade -- \texttt{N7d.pdf} (non index\'e dans OpenAlex sous ce
+titre) et [B] (rapport non publi\'e formellement, sans identifiant
+bibliographique standard). Ceci constitue la premi\`ere g\'en\'eration de
+cette recherche.
+
+Chaque article citant a \'et\'e filtr\'e strictement pour ne retenir que
+les compositions \textbf{exclusivement azot\'ees} (neutres, cationiques ou
+anioniques -- aucun autre \'el\'ement pr\'esent dans l'esp\`ece \'etudi\'ee,
+\`a l'exception du contre-ion d'un sel quand seule l'esp\`ece N$_x^{\pm}$
+isol\'ee est le sujet de l'article) : les sels m\'etalliques, compos\'es
+dop\'es/substitu\'es (Al, Be, B, Si, K...), d\'eriv\'es organiques
+(aryl-pentazoles, t\'etrazoles carbon\'es) et mat\'eriaux \'energ\'etiques
+\`a base d'azote mais non purement azot\'es (nitramines, oxydes N$_x$O$_y$,
+etc.) ont \'et\'e \'ecart\'es.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lr}
+\toprule
+Articles sources interrog\'es (g\'en\'eration 1) & 38 / 40 \\
+Citations totales collect\'ees (avec doublons inter-sources) & 2\,264 + 257 ([GS]) \\
+Citations uniques (d\'edoublonn\'ees par identifiant OpenAlex) & 977 \\
+\quad dont d\'ej\`a pr\'esentes dans notre corpus de 40 sources & 21 \\
+Candidats apr\`es filtrage strict (exclusivement azot\'e) & \textbf{135} \\
+\bottomrule
+\end{tabular}
+\caption{Bilan quantitatif de la recherche par citations, g\'en\'eration 1.}
+\label{tab:citation-search-stats}
+\end{table}
+
+\subsection{Fr\'equence de la recherche sur les compos\'es polyazot\'es (1996-2026)}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=13cm]{figures/citation_frequency_1996_2026.png}
+\caption{Nombre d'articles citant annuellement les 38 sources de ce
+recueil, 1996-2026 (bleu clair : toutes citations ; bleu fonc\'e :
+candidats retenus apr\`es filtrage N-pur). L'activit\'e de recherche sur
+ce th\`eme est remarquablement stable sur 30 ans (20 \`a 50 articles/an),
+avec des pics vers 2003-2004 et 2020-2022 plut\^ot qu'un d\'eclin apr\`es
+l'engouement initial des ann\'ees 1990.}
+\label{fig:citation-frequency}
+\end{figure}
+
+Point notable : l'activit\'e ne faiblit pas avec le temps -- au contraire,
+2020-2022 concentre presque autant de publications pertinentes que le pic
+initial de 2003-2004, port\'ee par plusieurs avanc\'ees exp\'erimentales
+r\'ecentes (d\'etection de cyclo-N$_5^{-}$ en solution en 2016, synth\`eses
+cristallines depuis 2022).
+
+\subsection{Commentaire circonstanci\'e : candidats prioritaires}
+
+Sur les 135 candidats (tableau~\ref{tab:citation-search-candidates}),
+plusieurs se distinguent nettement pour une extraction future
+(section~\ref{sec:citation-search-suite}) :
+
+\begin{itemize}
+  \item \textbf{Tailles absentes de notre corpus} : \emph{Structures and
+  stability of N13 cluster} (2003), \emph{Theoretical prediction of
+  potential energy surface for N14 cluster} (2003), \emph{A theoretical
+  study on the stability of N15+ cluster} (2003), \emph{Cage Isomers of
+  N14 and N16} (2004) -- aucune de ces tailles n'est repr\'esent\'ee dans
+  le recueil actuel (qui s'arr\^ete \`a N$_{18}$ en neutre, N$_{10}$ en
+  charg\'e).
+  \item \textbf{Recherches exhaustives de surface d'\'energie
+  potentielle}, susceptibles de r\'ev\'eler un minimum global plus stable
+  que celui actuellement retenu : \emph{Global ab initio ground-state
+  potential energy surface of N4} (2013), \emph{A genetic algorithm survey
+  on closed-shell atomic nitrogen clusters} (2018), \emph{How does electron
+  delocalization affect the electronic energy? A survey of neutral
+  poly-nitrogen clusters} (2011).
+  \item \textbf{Nouveaux \'etats de charge non document\'es ici} :
+  \emph{Computational investigation of the [N7]3- anion} (2025, un trianion
+  --  aucune esp\`ece \`a charge $|q|>1$ n'est dans notre recueil),
+  \emph{High-Pressure Synthesis of K4N6 with All Nitrogen Atoms Forming
+  Aromatic Hexazine [N6]4- Anion} (2026, synth\`ese \textbf{exp\'erimentale}
+  d'un t\'etra-anion N$_6^{4-}$).
+  \item \textbf{Avanc\'ees exp\'erimentales r\'ecentes} sur des formules
+  d\'ej\`a couvertes en calcul pur : \emph{Preparation of a neutral nitrogen
+  allotrope hexanitrogen C2h-N6} (2025), \emph{Hexanitrogen (N6): A
+  Synthetic Leap Towards Neutral Nitrogen Allotropes} (2024), \emph{Novel
+  cage-like all-nitrogen molecular crystal stable under ambient conditions}
+  (2023), \emph{Cyclo-N9-: a Novel 5/6 Fused Polynitrogen Anion} (2025),
+  \emph{Creating Cyclo-N5+ Cations and Assembling N5+N5- Salts} (2024) --
+  si ces synth\`eses sont confirm\'ees, ce sont les toutes premi\`eres
+  preuves exp\'erimentales directes pour plusieurs formules de ce recueil.
+  \item \textbf{Synth\`ese de l'\'etat de l'art} : \emph{Molecular and
+  Electronic Structures of Neutral Polynitrogens: Review on the Theory and
+  Experiment in 21st Century} (2022) -- revue r\'ecente, probablement la
+  source la plus efficace pour v\'erifier d'un coup l'\'etat actuel des
+  minima connus sur l'ensemble des formules neutres.
+\end{itemize}
+
+\subsection{Liste compl\`ete des candidats (g\'en\'eration 1)}
+\label{sec:citation-search-suite}
+
+\input{table_citation_search.tex}
+
+\subsection{Travail restant}
+
+Cette annexe couvre la \textbf{g\'en\'eration 1} (qui cite nos 40 sources)
+pour 38 d'entre elles. Restent \`a traiter : (i) \texttt{N7d.pdf} et [B]
+(non r\'esolus dans OpenAlex, \`a rechercher manuellement ou via un autre
+identifiant) ; (ii) la \textbf{g\'en\'eration 2} -- rechercher qui cite,
+\`a leur tour, les 135 candidats retenus ici, pour prolonger la couverture
+bibliographique sur les 30 ann\'ees compl\`etes sans se limiter aux seuls
+citants directs de nos sources ; (iii) l'extraction effective des
+structures/\'energies des candidats prioritaires list\'es ci-dessus,
+suivie de la construction 3D, relaxation GFN2-xTB et v\'erification de
+fr\'equence, selon le m\^eme protocole que le reste de ce recueil.
+
 \section{R\'ef\'erences}
 
 \input{table_references.tex}
