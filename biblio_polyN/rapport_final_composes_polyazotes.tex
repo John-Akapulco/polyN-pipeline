@@ -10,6 +10,7 @@
 \usepackage{longtable}
 \usepackage{booktabs}
 \usepackage{graphicx}
+\usepackage{float}
 \usepackage{hyperref}
 \usepackage{parskip}
 \usepackage{helvet}
@@ -95,6 +96,96 @@ diff\'erent, parfois exp\'erimental) de topologies d\'ej\`a document\'ees.
 \section{Compos\'es anioniques}
 
 \input{table_anion.tex}
+
+\section{Limites m\'ethodologiques : fiabilit\'e de l'\'energie relative GFN2-xTB}
+\label{sec:limites-gfn2}
+
+Le niveau GFN2-xTB, utilis\'e syst\'ematiquement dans ce recueil pour
+disposer d'une \'echelle d'\'energie commune \`a des structures publi\'ees
+\`a des niveaux de calcul tr\`es h\'et\'erog\`enes, a \'et\'e confront\'e
+directement aux propres valeurs de r\'ef\'erence de [B] (tableaux
+``Heats of Formation'', p.73-75, niveaux CCSD(T)/G2/B3LYP selon les cas)
+pour les formules o\`u plusieurs isom\`eres sont document\'es des deux
+c\^ot\'es. Le constat est net : \textbf{GFN2-xTB reproduit correctement les
+grands \'ecarts (structures tr\`es instables comme le cubane N$_8$
+O$_h$) mais se r\'ev\`ele peu fiable, et parfois qualitativement faux, sur
+les \'ecarts fins ou moyens (10 \`a 70 kcal/mol) entre isom\`eres proches}
+:
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{@{}p{1.3cm}p{5.4cm}rr@{}}
+\toprule
+Formule & Comparaison & \'Ecart [B] (kcal/mol) & \'Ecart GFN2-xTB (kcal/mol) \\
+\midrule
+N$_4$ & chaine C2h ($^3B_u$) vs papillon C2v & 73{,}0 & \textbf{0{,}0 (effondr\'es)} \\
+N$_6$ & ``book'' C2 vs ``twisted'' D2 & 36{,}3 & \textbf{0{,}0 (effondr\'es)} \\
+N$_7$ & 5-ring+chain (Cs) vs cha\^ine lin\'eaire ZZ (C2) & 27{,}0 (Cs plus stable) & 16{,}8 (\textbf{ordre invers\'e}) \\
+N$_8$ & ``ladder'' C2h : rang parmi 11 isom\`eres & avant-dernier (317{,}0/422{,}7) & \textbf{premier (ex \ae quo, 0{,}0)} \\
+N$_3^{+}$ & triangle D3h vs lin\'eaire D$_{\infty h}$ & 9{,}6 (triangle plus stable) & 26{,}2 (\textbf{ordre invers\'e}) \\
+N$_5^{-}$ & pentagone D5h vs bipyramide D3h & 189{,}6 & 143{,}4 (sous-estim\'e de 46) \\
+\bottomrule
+\end{tabular}
+\caption{Comparaison directe des \'ecarts d'\'energie relative entre
+isom\`eres de m\^eme formule/charge, GFN2-xTB (ce recueil) contre les
+valeurs propres de [B] au niveau CCSD(T)/DFT.}
+\label{tab:gfn2-vs-bartlett}
+\end{table}
+
+Cons\'equence pratique : la colonne $E_{\mathrm{rel}}$ des tableaux 1 \`a
+3 (compos\'es neutres/cationiques/anioniques) et les $\Delta H_f$ de la
+section~\ref{sec:isodesmic} qui suit doivent \^etre lus comme un
+\textbf{classement de d\'egrossissage} (fiable pour distinguer un
+isom\`ere tr\`es instable d'un isom\`ere comp\'etitif) et non comme une
+\'energie relative quantitativement fiable entre isom\`eres proches --
+deux isom\`eres donn\'es comme ex \ae quo ou proches dans ce recueil
+peuvent en r\'ealit\'e diff\'erer de plusieurs dizaines de kcal/mol, et
+l'ordre de stabilit\'e entre deux isom\`eres proches peut \^etre invers\'e
+par rapport \`a un calcul de plus haut niveau. Une campagne de
+raffinement DFT (wB97X-D3/def2-TZVP ou \'equivalent) puis
+DLPNO-CCSD(T)/def2-TZVP, d\'ej\`a configur\'ee dans le d\'epot compagnon
+\texttt{polyN\_adapt/refinement/} mais destin\'ee \`a s'ex\'ecuter sur un
+calculateur distant, doit \^etre men\'ee avant d'utiliser ce recueil pour
+trancher entre isom\`eres d'\'energie proche.
+
+\section{Enthalpies de r\'eaction quasi-isodesmique}
+\label{sec:isodesmic}
+
+\`A la suite de [B] (p.75), l'enthalpie de formation de chaque compos\'e
+est estim\'ee par une r\'eaction quasi-isodesmique r\'ef\'erenc\'ee \`a
+l'azote mol\'eculaire (esp\`eces neutres) ou \`a un ion azot\'e-hydrog\'en\'e
+de $\Delta H_f$ exp\'erimental connu (esp\`eces charg\'ees, afin
+d'\'equilibrer la charge sans r\'ef\'erence \`a un \'electron libre) :
+
+\begin{itemize}
+  \item Neutres : N$_x \to$ (x/2)~N$_2$
+  \item Cations : [NH$_4$]$^+$ + (x$-$1)/2~N$_2 \to$ N$_x^+$ + 2~H$_2$,
+        avec $\Delta H_f$(NH$_4^+$) = 150{,}6 kcal/mol (exp\'erimental)
+  \item Anions : [NH$_2$]$^-$ + (x$-$1)/2~N$_2 \to$ N$_x^-$ + H$_2$,
+        avec $\Delta H_f$(NH$_2^-$) = 27{,}0 kcal/mol (exp\'erimental)
+\end{itemize}
+
+Toutes les \'energies \'electroniques (N$_x$, N$_2$, NH$_4^+$, H$_2$,
+NH$_2^-$) sont calcul\'ees au m\^eme niveau GFN2-xTB que le reste de ce
+recueil, avec les limites discut\'ees en section~\ref{sec:limites-gfn2} --
+en particulier, les r\'eactions cationique/anionique cassent des liaisons
+N--H et forment H--H, un type d'\'echange de liaison sur lequel GFN2-xTB
+n'a pas \'et\'e valid\'e ici : les $\Delta H_f$ absolus obtenus pour les
+ions peuvent s'\'ecarter des valeurs de [B] de plus de 100 kcal/mol (ex. :
+N$_5^{+}$ calcul\'e ici \`a 195{,}9 kcal/mol contre 321{,}8 chez [B]). Ces
+valeurs sont n\'eanmoins conserv\'ees ci-dessous, coh\'erentes en interne
+avec le reste du recueil, en attendant leur raffinement par la campagne
+DFT/CCSD(T) \'evoqu\'ee ci-dessus.
+
+\subsection{Neutres}
+\input{table_isodesmic_neutre.tex}
+
+\subsection{Cations}
+\input{table_isodesmic_cation.tex}
+
+\subsection{Anions}
+\input{table_isodesmic_anion.tex}
 
 \section{R\'ef\'erences}
 
