@@ -29,6 +29,11 @@ rows_sorted = sorted(rows, key=lambda r: (r["formula"].replace("N", "").zfill(3)
 
 lines = []
 lines.append(r"\begin{longtable}{@{}p{4.4cm}p{1.3cm}p{1.2cm}p{4.1cm}p{1.9cm}@{}}")
+lines.append(r"\caption{Liste compl\`ete des 70 structures extraites de la "
+             r"bibliographie, avec formule (charge en exposant), groupe "
+             r"ponctuel, m\'ethode de la g\'eom\'etrie de r\'ef\'erence et "
+             r"statut de reconstruction (exacte ou relax\'ee GFN2-xTB).}")
+lines.append(r"\label{tab:structures}\\")
 lines.append(r"\toprule")
 lines.append(r"\textbf{Fichier (id)} & \textbf{Formule} & \textbf{G. ponctuel} & "
              r"\textbf{Methode} & \textbf{Statut} \\")

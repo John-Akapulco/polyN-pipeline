@@ -11,6 +11,7 @@
 \usepackage{longtable}
 \usepackage{booktabs}
 \usepackage{graphicx}
+\usepackage{float}
 \usepackage{hyperref}
 \usepackage{parskip}
 \usepackage{helvet}
@@ -37,7 +38,7 @@
 
 \title{\color{accent}\textbf{Extraction des structures de compos\'es polyazot\'es\\
 \large depuis la bibliographie et g\'en\'eration de fichiers .xyz}}
-\author{Pipeline polyN --- biblio\_polyN}
+\author{Gilles Frapper \\ Professeur des Universit\'es en Chimie Th\'eorique \\ IC2MP UMR 7285 CNRS, Universit\'e de Poitiers \\[2pt] \small \href{mailto:gilles.frapper@univ-poitiers.fr}{gilles.frapper@univ-poitiers.fr}}
 \date{\today}
 
 \begin{document}
@@ -180,19 +181,19 @@ repr\'esentation en boules-b\^atons.
 La figure~\ref{fig:gallery} montre dix structures repr\'esentatives, de
 l'azote mol\'eculaire aux cages les plus complexes.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
-\begin{tabular}{ccccc}
-\includegraphics[width=2.6cm]{figures/N4_Td.png} &
-\includegraphics[width=2.6cm]{figures/N4_C2v_butterfly.png} &
-\includegraphics[width=2.6cm]{figures/N5H_pentazole.png} &
-\includegraphics[width=2.6cm]{figures/N5-_pentagon.png} &
-\includegraphics[width=2.6cm]{figures/N6_D3h_prism.png} \\
-\includegraphics[width=2.6cm]{figures/N8_Oh_cube.png} &
-\includegraphics[width=2.6cm]{figures/N8_D2h_pentalene.png} &
-\includegraphics[width=2.6cm]{figures/N10_D5h_prism.png} &
-\includegraphics[width=2.6cm]{figures/N10_D2d_linked5rings.png} &
-\includegraphics[width=2.6cm]{figures/N20_Ih_dodecahedrane.png} \\
+\begin{tabular}{cc}
+\includegraphics[width=6.5cm]{figures/N4_Td.png} &
+\includegraphics[width=6.5cm]{figures/N4_C2v_butterfly.png} \\
+\includegraphics[width=6.5cm]{figures/N5H_pentazole.png} &
+\includegraphics[width=6.5cm]{figures/N5-_pentagon.png} \\
+\includegraphics[width=6.5cm]{figures/N6_D3h_prism.png} &
+\includegraphics[width=6.5cm]{figures/N8_Oh_cube.png} \\
+\includegraphics[width=6.5cm]{figures/N8_D2h_pentalene.png} &
+\includegraphics[width=6.5cm]{figures/N10_D5h_prism.png} \\
+\includegraphics[width=6.5cm]{figures/N10_D2d_linked5rings.png} &
+\includegraphics[width=6.5cm]{figures/N20_Ih_dodecahedrane.png} \\
 \end{tabular}
 \caption{S\'election de dix structures polyazot\'ees reconstruites (rendu
 boules-b\^atons simplifi\'e). De gauche \`a droite, de haut en bas :
@@ -207,7 +208,8 @@ dodeca\`edre N$_{20}$ (I$_h$).}
 
 \subsection{Bilan quantitatif}
 
-\begin{center}
+\begin{table}[H]
+\centering
 \begin{tabular}{lr}
 \toprule
 Structures reconstruites (total) & 70 \\
@@ -217,7 +219,9 @@ Esp\`eces couvertes & N$_2$ \`a N$_{20}$ \\
 \'Etats de charge & neutre, cation (+1), anion ($-$1) \\
 \bottomrule
 \end{tabular}
-\end{center}
+\caption{Bilan quantitatif de l'extraction bibliographique.}
+\label{tab:bilan-quantitatif}
+\end{table}
 
 \subsection{R\'epartition par formule et \'etat de charge}
 
@@ -226,7 +230,8 @@ le nombre de structures neutres, anioniques et cationiques extraites --
 N$_n^{-}$ \'etant compt\'e s\'epar\'ement de N$_n^{+}$, les deux esp\`eces
 diff\'erant souvent fortement de g\'eom\'etrie et de sym\'etrie.
 
-\begin{center}
+\begin{table}[H]
+\centering
 \begin{tabular}{lrrrr}
 \toprule
 Formule & Neutre & Anion (N$^{-}$) & Cation (N$^{+}$) & Total \\
@@ -246,7 +251,10 @@ N$_{20}$ & 1  & --  & --  & 1  \\
 \textbf{Total} & \textbf{41} & \textbf{16} & \textbf{13} & \textbf{70} \\
 \bottomrule
 \end{tabular}
-\end{center}
+\caption{R\'epartition des 70 structures extraites par formule N$_n$ et
+\'etat de charge.}
+\label{tab:repartition-formule}
+\end{table}
 
 D\'etail des isom\`eres retenus pour chaque couple (formule, charge) :
 
@@ -310,7 +318,6 @@ r\'ef\'erence et le statut de reconstruction.
 \small
 \input{table_structures.tex}
 \endgroup
-\label{tab:structures}
 
 \section{Comparaison avec les structures identifi\'ees par le pipeline de criblage}
 \label{sec:comparaison-code}
@@ -367,7 +374,8 @@ lacune de couverture du fichier de configuration :
 
 \subsection{R\'esultats sur les 48 structures comparables}
 
-\begin{center}
+\begin{table}[H]
+\centering
 \begin{tabular}{lrrrr}
 \toprule
 Formule / charge & Biblio & Retrouv\'ees & Manqu\'ees & Topos. code en plus \\
@@ -390,7 +398,12 @@ N$_{12}$ neutre  & 1  & 0  & 1 & 15 \\
 \textbf{Total}   & \textbf{48} & \textbf{36 (75\,\%)} & \textbf{12} & -- \\
 \bottomrule
 \end{tabular}
-\end{center}
+\caption{Comparaison topologique entre les 48 structures biblio
+comparables et l'ensemble des candidats optimis\'es par
+\texttt{polyN\_pipeline.py} (579 candidats, deux campagnes de
+production).}
+\label{tab:comparaison-48}
+\end{table}
 
 Structures biblio non retrouv\'ees (topologiquement absentes de l'ensemble
 code) : N$_4$ (\texttt{C2h\_chain}, \texttt{C2v\_butterfly}), N$_5^{-}$
@@ -507,22 +520,26 @@ d'autres topologies pr\'esentes dans les runs de production).
 
 \subsection{Cas retrouv\'es}
 
-\begin{center}
+\begin{figure}[H]
+\centering
 \begin{tabular}{cc}
-\includegraphics[width=3.4cm]{figures/N3-_triangle.png} &
-\includegraphics[width=3.4cm]{figures/code_N3_anion_triangle.png} \\
-Biblio \texttt{N3-\_triangle} & Code \texttt{N3\_anion\_iso0002\_conf2} (v2) \\[2mm]
-\includegraphics[width=3.4cm]{figures/N6_D3h_prism.png} &
-\includegraphics[width=3.4cm]{figures/code_N6_neutral_prism.png} \\
-Biblio \texttt{N6\_D3h\_prism} & Code \texttt{N6\_iso0004\_conf1} (v2) \\[2mm]
-\includegraphics[width=3.4cm]{figures/N8_Oh_cube.png} &
-\includegraphics[width=3.4cm]{figures/code_N8_neutral_cube.png} \\
-Biblio \texttt{N8\_Oh\_cube} & Code \texttt{N8\_neutral\_iso0005\_conf1} (seeds\_pubchem) \\[2mm]
-\includegraphics[width=3.4cm]{figures/N7-_chain.png} &
-\includegraphics[width=3.4cm]{figures/code_N7_anion_chain.png} \\
+\includegraphics[width=6cm]{figures/N3-_triangle.png} &
+\includegraphics[width=6cm]{figures/code_N3_anion_triangle.png} \\
+Biblio \texttt{N3-\_triangle} & Code \texttt{N3\_anion\_iso0002\_conf2} (v2) \\[3mm]
+\includegraphics[width=6cm]{figures/N6_D3h_prism.png} &
+\includegraphics[width=6cm]{figures/code_N6_neutral_prism.png} \\
+Biblio \texttt{N6\_D3h\_prism} & Code \texttt{N6\_iso0004\_conf1} (v2) \\[3mm]
+\includegraphics[width=6cm]{figures/N8_Oh_cube.png} &
+\includegraphics[width=6cm]{figures/code_N8_neutral_cube.png} \\
+Biblio \texttt{N8\_Oh\_cube} & Code \texttt{N8\_neutral\_iso0005\_conf1} (seeds\_pubchem) \\[3mm]
+\includegraphics[width=6cm]{figures/N7-_chain.png} &
+\includegraphics[width=6cm]{figures/code_N7_anion_chain.png} \\
 Biblio \texttt{N7-\_chain} & Code \texttt{N7\_anion\_iso0076\_conf1} (seeds\_pubchem) \\
 \end{tabular}
-\end{center}
+\caption{Quatre cas o\`u la topologie biblio est retrouv\'ee par le
+pipeline de criblage (graphes isomorphes).}
+\label{fig:cas-retrouves}
+\end{figure}
 
 Dans les quatre cas, le graphe optimis\'e par le pipeline est isomorphe
 au graphe de la structure biblio (m\^eme nombre de liaisons, m\^eme
@@ -532,28 +549,38 @@ issue de [GS]/[B].
 
 \subsection{Cas manqu\'es}
 
-\begin{center}
-\begin{tabular}{ccc}
-\includegraphics[width=2.7cm]{figures/N4_C2v_butterfly.png} &
-\includegraphics[width=2.7cm]{figures/code_N4_neutral_tetrahedral.png} &
-\includegraphics[width=2.7cm]{figures/code_N4_neutral_branched_alt.png} \\
-Biblio \texttt{N4\_C2v\_butterfly} & Code \texttt{N4\_iso0001\_conf1} (v2) & Code \texttt{N4\_neutral\_iso0002\_conf1} (seeds) \\
+\begin{figure}[H]
+\centering
+\begin{tabular}{cc}
+\includegraphics[width=6cm]{figures/N4_C2v_butterfly.png} &
+\includegraphics[width=6cm]{figures/code_N4_neutral_tetrahedral.png} \\
+Biblio \texttt{N4\_C2v\_butterfly} & Code \texttt{N4\_iso0001\_conf1} (v2) \\[3mm]
+\multicolumn{2}{c}{\includegraphics[width=6cm]{figures/code_N4_neutral_branched_alt.png}} \\
+\multicolumn{2}{c}{Code \texttt{N4\_neutral\_iso0002\_conf1} (seeds)} \\
 \end{tabular}
-\end{center}
+\caption{N$_4$ neutre : le papillon biblio (C$_{2v}$) contre les
+candidats du code pour cette formule.}
+\label{fig:cas-manque-n4}
+\end{figure}
 Le papillon N$_4$ (C$_{2v}$) n'a pas d'\'equivalent topologique dans les
 candidats du code pour cette formule. Le premier candidat affich\'e
 correspond en fait au t\'etra\`edre N$_4$ (T$_d$, autre structure biblio,
 d\'ej\`a compt\'ee comme retrouv\'ee) ; le second est un arbre ramifi\'e
 (degr\'es 1/2/2/3) distinct des deux topologies biblio.
 
-\begin{center}
-\begin{tabular}{ccc}
-\includegraphics[width=2.7cm]{figures/N5-_bipyramid.png} &
-\includegraphics[width=2.7cm]{figures/code_N5_anion_pentagon.png} &
-\includegraphics[width=2.7cm]{figures/code_N5_anion_alt_branched.png} \\
-Biblio \texttt{N5-\_bipyramid} & Code \texttt{N5\_anion\_iso0002\_conf0} (v2) & Code \texttt{N5\_anion\_iso0005\_conf2} (v2) \\
+\begin{figure}[H]
+\centering
+\begin{tabular}{cc}
+\includegraphics[width=6cm]{figures/N5-_bipyramid.png} &
+\includegraphics[width=6cm]{figures/code_N5_anion_pentagon.png} \\
+Biblio \texttt{N5-\_bipyramid} & Code \texttt{N5\_anion\_iso0002\_conf0} (v2) \\[3mm]
+\multicolumn{2}{c}{\includegraphics[width=6cm]{figures/code_N5_anion_alt_branched.png}} \\
+\multicolumn{2}{c}{Code \texttt{N5\_anion\_iso0005\_conf2} (v2)} \\
 \end{tabular}
-\end{center}
+\caption{N$_5^{-}$ : la bipyramide biblio contre les candidats du code
+pour cette formule/charge.}
+\label{fig:cas-manque-n5}
+\end{figure}
 La bipyramide N$_5^{-}$ (9 liaisons, sommets de degr\'e 3--4) n'est pas
 retrouv\'ee. Le premier candidat affich\'e correspond en fait au
 pentagone N$_5^{-}$ (autre structure biblio, d\'ej\`a compt\'ee comme
@@ -561,14 +588,19 @@ retrouv\'ee) ; le second, topologie la plus stable trouv\'ee par le code
 pour ce groupe, est une structure ramifi\'ee \`a 5 liaisons nettement
 moins connect\'ee que la bipyramide.
 
-\begin{center}
-\begin{tabular}{ccc}
-\includegraphics[width=2.7cm]{figures/N9-_chain.png} &
-\includegraphics[width=2.7cm]{figures/code_N9_anion_cyclic_alt1.png} &
-\includegraphics[width=2.7cm]{figures/code_N9_anion_branched_alt2.png} \\
-Biblio \texttt{N9-\_chain} & Code \texttt{N9\_anion\_iso0091\_conf1} (v2) & Code \texttt{N9\_anion\_iso0091\_conf3} (v2) \\
+\begin{figure}[H]
+\centering
+\begin{tabular}{cc}
+\includegraphics[width=6cm]{figures/N9-_chain.png} &
+\includegraphics[width=6cm]{figures/code_N9_anion_cyclic_alt1.png} \\
+Biblio \texttt{N9-\_chain} & Code \texttt{N9\_anion\_iso0091\_conf1} (v2) \\[3mm]
+\multicolumn{2}{c}{\includegraphics[width=6cm]{figures/code_N9_anion_branched_alt2.png}} \\
+\multicolumn{2}{c}{Code \texttt{N9\_anion\_iso0091\_conf3} (v2)} \\
 \end{tabular}
-\end{center}
+\caption{N$_9^{-}$ : la cha\^ine biblio contre les candidats du code pour
+cette formule/charge.}
+\label{fig:cas-manque-n9}
+\end{figure}
 Les trois isom\`eres N$_9^{-}$ de la biblio (dont la cha\^ine simple
 ci-dessus, 8 liaisons) sont absents des 24 topologies distinctes que le
 code trouve pour ce groupe -- le plus proche en connectivit\'e
@@ -576,24 +608,32 @@ code trouve pour ce groupe -- le plus proche en connectivit\'e
 le premier candidat, cyclique \`a 11 liaisons, illustre l'autre extr\^eme
 de l'espace explor\'e par le code.
 
-\begin{center}
+\begin{figure}[H]
+\centering
 \begin{tabular}{cc}
-\includegraphics[width=3.4cm]{figures/N10_D2d_bispentazole_GS.png} &
-\includegraphics[width=3.4cm]{figures/code_N10_neutral_alt.png} \\
+\includegraphics[width=6cm]{figures/N10_D2d_bispentazole_GS.png} &
+\includegraphics[width=6cm]{figures/code_N10_neutral_alt.png} \\
 Biblio \texttt{N10\_D2d\_bispentazole\_GS} & Code \texttt{N10\_neutral\_iso0057\_conf0} (seeds\_pubchem) \\
 \end{tabular}
-\end{center}
+\caption{N$_{10}$ neutre : le bispentazole biblio contre le meilleur
+candidat du code pour cette formule.}
+\label{fig:cas-manque-n10}
+\end{figure}
 Le bispentazole N$_{10}$ (14 liaisons) n'a pas d'\'equivalent : la
 topologie neutre N$_{10}$ la plus stable trouv\'ee par le code (11
 liaisons) n'est pas isomorphe.
 
-\begin{center}
+\begin{figure}[H]
+\centering
 \begin{tabular}{cc}
-\includegraphics[width=3.4cm]{figures/N12_C2h_dipentazolyldiazene.png} &
-\includegraphics[width=3.4cm]{figures/code_N12_neutral_alt.png} \\
+\includegraphics[width=6cm]{figures/N12_C2h_dipentazolyldiazene.png} &
+\includegraphics[width=6cm]{figures/code_N12_neutral_alt.png} \\
 Biblio \texttt{N12\_C2h\_dipentazolyldiazene} & Code \texttt{N12\_iso0184\_conf0} (v2) \\
 \end{tabular}
-\end{center}
+\caption{N$_{12}$ neutre : le dipentazolyldiaz\`ene biblio contre le
+meilleur candidat du code pour cette formule.}
+\label{fig:cas-manque-n12}
+\end{figure}
 Point notable : le fichier \texttt{.xyz} biblio publi\'e pour N$_{12}$
 est lui-m\^eme d\'econnect\'e sous le seuil de 1{,}9~\AA\ (deux cycles
 N$_6$ s\'epar\'es de 2{,}88~\AA, visibles sur l'image) -- il ne s'agit
@@ -605,14 +645,19 @@ deux cycles s\'epar\'es.
 
 \subsection{Aveuglement du crit\`ere de graphe aux st\'er\'eoisom\`eres}
 
-\begin{center}
-\begin{tabular}{ccc}
-\includegraphics[width=2.7cm]{figures/N8_C2h_EEE.png} &
-\includegraphics[width=2.7cm]{figures/N8_C2h_ZEZ.png} &
-\includegraphics[width=2.7cm]{figures/N8_Cs_ZEE.png} \\
-\texttt{N8\_C2h\_EEE} & \texttt{N8\_C2h\_ZEZ} & \texttt{N8\_Cs\_ZEE} \\
+\begin{figure}[H]
+\centering
+\begin{tabular}{cc}
+\includegraphics[width=6cm]{figures/N8_C2h_EEE.png} &
+\includegraphics[width=6cm]{figures/N8_C2h_ZEZ.png} \\
+\texttt{N8\_C2h\_EEE} & \texttt{N8\_C2h\_ZEZ} \\[3mm]
+\multicolumn{2}{c}{\includegraphics[width=6cm]{figures/N8_Cs_ZEE.png}} \\
+\multicolumn{2}{c}{\texttt{N8\_Cs\_ZEE}} \\
 \end{tabular}
-\end{center}
+\caption{Trois conform\`eres E/Z de la cha\^ine N$_8$, distincts dans
+[B] mais isomorphes sous le seuil de connectivit\'e de 1{,}9~\AA.}
+\label{fig:stereoisomeres-n8}
+\end{figure}
 Ces trois isom\`eres de conformation E/Z de la cha\^ine N$_8$, g\'eom\'etriquement
 et exp\'erimentalement distincts dans [B], partagent le m\^eme graphe de
 connectivit\'e (cha\^ine \`a 7 liaisons) sous le seuil de 1{,}9~\AA : la
@@ -665,62 +710,133 @@ group\'ees par (formule, charge) et class\'ees par \'energie GFN2-xTB
 crois sante (eV/atome) ; tableau complet dans
 \texttt{biblio\_polyN/comparison\_table\_3sources.csv}.
 
-\subsection{Vainqueur par groupe (formule neutre)}
+\subsection{Vainqueurs par groupe}
+\label{ssec:vainqueurs-par-groupe}
 
-Sur les 7 groupes o\`u au moins une structure import\'ee coexiste avec une
-structure biblio de m\^eme formule/charge, la structure la plus stable
-(rang~1) provient d'un des codes de g\'en\'eration dans 6 cas sur 7 :
+Toutes les \'energies ci-dessous sont post-v\'erification de fr\'equences
+(section~\ref{sec:freq-verif} -- vrais minima confirm\'es, spin correctement
+impos\'e).
 
-\begin{center}
+\subsubsection{a. Neutre}
+
+Sur les 7 groupes neutres o\`u au moins une structure import\'ee coexiste
+avec une structure biblio de m\^eme formule, la structure la plus stable
+(rang~1) provient d'un des codes de g\'en\'eration dans 6 cas sur 7
+(tableau~\ref{tab:vainqueurs-neutre}).
+
+\begin{table}[H]
+\centering
 \small
 \begin{tabular}{lllrlrr}
 \toprule
 Formule & Origine du vainqueur & Topologie (vainqueur) & $E$ (eV/at.) & Meilleure biblio (rang) & $E$ biblio (eV/at.) & $\Delta$ (meV/at.) \\
 \midrule
 N$_4$  & polyN\_study & chain              & $-78{,}4278$ & C2v\_butterfly (10) & $-78{,}2786$ & 149{,}2 \\
-N$_6$  & N\_csp       & ring-3-substituted & $-78{,}8828$ & C2\_book (14)       & $-78{,}7087$ & 174{,}1 \\
-N$_7$  & N\_csp       & chain              & $-78{,}8040$ & Cs\_ring\_chain (14)& $-78{,}6998$ & 104{,}3 \\
+N$_6$  & N\_csp       & ring-3-substituted & $-78{,}8828$ & C2\_book (16)       & $-78{,}7087$ & 174{,}1 \\
+N$_7$  & N\_csp       & chain              & $-78{,}8040$ & Cs\_ring\_chain (15)& $-78{,}6998$ & 104{,}3 \\
 N$_8$  & biblio       & C2v\_ring          & $-79{,}0369$ & C2v\_ring (1)       & $-79{,}0369$ & 0{,}0 \\
-N$_9$  & N\_csp       & ring-5-substituted & $-78{,}8963$ & fused\_rings (14)   & $-78{,}8260$ & 70{,}4 \\
-N$_{10}$ & N\_csp     & ring-5-substituted & $-78{,}9383$ & C3\_cap (10)        & $-78{,}8978$ & 40{,}5 \\
-N$_{12}$ & polyN\_study & ring-3-subst     & $-78{,}7110$ & C2h\_dipentazolyldiazene (2) & $-78{,}3628$ & 348{,}2 \\
+N$_9$  & N\_csp       & ring-5-substituted & $-78{,}8963$ & fused\_rings (10)   & $-78{,}8324$ & 63{,}9 \\
+N$_{10}$ & N\_csp     & ring-5-substituted & $-78{,}9383$ & cage\_C2v (10)      & $-78{,}8978$ & 40{,}5 \\
+N$_{12}$ & polyN\_study & ring-3-subst     & $-78{,}7110$ & C2h\_dipentazolyldiazene (2) & $-78{,}3628$ & 348{,}3 \\
 \bottomrule
 \end{tabular}
-\end{center}
+\caption{Vainqueur (structure la plus stable) par groupe de formule
+neutre, toutes origines confondues (biblio, N\_csp, polyN\_study),
+compar\'e \`a la meilleure structure biblio du m\^eme groupe. $\Delta$ =
+\'ecart entre la meilleure structure biblio et le vainqueur (positif = le
+vainqueur import\'e est plus stable). Rang de la structure biblio entre
+parenth\`eses (position dans le classement toutes origines confondues du
+groupe).}
+\label{tab:vainqueurs-neutre}
+\end{table}
 
-$\Delta$ = \'ecart entre la meilleure structure biblio du groupe et le
-vainqueur toutes origines confondues (positif = le vainqueur importé est
-plus stable). Pour N$_8$, le vainqueur \emph{est} la structure biblio
+Pour N$_8$, le vainqueur \emph{est} la structure biblio
 (\texttt{C2v\_ring}) -- aucune structure import\'ee ne fait mieux dans ce
-groupe.
+groupe. Les deux sources import\'ees (N\_csp, polyN\_study) ne contiennent
+que des clusters neutres : les tableaux b et c ci-dessous, b\^atis
+uniquement \`a partir des structures biblio, n'offrent donc pas encore de
+comparaison \`a plusieurs origines pour les esp\`eces charg\'ees (cf.
+annexe~\ref{sec:composes-a-etudier}).
 
-Les six familles charg\'ees document\'ees dans les articles (N$_6^\pm$,
-N$_9^\pm$, N$_{10}^\pm$) n'ont pas de comparateur ici : les deux sources
-import\'ees ne contiennent que des clusters neutres.
+\subsubsection{b. Cation}
 
-\subsection{Repr\'esentations compar\'ees}
-
-\begin{center}
-\begin{tabular}{cc}
-\includegraphics[width=3.0cm]{figures/win_N4_polyN_study.png} &
-\includegraphics[width=3.0cm]{figures/win_N4_biblio.png} \\
-\includegraphics[width=3.0cm]{figures/win_N6_N_csp.png} &
-\includegraphics[width=3.0cm]{figures/win_N6_biblio.png} \\
-\includegraphics[width=3.0cm]{figures/win_N7_N_csp.png} &
-\includegraphics[width=3.0cm]{figures/win_N7_biblio.png} \\
+\begin{table}[H]
+\centering
+\begin{tabular}{llrc}
+\toprule
+Formule & Structure (unique candidate biblio) & $E$ (eV/at.) & Sauts freq. \\
+\midrule
+N$_6^{+}$  & \texttt{N6+\_C2h\_nonplanar} & $-76{,}4957$ & 0 \\
+N$_9^{+}$  & \texttt{N9+\_fused\_rings}   & $-77{,}3283$ & 2 \\
+N$_{10}^{+}$ & \texttt{N10+\_rings}       & $-77{,}4938$ & 0 \\
+\bottomrule
 \end{tabular}
+\caption{Vainqueur par groupe de formule cationique. Une seule origine
+disponible (biblio) par groupe \`a ce stade -- pas de comparaison
+multi-source possible tant que N\_csp/polyN\_study ne couvrent pas les
+esp\`eces charg\'ees.}
+\label{tab:vainqueurs-cation}
+\end{table}
 
-\begin{tabular}{cc}
-\includegraphics[width=3.0cm]{figures/win_N9_N_csp.png} &
-\includegraphics[width=3.0cm]{figures/win_N9_biblio.png} \\
-\includegraphics[width=3.0cm]{figures/win_N10_N_csp.png} &
-\includegraphics[width=3.0cm]{figures/win_N10_biblio.png} \\
-\includegraphics[width=3.0cm]{figures/win_N12_polyN_study.png} &
-\includegraphics[width=3.0cm]{figures/win_N12_biblio.png} \\
+\subsubsection{c. Anion}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{llrc}
+\toprule
+Formule & Structure (unique candidate biblio) & $E$ (eV/at.) & Sauts freq. \\
+\midrule
+N$_6^{-}$  & \texttt{N6-\_C2\_linked\_triangles} & $-79{,}0561$ & 1 \\
+N$_9^{-}$  & \texttt{N9-\_ring\_chain}            & $-79{,}6416$ & 0 \\
+N$_{10}^{-}$ & \texttt{N10-\_D2h\_perp\_rings}    & $-79{,}7228$ & 2 \\
+\bottomrule
 \end{tabular}
+\caption{Vainqueur par groupe de formule anionique. M\^eme limite que le
+tableau~\ref{tab:vainqueurs-cation} : une seule origine par groupe.}
+\label{tab:vainqueurs-anion}
+\end{table}
 
-\includegraphics[width=3.0cm]{figures/win_N8_biblio.png}
-\end{center}
+\subsection{Repr\'esentations compar\'ees (groupes neutres)}
+
+\begin{figure}[H]
+\centering
+\begin{tabular}{cc}
+\includegraphics[width=6cm]{figures/win_N4_polyN_study.png} &
+\includegraphics[width=6cm]{figures/win_N4_biblio.png} \\
+\includegraphics[width=6cm]{figures/win_N6_N_csp.png} &
+\includegraphics[width=6cm]{figures/win_N6_biblio.png} \\
+\includegraphics[width=6cm]{figures/win_N7_N_csp.png} &
+\includegraphics[width=6cm]{figures/win_N7_biblio.png} \\
+\end{tabular}
+\caption{Vainqueurs neutres N$_4$, N$_6$, N$_7$ (colonne de gauche) contre
+la meilleure structure biblio du m\^eme groupe (colonne de droite).}
+\label{fig:vainqueurs-n4-n6-n7}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{tabular}{cc}
+\includegraphics[width=6cm]{figures/win_N9_N_csp.png} &
+\includegraphics[width=6cm]{figures/win_N9_biblio.png} \\
+\includegraphics[width=6cm]{figures/win_N10_N_csp.png} &
+\includegraphics[width=6cm]{figures/win_N10_biblio.png} \\
+\includegraphics[width=6cm]{figures/win_N12_polyN_study.png} &
+\includegraphics[width=6cm]{figures/win_N12_biblio.png} \\
+\end{tabular}
+\caption{Vainqueurs neutres N$_9$, N$_{10}$, N$_{12}$ (colonne de gauche)
+contre la meilleure structure biblio du m\^eme groupe (colonne de
+droite).}
+\label{fig:vainqueurs-n9-n10-n12}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=6cm]{figures/win_N8_biblio.png}
+\caption{N$_8$ : le vainqueur \emph{est} la structure biblio
+(\texttt{C2v\_ring}), seul groupe o\`u aucune structure import\'ee ne fait
+mieux.}
+\label{fig:vainqueur-n8}
+\end{figure}
 
 Colonne de gauche : vainqueur (import\'e), sauf N$_8$ (biblio, seul et
 unique). Colonne de droite : meilleure structure biblio du m\^eme groupe,
@@ -762,7 +878,8 @@ jusqu'\`a 5 fois si n\'ecessaire.
 
 \subsection{R\'esultats}
 
-\begin{center}
+\begin{table}[H]
+\centering
 \begin{tabular}{lr}
 \toprule
 Calculs r\'eussis & 311 / 312 \\
@@ -772,7 +889,10 @@ Points-selles non r\'esolus (5 sauts \'epuis\'es) & 0 \\
 \'Echec SCF (g\'eom\'etrie non \'evaluable) & 1 (\texttt{N\_csp\_N7\_0015\_bicyclic-5-5}) \\
 \bottomrule
 \end{tabular}
-\end{center}
+\caption{V\'erification de fr\'equences sur les 312 structures import\'ees
+convergées (N\_csp, polyN\_study).}
+\label{tab:freq-import}
+\end{table}
 
 Les 39 corrections changent parfois significativement l'\'energie -- jusqu'\`a
 $-0{,}44$~eV/atome pour \texttt{N\_csp\_N8\_0032\_bicyclic-3-5-6}
@@ -800,7 +920,8 @@ reprenant la charge et la multiplicit\'e de spin exactement telles que
 d\'eclar\'ees dans \texttt{biblio\_polyN/build/molecules.py} (pas devin\'ees
 par une r\`egle de parit\'e) :
 
-\begin{center}
+\begin{table}[H]
+\centering
 \begin{tabular}{lr}
 \toprule
 Calculs r\'eussis & 25 / 25 \\
@@ -809,7 +930,10 @@ Minima atteints apr\`es correction (1--2 sauts) & 6 \\
 Points-selles non r\'esolus & 0 \\
 \bottomrule
 \end{tabular}
-\end{center}
+\caption{V\'erification de fr\'equences sur les 25 structures biblio,
+charge et multiplicit\'e reprises de \texttt{molecules.py}.}
+\label{tab:freq-biblio}
+\end{table}
 
 \subsubsection{Bug d\'ecouvert et corrig\'e : multiplicit\'e de spin ignor\'ee par tblite}
 \label{sssec:bug-multiplicity}
@@ -862,5 +986,65 @@ vainqueurs report\'es y sont donc inchang\'es par cette extension aux
 structures charg\'ees biblio. Une comparaison \`a trois sources sur les
 familles charg\'ees resterait \`a construire une fois N\_csp/polyN\_study
 \'etendus aux ions.
+
+\section{Compos\'es \`a \'etudier par nos codes}
+\label{sec:composes-a-etudier}
+
+Le tableau~\ref{tab:composes-a-etudier} liste les couples (formule, charge)
+document\'es dans la bibliographie (section~\ref{sec:comparaison-code}) mais
+\textbf{non encore couverts} par les g\'en\'erateurs propres au d\'ep\^ot
+(\texttt{polyN\_pipeline.py}, N\_csp, polyN\_study) -- soit parce que ces
+g\'en\'erateurs ne produisent \`a ce jour que des esp\`eces neutres
+(N\_csp, polyN\_study), soit parce que la configuration de production du
+pipeline principal ne couvre pas cette parit\'e formule/charge
+(section~\ref{sec:comparaison-code}), soit parce qu'aucun g\'en\'erateur du
+d\'ep\^ot n'atteint encore cette taille. Chaque ligne indique le nombre de
+structures biblio d\'ej\`a disponibles comme r\'ef\'erence pour une future
+comparaison, une fois le g\'en\'erateur \'etendu.
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{llrp{6.5cm}}
+\toprule
+Formule & Charge & Struct. biblio & Remarque \\
+\midrule
+N$_2$    & cation ($+1$) & 1 & hors p\'erim\`etre parit\'e (section~\ref{sec:comparaison-code}) \\
+N$_3$    & cation ($+1$) & 2 & hors p\'erim\`etre parit\'e \\
+N$_3$    & anion ($-1$)  & 3 & hors p\'erim\`etre parit\'e \\
+N$_4$    & cation ($+1$) & 1 & aucun g\'en\'erateur du d\'ep\^ot ne traite les ions charg\'es \\
+N$_4$    & anion ($-1$)  & 2 & idem \\
+N$_5$    & cation ($+1$) & 1 & idem \\
+N$_5$    & anion ($-1$)  & 2 & idem \\
+N$_6$    & cation ($+1$) & 3 & seule origine biblio dans le tableau~\ref{tab:vainqueurs-cation} \\
+N$_6$    & anion ($-1$)  & 2 & seule origine biblio dans le tableau~\ref{tab:vainqueurs-anion} \\
+N$_7$    & cation ($+1$) & 1 & aucun g\'en\'erateur du d\'ep\^ot ne traite les ions charg\'es \\
+N$_7$    & anion ($-1$)  & 1 & idem \\
+N$_8$    & anion ($-1$)  & 2 & idem (pas de cation N$_8^{+}$ document\'e) \\
+N$_9$    & cation ($+1$) & 2 & seule origine biblio dans le tableau~\ref{tab:vainqueurs-cation} \\
+N$_9$    & anion ($-1$)  & 3 & seule origine biblio dans le tableau~\ref{tab:vainqueurs-anion} \\
+N$_{10}$ & cation ($+1$) & 2 & seule origine biblio dans le tableau~\ref{tab:vainqueurs-cation} \\
+N$_{10}$ & anion ($-1$)  & 1 & seule origine biblio dans le tableau~\ref{tab:vainqueurs-anion} \\
+N$_{20}$ & neutre        & 1 & au-del\`a de la taille maximale g\'en\'er\'ee (N\_csp : $n\leq10$, polyN\_study : $n\leq12$) \\
+\bottomrule
+\end{tabular}
+\caption{Couples (formule, charge) document\'es dans la bibliographie mais
+non encore explor\'es par un g\'en\'erateur du d\'ep\^ot -- candidats
+prioritaires pour \'etendre la comparaison \`a trois sources
+(section~\ref{sec:comparaison-3sources}) aux esp\`eces charg\'ees et aux
+tailles $n>12$.}
+\label{tab:composes-a-etudier}
+\end{table}
+
+Par ordre de priorit\'e sugg\'er\'e : (1) \'etendre N\_csp/polyN\_study (ou
+le pipeline principal) aux familles charg\'ees des tailles d\'ej\`a
+couvertes c\^ot\'e neutre (N$_6^\pm$, N$_9^\pm$, N$_{10}^\pm$), qui
+disposent chacune de comparateurs biblio d\'ej\`a v\'erifi\'es en fr\'equence
+(tableaux~\ref{tab:vainqueurs-cation} et~\ref{tab:vainqueurs-anion}) --
+gain imm\'ediat en comparabilit\'e ; (2) couvrir les ions aux tailles
+interm\'ediaires actuellement hors p\'erim\`etre du pipeline principal
+(N$_2^{+}$, N$_3^{\pm}$, N$_4^{\pm}$, N$_5^{\pm}$, N$_7^{\pm}$, N$_8^{-}$) ;
+(3) \'etendre la taille maximale g\'en\'er\'ee au-del\`a de N$_{12}$ pour
+couvrir N$_{20}$ neutre.
 
 \end{document}
