@@ -1,0 +1,23 @@
+{"source_file": "N18.pdf", "title": "N18: a computational investigation (Gu, Chen, Jiang, Chen, Ji, Ren, Tian, J. Mol. Struct. THEOCHEM 428 (1998) 183-188)", "species": [
+  {"id": "N18_C2v_cage", "formula": "N18", "charge": 0, "mult": 1, "point_group": "C2v", "method": "B3LYP/6-31G* (also reports RHF/4-31G*, RHF/6-31G*, BHLYP/6-31G*, B3P86/6-31G*, MP2/6-31G* -- all levels given per-bond in Table 1)",
+   "source_note": "Table 1 (p.185), full 18-bond table with atom-index labels matching Fig.1's numbered cage diagram (atoms 1-18). Complete set of unique symmetry-equivalent bond groups given below at B3LYP/6-31G* (values for other 5 levels also available in bond_params_all_levels).",
+   "geometry_type": "bond_params",
+   "bond_params": {
+     "shape": "C2v cage, previously reported structure (ref [17] in paper), 8 conjugated pentagons per abstract -- FULL EXPLICIT BOND GRAPH (all 18 unique edges given as atom-index pairs, sufficient for distance-geometry embedding even without a named geom.py shape)",
+     "edges_B3LYP_A": [
+       {"pair": ["18","17"], "length": 1.4587},
+       {"pair": ["15","8"], "length": 1.5197}, {"pair": ["12","3"], "length": 1.5197},
+       {"pair": ["6","5"], "length": 1.5104}, {"pair": ["10","1"], "length": 1.5104},
+       {"pair": ["14","13"], "length": 1.5588}, {"pair": ["16","11"], "length": 1.5588},
+       {"pair": ["8","7"], "length": 1.4655}, {"pair": ["9","8"], "length": 1.4655}, {"pair": ["1","2"], "length": 1.4655}, {"pair": ["4","3"], "length": 1.4655},
+       {"pair": ["14","6"], "length": 1.5104}, {"pair": ["13","5"], "length": 1.5104}, {"pair": ["11","1"], "length": 1.5104}, {"pair": ["16","10"], "length": 1.5104},
+       {"pair": ["7","6"], "length": 1.4771}, {"pair": ["10","9"], "length": 1.4771}, {"pair": ["5","4"], "length": 1.4771}, {"pair": ["2","1"], "length": 1.4771},
+       {"pair": ["17","9"], "length": 1.5052}, {"pair": ["18","2"], "length": 1.5052}, {"pair": ["18","4"], "length": 1.5052},
+       {"pair": ["6","15"], "length": 1.4476}, {"pair": ["15","14"], "length": 1.4476}, {"pair": ["13","12"], "length": 1.4476}
+     ],
+     "note_on_edges": "Some rows in the source table list 2-4 symmetry-equivalent bonds sharing one length value (C2v symmetry classes) -- expanded here into individual atom-pair edges, all with that row's length. This yields 24 edge entries covering what the paper calls the unique R_i,j set for 18 atoms (cage, each atom presumably 3-coordinate per the 'octaazacubane-like conjugated pentagon' framework described in the abstract) -- coordinator should verify total edge count against expected 3-coordinate-cage edge count (27 edges for 18 3-coordinate atoms) before building 3D geometry.",
+     "average_bond_length_by_level_A": {"RHF_4-31G": 1.4390, "RHF_6-31G": 1.4390, "BHLYP_6-31G": 1.4568, "B3LYP_6-31G": 1.4911, "B3P86_6-31G": 1.4770, "MP2_6-31G": 1.4980}
+   },
+   "suggested_build": "UNKNOWN_HAS_FULL_BOND_GRAPH",
+   "notes": "Confirmed genuine minimum (all harmonic frequencies positive/real per paper's own vibrational analysis at 3 levels). Stability comparable to N20 dodecahedral cage (~50 kcal/mol/atom above separated N2, similar order to N20). Cage built from 8 conjugated pentagons (per abstract) -- structurally related to but distinct from N20's 12-pentagon dodecahedron and from octaazacubane N8. This is a LARGE, well-characterized cage with essentially complete geometric data (full bond graph across 6 levels of theory) -- one of the highest-value new structures in this whole batch. NOT present in existing corpus (N_csp/polyN_study max out at n<=12, biblio corpus's largest neutral cage is N20 dodecahedrane) -- genuinely NEW size/topology."}
+]}

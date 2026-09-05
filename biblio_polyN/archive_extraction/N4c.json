@@ -1,0 +1,70 @@
+{
+  "source_file": "N4c.pdf",
+  "title": "Thermochemistry of Tetrazete and Tetraazatetrahedrane: A High-Level Computational Study",
+  "authors": "Glukhovtsev M.N., Laiter S.",
+  "journal_year": "J. Phys. Chem. 1996, 100, 1569-1577",
+  "species": [
+    {
+      "id": "N4_D2h_tetrazete",
+      "formula": "N4",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "D2h",
+      "method": "MP2(full)/6-31G(d)",
+      "source_note": "Figure 2 (image), structure '1 D2h'",
+      "geometry_type": "exact_coords_unavailable_bond_params_only",
+      "bond_params": {
+        "bonds_angstrom": [
+          1.542,
+          1.287,
+          1.542,
+          1.287
+        ],
+        "description": "Rectangular D2h ring ('tetrazete'), alternating short (1.287, N=N-like) and long (1.542, N-N single-like) bonds, read directly off Figure 2 image."
+      },
+      "suggested_build": "rectangle",
+      "notes": "LIKELY DUPLICATE of existing molecules.py entry describing the N4 rectangle (need to cross-check exact bond lengths against existing 'N4_D2h_rectangle_planar' entry during dedup -- this paper's numbers may refine/differ from the existing entry's source)."
+    },
+    {
+      "id": "N4_Td_tetraazatetrahedrane",
+      "formula": "N4",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "Td",
+      "method": "MP2/6-31G(d) (cross-compared to CASSCF/DZP: 1.471 A, and CCSD/DZP: ~0.020 A shorter)",
+      "source_note": "Figure 2 (image) and text p.1571, structure '2 Td'",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "edge_angstrom": 1.478,
+        "description": "Regular tetrahedron, all edges equal."
+      },
+      "suggested_build": "tetrahedron",
+      "notes": "DUPLICATE of existing 'N4_Td' entry and of N4b.pdf's structure '1' (this paper's own Td value 1.478 vs N4b.pdf's 1.472 at CCSD(T)/DZP -- minor method-dependent variation, cross-check both)."
+    },
+    {
+      "id": "N4_Cs_triplet_5_openchain",
+      "formula": "N4",
+      "charge": 0,
+      "mult": 3,
+      "point_group": "Cs",
+      "method": "MP2(full)/6-31G(d); CISD(fc)/6-31G(d) values in parentheses",
+      "source_note": "Figure 2 (image), structure '5' -- text confirms 'the open-chain triplet 5 is a minimum with the lowest frequency (au) of 160 cm-1 at UMP2/6-31G(d)'",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "terminal_bonds_angstrom": [
+          1.168,
+          1.168
+        ],
+        "central_bond_angstrom": 1.465,
+        "one_angle_deg": 117.4,
+        "cisd_alt_values": {
+          "terminal_bond": 1.176,
+          "angle": 114.0
+        },
+        "description": "Open-chain Cs triplet N4: two terminal N-N bonds ~1.168 A each (similar to N2 bond), one central N-N bond 1.465 A (elongated single bond vs hydrazine reference 1.438 A). Only ONE of the chain's two internal angles is given explicitly in Figure 2 (117.4 deg / 114.0 deg CISD); the second angle is not stated in text or legible in the figure -- do not assume symmetry, flag as missing for the build phase."
+      },
+      "suggested_build": "chain2d",
+      "notes": "LIKELY THE SAME SPECIES as N4b.pdf's structure '4, Cs (3A'')' (Bittererova et al. 2000) -- cross-check both extractions; this one (Glukhovtsev/Laiter 1996) is missing one chain angle that N4b.pdf's extraction may supply, so the two together may give a complete geometry."
+    }
+  ]
+}

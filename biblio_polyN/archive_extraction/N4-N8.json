@@ -1,0 +1,10 @@
+{"source_file": "N4-N8.pdf", "title": "Protonated High Energy Density Materials: N4 Tetrahedron and N8 Octahedron (Leininger, Van Huis, Schaefer, J. Phys. Chem. A 1997, 101, 4460)", "species": [
+  {"id": "N4_Td_tetrahedrane_CCSDT", "formula": "N4", "charge": 0, "mult": 1, "point_group": "Td", "method": "CCSD(T)/TZ2Pf (highest level in paper)",
+   "source_note": "Table 6, p.4463: rNN column, TZ2Pf CCSD(T) row = 1.463 A. Single edge length (all 6 edges equivalent by Td symmetry).",
+   "geometry_type": "bond_params", "bond_params": {"shape": "tetrahedron, all edges equivalent", "edge_A": 1.463, "edge_A_by_level": {"DZP_SCF": 1.398, "DZP_MP2": 1.484, "DZP_CCSDT": 1.472, "TZ2Pf_SCF": 1.392, "TZ2Pf_CCSDT": 1.463}},
+   "suggested_build": "tetrahedron", "notes": "Likely duplicate topology of existing N4_Td in molecules.py -- but this CCSD(T)/TZ2Pf value (1.463 A) is a high-quality independent literature value, useful as a cross-check/alternative reference even if topologically redundant. Paper confirms Td N4 is a genuine minimum (harmonic frequencies all real, Table 7)."},
+  {"id": "N8_Oh_octaazacubane_CCSD", "formula": "N8", "charge": 0, "mult": 1, "point_group": "Oh", "method": "CCSD/DZP (highest correlated level given for pure N8 in Table 2; no CCSD(T) row for N8 itself)",
+   "source_note": "Table 2, p.4462: rNN column for N8 (not vertex-protonated), DZP CCSD row = 1.517 A. Single edge length (all 12 edges equivalent by Oh symmetry, cube).",
+   "geometry_type": "bond_params", "bond_params": {"shape": "cube, all edges equivalent", "edge_A": 1.517, "edge_A_by_level": {"DZP_SCF": 1.461, "DZP_MP2": 1.529, "DZP_B3LYP": 1.517, "DZP_CCSD": 1.517}},
+   "suggested_build": "cube", "notes": "Likely duplicate topology of existing N8_Oh_cube/N8_Oh_cubane_GS in molecules.py -- cross-check bond length. Paper confirms Oh N8 is a genuine minimum (Table 3, all frequencies real/positive)."}
+], "notes_batch": "This paper's real focus (protonated N4H+/N8H+ forms) is out of scope (contains H) and correctly skipped -- only the parent pure-N Td N4 and Oh N8 species extracted."}

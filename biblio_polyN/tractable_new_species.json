@@ -1,0 +1,1494 @@
+[
+ {
+  "id": "N5-_pentagon_D5h_crosscheck",
+  "formula": "N5",
+  "charge": -1,
+  "mult": 1,
+  "point_group": "D5h",
+  "method": "RI-MP2-fc/TZVPP",
+  "source_note": "p. 4640: 'The bond lengths in the N5 ring of 1 differ by less than 0.02 A from the pentazole anion (1.334 A at RI-MP2-fc/TZVPP)'",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "ring_bond_angstrom": 1.334,
+   "shape": "regular planar pentagon, D5h, all 5 N-N bonds equal by symmetry"
+  },
+  "coords": null,
+  "suggested_build": "regular_ngon",
+  "notes": "Almost certainly a DUPLICATE of the existing biblio_polyN corpus entry N5-_pentagon (D5h pentazolate anion) -- included here only as a single-number cross-check value (1.334 A at this paper's level of theory), not a new structure.",
+  "_source_file": "N10.json"
+ },
+ {
+  "id": "N18_C2v_cage",
+  "formula": "N18",
+  "charge": 0,
+  "mult": 1,
+  "point_group": "C2v",
+  "method": "B3LYP/6-31G* (also reports RHF/4-31G*, RHF/6-31G*, BHLYP/6-31G*, B3P86/6-31G*, MP2/6-31G* -- all levels given per-bond in Table 1)",
+  "source_note": "Table 1 (p.185), full 18-bond table with atom-index labels matching Fig.1's numbered cage diagram (atoms 1-18). Complete set of unique symmetry-equivalent bond groups given below at B3LYP/6-31G* (values for other 5 levels also available in bond_params_all_levels).",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "shape": "C2v cage, previously reported structure (ref [17] in paper), 8 conjugated pentagons per abstract -- FULL EXPLICIT BOND GRAPH (all 18 unique edges given as atom-index pairs, sufficient for distance-geometry embedding even without a named geom.py shape)",
+   "edges_B3LYP_A": [
+    {
+     "pair": [
+      "18",
+      "17"
+     ],
+     "length": 1.4587
+    },
+    {
+     "pair": [
+      "15",
+      "8"
+     ],
+     "length": 1.5197
+    },
+    {
+     "pair": [
+      "12",
+      "3"
+     ],
+     "length": 1.5197
+    },
+    {
+     "pair": [
+      "6",
+      "5"
+     ],
+     "length": 1.5104
+    },
+    {
+     "pair": [
+      "10",
+      "1"
+     ],
+     "length": 1.5104
+    },
+    {
+     "pair": [
+      "14",
+      "13"
+     ],
+     "length": 1.5588
+    },
+    {
+     "pair": [
+      "16",
+      "11"
+     ],
+     "length": 1.5588
+    },
+    {
+     "pair": [
+      "8",
+      "7"
+     ],
+     "length": 1.4655
+    },
+    {
+     "pair": [
+      "9",
+      "8"
+     ],
+     "length": 1.4655
+    },
+    {
+     "pair": [
+      "1",
+      "2"
+     ],
+     "length": 1.4655
+    },
+    {
+     "pair": [
+      "4",
+      "3"
+     ],
+     "length": 1.4655
+    },
+    {
+     "pair": [
+      "14",
+      "6"
+     ],
+     "length": 1.5104
+    },
+    {
+     "pair": [
+      "13",
+      "5"
+     ],
+     "length": 1.5104
+    },
+    {
+     "pair": [
+      "11",
+      "1"
+     ],
+     "length": 1.5104
+    },
+    {
+     "pair": [
+      "16",
+      "10"
+     ],
+     "length": 1.5104
+    },
+    {
+     "pair": [
+      "7",
+      "6"
+     ],
+     "length": 1.4771
+    },
+    {
+     "pair": [
+      "10",
+      "9"
+     ],
+     "length": 1.4771
+    },
+    {
+     "pair": [
+      "5",
+      "4"
+     ],
+     "length": 1.4771
+    },
+    {
+     "pair": [
+      "2",
+      "1"
+     ],
+     "length": 1.4771
+    },
+    {
+     "pair": [
+      "17",
+      "9"
+     ],
+     "length": 1.5052
+    },
+    {
+     "pair": [
+      "18",
+      "2"
+     ],
+     "length": 1.5052
+    },
+    {
+     "pair": [
+      "18",
+      "4"
+     ],
+     "length": 1.5052
+    },
+    {
+     "pair": [
+      "6",
+      "15"
+     ],
+     "length": 1.4476
+    },
+    {
+     "pair": [
+      "15",
+      "14"
+     ],
+     "length": 1.4476
+    },
+    {
+     "pair": [
+      "13",
+      "12"
+     ],
+     "length": 1.4476
+    }
+   ],
+   "note_on_edges": "Some rows in the source table list 2-4 symmetry-equivalent bonds sharing one length value (C2v symmetry classes) -- expanded here into individual atom-pair edges, all with that row's length. This yields 24 edge entries covering what the paper calls the unique R_i,j set for 18 atoms (cage, each atom presumably 3-coordinate per the 'octaazacubane-like conjugated pentagon' framework described in the abstract) -- coordinator should verify total edge count against expected 3-coordinate-cage edge count (27 edges for 18 3-coordinate atoms) before building 3D geometry.",
+   "average_bond_length_by_level_A": {
+    "RHF_4-31G": 1.439,
+    "RHF_6-31G": 1.439,
+    "BHLYP_6-31G": 1.4568,
+    "B3LYP_6-31G": 1.4911,
+    "B3P86_6-31G": 1.477,
+    "MP2_6-31G": 1.498
+   }
+  },
+  "suggested_build": "UNKNOWN_HAS_FULL_BOND_GRAPH",
+  "notes": "Confirmed genuine minimum (all harmonic frequencies positive/real per paper's own vibrational analysis at 3 levels). Stability comparable to N20 dodecahedral cage (~50 kcal/mol/atom above separated N2, similar order to N20). Cage built from 8 conjugated pentagons (per abstract) -- structurally related to but distinct from N20's 12-pentagon dodecahedron and from octaazacubane N8. This is a LARGE, well-characterized cage with essentially complete geometric data (full bond graph across 6 levels of theory) -- one of the highest-value new structures in this whole batch. NOT present in existing corpus (N_csp/polyN_study max out at n<=12, biblio corpus's largest neutral cage is N20 dodecahedrane) -- genuinely NEW size/topology.",
+  "_source_file": "N18.json"
+ },
+ {
+  "id": "N20_Ih_cage_HaEtAl",
+  "formula": "N20",
+  "charge": 0,
+  "mult": 1,
+  "point_group": "Ih",
+  "method": "B3LYP/6-31+G(d)",
+  "source_note": "text, p.329: N-N bond distance 1.438 A (HF), 1.500 A (MP2), 1.492 A (B3LYP), single edge length by Ih symmetry (dodecahedron, all edges equivalent)",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "shape": "dodecahedron, all 30 edges equivalent by Ih symmetry",
+   "edge_HF": 1.438,
+   "edge_MP2": 1.5,
+   "edge_B3LYP": 1.492
+  },
+  "suggested_build": "dodecahedron",
+  "notes": "Confirmed genuine local minimum by frequency calc (paper's own analysis). Highest-energy of the three N20 isomers studied here (~200 kcal/mol above bowl/ring). Likely duplicates existing N20_Ih_dodecahedrane in molecules.py -- cross-check bond length value against existing entry.",
+  "_source_file": "N20.json"
+ },
+ {
+  "id": "N3+_Dinfh_linear_groundstate",
+  "formula": "N3",
+  "charge": 1,
+  "mult": 3,
+  "point_group": "Dinfh (linear, centrosymmetric)",
+  "method": "MRCI/[5s,4p,3d,2f] (Dunning basis, state-averaged CASSCF reference)",
+  "source_note": "Table 1, p.276: X 3-Sigma-g(-) state (electronic ground state), MRCI R_e = 2.254 bohr; experimental R_0 = 2.254 bohr (excellent agreement). Value in bohr, converted: 2.254 * 0.52917721 = 1.1928 A.",
+  "geometry_type": "exact_coords",
+  "coords": null,
+  "bond_params": {
+   "shape": "linear centrosymmetric N-N-N, D-inf-h, single N-N distance parameter",
+   "R_NN_bohr": 2.254,
+   "R_NN_angstrom": 1.1928
+  },
+  "suggested_build": "linear",
+  "notes": "IMPORTANT CROSS-CHECK: this paper's high-level MRCI calculation finds the N3+ GROUND STATE to be a TRIPLET (X 3-Sigma-g-, mult=3), linear and centrosymmetric -- confirmed by rotationally-resolved experimental spectroscopy (paper explicitly notes prior theoretical work got an asymmetric SINGLET ground state wrong due to symmetry-breaking artifacts, corrected here). If the existing molecules.py N3+_linear entry uses mult=1 (singlet) or a different point group, this is a genuine discrepancy worth flagging in the report -- this MRCI+experiment-validated value should be considered authoritative over any HF/DFT singlet result. coords field left null since only a single bond-length parameter (not a full atom-by-atom Cartesian table) is given; trivial to construct (3 colinear atoms, symmetric spacing) via the 'linear' build.",
+  "_source_file": "N3+.json"
+ },
+ {
+  "id": "N4+_Dinfh_linear",
+  "formula": "N4",
+  "charge": 1,
+  "mult": 2,
+  "point_group": "Dinfh",
+  "method": "RCCSD-T (also B3LYP, B97-1 reported, RCCSD-T preferred as most reliable per paper)",
+  "source_note": "Table 2, p. 1848",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "chain_bonds_angstrom": [
+    1.1097,
+    2.0045,
+    1.1097
+   ],
+   "chain_bonds_bohr_asprinted": [
+    2.097,
+    3.788,
+    2.097
+   ],
+   "description": "Linear centrosymmetric N-N-N-N (X 2Sigma+u state). Converted from bohr as printed in paper (RCCSD-T: RN-N=2.097 bohr, RN...N=3.788 bohr) via 1 bohr=0.52917721 Angstrom. Structure is essentially two N2 units weakly bound (RN...N much longer than N2 bond, 'floppy' along bending per text). Alternative values also tabulated: B3LYP 2.072/4.048 bohr, B97-1 2.078/4.003 bohr."
+  },
+  "suggested_build": "linear",
+  "notes": "Genuine minimum (vibrational analysis performed, ground state). Not present in existing catalog (existing catalog has no N4+ entry at all per prior 70-structure list).",
+  "_source_file": "N4+.json"
+ },
+ {
+  "id": "N4_D2h_rectangle_cyclobutadiene_analog",
+  "formula": "N4",
+  "charge": 0,
+  "mult": 1,
+  "point_group": "D2h",
+  "method": "MP2/6-31G*",
+  "source_note": "text p.3294: 'cyclobutadiene analog structure 2 ... planar, rectangular structure of alternate single and double bonds (MP2: 1.542 and 1.287 A, respectively)'",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "shape": "planar rectangle (4-ring), alternating bonds",
+   "bond_single_A": 1.542,
+   "bond_double_A": 1.287
+  },
+  "suggested_build": "rectangle",
+  "notes": "Likely duplicate topology of existing N4_D2h_rectangle_planar in molecules.py -- cross-check bond lengths, this MP2/6-31G* source may differ from existing entry's level of theory.",
+  "_source_file": "N4-6-8.json"
+ },
+ {
+  "id": "N6_D6h_hexagon_aromatic",
+  "formula": "N6",
+  "charge": 0,
+  "mult": 1,
+  "point_group": "D6h",
+  "method": "not explicitly stated for this value (paper-wide RHF/MP2 6-31G*)",
+  "source_note": "text p.3295: 'N...N aromatic bond in 3, 1.337 A' -- planar hexagonal aromatic N6 ring (benzene analog), all 6 bonds equivalent",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "shape": "planar hexagonal ring, 6 equivalent aromatic N-N bonds",
+   "bond_A": 1.337
+  },
+  "suggested_build": "regular_ngon",
+  "notes": "This is structure '3' in the paper's numbering, described as having 120-deg angles (sp2 N), 'completely free of strain' per authors. Not the same as N6_D3h_prism already in corpus -- planar aromatic hexagon is a distinct topology, likely NEW.",
+  "_source_file": "N4-6-8.json"
+ },
+ {
+  "id": "N8_D4h_cyclooctatetraene",
+  "formula": "N8",
+  "charge": 0,
+  "mult": 1,
+  "point_group": "D4h (tub-shaped COT analog, exact PG not restated numerically here)",
+  "method": "MP2/6-31G*",
+  "source_note": "text p.3295: 'N8 cyclooctatetraene 10 ... nonconjugated single and double bonds (MP2: 1.429 and 1.267 A, respectively)'",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "shape": "8-membered ring, alternating single/double bonds, cyclooctatetraene-like (tub/planar not specified numerically)",
+   "bond_single_A": 1.429,
+   "bond_double_A": 1.267
+  },
+  "suggested_build": "general_ring",
+  "notes": "Distinct from N8_C2v_ring / N8_D2h_pentalene already in corpus (this is the COT 8-ring specifically) -- likely NEW topology if not graph-isomorphic to existing ring entries.",
+  "_source_file": "N4-6-8.json"
+ },
+ {
+  "id": "N8_pentalene_dianion_analog_struct11",
+  "formula": "N8",
+  "charge": 0,
+  "mult": 1,
+  "point_group": "not stated numerically",
+  "method": "MP2/6-31G*",
+  "source_note": "text p.3295-3296: structure '11', N8 analog of pentalene dianion, fused bicyclic (two fused 5-rings sharing an edge), 'calculated N...N bond distances in 11, ranging from 1.334 to 1.368 A, indicate extensive delocalization'",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "shape": "fused bicyclic, two 5-membered rings sharing a common N-N edge (pentalene-type)",
+   "bond_range_A": [
+    1.334,
+    1.368
+   ]
+  },
+  "suggested_build": "fused_bicyclic",
+  "notes": "CAUTION: only a bond-length RANGE given, not individual bond assignments -- insufficient for exact reconstruction, would need Niveau 2 (build fused_bicyclic topology with approximate bonds ~1.35 A, then GFN2-xTB relax). Compare against existing N8_D2h_pentalene / N8_Cs_azidopentazole for possible topology overlap.",
+  "_source_file": "N4-6-8.json"
+ },
+ {
+  "id": "N4_Td_tetrahedrane_CCSDT",
+  "formula": "N4",
+  "charge": 0,
+  "mult": 1,
+  "point_group": "Td",
+  "method": "CCSD(T)/TZ2Pf (highest level in paper)",
+  "source_note": "Table 6, p.4463: rNN column, TZ2Pf CCSD(T) row = 1.463 A. Single edge length (all 6 edges equivalent by Td symmetry).",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "shape": "tetrahedron, all edges equivalent",
+   "edge_A": 1.463,
+   "edge_A_by_level": {
+    "DZP_SCF": 1.398,
+    "DZP_MP2": 1.484,
+    "DZP_CCSDT": 1.472,
+    "TZ2Pf_SCF": 1.392,
+    "TZ2Pf_CCSDT": 1.463
+   }
+  },
+  "suggested_build": "tetrahedron",
+  "notes": "Likely duplicate topology of existing N4_Td in molecules.py -- but this CCSD(T)/TZ2Pf value (1.463 A) is a high-quality independent literature value, useful as a cross-check/alternative reference even if topologically redundant. Paper confirms Td N4 is a genuine minimum (harmonic frequencies all real, Table 7).",
+  "_source_file": "N4-N8.json"
+ },
+ {
+  "id": "N8_Oh_octaazacubane_CCSD",
+  "formula": "N8",
+  "charge": 0,
+  "mult": 1,
+  "point_group": "Oh",
+  "method": "CCSD/DZP (highest correlated level given for pure N8 in Table 2; no CCSD(T) row for N8 itself)",
+  "source_note": "Table 2, p.4462: rNN column for N8 (not vertex-protonated), DZP CCSD row = 1.517 A. Single edge length (all 12 edges equivalent by Oh symmetry, cube).",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "shape": "cube, all edges equivalent",
+   "edge_A": 1.517,
+   "edge_A_by_level": {
+    "DZP_SCF": 1.461,
+    "DZP_MP2": 1.529,
+    "DZP_B3LYP": 1.517,
+    "DZP_CCSD": 1.517
+   }
+  },
+  "suggested_build": "cube",
+  "notes": "Likely duplicate topology of existing N8_Oh_cube/N8_Oh_cubane_GS in molecules.py -- cross-check bond length. Paper confirms Oh N8 is a genuine minimum (Table 3, all frequencies real/positive).",
+  "_source_file": "N4-N8.json"
+ },
+ {
+  "id": "N4_Td_singlet_1",
+  "formula": "N4",
+  "charge": 0,
+  "mult": 1,
+  "point_group": "Td",
+  "method": "CCSD(T)/DZP (also B3LYP/DZP, B3LYP/cc-pVTZ, CAS(12,12) reported)",
+  "source_note": "Table 2, structure '1, Td (1A1)'",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "edge_angstrom": 1.472,
+   "description": "Regular tetrahedron, all N-N edges equal (Re=1.472 A at CCSD(T)/DZP; also 1.458/1.448/1.470/1.466/1.442/1.461 at other listed levels)."
+  },
+  "suggested_build": "tetrahedron",
+  "notes": "DUPLICATE of existing molecules.py entry 'N4_Td' (same formula/charge/topology) -- extracted anyway per instructions; gives an independent refined bond length to cross-check against existing entry.",
+  "_source_file": "N4b.json"
+ },
+ {
+  "id": "N4_D2d_triplet_5",
+  "formula": "N4",
+  "charge": 0,
+  "mult": 3,
+  "point_group": "D2d",
+  "method": "CCSD(T)/DZP (also B3LYP/DZP, B3LYP/cc-pVTZ, CAS(12,12)/DZP, CAS(12,12)/cc-pVTZ reported)",
+  "source_note": "Table 3, structure '5, D2d (3A1)' -- 'lowest energy triplet with a closed structure' per abstract",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "R12_angstrom": 1.394,
+   "angle_R123_deg": 88.4,
+   "dihedral_phi1234_deg": 18.8,
+   "description": "Puckered 4-membered ring, D2d symmetry, all 4 N-N bonds equal by symmetry (R12), one ring angle (R123), one pucker/dihedral angle (phi1234). CCSD(T)/DZP values; other levels also tabulated (B3LYP/DZP: 1.380/88.4/18.9; B3LYP/cc-pVTZ: 1.370/88.5/18.4; CAS(12,12)/DZP: 1.396/89.2/13.5; CAS(12,12)/cc-pVTZ: 1.391/89.2/12.8)."
+  },
+  "suggested_build": "puckered_4ring_d2d",
+  "notes": "NEW species, genuine minimum (real harmonic frequencies reported in Table 3, though authors note T1 diagnostic is somewhat large -0.028- suggesting mild multireference character -- flagging per instructions). Not in existing 70-structure catalog.",
+  "_source_file": "N4b.json"
+ },
+ {
+  "id": "N4_Cs_triplet_4_openchain",
+  "formula": "N4",
+  "charge": 0,
+  "mult": 3,
+  "point_group": "Cs",
+  "method": "CCSD(T)/DZP (also B3LYP/DZP, B3LYP/cc-pVTZ, CAS(12,12)/DZP, CAS(12,12)/cc-pVTZ reported)",
+  "source_note": "Table 9, structure '4, Cs (3A'')' -- abstract states this is 'a true minimum at all investigated levels'",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "bonds_angstrom": [
+    1.337,
+    1.289,
+    1.16
+   ],
+   "angles_deg": [
+    116.2,
+    172.0
+   ],
+   "description": "Open-chain: bond order N3-N1 (R13=1.337), N1-N2 (R12=1.289), N2-N4 (R24=1.160); angle at N1 (R213=116.2), angle at N2 (R124=172.0, near-linear). CCSD(T)/DZP values; other levels also tabulated in Table 9."
+  },
+  "suggested_build": "chain2d",
+  "notes": "LIKELY THE SAME SPECIES as N4c.pdf's structure '5, Cs, open-chain triplet' (Glukhovtsev & Laiter 1996) -- both papers report an open-chain Cs-symmetry triplet N4 as a genuine minimum with similar bond-length pattern (short terminal ~1.16-1.17, medium/long other bonds). Cross-check both extractions against each other during dedup/build phase; may be the identical physical structure computed independently by two groups.",
+  "_source_file": "N4b.json"
+ },
+ {
+  "id": "N4_Td_tetraazatetrahedrane",
+  "formula": "N4",
+  "charge": 0,
+  "mult": 1,
+  "point_group": "Td",
+  "method": "MP2/6-31G(d) (cross-compared to CASSCF/DZP: 1.471 A, and CCSD/DZP: ~0.020 A shorter)",
+  "source_note": "Figure 2 (image) and text p.1571, structure '2 Td'",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "edge_angstrom": 1.478,
+   "description": "Regular tetrahedron, all edges equal."
+  },
+  "suggested_build": "tetrahedron",
+  "notes": "DUPLICATE of existing 'N4_Td' entry and of N4b.pdf's structure '1' (this paper's own Td value 1.478 vs N4b.pdf's 1.472 at CCSD(T)/DZP -- minor method-dependent variation, cross-check both).",
+  "_source_file": "N4c.json"
+ },
+ {
+  "id": "N4_Cs_triplet_5_openchain",
+  "formula": "N4",
+  "charge": 0,
+  "mult": 3,
+  "point_group": "Cs",
+  "method": "MP2(full)/6-31G(d); CISD(fc)/6-31G(d) values in parentheses",
+  "source_note": "Figure 2 (image), structure '5' -- text confirms 'the open-chain triplet 5 is a minimum with the lowest frequency (au) of 160 cm-1 at UMP2/6-31G(d)'",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "terminal_bonds_angstrom": [
+    1.168,
+    1.168
+   ],
+   "central_bond_angstrom": 1.465,
+   "one_angle_deg": 117.4,
+   "cisd_alt_values": {
+    "terminal_bond": 1.176,
+    "angle": 114.0
+   },
+   "description": "Open-chain Cs triplet N4: two terminal N-N bonds ~1.168 A each (similar to N2 bond), one central N-N bond 1.465 A (elongated single bond vs hydrazine reference 1.438 A). Only ONE of the chain's two internal angles is given explicitly in Figure 2 (117.4 deg / 114.0 deg CISD); the second angle is not stated in text or legible in the figure -- do not assume symmetry, flag as missing for the build phase."
+  },
+  "suggested_build": "chain2d",
+  "notes": "LIKELY THE SAME SPECIES as N4b.pdf's structure '4, Cs (3A'')' (Bittererova et al. 2000) -- cross-check both extractions; this one (Glukhovtsev/Laiter 1996) is missing one chain angle that N4b.pdf's extraction may supply, so the two together may give a complete geometry.",
+  "_source_file": "N4c.json"
+ },
+ {
+  "id": "N5+_C2v_experimental_Xray",
+  "formula": "N5",
+  "charge": 1,
+  "mult": 1,
+  "point_group": "C2v (approximate -- real crystal geometry slightly asymmetric)",
+  "method": "Single-crystal X-ray diffraction, N5+Sb2F11- salt (EXPERIMENTAL, not computational)",
+  "source_note": "Table 2, p. ~6311; Table 1 gives full crystal data (monoclinic, C2/c, a=10.913(8) A, b=12.654(8) A, c=16.675(11) A, beta=104.715(18) deg)",
+  "geometry_type": "exact_coords",
+  "coords": null,
+  "bond_params": {
+   "bonds_angstrom_as_labeled": {
+    "N1-N2": "1.102(19)",
+    "N2-N3": "1.303(19)",
+    "N3-N4": "1.295(19)",
+    "N4-N5": "1.107(19)"
+   },
+   "angles_deg_as_labeled": {
+    "N1-N2-N3": "168.1(15)",
+    "N4-N3-N2": "111.2(11)"
+   },
+   "description": "REAL experimental X-ray geometry of the N5+ cation (as its Sb2F11- salt), slightly asymmetric due to crystal packing (bonds/angles not perfectly C2v-symmetric: 1.102 vs 1.107, 1.303 vs 1.295). Only 2 of the 3 internal chain angles given explicitly in the paper's Table 2 (angle at N4, i.e. N3-N4-N5, not tabulated) -- do not assume it equals the N1-N2-N3 value given the observed asymmetry elsewhere."
+  },
+  "suggested_build": "chain2d (as bond_params fallback, since full Cartesian atom coordinates from the CIF are not reprinted as a table in the paper text itself, only derived bond lengths/angles)",
+  "notes": "HIGH VALUE: this is a genuine EXPERIMENTAL structure (X-ray), not computational -- should likely take priority over any purely-DFT N5+ entry in the existing catalog for the 'reference' geometry of this species, even though it represents the same topology (duplicate by graph/formula/charge). Same species as N5.pdf's 'N5+_C2v_product' (computed: 1.111/1.302, close agreement) and referenced in N5-N6-abinitio.pdf. Flag this preference explicitly during dedup/report-writing: prefer experimental over computed when both represent the same topology.",
+  "_source_file": "N5+.json"
+ },
+ {
+  "id": "N5_C2v_radical_2A1",
+  "formula": "N5",
+  "charge": 0,
+  "mult": 2,
+  "point_group": "C2v",
+  "method": "UCCSD(T)/6-31G(d) (also UMP2/6-311+G(d), UMP2/6-311+G(3df), UB3LYP/6-311+G(d) reported)",
+  "source_note": "Table 2, state N5R 2A1",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "bonds_angstrom": [
+    1.161,
+    1.413,
+    1.413,
+    1.161
+   ],
+   "angles_deg": [
+    137.7,
+    102.2,
+    137.7
+   ],
+   "description": "Symmetric open-chain radical N1-N2-N3-N4-N5, C2v. Bonds: N1N2=N4N5=1.161, N2N3=N3N4=1.413 (CCSD(T)/6-31G(d)). Angles: N1N2N3=N3N4N5=137.7, N2N3N4=102.2 (row label 'N1N2N3 N3N4N5' in Table 2 denotes the two equal angles by symmetry)."
+  },
+  "suggested_build": "chain2d",
+  "notes": "NEW species, N5 neutral radical (doublet ground/low-energy state).",
+  "_source_file": "N5-N6-abinitio.json"
+ },
+ {
+  "id": "N5_C2v_radical_2B2",
+  "formula": "N5",
+  "charge": 0,
+  "mult": 2,
+  "point_group": "C2v",
+  "method": "UB3LYP/6-311+G(d) (UMP2/6-311+G(d) also gives bonds only, no CCSD(T) reported for this state)",
+  "source_note": "Table 2, state N5R 2B2",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "bonds_angstrom": [
+    1.151,
+    1.34,
+    1.34,
+    1.151
+   ],
+   "angles_deg": [
+    210.9,
+    114.4,
+    210.9
+   ],
+   "description": "Second, higher-energy radical state, same atom connectivity as 2A1 but different angles; note angle value >180 (210.9) as printed -- likely a specific dihedral/reflex-angle convention used by the authors, transcribed as-is, needs care during reconstruction (may represent 360-210.9=149.1 or similar convention; verify against original before use)."
+  },
+  "suggested_build": "chain2d",
+  "notes": "NEW species but flagged: the >180 degree angle value is unusual and should be double-checked (possible OCR/convention issue) rather than assumed to be a direct chain2d input; also higher in energy than 2A1 state (~by ~9 kJ/mol relative per text 'about 250 kJ/mol' context -- reread text for exact relative energy if needed).",
+  "_source_file": "N5-N6-abinitio.json"
+ },
+ {
+  "id": "N5-_D5h_pentazolate",
+  "formula": "N5",
+  "charge": -1,
+  "mult": 1,
+  "point_group": "D5h",
+  "method": "CCSD(T)/6-311+G(d) (also MP2, QCISD, B3LYP with same basis reported: 1.337/1.324/1.334/1.326 A respectively)",
+  "source_note": "Table 3 footnote, N5A (D5h)",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "edge_angstrom": 1.334,
+   "description": "Regular pentagon (D5h), all N-N bonds equal."
+  },
+  "suggested_build": "regular_ngon",
+  "notes": "LIKELY DUPLICATE of existing 'N5-_pentagon' entry -- cross-check bond length against existing catalog value during dedup.",
+  "_source_file": "N5-N6-abinitio.json"
+ },
+ {
+  "id": "N6_C2h_trans_diazide_v2",
+  "formula": "N6",
+  "charge": 0,
+  "mult": 1,
+  "point_group": "C2h",
+  "method": "CASPT2 / 3s2p1d ANO basis (also SCF/vdzp, MP2/vdzp, DFT/vdzp, DFT/vtzp reported)",
+  "source_note": "Table 1, row 'CASPT2(C2h)'",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "bonds_angstrom": [
+    1.479,
+    1.266,
+    1.163
+   ],
+   "angle1_deg": 105.3,
+   "angle2_deg": 171.3,
+   "dihedral_deg": 180.0,
+   "description": "Half-molecule internal coordinates (R11'=central bond, R12=middle bond, R23=terminal bond by inferred atom labeling; symmetric other half by C2h). Confirmed genuine minimum: 'harmonic vibrational frequencies confirmed that the linear[sic, likely open-chain] structure is a local minimum, with all the harmonic vibrational frequencies real.'"
+  },
+  "suggested_build": "chain2d",
+  "notes": "LIKELY THE SAME SPECIES as N5-N6-abinitio.pdf's 'N6_C2h_trans_diazide' (independent characterization, different method/basis, reasonably consistent bond lengths -- cross-check both during dedup, may want to keep both as independent literature confirmations rather than merge outright).",
+  "_source_file": "N6-3N2.json"
+ },
+ {
+  "id": "N6_C2v_cis_diazide",
+  "formula": "N6",
+  "charge": 0,
+  "mult": 1,
+  "point_group": "C2v",
+  "method": "CASPT2 / 3s2p1d ANO basis, assumed C2v symmetry",
+  "source_note": "Table 1, row 'CASPT2(C2v)'",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "bonds_angstrom": [
+    1.483,
+    1.278,
+    1.172
+   ],
+   "angle1_deg": 118.1,
+   "angle2_deg": 173.1,
+   "dihedral_deg": 180.0,
+   "description": "Footnote a states this row is the 'cis' counterpart to the trans (C2h) row above, from the same CASPT2 calculation series. CAUTION: the table lists dihedral 180.0 for BOTH the C2h and C2v rows, which is not what one would expect if cis vs trans differ by the inter-unit dihedral (should differ from the trans value, e.g. ~0 vs ~180) -- this may be a table-formatting/OCR artifact from pdftotext, or the cis/trans distinction here may refer to something other than that dihedral. FLAG for manual verification against the original PDF table image before using."
+  },
+  "suggested_build": "chain2d",
+  "notes": "Possible NEW distinct stationary point (if genuinely a separate minimum from the trans form) OR may be a stereoisomer/conformer indistinguishable from the trans form under our graph-connectivity-only topology comparison (same caveat already documented in the main report's stereoisomer-blindness discussion) -- same connectivity graph as N6_C2h_trans_diazide either way. Recommend treating as informational/secondary rather than a priority new build target given the dihedral ambiguity noted above.",
+  "_source_file": "N6-3N2.json"
+ },
+ {
+  "id": "N7_iso7_Cs_chain",
+  "formula": "N7",
+  "charge": 0,
+  "mult": 2,
+  "point_group": "Cs",
+  "method": "B3LYP/6-31G*",
+  "source_note": "Table 1 (isomer 7, Cs, 2A'), Table 2",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "bonds_A": {
+    "R12": 1.371,
+    "R25": 1.256,
+    "R45": 1.141
+   },
+   "angles_deg": {
+    "a125": 112.1,
+    "a254": 170.3
+   },
+   "shape": "twisted open-chain (zigzag); terminal bonds close to N2 triple-bond length (1.094 A), central region hypervalent-like"
+  },
+  "suggested_build": "chain (geom.py chain2d)",
+  "notes": "GLOBAL MINIMUM of this paper's N7 study (lowest energy of all 7 isomers considered, all real vibrational frequencies). B3LYP total energy -383.0303 au. Central angle ~105-112 deg consistent with sp3 central N.",
+  "_source_file": "N7.json"
+ },
+ {
+  "id": "N7_iso7_C2_chain",
+  "formula": "N7",
+  "charge": 0,
+  "mult": 2,
+  "point_group": "C2",
+  "method": "B3LYP/6-31G*",
+  "source_note": "Table 1 (isomer 7, C2, 2B), Table 2",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "bonds_A": {
+    "R12": 1.371,
+    "R25": 1.256,
+    "R45": 1.141
+   },
+   "angles_deg": {
+    "a125": 112.1,
+    "a254": 170.3
+   },
+   "shape": "twisted open-chain, C2 symmetry-broken variant of iso7_Cs"
+  },
+  "suggested_build": "chain (geom.py chain2d)",
+  "notes": "Paper reports this as numerically near-identical to N7_iso7_Cs_chain (same bond lengths/angles to given precision, same total energy -383.0303 au, nearly identical nuclear repulsion energy) -- essentially the same structure under two symmetry labels. Keep as separate entry per paper's own distinction but flag for likely dedup with iso7_Cs during centralized processing.",
+  "_source_file": "N7.json"
+ },
+ {
+  "id": "N7+_1_C2v_openchain",
+  "formula": "N7",
+  "charge": 1,
+  "mult": 1,
+  "point_group": "C2v",
+  "method": "B3LYP/6-311(+)G* (paper's preferred level; HF/6-31G*, B3LYP/6-31G*, MP2/6-31G* also given in Fig. 1a/Table 1)",
+  "source_note": "Fig. 1a (structure 1) + prose p.141; Tables 1-3",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "bonds_A": {
+    "N1_N2_or_N1_N3": 1.297,
+    "N2_N4_or_N3_N5": 1.317,
+    "N4_N6_or_N5_N7_terminal": 1.11
+   },
+   "shape": "open-chain, C2v; terminal bond close to N2 triple bond, central bonds between double-bond (HN=NH, 1.252 A) and aromatic (1.350 A) N-N length",
+   "figure_note": "Fig. 1a in the PDF (page 3 of the file) has the FULL set of bond lengths/angles at all 4 levels of theory annotated directly on the structure drawing -- only the prose-quoted subset is transcribed here for safety/certainty of atom-bond assignment; re-read the figure directly for a complete Z-matrix if needed."
+  },
+  "suggested_build": "chain (geom.py chain2d)",
+  "notes": "GLOBAL MINIMUM for N7+ (charge=+1), genuine local minimum at all 4 levels of theory (lowest freq 123-139 cm-1 depending on level, all real). B3LYP/6-311(+)G* total energy -382.8410263 au. THIS IS A NEW CHARGE STATE not present in N7.json or n7b.json (those are neutral N7 only) -- important addition for the cation family comparison table.",
+  "_source_file": "N7c.json"
+ },
+ {
+  "id": "N7-_6_Cs_6ring_boat",
+  "formula": "N7",
+  "charge": -1,
+  "mult": 1,
+  "point_group": "Cs",
+  "method": "B3LYP/6-31G*",
+  "source_note": "Fig. 2a (structure 6), prose p.143-144",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "bonds_A": {
+    "N6_N7": 1.279,
+    "N1_N2_or_N4_N5": "given as ~aromatic/double, see figure"
+   },
+   "shape": "six-membered ring in boat conformation, N1-N6/N5-N6 = 1.464 A, N2-N3/N3-N4 = 1.344 A"
+  },
+  "suggested_build": "general_ring or generic_guess(shape=\"ring\", n_atoms=6, plus one exocyclic/substituent atom)",
+  "notes": "Genuine local minimum at ALL 4 levels (all real vibrational frequencies per text and Table 3) -- close second to structure 5 (within 0.3-3.7 kcal/mol depending on level, actually LOWER than 5 at HF and B3LYP/6-31G*). Negative charge mainly on N1 (-0.40), N2/N3 (-0.18), N6/N7 (-0.28).",
+  "_source_file": "N7c.json"
+ },
+ {
+  "id": "N8_LiWang_C2h_openchain",
+  "formula": "N8",
+  "charge": 0,
+  "mult": 1,
+  "point_group": "C2h",
+  "method": "B3LYP/6-311+G*",
+  "source_note": "Fig. 1 (labeled N8(C2h)), prose p.C (isomerization section), Table 1 energy = -437.902168 au",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "bonds_A": {
+    "one_bond_type": 1.394,
+    "other_bond_type": 1.252
+   },
+   "shape": "open-chain, C2h; one bond type between single/double (1.394 A), other near N2H2 double-bond length (1.252 A)"
+  },
+  "suggested_build": "chain (geom.py chain2d)",
+  "notes": "POSSIBLE DUPLICATE: likely overlaps with an existing N8_C2h_* entry in molecules.py (chain conformer with double-bond alternation) -- flag for graph-isomorphism dedup check. Slightly more stable than N8(Cs) (isomerization barrier 4.0-5.4 kcal/mol from Cs to C2h, QCISD/B3LYP level). Genuine local minimum (product of the isomerization PES study).",
+  "_source_file": "N8.json"
+ },
+ {
+  "id": "N8_D2h_octaazapentalene",
+  "formula": "N8",
+  "charge": 0,
+  "mult": 1,
+  "point_group": "D2h",
+  "method": "MP2/6-31G*",
+  "source_note": "Figure 1, p.5648 (labeled bond lengths/angles on structure diagram, read visually)",
+  "geometry_type": "bond_params",
+  "coords": null,
+  "bond_params": {
+   "connectivity": "Fused bicyclic 5-5 rings sharing a central bridge bond (naphthalene-analog / pentalene topology).",
+   "bonds_angstrom_approx": [
+    1.369,
+    1.342,
+    1.337
+   ],
+   "angles_deg_approx": [
+    113.9,
+    109.2,
+    103.8
+   ],
+   "caveat": "Values read from a small labeled diagram image; exact atom-by-atom bond assignment not fully certain due to image resolution -- recommend re-checking Fig.1 (page 2 of PDF) directly if exact reconstruction needed. Likely the SAME topology as the existing corpus entry N8_D2h_pentalene (dedup candidate) -- flagging for central dedup rather than asserting identity myself."
+  },
+  "suggested_build": "generic_guess (shape='bicyclic', n_atoms=8) -- or reuse existing N8_D2h_pentalene build if confirmed duplicate",
+  "notes": "'Structure 1' in paper (octaazapentalene). MP2/6-31G* and CCSD(T)/6-311G* both find this ~17 kcal/mol above structure 2 (azidopentazole), i.e. not the global minimum among the 3 isomers studied here.",
+  "_source_file": "N8c.json"
+ },
+ {
+  "id": "N8_Cs_azidopentazole_v2",
+  "formula": "N8",
+  "charge": 0,
+  "mult": 1,
+  "point_group": "Cs",
+  "method": "MP2/6-31G*",
+  "source_note": "Figure 1, p.5648",
+  "geometry_type": "bond_params",
+  "coords": null,
+  "bond_params": {
+   "connectivity": "N5 ring with an -N3 (azide) side chain in the ring plane.",
+   "bonds_angstrom_approx": [
+    1.331,
+    1.331,
+    1.391,
+    1.336,
+    1.332,
+    1.277,
+    1.15
+   ],
+   "angles_deg_approx": [
+    109.9,
+    114.5,
+    108.8,
+    103.1
+   ],
+   "caveat": "Read from labeled diagram image; likely the SAME topology as existing corpus entry N8_Cs_azidopentazole (dedup candidate -- different level of theory though, MP2/6-31G* here vs whatever the original source used)."
+  },
+  "suggested_build": "reuse existing N8_Cs_azidopentazole build if confirmed duplicate, else generic_guess (shape='ring_plus_chain', n_atoms=8)",
+  "notes": "'Structure 2' -- found to be the MOST STABLE of the 3 isomers studied in this paper (both MP2/6-31G* and CCSD(T)/6-311G*).",
+  "_source_file": "N8c.json"
+ },
+ {
+  "id": "N8_C2h_diazidodiimide_cis_3a",
+  "formula": "N8",
+  "charge": 0,
+  "mult": 1,
+  "point_group": "C2h",
+  "method": "MP2/6-31G*",
+  "source_note": "Figure 1, p.5648, structure '3a'",
+  "geometry_type": "bond_params",
+  "coords": null,
+  "bond_params": {
+   "connectivity": "Linear/zigzag open chain: azide(N1-N2-N3)-N4=N5-azide(N6-N7-N8); described in text as 'diazidodiimide, cis: N3-N=N-N3'.",
+   "bonds_angstrom_approx": [
+    1.153,
+    1.272,
+    1.409,
+    1.273
+   ],
+   "angles_deg_approx": [
+    106.3,
+    108.3
+   ],
+   "caveat": "Symmetric values doubled by C2h symmetry (only one half of the molecule's distinct bonds shown, mirrored by inversion center). Read from labeled diagram image."
+  },
+  "suggested_build": "generic_guess (shape='chain', n_atoms=8) -- open zigzag chain with two terminal azide-like triple-bond ends",
+  "notes": "'Structure 3a' (cis diazidodiimide). Does NOT appear to match any existing corpus entry by name -- likely genuinely NEW topology. 2.9 kcal/mol more stable than trans isomer (3b) at MP2/6-31G*; 1.2 kcal/mol at CCSD(T)/6-311G*. ~17.5 kcal/mol above azidopentazole (structure 2) at MP2 level.",
+  "_source_file": "N8c.json"
+ },
+ {
+  "id": "N8_C2v_diazidodiimide_trans_3b",
+  "formula": "N8",
+  "charge": 0,
+  "mult": 1,
+  "point_group": "C2v",
+  "method": "MP2/6-31G*",
+  "source_note": "Figure 1, p.5648, structure '3b'",
+  "geometry_type": "bond_params",
+  "coords": null,
+  "bond_params": {
+   "connectivity": "Same as 3a but trans conformation of the two azide side groups relative to the central N=N.",
+   "bonds_angstrom_approx": [
+    1.155,
+    1.269,
+    1.421
+   ],
+   "angles_deg_approx": [
+    113.9,
+    108.9
+   ],
+   "caveat": "Read from labeled diagram image."
+  },
+  "suggested_build": "generic_guess (shape='chain', n_atoms=8)",
+  "notes": "'Structure 3b' (trans diazidodiimide). Likely genuinely NEW topology (not matched by name to existing corpus). Note: point group listed as C2h in main text Table 1 caption context but figure explicitly labels 3b as (C2v) -- flagging this inconsistency for the coordinator, did not resolve it myself.",
+  "_source_file": "N8c.json"
+ },
+ {
+  "id": "N8_Oh_cubane_v2",
+  "formula": "N8",
+  "charge": 0,
+  "mult": 1,
+  "point_group": "Oh",
+  "method": "MP2/(9s5p1d)/[3s2p1d]; also HF and DFT(B3LYP/cc-pVTZ) reported",
+  "source_note": "Table 1 (symmetry) + Table 2 (bond lengths), p.2-4",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "shape_name": "cubane (Oh)",
+   "R_ss_angstrom": {
+    "HF": 1.46,
+    "MP2": 1.53,
+    "DFT": 1.52
+   }
+  },
+  "suggested_build": "cube (already have a geom.py function + likely duplicate of existing N8_Oh_cube/N8_Oh_cubane_GS)",
+  "notes": "Likely duplicate of existing corpus entries -- flag for dedup, not asserting identity.",
+  "_source_file": "N8e.json"
+ },
+ {
+  "id": "N8_D2h_pentacyclooctane",
+  "formula": "N8",
+  "charge": 0,
+  "mult": 1,
+  "point_group": "D2h",
+  "method": "MP2/(9s5p1d)/[3s2p1d]; also HF and DFT",
+  "source_note": "Table 1+2, p.2-4",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "shape_name": "pentacyclooctane (N8 analog of C8H8 pentacyclooctane cage)",
+   "R_ss_angstrom_range": {
+    "HF": [
+     1.41,
+     1.42
+    ],
+    "MP2": [
+     1.45,
+     1.49
+    ],
+    "DFT": [
+     1.45,
+     1.48
+    ]
+   }
+  },
+  "suggested_build": "UNKNOWN -- not in current geom.py shape list, needs the standard pentacyclooctane cage connectivity (well-known organic topology, not fabricated here)",
+  "notes": "No obvious match in existing corpus by name -- likely NEW topology.",
+  "_source_file": "N8e.json"
+ },
+ {
+  "id": "N8_C2v_cuneane",
+  "formula": "N8",
+  "charge": 0,
+  "mult": 1,
+  "point_group": "C2v",
+  "method": "MP2/(9s5p1d)/[3s2p1d]; also HF and DFT",
+  "source_note": "Table 1+2, p.2-4",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "shape_name": "cuneane (N8 analog of C8H8 cuneane cage)",
+   "R_ss_angstrom_range": {
+    "HF": [
+     1.4,
+     1.45
+    ],
+    "MP2": [
+     1.43,
+     1.5
+    ],
+    "DFT": [
+     1.43,
+     1.49
+    ]
+   }
+  },
+  "suggested_build": "UNKNOWN -- needs standard cuneane cage connectivity",
+  "notes": "No obvious match in existing corpus -- likely NEW topology.",
+  "_source_file": "N8e.json"
+ },
+ {
+  "id": "N8_C2v_cis_tricyclooctadiene",
+  "formula": "N8",
+  "charge": 0,
+  "mult": 1,
+  "point_group": "C2v (per Table 1; OCR confidence medium)",
+  "method": "MP2/(9s5p1d)/[3s2p1d]; also HF and DFT",
+  "source_note": "Table 1+2, p.2-4",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "shape_name": "cis-tricyclooctadiene (N8 analog)",
+   "R_ss_angstrom_range": {
+    "HF": [
+     1.44,
+     1.5
+    ],
+    "MP2": [
+     1.49,
+     1.62
+    ],
+    "DFT": [
+     1.49,
+     1.57
+    ]
+   },
+   "R_sd_angstrom": {
+    "HF": 1.41,
+    "MP2": 1.42,
+    "DFT": 1.43
+   },
+   "R_dd_angstrom": {
+    "HF": 1.23,
+    "MP2": 1.31,
+    "DFT": 1.26
+   }
+  },
+  "suggested_build": "UNKNOWN -- needs standard tricyclooctadiene cage connectivity",
+  "notes": "No obvious match in existing corpus -- likely NEW topology.",
+  "_source_file": "N8e.json"
+ },
+ {
+  "id": "N8_trans_tricyclooctadiene",
+  "formula": "N8",
+  "charge": 0,
+  "mult": 1,
+  "point_group": "Cs or C2 (Table 1 label not confidently legible)",
+  "method": "MP2/(9s5p1d)/[3s2p1d]; also HF and DFT",
+  "source_note": "Table 1+2, p.2-4",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "shape_name": "trans-tricyclooctadiene (N8 analog)",
+   "R_ss_angstrom_range": {
+    "HF": [
+     1.44,
+     1.47
+    ],
+    "MP2": [
+     1.5,
+     1.56
+    ]
+   },
+   "R_sd_angstrom": {
+    "HF": 1.42,
+    "MP2": 1.45
+   },
+   "note_low_confidence": "DFT row and exact R_dd for this isomer not legibly transcribed -- recommend re-check"
+  },
+  "suggested_build": "UNKNOWN",
+  "notes": "No obvious match in existing corpus -- likely NEW topology. Lower transcription confidence than others in this batch.",
+  "_source_file": "N8e.json"
+ },
+ {
+  "id": "N8_Cs_bicyclooctatriene",
+  "formula": "N8",
+  "charge": 0,
+  "mult": 1,
+  "point_group": "Cs",
+  "method": "MP2/(9s5p1d)/[3s2p1d]; also HF and DFT",
+  "source_note": "Table 1+2, p.2-4",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "shape_name": "bicyclooctatriene (N8 analog)",
+   "R_ss_angstrom": {
+    "HF": 1.41,
+    "MP2": 1.45,
+    "DFT": 1.44
+   },
+   "R_sd_angstrom_range": {
+    "HF": [
+     1.38,
+     1.4
+    ],
+    "MP2": [
+     1.4,
+     1.42
+    ],
+    "DFT": [
+     1.39,
+     1.42
+    ]
+   },
+   "R_dd_angstrom_range": {
+    "HF": [
+     1.21,
+     1.23
+    ],
+    "MP2": [
+     1.25,
+     1.31
+    ],
+    "DFT": [
+     1.23,
+     1.27
+    ]
+   }
+  },
+  "suggested_build": "UNKNOWN -- needs standard bicyclooctatriene connectivity",
+  "notes": "No obvious match in existing corpus -- likely NEW topology.",
+  "_source_file": "N8e.json"
+ },
+ {
+  "id": "N8_D2d_cis_cyclooctatetraene",
+  "formula": "N8",
+  "charge": 0,
+  "mult": 1,
+  "point_group": "D2d (per Table 1; not fully confident from image)",
+  "method": "MP2/(9s5p1d)/[3s2p1d]; also HF and DFT",
+  "source_note": "Table 1+2, p.2-4",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "shape_name": "cis-cyclooctatetraene ('tub' form), all atoms 2-coordinate",
+   "R_sd_angstrom": {
+    "HF": 1.2,
+    "MP2": 1.27,
+    "DFT": 1.23
+   },
+   "R_dd_angstrom": {
+    "HF": 1.4,
+    "MP2": 1.43,
+    "DFT": 1.43
+   }
+  },
+  "suggested_build": "generic_guess (shape='ring', n_atoms=8), non-planar tub conformation",
+  "notes": "Likely close/possibly isomorphic in graph terms to some existing chain/ring N8 entries from the [B] Fau/Bartlett corpus (E/Z chain conformers) -- flag for dedup check rather than asserting.",
+  "_source_file": "N8e.json"
+ },
+ {
+  "id": "N8_D2h_pentalene_v3",
+  "formula": "N8",
+  "charge": 0,
+  "mult": 1,
+  "point_group": "D2h (paper calls it 'azapentalene')",
+  "method": "MP2/(9s5p1d)/[3s2p1d]; also HF and DFT",
+  "source_note": "Table 1+2, p.2-4; text notes all N-N bonds similar length (1.28-1.31 HF, 1.34-1.37 MP2, 1.31-1.33 DFT), pi-delocalized",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "shape_name": "pentalene (fused bicyclic 5-5, delocalized)",
+   "R_ss_angstrom": {
+    "HF": 1.28,
+    "MP2": 1.37,
+    "DFT": 1.31
+   },
+   "R_sd_angstrom": {
+    "HF": 1.31,
+    "MP2": 1.34,
+    "DFT": 1.33
+   },
+   "R_dd_angstrom": {
+    "HF": 1.29,
+    "MP2": 1.34,
+    "DFT": 1.32
+   }
+  },
+  "suggested_build": "reuse existing N8_D2h_pentalene build if confirmed duplicate",
+  "notes": "Likely duplicate of existing corpus entry N8_D2h_pentalene AND of N8_D2h_octaazapentalene extracted from N8c.pdf in this same batch -- three independent literature sources (this paper, N8c.pdf, and the original [B]/[GS] corpus) may all report the same pentalene topology at different levels of theory. Flag for careful central dedup / cross-check, don't merge blindly since bond lengths differ somewhat between sources (correlation-level dependence noted explicitly by these authors).",
+  "_source_file": "N8e.json"
+ },
+ {
+  "id": "N6_D3h_cage_3Mset",
+  "formula": "N6",
+  "charge": 0,
+  "mult": 1,
+  "point_group": "D3h",
+  "method": "B3LYP/CC-PVDZ",
+  "source_note": "Abstract + Section 2.1 + Table 1, p. 3845-3848",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "selected_bonds_angstrom": {
+    "R1,2": 1.481,
+    "R1,4": 1.524,
+    "R4,5": 1.481
+   },
+   "shape": "nested-ring cage, 3M set (each layer has 3 atoms)"
+  },
+  "coords": null,
+  "suggested_build": "generic_guess",
+  "notes": "generic_guess shape='cage' (n_atoms=6); ONLY symmetry-representative bond lengths given (not full connectivity/all atoms) -- insufficient alone for exact reconstruction, would need the paper's own 'nested W-shape ring insertion' construction algorithm (described in Section 2) or a generic cage embedding + GFN2-xTB relaxation.",
+  "_source_file": "N_nanotubes_06.json"
+ },
+ {
+  "id": "N12_D3d_cage_3Mset",
+  "formula": "N12",
+  "charge": 0,
+  "mult": 1,
+  "point_group": "D3d",
+  "method": "B3LYP/CC-PVDZ",
+  "source_note": "Abstract + Section 2.1 + Table 1, p. 3845-3848",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "selected_bonds_angstrom": {
+    "R1,2": 1.532,
+    "R1,4": 1.42,
+    "R4,5": 1.494,
+    "R5,10": 1.42,
+    "R10,12": 1.532
+   },
+   "shape": "nested-ring cage, 3M set (each layer has 3 atoms)"
+  },
+  "coords": null,
+  "suggested_build": "generic_guess",
+  "notes": "generic_guess shape='cage' (n_atoms=12); ONLY symmetry-representative bond lengths given (not full connectivity/all atoms) -- insufficient alone for exact reconstruction, would need the paper's own 'nested W-shape ring insertion' construction algorithm (described in Section 2) or a generic cage embedding + GFN2-xTB relaxation.",
+  "_source_file": "N_nanotubes_06.json"
+ },
+ {
+  "id": "N18_D3h_cage",
+  "formula": "N18",
+  "charge": 0,
+  "mult": 1,
+  "point_group": "D3h",
+  "method": "B3LYP/CC-PVDZ",
+  "source_note": "Abstract + Section 2.1 + Table 1, p. 3845-3848",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "selected_bonds_angstrom": {
+    "R1,2": 1.526,
+    "R1,4": 1.432,
+    "R4,5": 1.477,
+    "R5,10": 1.479,
+    "R10,12": 1.477,
+    "R12,16": 1.432
+   },
+   "shape": "nested-ring cage, 3M set (each layer has 3 atoms)"
+  },
+  "coords": null,
+  "suggested_build": "generic_guess",
+  "notes": "generic_guess shape='cage' (n_atoms=18); ONLY symmetry-representative bond lengths given (not full connectivity/all atoms) -- insufficient alone for exact reconstruction, would need the paper's own 'nested W-shape ring insertion' construction algorithm (described in Section 2) or a generic cage embedding + GFN2-xTB relaxation.",
+  "_source_file": "N_nanotubes_06.json"
+ },
+ {
+  "id": "N8_Oh_cube_multilayer",
+  "formula": "N8",
+  "charge": 0,
+  "mult": 1,
+  "point_group": "Oh",
+  "method": "B3LYP/CC-PVDZ",
+  "source_note": "Abstract + Section 2.2 + Table 2, p. 3845-3848",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "selected_bonds_angstrom": {
+    "R1,2": 1.522,
+    "R1,5": 1.523,
+    "R5,6": 1.523
+   },
+   "shape": "nested-ring cage, 4M set (each layer has 4 atoms)"
+  },
+  "coords": null,
+  "suggested_build": "generic_guess",
+  "notes": "generic_guess shape='cage' (n_atoms=8); ONLY symmetry-representative bond lengths given (not full connectivity/all atoms) -- insufficient alone for exact reconstruction, would need the paper's own 'nested W-shape ring insertion' construction algorithm (described in Section 2) or a generic cage embedding + GFN2-xTB relaxation. Note: this is a DIFFERENT paper's own re-derivation of the well-known N8 Oh cubane, already in the existing biblio corpus (N8_Oh_cube) -- likely duplicate, keep for cross-validation of bond length only.",
+  "_source_file": "N_nanotubes_06.json"
+ },
+ {
+  "id": "N16_D4d_cage",
+  "formula": "N16",
+  "charge": 0,
+  "mult": 1,
+  "point_group": "D4d",
+  "method": "B3LYP/CC-PVDZ",
+  "source_note": "Abstract + Section 2.2 + Table 2, p. 3845-3848",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "selected_bonds_angstrom": {
+    "R1,2": 1.547,
+    "R1,5": 1.437,
+    "R5,6": 1.495,
+    "R6,13": 1.437,
+    "R13,14": 1.547
+   },
+   "shape": "nested-ring cage, 4M set (each layer has 4 atoms)"
+  },
+  "coords": null,
+  "suggested_build": "generic_guess",
+  "notes": "generic_guess shape='cage' (n_atoms=16); ONLY symmetry-representative bond lengths given (not full connectivity/all atoms) -- insufficient alone for exact reconstruction, would need the paper's own 'nested W-shape ring insertion' construction algorithm (described in Section 2) or a generic cage embedding + GFN2-xTB relaxation.",
+  "_source_file": "N_nanotubes_06.json"
+ },
+ {
+  "id": "N10_D5h_cage_multilayer",
+  "formula": "N10",
+  "charge": 0,
+  "mult": 1,
+  "point_group": "D5h",
+  "method": "B3LYP/CC-PVDZ",
+  "source_note": "Abstract + Section 2.3 + Table 3, p. 3845-3848",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "selected_bonds_angstrom": {
+    "R1,2": 1.5,
+    "R1,6": 1.52,
+    "R6,7": 1.5,
+    "R7,16": null,
+    "R16,17": null,
+    "R17,26": null
+   },
+   "shape": "nested-ring cage, 5M set (each layer has 5 atoms)"
+  },
+  "coords": null,
+  "suggested_build": "generic_guess",
+  "notes": "generic_guess shape='cage' (n_atoms=10); ONLY symmetry-representative bond lengths given (not full connectivity/all atoms) -- insufficient alone for exact reconstruction, would need the paper's own 'nested W-shape ring insertion' construction algorithm (described in Section 2) or a generic cage embedding + GFN2-xTB relaxation. Likely duplicate of the well-known N10 D5h prism already in existing biblio corpus (N10_D5h_prism) -- cross-validation only.",
+  "_source_file": "N_nanotubes_06.json"
+ },
+ {
+  "id": "N20_Ih_cage_multilayer",
+  "formula": "N20",
+  "charge": 0,
+  "mult": 1,
+  "point_group": "Ih",
+  "method": "B3LYP/CC-PVDZ",
+  "source_note": "Abstract + Section 2.3 + Table 3, p. 3845-3848",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "selected_bonds_angstrom": {
+    "R1,2": 1.493,
+    "R1,6": 1.494,
+    "R6,7": 1.493,
+    "R7,16": 1.493,
+    "R16,17": 1.493,
+    "R17,26": null
+   },
+   "shape": "nested-ring cage, 5M set (each layer has 5 atoms)"
+  },
+  "coords": null,
+  "suggested_build": "generic_guess",
+  "notes": "generic_guess shape='cage' (n_atoms=20); ONLY symmetry-representative bond lengths given (not full connectivity/all atoms) -- insufficient alone for exact reconstruction, would need the paper's own 'nested W-shape ring insertion' construction algorithm (described in Section 2) or a generic cage embedding + GFN2-xTB relaxation. Likely duplicate of the well-known N20 Ih dodecahedrane already in existing biblio corpus (N20_Ih_dodecahedrane) -- cross-validation only.",
+  "_source_file": "N_nanotubes_06.json"
+ },
+ {
+  "id": "N12_D6h_cage",
+  "formula": "N12",
+  "charge": 0,
+  "mult": 1,
+  "point_group": "D6h",
+  "method": "B3LYP/CC-PVDZ",
+  "source_note": "Abstract + Section 2.4 + Table 4, p. 3845-3848",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "selected_bonds_angstrom": {
+    "R1,2": 1.507,
+    "R1,7": 1.513,
+    "R7,8": 1.507
+   },
+   "shape": "nested-ring cage, 6M set (each layer has 6 atoms)"
+  },
+  "coords": null,
+  "suggested_build": "generic_guess",
+  "notes": "generic_guess shape='cage' (n_atoms=12); ONLY symmetry-representative bond lengths given (not full connectivity/all atoms) -- insufficient alone for exact reconstruction, would need the paper's own 'nested W-shape ring insertion' construction algorithm (described in Section 2) or a generic cage embedding + GFN2-xTB relaxation.",
+  "_source_file": "N_nanotubes_06.json"
+ },
+ {
+  "id": "N6_C2h_diazide_synthesis_product",
+  "formula": "N6",
+  "charge": 0,
+  "mult": 1,
+  "point_group": "C2h",
+  "method": "B3LYP/6-311++G** (also HF/6-31G**, B3LYP/6-31G** reported)",
+  "source_note": "Figure 1 (N6 panel), text p.2750-2751",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "shape": "open-chain diazide N3-N1=N2...N2'=N1'-N3' (C2h, centrosymmetric)",
+   "approx_bond_lengths_A_B3LYP_6-311ppGss": {
+    "N1-N2": 1.247,
+    "N1-N3": 1.242
+   },
+   "approx_angles_deg": {
+    "N2-N1-N3": 109.5,
+    "chain_dihedral_or_wide_angle": 188.1
+   },
+   "confidence": "moderate -- read from a dense multi-value labeled figure without atom coordinates, not a printed table"
+  },
+  "suggested_build": "DUPLICATE_OF_EXISTING_LIKELY",
+  "is_duplicate_of_existing_id": "N6_C2h_chain",
+  "notes": "Relative energy of N6+HF product = -27.7 kcal/mol (B3LYP/6-311++G**) / -40.3 (CCSD). This is the target product of a proposed synthesis route (HN3 + N3F -> N6 + HF), barrier 21.4-27.0 kcal/mol depending on method -- context for future HEDM synthesis-feasibility discussion, not a new topology.",
+  "_source_file": "jp0141833.json"
+ },
+ {
+  "id": "N11_C2v_acyclic_chain",
+  "formula": "N11",
+  "charge": 0,
+  "mult": 2,
+  "point_group": "C2v",
+  "method": "HF/CC-PVDZ (also MP2/CC-PVDZ)",
+  "source_note": "Figure 5",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "shape": "unbranched zigzag chain, 11 atoms, C2v symmetric",
+   "bond_lengths_A_HF_CCPVDZ_terminal_to_center_approx": [
+    1.1,
+    1.26,
+    1.32,
+    1.29,
+    1.32
+   ],
+   "angles_deg_HF_terminal_to_center_approx": [
+    166.5,
+    101.5,
+    108.9,
+    107.9,
+    105.6
+   ],
+   "confidence": "lower than N9 entry -- more values packed into the figure, some bond/angle assignment ambiguity; RECOMMEND re-reading the figure directly before use"
+  },
+  "suggested_build": "chain2d",
+  "notes": "Doublet (odd electron, 11 atoms). No N11 entry currently identified in the existing 70-structure biblio corpus -- POSSIBLY NEW topology (needs central-dedup verification against full N_csp/polyN_study/biblio pool, and cross-check against N11.pdf in this same archive batch assignment which studies N11 isomers directly and may cover this same or a different N11 isomer more precisely).",
+  "_source_file": "jp0208182.json"
+ },
+ {
+  "id": "N7_wang_2_Cs_5ring4ring",
+  "formula": "N7",
+  "charge": 0,
+  "mult": 2,
+  "point_group": "Cs",
+  "method": "B3LYP/6-31G*",
+  "source_note": "Table 1 (molecule 2, Cs)",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "bonds_A": {
+    "R12": 1.3169,
+    "R13": 1.3779,
+    "R35": 1.4579,
+    "R36": 1.487,
+    "R67": 1.2455
+   },
+   "angles_deg": {
+    "A213": 106.7,
+    "A124": 114.3,
+    "A135": 105.9,
+    "A536": 85.9,
+    "A367": 94.1
+   },
+   "dihedrals_deg": {
+    "T2135": 4.2,
+    "T2136": 98.0,
+    "T1354": 0.0,
+    "T6357": 0.0
+   },
+   "shape": "fused bicyclic: atoms 1,2,3,4,5 form a 5-membered ring (planar), atoms 3,5,6,7 form a 4-membered ring; similar to the N8(Cs) isomer of Gagliardi. Atom 3 and 5 are each bonded to 3 N atoms."
+  },
+  "suggested_build": "fused_bicyclic (geom.py, 5-ring + 4-ring share an edge/atoms)",
+  "notes": "Genuine local minimum at ALL four levels (UHF, UMP2, B3LYP/6-31G*, B3LYP/6-311+G*) -- 'possible candidate of stable N7 isomers'. B3LYP total energy -382.9579 au (2nd lowest of the 6). Lowest freq 221 cm-1 at B3LYP/6-311+G*.",
+  "_source_file": "n7b.json"
+ },
+ {
+  "id": "N7_wang_3_C2v_openchain_DUPLICATE",
+  "formula": "N7",
+  "charge": 0,
+  "mult": 2,
+  "point_group": "C2v",
+  "method": "B3LYP/6-31G*",
+  "source_note": "Table 1 (molecule 3, C2v)",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "bonds_A": {
+    "R12": 1.141,
+    "R23": 1.2557,
+    "R34": 1.3712
+   },
+   "angles_deg": {
+    "A123": 170.2,
+    "A234": 112.1,
+    "A345": 104.2
+   },
+   "dihedrals_deg": {
+    "T1234": 180.0,
+    "T4567": 180.0
+   },
+   "shape": "'w-shaped' twisted open chain; R12/R67~1.14 A close to N2 triple bond, R23/R56 close to N=N double bond"
+  },
+  "suggested_build": "chain (geom.py chain2d)",
+  "notes": "CONFIRMED DUPLICATE: this is explicitly identified by the authors as the SAME structure as the 'twisted open-chain N7' of Li et al. 1998 (= N7_iso7_Cs_chain / N7_iso7_C2_chain in N7.json from N7.pdf) -- paper states 'the final optimized structure was with C2v symmetry... whose energies and geometry parameters are same as the results of Cs and C2 structures in reference [47]'. B3LYP total energy -383.0303 au, IDENTICAL to N7.json's iso7 entries. Genuine minimum at all 4 levels, lowest energy of all 6 here. DO NOT double-count in the new-structures pool -- this is the same global-minimum N7 species reported independently by a second paper as a consistency check.",
+  "_source_file": "n7b.json"
+ },
+ {
+  "id": "N7_wang_5_Cs_singlebond",
+  "formula": "N7",
+  "charge": 0,
+  "mult": 2,
+  "point_group": "Cs",
+  "method": "B3LYP/6-31G*",
+  "source_note": "Table 1 (molecule 5, Cs)",
+  "geometry_type": "bond_params",
+  "bond_params": {
+   "bonds_A": {
+    "R12": 1.4809,
+    "R14": 1.4603,
+    "R24": 1.4779,
+    "R34": 1.4779,
+    "R35": 1.4765,
+    "R56": 1.4527,
+    "R57": 1.4242
+   },
+   "angles_deg": {
+    "A213": 92.7,
+    "A126": 105.4,
+    "A426": 109.2,
+    "A243": 93.0,
+    "A356": 103.5,
+    "A357": 107.2
+   },
+   "dihedrals_deg": {
+    "T3126": 50.2,
+    "T6243": 243.4,
+    "T1265": 233.0,
+    "T3562": 0.0,
+    "T1267": 294.7
+   },
+   "shape": "pure single-bonded N7 cluster (only isomer with no double-bond character); atom 7 bonded to only one other N"
+  },
+  "suggested_build": "UNKNOWN (branched/caged single-bond framework)",
+  "notes": "Genuine local minimum at ALL four levels -- explicitly confirmed stable by the authors. B3LYP total energy -382.8346 au (highest energy = least stable of the 6, expected since no multiple-bond stabilization).",
+  "_source_file": "n7b.json"
+ }
+]

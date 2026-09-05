@@ -1,0 +1,110 @@
+{
+  "source_file": "N8c.pdf",
+  "title": "An Ab Initio Study of Potential Energy Surfaces for N8 Isomers",
+  "species": [
+    {
+      "id": "N8_D2h_octaazapentalene",
+      "formula": "N8",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "D2h",
+      "method": "MP2/6-31G*",
+      "source_note": "Figure 1, p.5648 (labeled bond lengths/angles on structure diagram, read visually)",
+      "geometry_type": "bond_params",
+      "coords": null,
+      "bond_params": {
+        "connectivity": "Fused bicyclic 5-5 rings sharing a central bridge bond (naphthalene-analog / pentalene topology).",
+        "bonds_angstrom_approx": [1.369, 1.342, 1.337],
+        "angles_deg_approx": [113.9, 109.2, 103.8],
+        "caveat": "Values read from a small labeled diagram image; exact atom-by-atom bond assignment not fully certain due to image resolution -- recommend re-checking Fig.1 (page 2 of PDF) directly if exact reconstruction needed. Likely the SAME topology as the existing corpus entry N8_D2h_pentalene (dedup candidate) -- flagging for central dedup rather than asserting identity myself."
+      },
+      "suggested_build": "generic_guess (shape='bicyclic', n_atoms=8) -- or reuse existing N8_D2h_pentalene build if confirmed duplicate",
+      "notes": "'Structure 1' in paper (octaazapentalene). MP2/6-31G* and CCSD(T)/6-311G* both find this ~17 kcal/mol above structure 2 (azidopentazole), i.e. not the global minimum among the 3 isomers studied here."
+    },
+    {
+      "id": "N8_Cs_azidopentazole_v2",
+      "formula": "N8",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "Cs",
+      "method": "MP2/6-31G*",
+      "source_note": "Figure 1, p.5648",
+      "geometry_type": "bond_params",
+      "coords": null,
+      "bond_params": {
+        "connectivity": "N5 ring with an -N3 (azide) side chain in the ring plane.",
+        "bonds_angstrom_approx": [1.331, 1.331, 1.391, 1.336, 1.332, 1.277, 1.150],
+        "angles_deg_approx": [109.9, 114.5, 108.8, 103.1],
+        "caveat": "Read from labeled diagram image; likely the SAME topology as existing corpus entry N8_Cs_azidopentazole (dedup candidate -- different level of theory though, MP2/6-31G* here vs whatever the original source used)."
+      },
+      "suggested_build": "reuse existing N8_Cs_azidopentazole build if confirmed duplicate, else generic_guess (shape='ring_plus_chain', n_atoms=8)",
+      "notes": "'Structure 2' -- found to be the MOST STABLE of the 3 isomers studied in this paper (both MP2/6-31G* and CCSD(T)/6-311G*)."
+    },
+    {
+      "id": "N8_C2h_diazidodiimide_cis_3a",
+      "formula": "N8",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "C2h",
+      "method": "MP2/6-31G*",
+      "source_note": "Figure 1, p.5648, structure '3a'",
+      "geometry_type": "bond_params",
+      "coords": null,
+      "bond_params": {
+        "connectivity": "Linear/zigzag open chain: azide(N1-N2-N3)-N4=N5-azide(N6-N7-N8); described in text as 'diazidodiimide, cis: N3-N=N-N3'.",
+        "bonds_angstrom_approx": [1.153, 1.272, 1.409, 1.273],
+        "angles_deg_approx": [106.3, 108.3],
+        "caveat": "Symmetric values doubled by C2h symmetry (only one half of the molecule's distinct bonds shown, mirrored by inversion center). Read from labeled diagram image."
+      },
+      "suggested_build": "generic_guess (shape='chain', n_atoms=8) -- open zigzag chain with two terminal azide-like triple-bond ends",
+      "notes": "'Structure 3a' (cis diazidodiimide). Does NOT appear to match any existing corpus entry by name -- likely genuinely NEW topology. 2.9 kcal/mol more stable than trans isomer (3b) at MP2/6-31G*; 1.2 kcal/mol at CCSD(T)/6-311G*. ~17.5 kcal/mol above azidopentazole (structure 2) at MP2 level."
+    },
+    {
+      "id": "N8_C2v_diazidodiimide_trans_3b",
+      "formula": "N8",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "C2v",
+      "method": "MP2/6-31G*",
+      "source_note": "Figure 1, p.5648, structure '3b'",
+      "geometry_type": "bond_params",
+      "coords": null,
+      "bond_params": {
+        "connectivity": "Same as 3a but trans conformation of the two azide side groups relative to the central N=N.",
+        "bonds_angstrom_approx": [1.155, 1.269, 1.421],
+        "angles_deg_approx": [113.9, 108.9],
+        "caveat": "Read from labeled diagram image."
+      },
+      "suggested_build": "generic_guess (shape='chain', n_atoms=8)",
+      "notes": "'Structure 3b' (trans diazidodiimide). Likely genuinely NEW topology (not matched by name to existing corpus). Note: point group listed as C2h in main text Table 1 caption context but figure explicitly labels 3b as (C2v) -- flagging this inconsistency for the coordinator, did not resolve it myself."
+    },
+    {
+      "id": "N8_diazidodiimide_rotamer_3c",
+      "formula": "N8",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "not stated (sketch only, no symmetry label given)",
+      "method": "MP2/6-31G* (implied, no explicit geometry table)",
+      "source_note": "p.5649, qualitative sketch only, no numeric bond lengths/angles given in visible text",
+      "geometry_type": "topology_only",
+      "coords": null,
+      "bond_params": null,
+      "suggested_build": "generic_guess (shape='chain', n_atoms=8)",
+      "notes": "Rotamer of cis isomer (rotation of one -N3 group). Confirmed by Hessian to be a local minimum, 8.2 kcal/mol above cis (3a) isomer at CCSD(T)/6-311G*, per text -- but NO geometric parameters (bond lengths/angles) are given anywhere in the visible text, only a qualitative connectivity sketch. Cannot be reconstructed exactly; topology-only entry."
+    },
+    {
+      "id": "N8_diazidodiimide_rotamer_3d",
+      "formula": "N8",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "not stated (sketch only, no symmetry label given)",
+      "method": "MP2/6-31G* (implied, no explicit geometry table)",
+      "source_note": "p.5649, qualitative sketch only",
+      "geometry_type": "topology_only",
+      "coords": null,
+      "bond_params": null,
+      "suggested_build": "generic_guess (shape='chain', n_atoms=8)",
+      "notes": "Rotamer of trans isomer. Local minimum per Hessian, 4.1 kcal/mol above cis (3a) isomer at CCSD(T)/6-311G*. No numeric geometry given."
+    }
+  ]
+}

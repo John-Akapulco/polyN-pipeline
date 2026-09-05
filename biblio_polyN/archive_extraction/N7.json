@@ -1,0 +1,120 @@
+{
+  "source_file": "N7.pdf",
+  "title": "Structure and stability of N7 cluster",
+  "authors": "Qian-Shu Li, Xu-Guang Hu, Wen-Guo Xu",
+  "journal_year": "Chem. Phys. Lett. 287 (1998) 94-99",
+  "species": [
+    {
+      "id": "N7_iso1_Cs",
+      "formula": "N7", "charge": 0, "mult": 2, "point_group": "Cs",
+      "method": "B3LYP/6-31G* (also UHF/6-31G*, UMP2/6-31G* given)",
+      "source_note": "Table 1 (isomer 1), Table 2 for energy",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "units_as_printed": "nm in paper, converted to Angstrom by x10",
+        "bonds_A": {"R12": 1.519, "R14": 1.511, "R25": 1.418, "R27": 1.568, "R47": 1.471, "R67": 1.511},
+        "angles_deg": {"a253": 91.0, "a527": 101.4, "a125": 88.7},
+        "shape": "described as a derivative of the N6 prismane (Engelke) with an extra substituent atom; strained (some bond angles <90 deg)"
+      },
+      "suggested_build": "generic_guess (shape=\"cage\", n_atoms=7)",
+      "notes": "Genuine local minimum at UHF and B3LYP levels (0 imaginary freqs). B3LYP total energy -382.7819 au (0 imaginary). Higher in energy than isomer 2."
+    },
+    {
+      "id": "N7_iso2_C2v",
+      "formula": "N7", "charge": 0, "mult": 2, "point_group": "C2v",
+      "method": "B3LYP/6-31G*",
+      "source_note": "Table 1 (isomer 2), Table 2",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "bonds_A": {"R12": 1.402, "R24": 1.453, "R67": 1.590, "R47": 1.478},
+        "angles_deg": {"a213": 105.1},
+        "shape": "second derivative of the N6 prismane (Engelke), analogous to isomer 1"
+      },
+      "suggested_build": "generic_guess (shape=\"cage\", n_atoms=7)",
+      "notes": "Genuine local minimum (0 imaginary), B3LYP total energy -382.8398 au. Lowest vibrational freq 445(b1) cm-1 at UHF."
+    },
+    {
+      "id": "N7_iso3_C2v",
+      "formula": "N7", "charge": 0, "mult": 2, "point_group": "C2v",
+      "method": "B3LYP/6-31G*",
+      "source_note": "Table 1 (isomer 3), Table 2",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "bonds_A": {"R12": 1.371, "R36": 1.593, "R67": 1.190},
+        "angles_deg": {"a213": 103.3, "a136": 104.1},
+        "shape": "not otherwise described geometrically beyond bond table"
+      },
+      "suggested_build": "UNKNOWN",
+      "notes": "NOT a true minimum: 2 imaginary frequencies (393i, 278i cm-1 at UHF; 146i, 72i cm-1 at B3LYP) -- a genuine saddle point despite being lower in energy than isomers 1,2. B3LYP total energy -382.9088 au. Include for completeness but flag as unstable."
+    },
+    {
+      "id": "N7_iso4_C2v",
+      "formula": "N7", "charge": 0, "mult": 2, "point_group": "C2v",
+      "method": "B3LYP/6-31G*",
+      "source_note": "Table 1 (isomer 4), Table 2",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "bonds_A": {"R12": 1.471, "R24": 1.546, "R47": 1.519, "R67": 1.214},
+        "angles_deg": {"a425": 85.0, "a213": 81.7},
+        "shape": "branched, R67 length (1.214 A) close to N2H2 double-bond character"
+      },
+      "suggested_build": "UNKNOWN",
+      "notes": "Genuine local minimum (0 imaginary at UHF and B3LYP), B3LYP total energy -382.8261 au. Paper: 'possible candidate of stable N7 isomers'."
+    },
+    {
+      "id": "N7_iso5_C2v_UNSTABLE_dissociates",
+      "formula": "N7", "charge": 0, "mult": 2, "point_group": "C2v",
+      "method": "UHF/6-31G* (only level where it exists as a stationary point)",
+      "source_note": "Table 1 (isomer 5), Table 2",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "bonds_A": {"R12": 1.409, "R25": 1.481, "R45": 1.200},
+        "angles_deg": {"a213": 96.9, "a527": 102.3}
+      },
+      "suggested_build": "UNKNOWN",
+      "notes": "IMPORTANT: dissociates into N2 + N3 + N2 upon reoptimization at UMP2/6-31G* and B3LYP/6-31G* levels -- not a real bound N7 structure except as a UHF-level artifact. Included per instructions (paper does report a geometry) but should likely be EXCLUDED from any relaxation/comparison pool, or treated purely as a historical curiosity."
+    },
+    {
+      "id": "N7_iso6_C3v_quartet",
+      "formula": "N7", "charge": 0, "mult": 4, "point_group": "C3v",
+      "method": "B3LYP/6-31G*",
+      "source_note": "Table 1 (isomer 6, 4A2 state), Table 2",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "bonds_A": {"R12": 1.483, "R35": 1.459},
+        "angles_deg": {"a213": 89.2, "a536": 109.7},
+        "shape": "hexaazabenzene-like N6 ring (three N up, three N down, alternating) capped by a 7th N atom above the ring center -- described as a triradical"
+      },
+      "suggested_build": "UNKNOWN (ring + apical cap, no direct geom.py match; closest existing shape functions do not cover a capped 6-ring)",
+      "notes": "Genuine local minimum at BOTH UHF and B3LYP levels (0 imaginary; lowest freq 461(e) cm-1 UHF, 377(a2) cm-1 B3LYP) despite quartet (S=3/2) spin state -- notable, paper calls this 'an interesting result'. B3LYP total energy -382.7596 au."
+    },
+    {
+      "id": "N7_iso7_Cs_chain",
+      "formula": "N7", "charge": 0, "mult": 2, "point_group": "Cs",
+      "method": "B3LYP/6-31G*",
+      "source_note": "Table 1 (isomer 7, Cs, 2A'), Table 2",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "bonds_A": {"R12": 1.371, "R25": 1.256, "R45": 1.141},
+        "angles_deg": {"a125": 112.1, "a254": 170.3},
+        "shape": "twisted open-chain (zigzag); terminal bonds close to N2 triple-bond length (1.094 A), central region hypervalent-like"
+      },
+      "suggested_build": "chain (geom.py chain2d)",
+      "notes": "GLOBAL MINIMUM of this paper's N7 study (lowest energy of all 7 isomers considered, all real vibrational frequencies). B3LYP total energy -383.0303 au. Central angle ~105-112 deg consistent with sp3 central N."
+    },
+    {
+      "id": "N7_iso7_C2_chain",
+      "formula": "N7", "charge": 0, "mult": 2, "point_group": "C2",
+      "method": "B3LYP/6-31G*",
+      "source_note": "Table 1 (isomer 7, C2, 2B), Table 2",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "bonds_A": {"R12": 1.371, "R25": 1.256, "R45": 1.141},
+        "angles_deg": {"a125": 112.1, "a254": 170.3},
+        "shape": "twisted open-chain, C2 symmetry-broken variant of iso7_Cs"
+      },
+      "suggested_build": "chain (geom.py chain2d)",
+      "notes": "Paper reports this as numerically near-identical to N7_iso7_Cs_chain (same bond lengths/angles to given precision, same total energy -383.0303 au, nearly identical nuclear repulsion energy) -- essentially the same structure under two symmetry labels. Keep as separate entry per paper's own distinction but flag for likely dedup with iso7_Cs during centralized processing."
+    }
+  ]
+}

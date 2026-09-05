@@ -1,0 +1,33 @@
+{
+  "source_file": "N4+.pdf",
+  "title": "Potential Energy Function and Vibrational States of the Electronic Ground State of N4+",
+  "authors": "Leonard C., Rosmus P., Carter S., Handy N.C.",
+  "journal_year": "J. Phys. Chem. A 1999, 103, 1846-1852",
+  "species": [
+    {
+      "id": "N4+_Dinfh_linear",
+      "formula": "N4",
+      "charge": 1,
+      "mult": 2,
+      "point_group": "Dinfh",
+      "method": "RCCSD-T (also B3LYP, B97-1 reported, RCCSD-T preferred as most reliable per paper)",
+      "source_note": "Table 2, p. 1848",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "chain_bonds_angstrom": [
+          1.1097,
+          2.0045,
+          1.1097
+        ],
+        "chain_bonds_bohr_asprinted": [
+          2.097,
+          3.788,
+          2.097
+        ],
+        "description": "Linear centrosymmetric N-N-N-N (X 2Sigma+u state). Converted from bohr as printed in paper (RCCSD-T: RN-N=2.097 bohr, RN...N=3.788 bohr) via 1 bohr=0.52917721 Angstrom. Structure is essentially two N2 units weakly bound (RN...N much longer than N2 bond, 'floppy' along bending per text). Alternative values also tabulated: B3LYP 2.072/4.048 bohr, B97-1 2.078/4.003 bohr."
+      },
+      "suggested_build": "linear",
+      "notes": "Genuine minimum (vibrational analysis performed, ground state). Not present in existing catalog (existing catalog has no N4+ entry at all per prior 70-structure list)."
+    }
+  ]
+}

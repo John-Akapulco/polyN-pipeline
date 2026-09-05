@@ -1,0 +1,85 @@
+{
+  "source_file": "N4b.pdf",
+  "title": "Theoretical Study of the Triplet N4 Potential Energy Surface",
+  "authors": "Bittererova M., Brinck T., Ostmark H.",
+  "journal_year": "J. Phys. Chem. A 2000, 104, 11999-12005",
+  "species": [
+    {
+      "id": "N4_Td_singlet_1",
+      "formula": "N4",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "Td",
+      "method": "CCSD(T)/DZP (also B3LYP/DZP, B3LYP/cc-pVTZ, CAS(12,12) reported)",
+      "source_note": "Table 2, structure '1, Td (1A1)'",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "edge_angstrom": 1.472,
+        "description": "Regular tetrahedron, all N-N edges equal (Re=1.472 A at CCSD(T)/DZP; also 1.458/1.448/1.470/1.466/1.442/1.461 at other listed levels)."
+      },
+      "suggested_build": "tetrahedron",
+      "notes": "DUPLICATE of existing molecules.py entry 'N4_Td' (same formula/charge/topology) -- extracted anyway per instructions; gives an independent refined bond length to cross-check against existing entry."
+    },
+    {
+      "id": "N4_D2d_triplet_5",
+      "formula": "N4",
+      "charge": 0,
+      "mult": 3,
+      "point_group": "D2d",
+      "method": "CCSD(T)/DZP (also B3LYP/DZP, B3LYP/cc-pVTZ, CAS(12,12)/DZP, CAS(12,12)/cc-pVTZ reported)",
+      "source_note": "Table 3, structure '5, D2d (3A1)' -- 'lowest energy triplet with a closed structure' per abstract",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "R12_angstrom": 1.394,
+        "angle_R123_deg": 88.4,
+        "dihedral_phi1234_deg": 18.8,
+        "description": "Puckered 4-membered ring, D2d symmetry, all 4 N-N bonds equal by symmetry (R12), one ring angle (R123), one pucker/dihedral angle (phi1234). CCSD(T)/DZP values; other levels also tabulated (B3LYP/DZP: 1.380/88.4/18.9; B3LYP/cc-pVTZ: 1.370/88.5/18.4; CAS(12,12)/DZP: 1.396/89.2/13.5; CAS(12,12)/cc-pVTZ: 1.391/89.2/12.8)."
+      },
+      "suggested_build": "puckered_4ring_d2d",
+      "notes": "NEW species, genuine minimum (real harmonic frequencies reported in Table 3, though authors note T1 diagnostic is somewhat large -0.028- suggesting mild multireference character -- flagging per instructions). Not in existing 70-structure catalog."
+    },
+    {
+      "id": "N4_C2v_triplet_7",
+      "formula": "N4",
+      "charge": 0,
+      "mult": 3,
+      "point_group": "C2v",
+      "method": "CCSD(T)/DZP (also B3LYP/DZP, B3LYP/cc-pVTZ, CAS(12,12)/DZP, CAS(12,12)/cc-pVTZ reported)",
+      "source_note": "Table 6, structure '7, C2v (3B1)'",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "R12_angstrom": 1.451,
+        "R13_angstrom": 1.557,
+        "angle_R234_deg": 90.2,
+        "dihedral_phi2314_deg": 114.1,
+        "description": "Second triplet minimum, found by rotating one N2 unit relative to structure 5 (D2d). Atom connectivity per paper's own Figure/atom-numbering (not reproduced in text, only in original figure) -- R12 and R13 are two distinct bonds from a shared atom, R234 an angle, phi2314 a dihedral. Reconstruction requires the original paper's atom-labeling figure to disambiguate exactly which atoms bond to which; flagging suggested_build=UNKNOWN accordingly. CCSD(T)/DZP values shown; other levels also tabulated."
+      },
+      "suggested_build": "UNKNOWN",
+      "notes": "NEW species, genuine minimum (all real frequencies in Table 6, no imaginary marked). ~30 kcal/mol higher than structure 5 per all levels. Needs the paper's Figure 1 atom-numbering scheme (not extractable from text alone) to build correctly -- recommend visual read of Figure 1 before attempting geometry construction."
+    },
+    {
+      "id": "N4_Cs_triplet_4_openchain",
+      "formula": "N4",
+      "charge": 0,
+      "mult": 3,
+      "point_group": "Cs",
+      "method": "CCSD(T)/DZP (also B3LYP/DZP, B3LYP/cc-pVTZ, CAS(12,12)/DZP, CAS(12,12)/cc-pVTZ reported)",
+      "source_note": "Table 9, structure '4, Cs (3A'')' -- abstract states this is 'a true minimum at all investigated levels'",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "bonds_angstrom": [
+          1.337,
+          1.289,
+          1.16
+        ],
+        "angles_deg": [
+          116.2,
+          172.0
+        ],
+        "description": "Open-chain: bond order N3-N1 (R13=1.337), N1-N2 (R12=1.289), N2-N4 (R24=1.160); angle at N1 (R213=116.2), angle at N2 (R124=172.0, near-linear). CCSD(T)/DZP values; other levels also tabulated in Table 9."
+      },
+      "suggested_build": "chain2d",
+      "notes": "LIKELY THE SAME SPECIES as N4c.pdf's structure '5, Cs, open-chain triplet' (Glukhovtsev & Laiter 1996) -- both papers report an open-chain Cs-symmetry triplet N4 as a genuine minimum with similar bond-length pattern (short terminal ~1.16-1.17, medium/long other bonds). Cross-check both extractions against each other during dedup/build phase; may be the identical physical structure computed independently by two groups."
+    }
+  ]
+}

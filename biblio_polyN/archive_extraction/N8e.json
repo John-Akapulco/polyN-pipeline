@@ -1,0 +1,107 @@
+{
+  "source_file": "N8e.pdf",
+  "title": "A theoretical study of ten N8 isomers",
+  "note_on_extraction_quality": "This PDF is a scanned image with no text layer; all data below was read visually from rendered page images (pages 1-4 of the PDF). Table 2's numeric print is small; bond-length values were transcribed as legibly as possible but OCR-by-eye confidence on individual digits is MEDIUM, not high -- recommend the coordinator re-view Table 2 (page 4) and Table 1/Fig.1 (pages 2-3) directly before treating these numbers as final. No bond-ANGLE data is given anywhere in this paper (only the R_ss/R_sd/R_dd bond-length classification scheme described in the text: R_ss = bonds between two 3-coordinate atoms, R_sd = bond between a 3-coordinate and a 2-coordinate atom, R_dd/R_dd' = bonds between two 2-coordinate atoms, single or double character) -- reconstruction of full 3D geometry will need the named topology (these are the classic C8H8 hydrocarbon valence-isomer cage shapes: cubane, pentacyclooctane, cuneane, tricyclooctadienes, bicyclooctatriene, cyclooctatetraene, barrelene, pentalene) rather than these bond lengths alone.",
+  "species": [
+    {
+      "id": "N8_Oh_cubane_v2",
+      "formula": "N8", "charge": 0, "mult": 1, "point_group": "Oh",
+      "method": "MP2/(9s5p1d)/[3s2p1d]; also HF and DFT(B3LYP/cc-pVTZ) reported",
+      "source_note": "Table 1 (symmetry) + Table 2 (bond lengths), p.2-4",
+      "geometry_type": "bond_params",
+      "bond_params": {"shape_name": "cubane (Oh)", "R_ss_angstrom": {"HF": 1.46, "MP2": 1.53, "DFT": 1.52}},
+      "suggested_build": "cube (already have a geom.py function + likely duplicate of existing N8_Oh_cube/N8_Oh_cubane_GS)",
+      "notes": "Likely duplicate of existing corpus entries -- flag for dedup, not asserting identity."
+    },
+    {
+      "id": "N8_D2h_pentacyclooctane",
+      "formula": "N8", "charge": 0, "mult": 1, "point_group": "D2h",
+      "method": "MP2/(9s5p1d)/[3s2p1d]; also HF and DFT",
+      "source_note": "Table 1+2, p.2-4",
+      "geometry_type": "bond_params",
+      "bond_params": {"shape_name": "pentacyclooctane (N8 analog of C8H8 pentacyclooctane cage)", "R_ss_angstrom_range": {"HF": [1.41, 1.42], "MP2": [1.45, 1.49], "DFT": [1.45, 1.48]}},
+      "suggested_build": "UNKNOWN -- not in current geom.py shape list, needs the standard pentacyclooctane cage connectivity (well-known organic topology, not fabricated here)",
+      "notes": "No obvious match in existing corpus by name -- likely NEW topology."
+    },
+    {
+      "id": "N8_C2v_cuneane",
+      "formula": "N8", "charge": 0, "mult": 1, "point_group": "C2v",
+      "method": "MP2/(9s5p1d)/[3s2p1d]; also HF and DFT",
+      "source_note": "Table 1+2, p.2-4",
+      "geometry_type": "bond_params",
+      "bond_params": {"shape_name": "cuneane (N8 analog of C8H8 cuneane cage)", "R_ss_angstrom_range": {"HF": [1.40, 1.45], "MP2": [1.43, 1.50], "DFT": [1.43, 1.49]}},
+      "suggested_build": "UNKNOWN -- needs standard cuneane cage connectivity",
+      "notes": "No obvious match in existing corpus -- likely NEW topology."
+    },
+    {
+      "id": "N8_C2v_cis_tricyclooctadiene",
+      "formula": "N8", "charge": 0, "mult": 1, "point_group": "C2v (per Table 1; OCR confidence medium)",
+      "method": "MP2/(9s5p1d)/[3s2p1d]; also HF and DFT",
+      "source_note": "Table 1+2, p.2-4",
+      "geometry_type": "bond_params",
+      "bond_params": {"shape_name": "cis-tricyclooctadiene (N8 analog)", "R_ss_angstrom_range": {"HF": [1.44,1.50], "MP2": [1.49,1.62], "DFT": [1.49,1.57]}, "R_sd_angstrom": {"HF": 1.41, "MP2": 1.42, "DFT": 1.43}, "R_dd_angstrom": {"HF": 1.23, "MP2": 1.31, "DFT": 1.26}},
+      "suggested_build": "UNKNOWN -- needs standard tricyclooctadiene cage connectivity",
+      "notes": "No obvious match in existing corpus -- likely NEW topology."
+    },
+    {
+      "id": "N8_trans_tricyclooctadiene",
+      "formula": "N8", "charge": 0, "mult": 1, "point_group": "Cs or C2 (Table 1 label not confidently legible)",
+      "method": "MP2/(9s5p1d)/[3s2p1d]; also HF and DFT",
+      "source_note": "Table 1+2, p.2-4",
+      "geometry_type": "bond_params",
+      "bond_params": {"shape_name": "trans-tricyclooctadiene (N8 analog)", "R_ss_angstrom_range": {"HF": [1.44,1.47], "MP2": [1.50,1.56]}, "R_sd_angstrom": {"HF": 1.42, "MP2": 1.45}, "note_low_confidence": "DFT row and exact R_dd for this isomer not legibly transcribed -- recommend re-check"},
+      "suggested_build": "UNKNOWN",
+      "notes": "No obvious match in existing corpus -- likely NEW topology. Lower transcription confidence than others in this batch."
+    },
+    {
+      "id": "N8_Cs_bicyclooctatriene",
+      "formula": "N8", "charge": 0, "mult": 1, "point_group": "Cs",
+      "method": "MP2/(9s5p1d)/[3s2p1d]; also HF and DFT",
+      "source_note": "Table 1+2, p.2-4",
+      "geometry_type": "bond_params",
+      "bond_params": {"shape_name": "bicyclooctatriene (N8 analog)", "R_ss_angstrom": {"HF": 1.41, "MP2": 1.45, "DFT": 1.44}, "R_sd_angstrom_range": {"HF": [1.38,1.40], "MP2": [1.40,1.42], "DFT": [1.39,1.42]}, "R_dd_angstrom_range": {"HF": [1.21,1.23], "MP2": [1.25,1.31], "DFT": [1.23,1.27]}},
+      "suggested_build": "UNKNOWN -- needs standard bicyclooctatriene connectivity",
+      "notes": "No obvious match in existing corpus -- likely NEW topology."
+    },
+    {
+      "id": "N8_C2h_trans_cyclooctatetraene",
+      "formula": "N8", "charge": 0, "mult": 1, "point_group": "C2h",
+      "method": "MP2/(9s5p1d)/[3s2p1d]; also HF and DFT",
+      "source_note": "Table 1+2, p.2-4",
+      "geometry_type": "bond_params",
+      "bond_params": {"shape_name": "trans-cyclooctatetraene ring, all atoms 2-coordinate (no R_ss)", "R_sd_angstrom": {"HF": 1.21, "MP2": 1.28, "DFT": 1.26}, "R_dd_angstrom": {"HF": 1.42, "MP2": 1.49, "DFT": 1.46}},
+      "suggested_build": "regular_ngon or generic_guess (shape='ring', n_atoms=8) with alternating bond character",
+      "notes": "IMPORTANT: paper states this structure ('form 7') is a genuine minimum at HF and MP2, but has ONE IMAGINARY FREQUENCY at the DFT (B3LYP/cc-pVTZ) level -- i.e. it is a transition state / saddle point at that level of theory, not confirmed as a true minimum across all methods. Flag accordingly if used."
+    },
+    {
+      "id": "N8_D2d_cis_cyclooctatetraene",
+      "formula": "N8", "charge": 0, "mult": 1, "point_group": "D2d (per Table 1; not fully confident from image)",
+      "method": "MP2/(9s5p1d)/[3s2p1d]; also HF and DFT",
+      "source_note": "Table 1+2, p.2-4",
+      "geometry_type": "bond_params",
+      "bond_params": {"shape_name": "cis-cyclooctatetraene ('tub' form), all atoms 2-coordinate", "R_sd_angstrom": {"HF": 1.20, "MP2": 1.27, "DFT": 1.23}, "R_dd_angstrom": {"HF": 1.40, "MP2": 1.43, "DFT": 1.43}},
+      "suggested_build": "generic_guess (shape='ring', n_atoms=8), non-planar tub conformation",
+      "notes": "Likely close/possibly isomorphic in graph terms to some existing chain/ring N8 entries from the [B] Fau/Bartlett corpus (E/Z chain conformers) -- flag for dedup check rather than asserting."
+    },
+    {
+      "id": "N8_D3h_barrelene",
+      "formula": "N8", "charge": 0, "mult": 1, "point_group": "D3h",
+      "method": "HF/(9s5p1d)/[3s2p1d] (MP2 optimization FAILS to converge in D3h symmetry -- see notes)",
+      "source_note": "Table 1+2, p.2-4; text discussion p.3-4",
+      "geometry_type": "bond_params",
+      "bond_params": {"shape_name": "barrelene (N8 analog)", "R_sd_angstrom": {"HF": 1.58, "DFT": 1.51}, "R_dd_angstrom": {"HF": 1.24, "DFT": null}},
+      "suggested_build": "UNKNOWN -- needs standard barrelene cage connectivity",
+      "notes": "IMPORTANT: 'stable at HF level, but at MP2 the optimization does not converge (it was performed in C2v symmetry, i.e. in the largest abelian subgroup of D3h); the DFT calculations result in TWO IMAGINARY FREQUENCIES.' This structure is essentially NOT a confirmed minimum at any correlated level of theory (MP2 doesn't converge to a D3h stationary point at all; DFT finds 2 imaginary modes). Only the HF-level structure is a genuine stationary point. Treat with caution -- likely not a true GFN2-xTB-relaxable minimum either; may collapse to something else entirely under relaxation."
+    },
+    {
+      "id": "N8_D2h_pentalene_v3",
+      "formula": "N8", "charge": 0, "mult": 1, "point_group": "D2h (paper calls it 'azapentalene')",
+      "method": "MP2/(9s5p1d)/[3s2p1d]; also HF and DFT",
+      "source_note": "Table 1+2, p.2-4; text notes all N-N bonds similar length (1.28-1.31 HF, 1.34-1.37 MP2, 1.31-1.33 DFT), pi-delocalized",
+      "geometry_type": "bond_params",
+      "bond_params": {"shape_name": "pentalene (fused bicyclic 5-5, delocalized)", "R_ss_angstrom": {"HF": 1.28, "MP2": 1.37, "DFT": 1.31}, "R_sd_angstrom": {"HF": 1.31, "MP2": 1.34, "DFT": 1.33}, "R_dd_angstrom": {"HF": 1.29, "MP2": 1.34, "DFT": 1.32}},
+      "suggested_build": "reuse existing N8_D2h_pentalene build if confirmed duplicate",
+      "notes": "Likely duplicate of existing corpus entry N8_D2h_pentalene AND of N8_D2h_octaazapentalene extracted from N8c.pdf in this same batch -- three independent literature sources (this paper, N8c.pdf, and the original [B]/[GS] corpus) may all report the same pentalene topology at different levels of theory. Flag for careful central dedup / cross-check, don't merge blindly since bond lengths differ somewhat between sources (correlation-level dependence noted explicitly by these authors)."
+    }
+  ]
+}

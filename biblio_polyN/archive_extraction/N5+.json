@@ -1,0 +1,34 @@
+{
+  "source_file": "N5+.pdf",
+  "title": "Polynitrogen Chemistry. Synthesis, Characterization, and Crystal Structure of Surprisingly Stable Fluoroantimonate Salts of N5+",
+  "authors": "Vij A., Wilson W.W., Vij V., Tham F.S., Sheehy J.A., Christe K.O.",
+  "journal_year": "J. Am. Chem. Soc. 2001, 123, 6308-6313",
+  "species": [
+    {
+      "id": "N5+_C2v_experimental_Xray",
+      "formula": "N5",
+      "charge": 1,
+      "mult": 1,
+      "point_group": "C2v (approximate -- real crystal geometry slightly asymmetric)",
+      "method": "Single-crystal X-ray diffraction, N5+Sb2F11- salt (EXPERIMENTAL, not computational)",
+      "source_note": "Table 2, p. ~6311; Table 1 gives full crystal data (monoclinic, C2/c, a=10.913(8) A, b=12.654(8) A, c=16.675(11) A, beta=104.715(18) deg)",
+      "geometry_type": "exact_coords",
+      "coords": null,
+      "bond_params": {
+        "bonds_angstrom_as_labeled": {
+          "N1-N2": "1.102(19)",
+          "N2-N3": "1.303(19)",
+          "N3-N4": "1.295(19)",
+          "N4-N5": "1.107(19)"
+        },
+        "angles_deg_as_labeled": {
+          "N1-N2-N3": "168.1(15)",
+          "N4-N3-N2": "111.2(11)"
+        },
+        "description": "REAL experimental X-ray geometry of the N5+ cation (as its Sb2F11- salt), slightly asymmetric due to crystal packing (bonds/angles not perfectly C2v-symmetric: 1.102 vs 1.107, 1.303 vs 1.295). Only 2 of the 3 internal chain angles given explicitly in the paper's Table 2 (angle at N4, i.e. N3-N4-N5, not tabulated) -- do not assume it equals the N1-N2-N3 value given the observed asymmetry elsewhere."
+      },
+      "suggested_build": "chain2d (as bond_params fallback, since full Cartesian atom coordinates from the CIF are not reprinted as a table in the paper text itself, only derived bond lengths/angles)",
+      "notes": "HIGH VALUE: this is a genuine EXPERIMENTAL structure (X-ray), not computational -- should likely take priority over any purely-DFT N5+ entry in the existing catalog for the 'reference' geometry of this species, even though it represents the same topology (duplicate by graph/formula/charge). Same species as N5.pdf's 'N5+_C2v_product' (computed: 1.111/1.302, close agreement) and referenced in N5-N6-abinitio.pdf. Flag this preference explicitly during dedup/report-writing: prefer experimental over computed when both represent the same topology."
+    }
+  ]
+}

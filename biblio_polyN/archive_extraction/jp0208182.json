@@ -1,0 +1,40 @@
+{
+  "source_file": "jp0208182.pdf",
+  "title": "Dissociation Barriers for Odd-Numbered Acyclic Nitrogen Molecules N9 and N11",
+  "authors": "Thompson M.D., Bledson T.M., Strout D.L.",
+  "journal_year": "J. Phys. Chem. A (2002), PAGE EST 2.9",
+  "notes_general": "Paper studies dissociation TRANSITION STATES (Figures 2-4, 6-9) which are not minima -- only the two parent minimum-energy molecules (Figure 1: N9, Figure 5: N11, both C2v zigzag chains, doublet) are extracted here. Both figures show a clean, unbranched, left-to-right zigzag chain with HF/CC-PVDZ bond lengths/angles (MP2/CC-PVDZ in parentheses) -- no atom-index labels needed since chain order is visually unambiguous. Values transcribed with moderate-to-good confidence (clean simple figures) but not verified against a printed numeric table -- suggest double-checking against the image before using for exact (Niveau 1) reconstruction; geom.py's chain2d() function is a direct fit for this data shape.",
+  "species": [
+    {
+      "id": "N9_C2v_acyclic_chain",
+      "formula": "N9", "charge": 0, "mult": 2, "point_group": "C2v",
+      "method": "HF/CC-PVDZ (also MP2/CC-PVDZ)",
+      "source_note": "Figure 1",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "shape": "unbranched zigzag chain, 9 atoms, C2v symmetric (bonds/angles mirror about center)",
+        "bond_lengths_A_HF_CCPVDZ_terminal_to_center": [1.10, 1.25, 1.30, 1.30],
+        "bond_lengths_A_MP2_CCPVDZ_parentheses": [1.11, 1.28, 1.29, 1.31],
+        "angles_deg_HF_terminal_to_center": [173.1, 109.2, 107.5, 108.1],
+        "confidence": "moderate -- clean simple chain figure, left-to-right reading, no atom-index labels present to cross-check"
+      },
+      "suggested_build": "chain2d",
+      "notes": "Doublet (odd electron count, 9 atoms). Dissociation barriers (not a property of this minimum itself, context only): N9->N7+N2 lowest barrier (~17 kcal/mol CCSD(T)), too low for viable HEDM per authors. Likely same topology as existing corpus 'N9_chain' entry -- flag for central dedup."
+    },
+    {
+      "id": "N11_C2v_acyclic_chain",
+      "formula": "N11", "charge": 0, "mult": 2, "point_group": "C2v",
+      "method": "HF/CC-PVDZ (also MP2/CC-PVDZ)",
+      "source_note": "Figure 5",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "shape": "unbranched zigzag chain, 11 atoms, C2v symmetric",
+        "bond_lengths_A_HF_CCPVDZ_terminal_to_center_approx": [1.10, 1.26, 1.32, 1.29, 1.32],
+        "angles_deg_HF_terminal_to_center_approx": [166.5, 101.5, 108.9, 107.9, 105.6],
+        "confidence": "lower than N9 entry -- more values packed into the figure, some bond/angle assignment ambiguity; RECOMMEND re-reading the figure directly before use"
+      },
+      "suggested_build": "chain2d",
+      "notes": "Doublet (odd electron, 11 atoms). No N11 entry currently identified in the existing 70-structure biblio corpus -- POSSIBLY NEW topology (needs central-dedup verification against full N_csp/polyN_study/biblio pool, and cross-check against N11.pdf in this same archive batch assignment which studies N11 isomers directly and may cover this same or a different N11 isomer more precisely)."
+    }
+  ]
+}

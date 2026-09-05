@@ -1,0 +1,14 @@
+{"source_file": "N20.pdf", "title": "A quantum chemical study of three isomers of N20 (Ha, Suleimenov, Nguyen, Chem. Phys. Lett. 315 (1999) 327-334)", "species": [
+  {"id": "N20_Ih_cage_HaEtAl", "formula": "N20", "charge": 0, "mult": 1, "point_group": "Ih", "method": "B3LYP/6-31+G(d)",
+   "source_note": "text, p.329: N-N bond distance 1.438 A (HF), 1.500 A (MP2), 1.492 A (B3LYP), single edge length by Ih symmetry (dodecahedron, all edges equivalent)",
+   "geometry_type": "bond_params", "bond_params": {"shape": "dodecahedron, all 30 edges equivalent by Ih symmetry", "edge_HF": 1.438, "edge_MP2": 1.500, "edge_B3LYP": 1.492},
+   "suggested_build": "dodecahedron", "notes": "Confirmed genuine local minimum by frequency calc (paper's own analysis). Highest-energy of the three N20 isomers studied here (~200 kcal/mol above bowl/ring). Likely duplicates existing N20_Ih_dodecahedrane in molecules.py -- cross-check bond length value against existing entry."},
+  {"id": "N20_C5v_bowl_HaEtAl", "formula": "N20", "charge": 0, "mult": 1, "point_group": "C5v", "method": "B3LYP/6-31+G(d)",
+   "source_note": "text p.329 states bond distances are 'displayed in Fig. 2' (a structure diagram image) -- numeric values not present in extractable text, only qualitative statement that bowl/ring have alternating single/double N-N bonds vs cage's uniform single bonds",
+   "geometry_type": "topology_only", "bond_params": {"shape": "corannulene-like bowl, one 5-membered ring cap + surrounding rings, alternating single/double bonds"},
+   "suggested_build": "UNKNOWN", "notes": "More stable than cage by ~200 kcal/mol per paper. Numeric geometry only in Fig.2 image -- would need image-read of that specific figure to get exact bond lengths/angles."},
+  {"id": "N20_D5_ring_HaEtAl", "formula": "N20", "charge": 0, "mult": 1, "point_group": "D5", "method": "B3LYP/6-31+G(d)",
+   "source_note": "same as bowl above -- numeric bond data only in Fig.2 image, not extracted",
+   "geometry_type": "topology_only", "bond_params": {"shape": "ring isomer, alternating single/double bonds, D5 symmetry"},
+   "suggested_build": "UNKNOWN", "notes": "Most stable of the three N20 isomers in this paper. Numeric geometry only in Fig.2 image."}
+]}

@@ -1,0 +1,48 @@
+{
+  "source_file": "N10_acyc.pdf",
+  "title": "Acyclic N10 Fails as a High Energy Density Material",
+  "species": [
+    {
+      "id": "N10_C2h_acyclic_chain",
+      "formula": "N10",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "C2h",
+      "method": "HF/CC-PVDZ (primary); MP2/CC-PVDZ values also given in parentheses",
+      "source_note": "Figure 1, p. 817 -- confirmed as a genuine minimum at HF/CC-PVDZ (paper states this explicitly)",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "unique_bonds_HF_CCPVDZ_angstrom": [
+          1.09,
+          1.27,
+          1.37,
+          1.21,
+          1.39
+        ],
+        "unique_bonds_MP2_CCPVDZ_angstrom": [
+          1.15,
+          1.27,
+          1.4,
+          1.28,
+          1.41
+        ],
+        "unique_angles_HF_CCPVDZ_deg": [
+          172.9,
+          107.2,
+          110.2,
+          107.9
+        ],
+        "unique_angles_MP2_CCPVDZ_deg": [
+          169.8,
+          108.8,
+          107.0,
+          104.8
+        ],
+        "shape": "C2h zigzag chain, 10 atoms, 9 bonds -- by inversion symmetry only 5 unique bond lengths and 4 unique angles are labeled in the figure (values read left-to-right from the terminal atom to the chain midpoint; the second half mirrors the first by the inversion center). Read directly off the published figure (Figure 1) via visual inspection, not OCR text -- re-check against the original figure before final reconstruction to confirm exact per-atom assignment order."
+      },
+      "coords": null,
+      "suggested_build": "chain2d",
+      "notes": "Global-minimum acyclic N10 isomer studied specifically for HEDM viability (dissociation barrier to N8+N2 found too low, ~15-19 kcal/mol, paper's main conclusion -- NOT a HEDM candidate per the authors, but still a genuine confirmed minimum worth including in the stability/topology comparison). The paper ALSO reports a Cs-symmetry transition state structure (Figure 2, TS bond ~1.60 A being broken) for the N10->N8+N2 dissociation pathway -- excluded here since a TS is not a minimum, but noted as directly relevant future kinetic-stability/barrier data if that line of work is pursued (matches the 'stability cinetique' gap discussed for this project)."
+    }
+  ]
+}

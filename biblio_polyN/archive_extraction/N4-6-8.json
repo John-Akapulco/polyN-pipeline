@@ -1,0 +1,18 @@
+{"source_file": "N4-6-8.pdf", "title": "Strain Energies in Homoatomic Nitrogen Clusters N4, N6, and N8 (Gimarc, Zhao, Inorg. Chem. 1996, 35, 3289)", "species": [
+  {"id": "N4_D2h_rectangle_cyclobutadiene_analog", "formula": "N4", "charge": 0, "mult": 1, "point_group": "D2h", "method": "MP2/6-31G*",
+   "source_note": "text p.3294: 'cyclobutadiene analog structure 2 ... planar, rectangular structure of alternate single and double bonds (MP2: 1.542 and 1.287 A, respectively)'",
+   "geometry_type": "bond_params", "bond_params": {"shape": "planar rectangle (4-ring), alternating bonds", "bond_single_A": 1.542, "bond_double_A": 1.287},
+   "suggested_build": "rectangle", "notes": "Likely duplicate topology of existing N4_D2h_rectangle_planar in molecules.py -- cross-check bond lengths, this MP2/6-31G* source may differ from existing entry's level of theory."},
+  {"id": "N6_D6h_hexagon_aromatic", "formula": "N6", "charge": 0, "mult": 1, "point_group": "D6h", "method": "not explicitly stated for this value (paper-wide RHF/MP2 6-31G*)",
+   "source_note": "text p.3295: 'N...N aromatic bond in 3, 1.337 A' -- planar hexagonal aromatic N6 ring (benzene analog), all 6 bonds equivalent",
+   "geometry_type": "bond_params", "bond_params": {"shape": "planar hexagonal ring, 6 equivalent aromatic N-N bonds", "bond_A": 1.337},
+   "suggested_build": "regular_ngon", "notes": "This is structure '3' in the paper's numbering, described as having 120-deg angles (sp2 N), 'completely free of strain' per authors. Not the same as N6_D3h_prism already in corpus -- planar aromatic hexagon is a distinct topology, likely NEW."},
+  {"id": "N8_D4h_cyclooctatetraene", "formula": "N8", "charge": 0, "mult": 1, "point_group": "D4h (tub-shaped COT analog, exact PG not restated numerically here)", "method": "MP2/6-31G*",
+   "source_note": "text p.3295: 'N8 cyclooctatetraene 10 ... nonconjugated single and double bonds (MP2: 1.429 and 1.267 A, respectively)'",
+   "geometry_type": "bond_params", "bond_params": {"shape": "8-membered ring, alternating single/double bonds, cyclooctatetraene-like (tub/planar not specified numerically)", "bond_single_A": 1.429, "bond_double_A": 1.267},
+   "suggested_build": "general_ring", "notes": "Distinct from N8_C2v_ring / N8_D2h_pentalene already in corpus (this is the COT 8-ring specifically) -- likely NEW topology if not graph-isomorphic to existing ring entries."},
+  {"id": "N8_pentalene_dianion_analog_struct11", "formula": "N8", "charge": 0, "mult": 1, "point_group": "not stated numerically", "method": "MP2/6-31G*",
+   "source_note": "text p.3295-3296: structure '11', N8 analog of pentalene dianion, fused bicyclic (two fused 5-rings sharing an edge), 'calculated N...N bond distances in 11, ranging from 1.334 to 1.368 A, indicate extensive delocalization'",
+   "geometry_type": "bond_params", "bond_params": {"shape": "fused bicyclic, two 5-membered rings sharing a common N-N edge (pentalene-type)", "bond_range_A": [1.334, 1.368]},
+   "suggested_build": "fused_bicyclic", "notes": "CAUTION: only a bond-length RANGE given, not individual bond assignments -- insufficient for exact reconstruction, would need Niveau 2 (build fused_bicyclic topology with approximate bonds ~1.35 A, then GFN2-xTB relax). Compare against existing N8_D2h_pentalene / N8_Cs_azidopentazole for possible topology overlap."}
+]}

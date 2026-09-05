@@ -1,0 +1,61 @@
+{
+  "source_file": "N8b.pdf",
+  "title": "Stability of N8 isomers and isomerization reaction of N8 (C2v) to N8 (Cs)",
+  "species": [
+    {
+      "id": "N8_C2v_structure6",
+      "formula": "N8",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "C2v",
+      "method": "B3LYP/6-31G* (also HF/6-31G*, B3PW91/6-31G* reported; B3LYP values transcribed here)",
+      "source_note": "Table 2, p.138; connectivity confirmed visually from Fig. 1, p.136 (image read directly)",
+      "geometry_type": "bond_params",
+      "coords": null,
+      "bond_params": {
+        "connectivity_from_figure": "Branched tree: central atom N1 bonded to N4 (terminal), N3, and N2; N3-N7, N7-N8 (terminal) form one arm; N2-N5, N5-N6 (terminal) form the other arm. 7 bonds total for 8 atoms (acyclic).",
+        "bonds_angstrom": {"r12_N1-N2": 1.580, "r14_N1-N4": 1.250, "r37_N3-N7": 1.139, "r78_N7-N8": 1.155, "r54_N4-N5_nonbonded_monitored": 2.708},
+        "angles_deg": {"a312": 96.4, "a731": 105.7, "a873": 181.2},
+        "caveat": "Table 2 gives only 5 of the ~7 symmetry-relevant bond values (r13, r25, r56 not separately tabulated) -- paper appears to rely on C2v symmetry equivalence between the two arms (N1-N3-N7-N8 and N1-N2-N5-N6) without spelling out which values are shared. r54 (2.708 A) is an explicitly NON-bonded monitored distance (becomes the new bond in the isomerization TS to structure 7), not an actual bond in structure 6."
+      },
+      "suggested_build": "generic_guess (shape='branched', n_atoms=8)",
+      "notes": "Genuine local minimum (0 imaginary frequencies at all 3 levels, per Table 1). Two new N8 isomers reported in this paper are structures 6 and 7; structures 1-5 (Oh, D2h, D2d, Cs-azidopentazole, C2h) are literature references to Glukhovtsev/Jiao/Schleyer 1996 (already in existing corpus as poly-N.pdf/molecules.py), not re-tabulated with new data here, so not extracted from this paper."
+    },
+    {
+      "id": "N8_Cs_structure7",
+      "formula": "N8",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "Cs",
+      "method": "B3LYP/6-31G* (also HF/6-31G*, B3PW91/6-31G* reported; B3LYP values transcribed here)",
+      "source_note": "Table 2, p.138; connectivity confirmed visually from Fig. 1, p.137",
+      "geometry_type": "bond_params",
+      "coords": null,
+      "bond_params": {
+        "connectivity_from_figure": "Branched chain: N1-N3, N3-N7, N7-N8 (terminal) one arm; N1-N4, N4-N5, N5-N2, N5-N6 (branch point at N5 with two termini N2 and N6). 7 bonds, acyclic.",
+        "bonds_angstrom": {"r13": 1.353, "r12_nonbonded_monitored": 2.703, "r14": 1.252, "r52": 1.258, "r54": 1.468, "r65": 1.248, "r73": 1.296, "r87": 1.127},
+        "angles_deg": {"a413": 116.2, "a145": 106.5, "a254": 133.4, "a652": 100.1, "a731": 115.4, "a873": 167.2}
+      },
+      "suggested_build": "generic_guess (shape='branched', n_atoms=8)",
+      "notes": "Genuine local minimum (0 imaginary frequencies at all 3 levels). Higher in energy than structure 6 by 70-80 kcal/mol depending on level (Table 4)."
+    },
+    {
+      "id": "N8_Cs_TS_structure8",
+      "formula": "N8",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "Cs",
+      "method": "B3LYP/6-31G*",
+      "source_note": "Table 2, p.138",
+      "geometry_type": "bond_params",
+      "coords": null,
+      "bond_params": {
+        "connectivity_from_figure": "Same overall skeleton as 6/7 but with a four-membered ring formed by the breaking/forming N1-N2/N4-N5 bonds (see Fig.1 caption 'continued', structure 8, Cs) -- transitional four-membered-ring topology.",
+        "bonds_angstrom": {"r12": 2.351, "r13": 1.398, "r14": 1.209, "r52": 1.262, "r54": 1.800, "r65": 1.209, "r73": 1.278, "r87": 1.130},
+        "angles_deg": {"a312": 151.4, "a412": 86.5, "a125": 67.7, "a652": 112.5, "a731": 113.3, "a873": 170.9}
+      },
+      "suggested_build": "UNKNOWN -- transition-state structure, not a simple minimum topology; needs bespoke handling if pursued at all",
+      "notes": "IMPORTANT: this is an explicit TRANSITION STATE (one imaginary frequency at all 3 levels: 222.2i/237.5i/280.3i cm-1, per Table 3), NOT a local minimum. Connects structure 6 (C2v) to structure 7 (Cs) via N1-N2 bond breaking and N4-N5 bond forming. Should probably be EXCLUDED from the minima/metastable-isomer comparison pool, or clearly labeled as a saddle point if kept for reference."
+    }
+  ]
+}

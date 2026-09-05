@@ -1,0 +1,121 @@
+{
+  "source_file": "N10-N60.pdf",
+  "title": "Toward new energy-rich molecular systems: from N10 to N60",
+  "species": [
+    {
+      "id": "N10_D2d_bicyclic_bispentazole",
+      "formula": "N10",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "D2d",
+      "method": "SCF, B3LYP, MP2, QCISD, cc-pVDZ and cc-pVTZ bases (Table 1)",
+      "source_note": "Table 1 + Table 2 (frequencies), p. 264 -- confirmed genuine minimum (D2d), companion D2h planar structure is a confirmed saddle point (imaginary freq 75-93 cm-1 depending on method), NOT a minimum",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "note": "Two symmetry-inequivalent values given per bond/angle label (two rows per Ri/ai in Table 1) -- likely the two chemically-distinct ring environments of the D2d bicyclic bispentazole structure (bridging bond R2 vs in-ring bonds R1/R3/R4).",
+        "B3LYP_ccPVTZ_angstrom": {
+          "R1": [
+            1.338,
+            1.328
+          ],
+          "R2": [
+            1.35,
+            1.369
+          ],
+          "R3": [
+            1.275,
+            1.288
+          ],
+          "R4": [
+            1.373,
+            1.355
+          ]
+        },
+        "QCISD_ccPVDZ_angstrom": {
+          "R1": [
+            1.345,
+            1.333
+          ],
+          "R2": [
+            1.351,
+            1.374
+          ],
+          "R3": [
+            1.282,
+            1.296
+          ],
+          "R4": [
+            1.388,
+            1.362
+          ]
+        },
+        "B3LYP_ccPVTZ_angles_deg": {
+          "a1": [
+            111.8,
+            112.9
+          ],
+          "a2": [
+            109.2,
+            109.4
+          ],
+          "a3": [
+            124.1,
+            123.5
+          ]
+        },
+        "R2_is_bridging_bond": "R2 is explicitly the inter-ring bridging bond (the 'remarkably strong' N-N bond mentioned in the abstract, DE(N10->2N5)=93 kcal/mol at QCISD)"
+      },
+      "coords": null,
+      "suggested_build": "two_rings_orthogonal",
+      "notes": "Bicyclic N10 = two 5-membered rings joined by a single bridging N-N bond in an orthogonal (D2d) arrangement -- this is almost certainly the SAME topology as N10_D2d_linked5rings / N10_D2d_bispentazole_GS already in the existing biblio_polyN corpus. Treat as a cross-validation / higher-quality alternate literature source for the same structure, not a new topology -- but this paper's multi-method bond-length table (SCF/B3LYP/MP2/QCISD) is notably more rigorous than a single-method source, worth keeping as a reference. A planar D2h isomer is explicitly confirmed as a SADDLE POINT (not a minimum) -- exclude that one from any minima list."
+    },
+    {
+      "id": "N5_C2v_ring_radical_from_N10_dissociation",
+      "formula": "N5",
+      "charge": 0,
+      "mult": 2,
+      "point_group": "C2v",
+      "method": "QCISD/CISD/B3LYP, cc-pVDZ",
+      "source_note": "p. 265-266, decomposition study N10 -> 2 N5",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "R3_angstrom_by_method": {
+          "QCISD": 1.607,
+          "CISD": 1.568,
+          "B3LYP": 1.536
+        },
+        "shape": "5-membered ring radical, R1/R4 bonds similar to those in the N10 bicyclic structure above, R3 bond much more single-bond-like (elongated) than in N10 -- MP2 tends to open the ring entirely (R3 highly stretched/non-bonded) at that level",
+        "R1_R4_note": "text states R1 and R4 are 'similar' to their N10 counterparts but does not retabulate exact numeric values for this radical -- only R3 is explicitly given"
+      },
+      "coords": null,
+      "suggested_build": "regular_ngon",
+      "notes": "Neutral N5 RADICAL (mult=2, doublet) formed by homolytic N10 ring-opening -- distinct from the well-known closed-shell N5+ cation and N5- anion already in the corpus. MP2 level does NOT confirm this as a bonded ring (opens to a non-bonded/highly stretched R3) -- only QCISD/CISD/B3LYP support a closed 5-ring minimum; flag this method-dependence explicitly if pursued further."
+    },
+    {
+      "id": "N60_fullerene_analog",
+      "formula": "N60",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "not explicitly named in text (analogized to icosahedral C60/buckminsterfullerene -- likely Ih, but VERIFY, not literally stated as 'Ih' in this paper unlike some other archive papers that do call an N60 species D3d etc.)",
+      "method": "SCF/cc-pVDZ, SCF/6-31G, AM1 (Table 3)",
+      "source_note": "Table 3, p. 266 -- confirmed as 'a local minimum at the AM1 and SCF levels of theory' per abstract",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "R1_pentagonal_bonds_angstrom": {
+          "SCF_ccPVDZ": 1.43,
+          "SCF_6-31G": 1.43,
+          "AM1": 1.441
+        },
+        "R2_hexagon_shared_bonds_angstrom": {
+          "SCF_ccPVDZ": 1.437,
+          "SCF_6-31G": 1.436,
+          "AM1": 1.482
+        },
+        "shape": "buckminsterfullerene-analog cage (60 atoms), two symmetry-distinct bond types: R1 = pentagonal-ring bonds, R2 = bonds shared between six-membered rings"
+      },
+      "coords": null,
+      "suggested_build": "generic_guess",
+      "notes": "generic_guess shape='cage', n_atoms=60. Proposed by the author to be buildable from 6 units of the D2d bicyclic N10 above (Fig. 2, not read as image). Likely overlaps/duplicates the N60 species already catalogued from other archive papers (N60_marek_03.pdf, N10-N60.pdf is itself one of 2 internal-duplicate-flagged files per the coordinator's dedup list already) and possibly the N60.pdf / N60-livermore.pdf entries -- cross-check point group and bond lengths against those before treating as independently new. No exact point-group symbol given here (only 'icosahedral' analogy in prose) -- do not assume Ih without confirming against a paper that states it explicitly (e.g. the separate N_nanotubes_06.pdf entry in this same archive batch DOES give N60 explicitly as D3d, which conflicts with an Ih assumption -- these may be genuinely different N60 isomers, not the same structure; keep them as SEPARATE candidate species, formula N60 charge 0, until graph-topology comparison proves otherwise.)"
+    }
+  ]
+}

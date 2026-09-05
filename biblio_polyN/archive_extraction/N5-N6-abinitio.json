@@ -1,0 +1,126 @@
+{
+  "source_file": "N5-N6-abinitio.pdf",
+  "title": "Decomposition mechanism of the polynitrogen N5 and N6 clusters and their ions",
+  "authors": "Nguyen M.T., Ha T.-K.",
+  "journal_year": "Chem. Phys. Lett. 335 (2001) 311-320",
+  "species": [
+    {
+      "id": "N5_C2v_radical_2A1",
+      "formula": "N5",
+      "charge": 0,
+      "mult": 2,
+      "point_group": "C2v",
+      "method": "UCCSD(T)/6-31G(d) (also UMP2/6-311+G(d), UMP2/6-311+G(3df), UB3LYP/6-311+G(d) reported)",
+      "source_note": "Table 2, state N5R 2A1",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "bonds_angstrom": [
+          1.161,
+          1.413,
+          1.413,
+          1.161
+        ],
+        "angles_deg": [
+          137.7,
+          102.2,
+          137.7
+        ],
+        "description": "Symmetric open-chain radical N1-N2-N3-N4-N5, C2v. Bonds: N1N2=N4N5=1.161, N2N3=N3N4=1.413 (CCSD(T)/6-31G(d)). Angles: N1N2N3=N3N4N5=137.7, N2N3N4=102.2 (row label 'N1N2N3 N3N4N5' in Table 2 denotes the two equal angles by symmetry)."
+      },
+      "suggested_build": "chain2d",
+      "notes": "NEW species, N5 neutral radical (doublet ground/low-energy state)."
+    },
+    {
+      "id": "N5_C2v_radical_2B2",
+      "formula": "N5",
+      "charge": 0,
+      "mult": 2,
+      "point_group": "C2v",
+      "method": "UB3LYP/6-311+G(d) (UMP2/6-311+G(d) also gives bonds only, no CCSD(T) reported for this state)",
+      "source_note": "Table 2, state N5R 2B2",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "bonds_angstrom": [
+          1.151,
+          1.34,
+          1.34,
+          1.151
+        ],
+        "angles_deg": [
+          210.9,
+          114.4,
+          210.9
+        ],
+        "description": "Second, higher-energy radical state, same atom connectivity as 2A1 but different angles; note angle value >180 (210.9) as printed -- likely a specific dihedral/reflex-angle convention used by the authors, transcribed as-is, needs care during reconstruction (may represent 360-210.9=149.1 or similar convention; verify against original before use)."
+      },
+      "suggested_build": "chain2d",
+      "notes": "NEW species but flagged: the >180 degree angle value is unusual and should be double-checked (possible OCR/convention issue) rather than assumed to be a direct chain2d input; also higher in energy than 2A1 state (~by ~9 kJ/mol relative per text 'about 250 kJ/mol' context -- reread text for exact relative energy if needed)."
+    },
+    {
+      "id": "N5-_D5h_pentazolate",
+      "formula": "N5",
+      "charge": -1,
+      "mult": 1,
+      "point_group": "D5h",
+      "method": "CCSD(T)/6-311+G(d) (also MP2, QCISD, B3LYP with same basis reported: 1.337/1.324/1.334/1.326 A respectively)",
+      "source_note": "Table 3 footnote, N5A (D5h)",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "edge_angstrom": 1.334,
+        "description": "Regular pentagon (D5h), all N-N bonds equal."
+      },
+      "suggested_build": "regular_ngon",
+      "notes": "LIKELY DUPLICATE of existing 'N5-_pentagon' entry -- cross-check bond length against existing catalog value during dedup."
+    },
+    {
+      "id": "N5+_C2v_singlet_Vshape",
+      "formula": "N5",
+      "charge": 1,
+      "mult": 1,
+      "point_group": "C2v",
+      "method": "not reprinted here (paper references [9,10], says geometry 'warrants no further comments')",
+      "source_note": "Section 3.3 text",
+      "geometry_type": "topology_only",
+      "notes": "V-shaped open form, terminal atoms point outward, ground state of N5+ (26 kJ/mol below triplet per this paper). No numeric geometry given in THIS paper -- see N5.pdf and N5+.pdf (this same archive batch) for actual numbers on this same species."
+    },
+    {
+      "id": "N5+_triplet_ionmolecule",
+      "formula": "N5",
+      "charge": 1,
+      "mult": 3,
+      "point_group": "not stated (asymmetric)",
+      "method": "not reprinted here (references prior work)",
+      "source_note": "Section 3.3 text",
+      "geometry_type": "topology_only",
+      "notes": "Described as 'a rather weak ion-molecule complex' -- asymmetric interaction of an N2 lone pair with one N=N bond of linear N3+. No numeric geometry given in this paper. Binding energy ~18 kJ/mol relative to N2 + triplet N3+ fragments (matches experimental 18.8 kJ/mol)."
+    },
+    {
+      "id": "N6_C2h_trans_diazide",
+      "formula": "N6",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "C2h",
+      "method": "CCSD(T) (basis ~6-31G(d) based on context; B3LYP/6-311+G(d) and MP2 values also given in Figure 2)",
+      "source_note": "Figure 2 (image), 'N6' equilibrium structure -- text: 'the N6 molecule is expected to be a planar-trans open-chain equilibrium geometry'",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "bonds_angstrom": [
+          1.153,
+          1.263,
+          1.468,
+          1.263,
+          1.153
+        ],
+        "angles_deg": [
+          106.9,
+          171.6,
+          171.6,
+          106.9
+        ],
+        "description": "Planar trans (centrosymmetric, C2h) open-chain diazide N6, six atoms in a chain: two terminal short N-N bonds (~1.15, N2-like), two medium bonds (~1.26), one long central single bond (~1.47, connecting the two N3-azide-like halves). CCSD(T) values (labeled (c) in Figure 2); B3LYP (a) and MP2 (b) alternatives also given: terminal 1.133/1.148, medium 1.241/1.256, central 1.454/1.442, angles 109.5/107.4 and 172.0/172.3."
+      },
+      "suggested_build": "chain2d",
+      "notes": "NEW, valuable, well-characterized species -- confirmed genuine minimum by harmonic frequency analysis (all real). A near-degenerate 'gauche' (C2) form also exists at MP2 level (energy difference ~0.2 kJ/mol, negligible) but no separate numeric geometry given for it in this paper. Cross-reference: N6-3N2.pdf (same batch) also reports this same trans-diazide species independently at CASPT2/DFT levels -- compare during dedup. A transition state 'N6-ts' for concerted 2N2 dissociation is also given in this paper's Figure 2 but SKIPPED here as it is explicitly a TS, not a minimum."
+    }
+  ]
+}

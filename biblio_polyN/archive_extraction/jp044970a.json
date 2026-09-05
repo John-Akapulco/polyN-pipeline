@@ -1,0 +1,34 @@
+{
+  "source_file": "jp044970a.pdf",
+  "title": "Predicted High-Energy Molecules: Helical All-Nitrogen and Helical Nitrogen-Rich Ring Clusters",
+  "authors": "Wang L., Mezey P.G.",
+  "journal_year": "J. Phys. Chem. A 109, 3241-3243 (2005)",
+  "notes_general": "N26H16 ([6] N-helicene, Figure 3) is OUT OF SCOPE (contains H). Both in-scope species (N26, N46) are large NEW helical all-nitrogen cage/ring-fusion structures, both confirmed as genuine energy minima by the authors' own frequency analysis (all real eigenvalues) -- larger than anything in the existing 70-structure corpus (max N20) or the N_csp/polyN_study imports (max N12), so very likely genuinely new to the full pool.",
+  "species": [
+    {
+      "id": "N26_6ring_helix",
+      "formula": "N26", "charge": 0, "mult": 1, "point_group": "not stated (nonplanar, described as C1-like helical, no symmetry label given)",
+      "method": "B3LYP/6-31G*",
+      "source_note": "Figure 1, text p.3242",
+      "geometry_type": "topology_only",
+      "bond_params": {"shape": "helical fused chain of 6 six-membered N rings ('[6] N-ring helix'), boat-conformation rings at both ends, nonplanar overall structure"},
+      "suggested_build": "UNKNOWN",
+      "notes": "Confirmed true minimum (real frequencies for all Hessian eigenvectors). Energy 864.6 kcal/mol above 13 N2. Dissociation to 2N2 releases 210.6 kcal/mol but barrier is only 4.85 kJ/mol (~1.16 kcal/mol) -- essentially barrierless, authors state this is 'insufficient to keep [6] N-ring helix kinetically stable' despite being a true PES minimum. Important caveat for any future metastability/HEDM discussion of this structure."
+    },
+    {
+      "id": "N46_11ring_helix",
+      "formula": "N46", "charge": 0, "mult": 1, "point_group": "not stated (helical, boat-conformation end rings)",
+      "method": "B3LYP/6-31G*",
+      "source_note": "Figure 2, text p.3242",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "shape": "helical fused chain of 11 six-membered N rings ('[11] N-ring helix'), boat conformation at end rings",
+        "end_unit_ring_bonds_A_range": {"a": [1.439, 1.468], "b": [1.227, 1.228], "c": [1.229, 1.250], "d": [1.350, 1.422], "e": [1.456, 1.517]},
+        "intermediate_unit_ring_bonds_A_range": {"a": [1.245, 1.259], "b": [1.356, 1.423], "c": [1.422, 1.506], "d": [1.377, 1.597]},
+        "confidence": "good -- explicitly labeled a/b/c/d/e lettered bonds with small ring diagrams in Figure 2, ranges given rather than single point values (repeating helical unit varies slightly along the helix)"
+      },
+      "suggested_build": "UNKNOWN",
+      "notes": "Confirmed true minimum (real frequencies). Energy 1538.0 kcal/mol above 23 N2. Bonds b,c in end units close to N=N double bond length; most other bonds close to N-N single bond; one bond (d, intermediate units) elongated up to 1.597 A on some ring positions -- notably long/weak N-N bond, possible point of instability."
+    }
+  ]
+}

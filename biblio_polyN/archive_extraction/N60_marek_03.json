@@ -1,0 +1,31 @@
+{
+  "source_file": "N60_marek_03.pdf",
+  "title": "Super-high energy-rich nitrogen cluster N60",
+  "authors": "Li Jie Wang, Marek Z. Zgierski",
+  "journal_year": "Chem. Phys. Lett. 376 (2003) 698-703",
+  "species": [
+    {
+      "id": "N60_S6_cage_HF",
+      "formula": "N60", "charge": 0, "mult": 1, "point_group": "S6",
+      "method": "HF/6-31G*",
+      "source_note": "Table 1 (structure 2, S6, HF level), Table 2 for energy",
+      "geometry_type": "topology_only",
+      "bond_params": {
+        "shape": "concave cage (different from fullerene C60 topology), 12 concave atoms, S6 symmetry. Partial bond lengths given (R1_2=1.389, R1_5=1.382, R1_9=1.403, R2_3=1.415, ... ~15 distinct bond lengths listed for the asymmetric unit, all in the 1.38-1.56 A range, consistent with N-N single/aromatic bonds) but the FULL 60-atom connectivity/coordinate set needed to build a complete geometry is not given in extractable text -- would require the paper's Figures (not read here) or symmetry-generation from the S6 point group + the listed unique bond parameters."
+      },
+      "suggested_build": "UNKNOWN -- 60-atom cage far beyond current geom.py shape functions; would need bespoke symmetry-expansion code or the original Figure coordinates",
+      "notes": "Stable (local minimum) cage structure AT HF/6-31G* LEVEL ONLY. Also compared to an Ih-symmetry alternative (structure 1, HF level) which the paper's cited prior work (Li et al.) found less favorable than S6."
+    },
+    {
+      "id": "N60_S6_UNSTABLE_dissociates_at_B3LYP",
+      "formula": "N60", "charge": 0, "mult": 1, "point_group": "S6 (nominal, HF-level starting point)",
+      "method": "B3LYP/6-31G*",
+      "source_note": "Table 1 (structure 4, B3LYP), abstract",
+      "geometry_type": "topology_only",
+      "bond_params": {"shape": "collapses into a complex of SIX chain-shaped N10 units (not a single covalent N60 cage) -- many bonds broken (dashes in Table 1) and angles distorted (9-68 deg, inconsistent with an intact cage)"},
+      "suggested_build": "n/a -- not a single molecule",
+      "notes": "IMPORTANT: at the higher (DFT/B3LYP) level of theory, the N60 cage does NOT remain intact -- it dissociates into six separate chain-shaped N10 clusters. This directly questions whether N60 is a genuine minimum at any level beyond HF. Paper reports N60 -> 30 N2 releases 1622.9 kcal/mol (B3LYP/6-31G*) as a formal energy-content figure, but this may be a formation-energy bookkeeping number rather than evidence the cage itself is DFT-stable. Treat the HF-level S6 cage as likely an artifact of the lower level of theory, similar to other HF-only structures flagged elsewhere in this extraction batch (e.g. N7+_3, N7-_7 in N7c.json)."
+    }
+  ],
+  "not_extracted_but_relevant": "60-atom system, well beyond the current project's largest structure (N20). Even the HF-stable cage's full 3D geometry requires the paper's figures (not accessed here) or S6-symmetry expansion of the partial parameter list in Table 1 -- flagged as a candidate for a dedicated follow-up if N60-scale clusters become a priority (cf. appendix D roadmap in rapport_polyN_biblio.tex re: extending beyond N12/N20)."
+}

@@ -1,0 +1,287 @@
+{
+  "source_file": "N10_marek_03.pdf",
+  "title": "Stability and the structures of Nitrogen clusters N10",
+  "species": [
+    {
+      "id": "N10_1_Cs_ion_pair_complex",
+      "formula": "N10",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "Cs",
+      "method": "B3LYP/6-31G and MP2/6-31G (both geometries optimized + harmonic freq characterized)",
+      "source_note": "Table 1 (energies) + Fig. 1 (geometry, images not read in this pass) + Section 3 discussion, p. 339-342",
+      "geometry_type": "topology_only",
+      "bond_params": {
+        "literature_energies": {
+          "B3LYP_6-31G": {
+            "E_hartree": -547.20421,
+            "ZPVE_kcal_mol": 27.1
+          },
+          "MP2_6-31G": {
+            "E_hartree": -545.80363,
+            "ZPVE_kcal_mol": 27.2
+          }
+        }
+      },
+      "coords": null,
+      "suggested_build": "generic_guess",
+      "notes": "Topology: ion-pair complex N5+ (chain cation) . N5- (5-ring anion), no intervening barrier, dissociates via TS12 to structure 2. Exact bond lengths/angles are given only in Fig. 1 (a multi-panel structure diagram spanning 3 pages, NOT read as an image in this extraction pass -- revisit visually if Niveau-1-exact reconstruction is wanted; otherwise treat as Niveau-2 topology-only, build initial geometry from connectivity + GFN2-xTB relax). Isomerization barrier to structure 2 (via TS12, imaginary freq 60i cm-1) is only 7.3(B3LYP)/16.2(MP2) kcal/mol -- easily interconverts, and overall complex needs 16.6(14.1) kcal/mol to dissociate into N2+N3.+N5. radicals."
+    },
+    {
+      "id": "N10_2_Cs_ion_pair_complex",
+      "formula": "N10",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "Cs",
+      "method": "B3LYP/6-31G and MP2/6-31G (both geometries optimized + harmonic freq characterized)",
+      "source_note": "Table 1 (energies) + Fig. 1 (geometry, images not read in this pass) + Section 3 discussion, p. 339-342",
+      "geometry_type": "topology_only",
+      "bond_params": {
+        "literature_energies": {
+          "B3LYP_6-31G": {
+            "E_hartree": -547.19656,
+            "ZPVE_kcal_mol": 27.0
+          },
+          "MP2_6-31G": {
+            "E_hartree": -545.7886,
+            "ZPVE_kcal_mol": 27.4
+          }
+        }
+      },
+      "coords": null,
+      "suggested_build": "generic_guess",
+      "notes": "Topology: ion-pair complex N5+.N5-, low dissociation barrier (9.3 kcal/mol both levels) via TS2 (57i cm-1) into 2N3.+2N2. Exact bond lengths/angles are given only in Fig. 1 (a multi-panel structure diagram spanning 3 pages, NOT read as an image in this extraction pass -- revisit visually if Niveau-1-exact reconstruction is wanted; otherwise treat as Niveau-2 topology-only, build initial geometry from connectivity + GFN2-xTB relax)."
+    },
+    {
+      "id": "N10_3_Cs_ring_plus_chain",
+      "formula": "N10",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "Cs",
+      "method": "B3LYP/6-31G and MP2/6-31G (both geometries optimized + harmonic freq characterized)",
+      "source_note": "Table 1 (energies) + Fig. 1 (geometry, images not read in this pass) + Section 3 discussion, p. 339-342",
+      "geometry_type": "topology_only",
+      "bond_params": {
+        "literature_energies": {
+          "B3LYP_6-31G": {
+            "E_hartree": -547.24596,
+            "ZPVE_kcal_mol": 28.4
+          },
+          "MP2_6-31G": {
+            "E_hartree": -545.82423,
+            "ZPVE_kcal_mol": 28.2
+          }
+        }
+      },
+      "coords": null,
+      "suggested_build": "generic_guess",
+      "notes": "Topology: 5-membered ring + chain-like N5 fragment (lowest B3LYP energy of the neutral set); dissociation barrier to N8+N2 only 15.1(21.0) kcal/mol via TS3 (190i cm-1). Exact bond lengths/angles are given only in Fig. 1 (a multi-panel structure diagram spanning 3 pages, NOT read as an image in this extraction pass -- revisit visually if Niveau-1-exact reconstruction is wanted; otherwise treat as Niveau-2 topology-only, build initial geometry from connectivity + GFN2-xTB relax)."
+    },
+    {
+      "id": "N10_4_Cs_ring_plus_chain",
+      "formula": "N10",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "Cs",
+      "method": "B3LYP/6-31G and MP2/6-31G (both geometries optimized + harmonic freq characterized)",
+      "source_note": "Table 1 (energies) + Fig. 1 (geometry, images not read in this pass) + Section 3 discussion, p. 339-342",
+      "geometry_type": "topology_only",
+      "bond_params": {
+        "literature_energies": {
+          "B3LYP_6-31G": {
+            "E_hartree": -547.24161,
+            "ZPVE_kcal_mol": 28.1
+          },
+          "MP2_6-31G": {
+            "E_hartree": -545.82219,
+            "ZPVE_kcal_mol": 28.0
+          }
+        }
+      },
+      "coords": null,
+      "suggested_build": "generic_guess",
+      "notes": "Topology: 5-membered ring + chain-like N5, isomerizes with 3 (barrier 11.0/10.5 kcal/mol via TS34, 190i cm-1); B3LYP: dissociates 2N3+2N2 (39.7 kcal/mol, TS4a 103i); MP2: dissociates to N5++N5- (74.0 kcal/mol, TS4b 137i). Exact bond lengths/angles are given only in Fig. 1 (a multi-panel structure diagram spanning 3 pages, NOT read as an image in this extraction pass -- revisit visually if Niveau-1-exact reconstruction is wanted; otherwise treat as Niveau-2 topology-only, build initial geometry from connectivity + GFN2-xTB relax)."
+    },
+    {
+      "id": "N10_5_Cs_ring_plus_chain",
+      "formula": "N10",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "Cs",
+      "method": "B3LYP/6-31G and MP2/6-31G (both geometries optimized + harmonic freq characterized)",
+      "source_note": "Table 1 (energies) + Fig. 1 (geometry, images not read in this pass) + Section 3 discussion, p. 339-342",
+      "geometry_type": "topology_only",
+      "bond_params": {
+        "literature_energies": {
+          "B3LYP_6-31G": {
+            "E_hartree": -547.23989,
+            "ZPVE_kcal_mol": 28.1
+          },
+          "MP2_6-31G": {
+            "E_hartree": -545.82053,
+            "ZPVE_kcal_mol": 28.1
+          }
+        }
+      },
+      "coords": null,
+      "suggested_build": "generic_guess",
+      "notes": "Topology: 5-membered ring + chain-like N5; dissociation barrier to N8+N2 of 11.3(16.2) kcal/mol via TS5 (800i cm-1). Exact bond lengths/angles are given only in Fig. 1 (a multi-panel structure diagram spanning 3 pages, NOT read as an image in this extraction pass -- revisit visually if Niveau-1-exact reconstruction is wanted; otherwise treat as Niveau-2 topology-only, build initial geometry from connectivity + GFN2-xTB relax)."
+    },
+    {
+      "id": "N10+_6_C2h_complex",
+      "formula": "N10",
+      "charge": 1,
+      "mult": 2,
+      "point_group": "C2h",
+      "method": "B3LYP/6-31G and MP2/6-31G (both geometries optimized + harmonic freq characterized)",
+      "source_note": "Table 1 (energies) + Fig. 1 (geometry, images not read in this pass) + Section 3 discussion, p. 339-342",
+      "geometry_type": "topology_only",
+      "bond_params": {},
+      "coords": null,
+      "suggested_build": "generic_guess",
+      "notes": "Topology: cationic complex, notably long N4-N5 bond of 2.207 A (B3LYP) -- essentially a loosely-bound N5...N5+ pair; stretching N4-N5 to 5.28 A dissociates barrierlessly into N5 + N5+ (30.8 kcal/mol energy difference). Exact bond lengths/angles are given only in Fig. 1 (a multi-panel structure diagram spanning 3 pages, NOT read as an image in this extraction pass -- revisit visually if Niveau-1-exact reconstruction is wanted; otherwise treat as Niveau-2 topology-only, build initial geometry from connectivity + GFN2-xTB relax). charge=+1, mult likely 2 (doublet, odd-electron cation) -- not explicitly stated as a number in text, inferred from being a cationic N10 radical species; VERIFY before use."
+    },
+    {
+      "id": "N10_8_pentagon_heptagon_fused",
+      "formula": "N10",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "not stated",
+      "method": "B3LYP/6-31G and MP2/6-31G (both geometries optimized + harmonic freq characterized)",
+      "source_note": "Table 1 (energies) + Fig. 1 (geometry, images not read in this pass) + Section 3 discussion, p. 339-342",
+      "geometry_type": "topology_only",
+      "bond_params": {
+        "literature_energies": {
+          "B3LYP_6-31G": {
+            "E_hartree": -547.13938,
+            "ZPVE_kcal_mol": 26.6
+          },
+          "MP2_6-31G": {
+            "E_hartree": -545.69791,
+            "ZPVE_kcal_mol": 27.5
+          }
+        }
+      },
+      "coords": null,
+      "suggested_build": "generic_guess",
+      "notes": "Topology: structure with a 5-membered ring and a 7-membered ring sharing one side (fused bicyclic); isomerizes with 7 (excluded, charge -2) -- wait: TS78 links 7(charge -2, excluded) and 8; low dissociation barrier via TS8 (617i cm-1) of only 7.7(14.4) kcal/mol into 2N3+2N2. Exact bond lengths/angles are given only in Fig. 1 (a multi-panel structure diagram spanning 3 pages, NOT read as an image in this extraction pass -- revisit visually if Niveau-1-exact reconstruction is wanted; otherwise treat as Niveau-2 topology-only, build initial geometry from connectivity + GFN2-xTB relax). Formally connected in the paper's PES to structure 7 (charge -2, excluded from our neutral/+1/-1 scope) via an isomerization TS -- structure 8 itself is treated as charge 0 in Table 1's energy listing; verify charge assignment before use given the confusing charge bookkeeping in this paper."
+    },
+    {
+      "id": "N10_9_C2h_chain",
+      "formula": "N10",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "C2h",
+      "method": "B3LYP/6-31G and MP2/6-31G (both geometries optimized + harmonic freq characterized)",
+      "source_note": "Table 1 (energies) + Fig. 1 (geometry, images not read in this pass) + Section 3 discussion, p. 339-342",
+      "geometry_type": "topology_only",
+      "bond_params": {
+        "literature_energies": {
+          "B3LYP_6-31G": {
+            "E_hartree": -547.19342,
+            "ZPVE_kcal_mol": 26.0
+          },
+          "MP2_6-31G": {
+            "E_hartree": -545.76996,
+            "ZPVE_kcal_mol": 25.9
+          }
+        }
+      },
+      "coords": null,
+      "suggested_build": "generic_guess",
+      "notes": "Topology: chain-like molecule; highly unstable, dissociation barrier to N8+N2 only 1.4(4.6) kcal/mol via TS9 (664i cm-1). Exact bond lengths/angles are given only in Fig. 1 (a multi-panel structure diagram spanning 3 pages, NOT read as an image in this extraction pass -- revisit visually if Niveau-1-exact reconstruction is wanted; otherwise treat as Niveau-2 topology-only, build initial geometry from connectivity + GFN2-xTB relax)."
+    },
+    {
+      "id": "N10_10_D2d_bispentazole",
+      "formula": "N10",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "D2d",
+      "method": "B3LYP/6-31G and MP2/6-31G (both geometries optimized + harmonic freq characterized)",
+      "source_note": "Table 1 (energies) + Fig. 1 (geometry, images not read in this pass) + Section 3 discussion, p. 339-342",
+      "geometry_type": "topology_only",
+      "bond_params": {
+        "literature_energies": {
+          "B3LYP_6-31G": {
+            "E_hartree": -547.26218,
+            "ZPVE_kcal_mol": 29.7
+          },
+          "MP2_6-31G": {
+            "E_hartree": -545.8463,
+            "ZPVE_kcal_mol": 29.5
+          }
+        }
+      },
+      "coords": null,
+      "suggested_build": "generic_guess",
+      "notes": "Topology: two pentagons bound to each other in a perpendicular configuration (bispentazole-type); LOWEST total energy among all optimized N10 clusters in this paper, but only modest dissociation barrier to N8+N2 of 9.5(8.7) kcal/mol via TS10 (489i cm-1). Exact bond lengths/angles are given only in Fig. 1 (a multi-panel structure diagram spanning 3 pages, NOT read as an image in this extraction pass -- revisit visually if Niveau-1-exact reconstruction is wanted; otherwise treat as Niveau-2 topology-only, build initial geometry from connectivity + GFN2-xTB relax). Likely the same topology as the D2d 'bispentazole'/'linked5rings' N10 structure already in the existing biblio_polyN corpus (N10_D2d_linked5rings / N10_D2d_bispentazole_GS) -- check for duplication before treating as new."
+    },
+    {
+      "id": "N10_11_chain",
+      "formula": "N10",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "not stated (chain-like)",
+      "method": "B3LYP/6-31G and MP2/6-31G (both geometries optimized + harmonic freq characterized)",
+      "source_note": "Table 1 (energies) + Fig. 1 (geometry, images not read in this pass) + Section 3 discussion, p. 339-342",
+      "geometry_type": "topology_only",
+      "bond_params": {
+        "literature_energies": {
+          "B3LYP_6-31G": {
+            "E_hartree": -547.2142,
+            "ZPVE_kcal_mol": 26.6
+          },
+          "MP2_6-31G": {
+            "E_hartree": -545.78446,
+            "ZPVE_kcal_mol": 26.5
+          }
+        }
+      },
+      "coords": null,
+      "suggested_build": "generic_guess",
+      "notes": "Topology: chain-like N10, studied in the authors' earlier Letter [ref 35]; proposed as a building block fragment for N60; dissociation barrier to N8+N2 of 14.3(21.6) kcal/mol via TS11 (749i cm-1). Exact bond lengths/angles are given only in Fig. 1 (a multi-panel structure diagram spanning 3 pages, NOT read as an image in this extraction pass -- revisit visually if Niveau-1-exact reconstruction is wanted; otherwise treat as Niveau-2 topology-only, build initial geometry from connectivity + GFN2-xTB relax)."
+    },
+    {
+      "id": "N10-_D2h_two_pentagons",
+      "formula": "N10",
+      "charge": -1,
+      "mult": 2,
+      "point_group": "D2h",
+      "method": "B3LYP/6-31G and MP2/6-31G (both geometries optimized + harmonic freq characterized)",
+      "source_note": "Table 1 (energies) + Fig. 1 (geometry, images not read in this pass) + Section 3 discussion, p. 339-342",
+      "geometry_type": "topology_only",
+      "bond_params": {},
+      "coords": null,
+      "suggested_build": "generic_guess",
+      "notes": "Topology: N10 formed by two pentagons (D2h) -- companion structure to a charge+2 analogue (excluded, out of scope) mentioned in the same sentence; minimum at B3LYP/6-31G but reported to develop ONE imaginary frequency at MP2/6-31G (out-of-plane motion of the two atoms connecting the pentagons) -- i.e. NOT a genuine MP2 minimum, B3LYP-level minimum only. Exact bond lengths/angles are given only in Fig. 1 (a multi-panel structure diagram spanning 3 pages, NOT read as an image in this extraction pass -- revisit visually if Niveau-1-exact reconstruction is wanted; otherwise treat as Niveau-2 topology-only, build initial geometry from connectivity + GFN2-xTB relax). No numeric geometry or table energy given for this one, prose-only mention. mult=2 (doublet) inferred from odd-electron anion, not explicitly stated -- verify."
+    },
+    {
+      "id": "N10_naphthalene_neutral",
+      "formula": "N10",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "not stated",
+      "method": "B3LYP/6-31G and MP2/6-31G (both geometries optimized + harmonic freq characterized)",
+      "source_note": "Table 1 (energies) + Fig. 1 (geometry, images not read in this pass) + Section 3 discussion, p. 339-342",
+      "geometry_type": "topology_only",
+      "bond_params": {},
+      "coords": null,
+      "suggested_build": "generic_guess",
+      "notes": "Topology: 'naphthalene-like' N10, two fused 6-membered(?)/aromatic-like rings by analogy to naphthalene; optimized as a minimum at B3LYP/6-31G level. Exact bond lengths/angles are given only in Fig. 1 (a multi-panel structure diagram spanning 3 pages, NOT read as an image in this extraction pass -- revisit visually if Niveau-1-exact reconstruction is wanted; otherwise treat as Niveau-2 topology-only, build initial geometry from connectivity + GFN2-xTB relax). No numeric geometry or table energy given, prose-only mention. IMPORTANT: this structure dissociates into 5 N2 at the MP2/6-31G level (i.e. is NOT a minimum at MP2 -- B3LYP artifact only) -- flag prominently, do not treat as a confirmed stable minimum without re-verification at a higher level (matches this project's own established practice of frequency-verifying with an independent method)."
+    },
+    {
+      "id": "N10-_naphthalene_anion",
+      "formula": "N10",
+      "charge": -1,
+      "mult": 2,
+      "point_group": "not stated",
+      "method": "B3LYP/6-31G and MP2/6-31G (both geometries optimized + harmonic freq characterized)",
+      "source_note": "Table 1 (energies) + Fig. 1 (geometry, images not read in this pass) + Section 3 discussion, p. 339-342",
+      "geometry_type": "topology_only",
+      "bond_params": {},
+      "coords": null,
+      "suggested_build": "generic_guess",
+      "notes": "Topology: naphthalene-like N10 anion, analogous to the neutral naphthalene-like structure above. Exact bond lengths/angles are given only in Fig. 1 (a multi-panel structure diagram spanning 3 pages, NOT read as an image in this extraction pass -- revisit visually if Niveau-1-exact reconstruction is wanted; otherwise treat as Niveau-2 topology-only, build initial geometry from connectivity + GFN2-xTB relax). No numeric geometry given, prose-only mention alongside the neutral naphthalene-like N10. mult=2 inferred, not stated explicitly -- verify. Same B3LYP-only-minimum caveat likely applies (paper doesn't explicitly confirm MP2 stability for the anion, only explicitly states the NEUTRAL dissociates at MP2 -- ambiguous for the anion, treat with caution)."
+    }
+  ]
+}

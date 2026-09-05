@@ -1,0 +1,99 @@
+{
+  "source_file": "2004_3_IJQC_Polynitrogen Clusters Containing Five-Membered Rings.pdf",
+  "title": "Polynitrogen Clusters Containing Five-Membered Rings",
+  "authors": "Cheng L.P., Li S., Li Q.S.",
+  "journal_year": "Int. J. Quantum Chem. 97, 933-943 (2004)",
+  "notes_general": "Comparison structures shown for N8/N10/N11/N12/N13/N14 in Figures 3-4 are reproductions of OTHER papers already cited (ref 1 = Glukhovtsev/Schleyer = poly-N.pdf already in existing corpus; ref 21 = Manaa = N10-N60.pdf in this archive; ref 22 = Klapotke/Harcourt = N12-N8.pdf in this archive) -- NOT extracted here as new species, only this paper's own novel contribution (9 N15 isomers) is captured. Figures 1-2 contain full 2D bond-length/bond-angle labeled diagrams (3 levels of theory each: B3PW91/B3LYP/MP2, plus Wiberg bond indices) for each N15 isomer -- precise per-atom-pair transcription was NOT attempted here (risk of misreading atom-to-atom correspondence from a dense hand-labeled figure); a dedicated high-resolution re-read of Figures 1-2 could upgrade these from topology_only to bond_params if exact reconstruction is later wanted. All values below (topology, point group, energies, ZPE, imaginary-mode count) are taken directly from the paper's Tables I-III and prose (all pure text, no figure-reading involved for these).",
+  "species": [
+    {
+      "id": "N15_1_C2v",
+      "formula": "N15", "charge": 0, "mult": 2, "point_group": "C2v",
+      "method": "B3LYP/6-31G* + B3PW91/6-31G* + MP2/6-31G* (geometry+freq at DFT levels)",
+      "source_note": "Table I-III, Figure 1 (isomer 15-1), most stable N15 isomer",
+      "geometry_type": "topology_only",
+      "bond_params": {"shape": "two pentazole (N5) rings connected by a 5-atom chain; most bond lengths close to aromatic N-N 1.350 A, one N-N close to double-bond 1.252 A"},
+      "suggested_build": "generic_guess", "shape_hint": "two_rings_plus_chain",
+      "notes": "Most stable of 9 N15 isomers (0.0 kcal/mol reference not used here, but lowest E in Table I at all 3 levels). n_imaginary=0 (true minimum). E(B3LYP)=-820.8360 Ha, ZPE=42.2 kcal/mol. Dissociation energy to 15/2 N2: 388.5 (B3LYP) / 490.5 (MP2) kcal/mol."
+    },
+    {
+      "id": "N15_2_Cs",
+      "formula": "N15", "charge": 0, "mult": 2, "point_group": "Cs",
+      "method": "B3LYP/6-31G* + B3PW91/6-31G* + MP2/6-31G*",
+      "source_note": "Table I-III, Figure 1 (isomer 15-2)",
+      "geometry_type": "topology_only",
+      "bond_params": {"shape": "three connected pentazole (N5) rings, cis arrangement"},
+      "suggested_build": "generic_guess", "shape_hint": "three_rings_chain",
+      "notes": "n_imaginary=0. E(B3LYP)=-820.8304 Ha, ZPE=44.4 kcal/mol. Relative E = 1.9-2.8 kcal/mol above 15-3 depending on method (2nd most stable overall per text, though Table II lists 15-3 as the 0.0 reference)."
+    },
+    {
+      "id": "N15_3_C2",
+      "formula": "N15", "charge": 0, "mult": 2, "point_group": "C2",
+      "method": "B3LYP/6-31G* + B3PW91/6-31G* + MP2/6-31G*",
+      "source_note": "Table I-III, Figure 1 (isomer 15-3)",
+      "geometry_type": "topology_only",
+      "bond_params": {"shape": "three connected pentazole (N5) rings, trans arrangement (trans-cooperation of 15-2)"},
+      "suggested_build": "generic_guess", "shape_hint": "three_rings_chain",
+      "notes": "n_imaginary=0. E(B3LYP)=-820.8270 Ha, ZPE=44.2 kcal/mol. Used as 0.0 kcal/mol reference in Table II."
+    },
+    {
+      "id": "N15_4_Cs",
+      "formula": "N15", "charge": 0, "mult": 2, "point_group": "Cs",
+      "method": "B3LYP/6-31G* + B3PW91/6-31G* + MP2/6-31G*",
+      "source_note": "Table I-III, Figure 1 (isomer 15-4)",
+      "geometry_type": "topology_only",
+      "bond_params": {"shape": "one pentazole (N5) ring with one N10 side-chain, planar"},
+      "suggested_build": "generic_guess", "shape_hint": "ring_plus_long_chain",
+      "notes": "n_imaginary=0. E(B3LYP)=-820.8118 Ha, ZPE=40.8 kcal/mol. Terminal N-N bond slightly longer than N2 triple bond (1.098 A); several bonds close to double-bond length (1.252 A)."
+    },
+    {
+      "id": "N15_5_Cs",
+      "formula": "N15", "charge": 0, "mult": 2, "point_group": "Cs",
+      "method": "B3LYP/6-31G* + B3PW91/6-31G* + MP2/6-31G*",
+      "source_note": "Table I-III, Figure 1 (isomer 15-5)",
+      "geometry_type": "topology_only",
+      "bond_params": {"shape": "one pentazole (N5) ring with two side-chains"},
+      "suggested_build": "generic_guess", "shape_hint": "ring_plus_two_chains",
+      "notes": "n_imaginary=0. E(B3LYP)=-820.8051 Ha, ZPE=41.9 kcal/mol. Least stable of the ring-containing isomers (15-1 to 15-5)."
+    },
+    {
+      "id": "N15_6_C2v",
+      "formula": "N15", "charge": 0, "mult": 2, "point_group": "C2v",
+      "method": "B3LYP/6-31G* + B3PW91/6-31G* + MP2/6-31G*",
+      "source_note": "Table I-III, Figure 2 (isomer 15-6)",
+      "geometry_type": "topology_only",
+      "bond_params": {"shape": "open-chain N15, no rings"},
+      "suggested_build": "chain2d",
+      "notes": "n_imaginary=0. E(B3LYP)=-820.7822 Ha, ZPE=38.9 kcal/mol."
+    },
+    {
+      "id": "N15_7_C1",
+      "formula": "N15", "charge": 0, "mult": 2, "point_group": "C1",
+      "method": "B3LYP/6-31G* + B3PW91/6-31G*",
+      "source_note": "Table I-III, Figure 2 (isomer 15-7)",
+      "geometry_type": "topology_only",
+      "bond_params": {"shape": "open-chain N15, no rings, asymmetric"},
+      "suggested_build": "chain2d",
+      "notes": "n_imaginary=1 at B3PW91 level but authors state it is negligibly small (~8i cm-1), below typical numerical-noise threshold (cf. this project's own 30 cm-1 noise cutoff in frequency_check.py) -- effectively a true minimum. E(B3LYP)=-820.7804 Ha, ZPE=39.5 kcal/mol."
+    },
+    {
+      "id": "N15_8_C1",
+      "formula": "N15", "charge": 0, "mult": 2, "point_group": "C1",
+      "method": "B3LYP/6-31G* + B3PW91/6-31G*",
+      "source_note": "Table I-III, Figure 2 (isomer 15-8)",
+      "geometry_type": "topology_only",
+      "bond_params": {"shape": "contains a six-membered ring in boat conformation"},
+      "suggested_build": "generic_guess", "shape_hint": "six_ring_plus_chain",
+      "notes": "n_imaginary=0. E(B3LYP)=-820.7557 Ha, ZPE=40.0 kcal/mol. ~40 kcal/mol less stable than 15-1."
+    },
+    {
+      "id": "N15_9_Cs",
+      "formula": "N15", "charge": 0, "mult": 2, "point_group": "Cs",
+      "method": "B3LYP/6-31G* + B3PW91/6-31G*",
+      "source_note": "Table I-III, Figure 2 (isomer 15-9)",
+      "geometry_type": "topology_only",
+      "bond_params": {"shape": "contains a six-membered ring in boat conformation"},
+      "suggested_build": "generic_guess", "shape_hint": "six_ring_plus_chain",
+      "notes": "n_imaginary=0. E(B3LYP)=-820.7177 Ha, ZPE=40.2 kcal/mol. Least stable of the 9 isomers, ~65 kcal/mol above 15-1."
+    }
+  ]
+}

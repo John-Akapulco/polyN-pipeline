@@ -1,0 +1,29 @@
+{
+  "source_file": "N5.pdf",
+  "title": "Ab initio and density functional theory study of the mechanism of synthesis of the N5+ cation",
+  "authors": "Xu W.-G., Li G.-L., Wang L.-J., Li S., Li Q.-S.",
+  "journal_year": "Chem. Phys. Lett. 314 (1999) 300-306",
+  "species": [
+    {
+      "id": "N5+_C2v_product",
+      "formula": "N5",
+      "charge": 1,
+      "mult": 1,
+      "point_group": "C2v",
+      "method": "B3LYP/6-311++G(d,p)",
+      "source_note": "Table 1 / text p. ~304: 'The N5+ cation has C2v symmetry with bond lengths of R12=1.302, R24=1.111 A'",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "bonds_angstrom": [
+          1.111,
+          1.302,
+          1.302,
+          1.111
+        ],
+        "description": "V-shaped C2v cation (final product of the HN3 + N2F+ -> N5+ + HF mechanism studied in this paper); R24 assumed terminal bond, R12 assumed inner bond by analogy with N5+.pdf/N5-N6-abinitio.pdf conventions -- exact atom labeling per this paper's own numbering not fully disambiguated from text alone."
+      },
+      "suggested_build": "chain2d",
+      "notes": "DUPLICATE/cross-reference of the same N5+ C2v species independently reported in N5+.pdf (experimental X-ray, this same batch: 1.102-1.107/1.295-1.303) and N5-N6-abinitio.pdf (topology_only mention). This paper is primarily a reaction-mechanism study (many ion-molecule complex intermediates and transition states along the HN3+N2F+ pathway) -- those mechanistic intermediates/TS structures were NOT extracted here (out of scope: not stable characterized N5 isomers, just points along one specific reaction coordinate)."
+    }
+  ]
+}

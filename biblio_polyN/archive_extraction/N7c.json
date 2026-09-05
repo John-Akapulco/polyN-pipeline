@@ -1,0 +1,108 @@
+{
+  "source_file": "N7c.pdf",
+  "title": "Structures and stability of N7+ and N7- clusters",
+  "authors": "Yong Dong Liu, Jun Fang Zhao, Qian Shu Li",
+  "journal_year": "Theor. Chem. Acc. 107 (2002) 140-146",
+  "species": [
+    {
+      "id": "N7+_1_C2v_openchain",
+      "formula": "N7", "charge": 1, "mult": 1, "point_group": "C2v",
+      "method": "B3LYP/6-311(+)G* (paper's preferred level; HF/6-31G*, B3LYP/6-31G*, MP2/6-31G* also given in Fig. 1a/Table 1)",
+      "source_note": "Fig. 1a (structure 1) + prose p.141; Tables 1-3",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "bonds_A": {"N1_N2_or_N1_N3": 1.297, "N2_N4_or_N3_N5": 1.317, "N4_N6_or_N5_N7_terminal": 1.110},
+        "shape": "open-chain, C2v; terminal bond close to N2 triple bond, central bonds between double-bond (HN=NH, 1.252 A) and aromatic (1.350 A) N-N length",
+        "figure_note": "Fig. 1a in the PDF (page 3 of the file) has the FULL set of bond lengths/angles at all 4 levels of theory annotated directly on the structure drawing -- only the prose-quoted subset is transcribed here for safety/certainty of atom-bond assignment; re-read the figure directly for a complete Z-matrix if needed."
+      },
+      "suggested_build": "chain (geom.py chain2d)",
+      "notes": "GLOBAL MINIMUM for N7+ (charge=+1), genuine local minimum at all 4 levels of theory (lowest freq 123-139 cm-1 depending on level, all real). B3LYP/6-311(+)G* total energy -382.8410263 au. THIS IS A NEW CHARGE STATE not present in N7.json or n7b.json (those are neutral N7 only) -- important addition for the cation family comparison table."
+    },
+    {
+      "id": "N7+_4_C3v_fused4rings",
+      "formula": "N7", "charge": 1, "mult": 1, "point_group": "C3v",
+      "method": "HF/6-31G* (B3LYP/MP2/B3LYP-311G* energies also given, Table 1)",
+      "source_note": "Fig. 1b (structure 4); Tables 1-3",
+      "geometry_type": "topology_only",
+      "bond_params": {"shape": "composed of three fused four-membered rings; high energy (+215 to +276 kcal/mol above structure 1 depending on level)"},
+      "suggested_build": "UNKNOWN (fused polycyclic, not in current geom.py list)",
+      "notes": "Genuine local minimum at all 4 levels (all real vibrational frequencies) despite very high relative energy. Full bond lengths/angles annotated in Fig. 1b (not transcribed here, see figure directly)."
+    },
+    {
+      "id": "N7+_2_UNSTABLE_collapses",
+      "formula": "N7", "charge": 1, "mult": 1, "point_group": "C2v (nominal)",
+      "method": "n/a -- structure collapses",
+      "source_note": "Fig. 1a (structure 2), prose p.141",
+      "geometry_type": "topology_only",
+      "bond_params": {"shape": "five-membered ring + N2 side chain"},
+      "suggested_build": "UNKNOWN",
+      "notes": "UNSTABLE: local minimum only at HF/MP2 levels; has an IMAGINARY frequency at B3LYP and collapses (following the imaginary mode) to an N5+.N2 van der Waals complex ('2-complex', Cs symmetry). Not a genuine N7+ minimum at the higher level of theory -- exclude from any relaxation pool or treat as a curiosity only."
+    },
+    {
+      "id": "N7+_3_UNSTABLE_collapses",
+      "formula": "N7", "charge": 1, "mult": 1, "point_group": "C2v (HF only)",
+      "method": "n/a -- structure collapses at B3LYP/MP2",
+      "source_note": "Fig. 1a (structure 3), prose p.141",
+      "geometry_type": "topology_only",
+      "bond_params": {"shape": "spiro structure, three- and five-membered rings perpendicularly fused"},
+      "suggested_build": "UNKNOWN",
+      "notes": "UNSTABLE: obtained only at HF/6-31G*; at B3LYP and MP2 it collapses to a C2v complex ('3-complex') containing an N3 three-membered ring plus two N2 fragments. Exclude from relaxation pool."
+    },
+    {
+      "id": "N7-_5_C2v_C2_openchain",
+      "formula": "N7", "charge": -1, "mult": 1, "point_group": "C2v or C2",
+      "method": "B3LYP/6-311+G* (paper's preferred level for the anion)",
+      "source_note": "Fig. 2a (structure 5), prose p.142-143; Tables 1-3",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "bonds_A": {"N4_N6_or_N5_N7_terminal": 1.163, "N2_N4_or_N3_N5": 1.216, "N1_N2_or_N1_N3": 1.414},
+        "shape": "open-chain, most stable N7- species; N2-N4/N4-N6 double bonds (NLMO), N1-N2 single bond"
+      },
+      "suggested_build": "chain (geom.py chain2d)",
+      "notes": "GLOBAL MINIMUM for N7- (charge=-1) -- 'most stable species among the N7- clusters'. Local minimum at HF/B3LYP-6-31G* but has 2 imaginary freqs at MP2/6-31G* and 1 at B3LYP/6-311+G* -- following the imaginary mode gives an all-real C2-symmetric structure (dihedral N3-N1-N2-N4 = 150.2 deg MP2 / 175.4 deg B3LYP) -- so treat as C2v/C2 near-degenerate pair, similar situation to the neutral N7 chain in N7.json. B3LYP/6-311+G* energy -383.1972773 au. NEW CHARGE STATE, important for anion family comparison."
+    },
+    {
+      "id": "N7-_6_Cs_6ring_boat",
+      "formula": "N7", "charge": -1, "mult": 1, "point_group": "Cs",
+      "method": "B3LYP/6-31G*",
+      "source_note": "Fig. 2a (structure 6), prose p.143-144",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "bonds_A": {"N6_N7": 1.279, "N1_N2_or_N4_N5": "given as ~aromatic/double, see figure"},
+        "shape": "six-membered ring in boat conformation, N1-N6/N5-N6 = 1.464 A, N2-N3/N3-N4 = 1.344 A"
+      },
+      "suggested_build": "general_ring or generic_guess(shape=\"ring\", n_atoms=6, plus one exocyclic/substituent atom)",
+      "notes": "Genuine local minimum at ALL 4 levels (all real vibrational frequencies per text and Table 3) -- close second to structure 5 (within 0.3-3.7 kcal/mol depending on level, actually LOWER than 5 at HF and B3LYP/6-31G*). Negative charge mainly on N1 (-0.40), N2/N3 (-0.18), N6/N7 (-0.28)."
+    },
+    {
+      "id": "N7-_7_UNSTABLE_HFonly_cage",
+      "formula": "N7", "charge": -1, "mult": 1, "point_group": "Cs",
+      "method": "HF/6-31G* only",
+      "source_note": "Fig. 2a (structure 7)",
+      "geometry_type": "topology_only",
+      "bond_params": {"shape": "cage of two five-membered rings, two trigonal (3-membered) rings, and one four-membered ring"},
+      "suggested_build": "UNKNOWN",
+      "notes": "Only exists at HF/6-31G*; B3LYP and MP2 optimizations collapse it to a complex ('7-complex', Cs). Treat as HF-level artifact, not a robust minimum."
+    },
+    {
+      "id": "N7-_8_Cs",
+      "formula": "N7", "charge": -1, "mult": 1, "point_group": "Cs",
+      "method": "not fully detailed in prose -- see Fig. 2b",
+      "source_note": "Fig. 2b (structure 8); Table 3 shows all-real frequencies at all 4 levels",
+      "geometry_type": "topology_only",
+      "bond_params": {},
+      "suggested_build": "UNKNOWN",
+      "notes": "Genuine local minimum at all 4 levels (Table 3: no imaginary-frequency markers), relative energy +1.7 to +23.6 kcal/mol above structure 5 depending on level. Full geometry only in Fig. 2b annotation, not transcribed (no clear prose bond-length statement found)."
+    },
+    {
+      "id": "N7-_9_C2v_C2",
+      "formula": "N7", "charge": -1, "mult": 1, "point_group": "C2v or C2",
+      "method": "not fully detailed in prose -- see Fig. 2b",
+      "source_note": "Fig. 2b (structure 9); Table 3",
+      "geometry_type": "topology_only",
+      "bond_params": {},
+      "suggested_build": "UNKNOWN",
+      "notes": "Has an imaginary frequency at B3LYP/6-311+G* (22i cm-1) that collapses to C2 symmetry; otherwise appears stable at other levels per Table 3. High relative energy (+113 to +134 kcal/mol above structure 5). Lower priority / less certain data quality than 5, 6, 8."
+    }
+  ]
+}

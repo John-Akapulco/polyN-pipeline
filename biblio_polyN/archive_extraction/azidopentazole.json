@@ -1,0 +1,31 @@
+{
+  "source_file": "azidopentazole.pdf",
+  "title": "First-principles DFT study of the structural, electronic and vibrational properties of azidopentazole",
+  "authors": "Kortus J., Pederson M.R., Richardson S.L.",
+  "journal_year": "Chem. Phys. Lett. 340, 565-570 (2001)",
+  "notes_general": "This paper recomputes two ALREADY-KNOWN N8 topologies (azidopentazole Cs, octaazapentalene D2h) at a different level of theory (all-electron PBE/NRLMOL) purely as a cross-validation exercise -- both topologies already exist in the current corpus as molecules.py ids 'N8_Cs_azidopentazole' and 'N8_D2h_pentalene' (both originally from poly-N.pdf/Glukhovtsev et al. B3LYP/6-31G*). The paper itself states its PBE bond lengths/angles agree with the existing B3LYP values within 0.1 A / 1 deg. Figure 1 (azidopentazole) and Figure 2 (octaazapentalene) DO show fully bond-length/angle-labeled 2D diagrams, but atom-index correspondence is not printed on the figure (no atom numbering), so precise per-bond transcription was not attempted here given the topology is already exactly reconstructed elsewhere in the corpus -- not worth the transcription-error risk for a duplicate. This paper's main NEW contribution is IR/Raman vibrational spectra for azidopentazole (Table 2: 17 modes from 54 to 2164 cm-1, IR intensities, Raman activities) -- useful for future spectroscopic validation but not a new geometry.",
+  "species": [
+    {
+      "id": "N8_azidopentazole_PBE",
+      "formula": "N8", "charge": 0, "mult": 1, "point_group": "Cs",
+      "method": "PBE/NRLMOL (all-electron gradient-corrected DFT)",
+      "source_note": "Fig. 1, Table 1",
+      "geometry_type": "topology_only",
+      "bond_params": {"shape": "5-membered pentazole ring with 3-atom azide-like tail (same topology as existing N8_Cs_azidopentazole)"},
+      "suggested_build": "DUPLICATE_OF_EXISTING",
+      "is_duplicate_of_existing_id": "N8_Cs_azidopentazole",
+      "notes": "E=-437.56550 Ha, E0(ZPE-corrected)=-437.53077 Ha, decomposition energy to 4N2 = 171.9 kcal/mol (PBE). Authors' own bond lengths/angles (Fig. 1, legible but no atom-index labels) agree with Glukhovtsev B3LYP/6-31G* (already in corpus) within 0.1 A / 1 deg per their own comparison -- treat as a validated duplicate, not a new topology. Vertical IP=10.9 eV, electron affinity=0.63 eV, HOMO=-7.6 eV, LUMO=-4.136 eV. Full IR/Raman spectrum in Table 2 (17 modes, 54-2164 cm-1) -- strongest IR mode 2164 cm-1 (369.5 km/mol), useful for spectroscopic cross-check if a relaxed structure is later computed."
+    },
+    {
+      "id": "N8_octaazapentalene_PBE",
+      "formula": "N8", "charge": 0, "mult": 1, "point_group": "D2h",
+      "method": "PBE/NRLMOL",
+      "source_note": "Fig. 2, Table 1",
+      "geometry_type": "topology_only",
+      "bond_params": {"shape": "two fused five-membered rings (pentalene-like), same topology as existing N8_D2h_pentalene"},
+      "suggested_build": "DUPLICATE_OF_EXISTING",
+      "is_duplicate_of_existing_id": "N8_D2h_pentalene",
+      "notes": "E=-437.54780 Ha, E0=-437.51182 Ha, decomposition energy to 4N2 = 183.8 kcal/mol (PBE). Cited as the lowest-energy N8 isomer in a 10-isomer study by Gagliardi et al. (not in this archive), but this paper finds azidopentazole is lower in energy than octaazapentalene at PBE level -- consistent ordering with existing corpus."
+    }
+  ]
+}

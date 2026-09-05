@@ -1,0 +1,21 @@
+{
+  "source_file": "N72_06.pdf",
+  "title": "What Makes the Cylinder-Shaped N72 Cage Stable?",
+  "authors": "Hongwei Zhou, Ning-Bew Wong, Ge Zhou, Anmin Tian",
+  "journal_year": "J. Phys. Chem. A 110 (2006) 7441-7446",
+  "species": [
+    {
+      "id": "N72_D3d_cylinder_cage",
+      "formula": "N72", "charge": 0, "mult": 1, "point_group": "D3d",
+      "method": "B3LYP/cc-pVDZ (single-point MP2/cc-pVDZ for relative stability)",
+      "source_note": "Table 1/2 (bond types, lengths for select bonds, orbital energies), text",
+      "geometry_type": "topology_only",
+      "bond_params": {
+        "shape": "cylinder-shaped cage, ~2.2 nm long, built by systematic layer-insertion procedure (N6(D3h) mother molecule -> insert W-shaped/chair-form hexagon layers alternately -> N12(D3d) -> N18(D3h) -> ... -> N72(D3d)); described as 'a beeline nanotube'. Every atom is 3-coordinate (3x72/2=108 bonds). Select bond lengths: N1-N4 ('55B' type, longest+highest orbital energy), N5-N10 = 1.483 A, N1-N2 ('35B' type, longest)."
+      },
+      "suggested_build": "UNKNOWN -- 72-atom cylindrical cage, far beyond current geom.py functions; the paper's own layer-by-layer construction algorithm (starting from N6(D3h), inserting hexagon layers) could in principle be coded but is a substantial undertaking",
+      "notes": "Genuine local minimum reported (lowest vibrational frequency 30 cm-1, i.e. all-real frequencies at B3LYP/cc-pVDZ). Described as 'the largest nitrogen cage investigated until now' at time of publication. No full Cartesian coordinate table found in the extractable text -- only bond-type/length spot values and the procedural construction description. Same category as N60_marek_03.json's cage: far beyond current project scale (max N20), flagged for the appendix D 'extend beyond N12/N20' roadmap item rather than immediate reconstruction."
+    }
+  ],
+  "not_extracted_but_relevant": "Paper is primarily an NBO/AIM bonding-analysis study (why cylindrical N-cages are stabilized by intramolecular through-space interactions) rather than a structure-survey paper -- only one species (N72 D3d itself) is the actual subject."
+}

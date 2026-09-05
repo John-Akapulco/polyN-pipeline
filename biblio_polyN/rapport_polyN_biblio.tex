@@ -1047,4 +1047,198 @@ interm\'ediaires actuellement hors p\'erim\`etre du pipeline principal
 (3) \'etendre la taille maximale g\'en\'er\'ee au-del\`a de N$_{12}$ pour
 couvrir N$_{20}$ neutre.
 
+\section{Extension \`a une archive bibliographique compl\'ementaire (38 articles)}
+\label{sec:archive-extension}
+
+Un second lot de 67 articles sur la chimie des compos\'es polyazot\'es a
+\'et\'e fourni (\texttt{Archive.zip}), ind\'ependamment des deux articles
+[GS]/[B] trait\'es aux sections pr\'ec\'edentes. Cette annexe documente son
+traitement : catalogage, extraction des donn\'ees g\'eom\'etriques,
+construction 3D, relaxation GFN2-xTB, v\'erification de fr\'equences et
+d\'edoublonnage contre le corpus complet (biblio + N\_csp + polyN\_study).
+
+\subsection{Catalogage et triage}
+
+Sur les 67 articles (titres/auteurs/esp\`eces relev\'es dans
+\texttt{biblio\_polyN/archive\_catalog.csv}) : 2 sont des doublons du
+corpus d\'ej\`a trait\'e ([GS], [B]) et 3 autres sont des doublons internes
+\`a l'archive elle-m\^eme (m\^eme article sauvegard\'e deux fois sous des
+noms diff\'erents). Sur les 62 articles restants, 43 rapportent une
+g\'eom\'etrie exploitable ; apr\`es retrait des 5 doublons ci-dessus,
+\textbf{38 articles uniques} ont \'et\'e effectivement trait\'es.
+
+\subsection{Extraction des donn\'ees}
+
+Les 38 articles ont \'et\'e lus int\'egralement (texte, tableaux, et
+lecture directe des figures scann\'ees ou des diagrammes annot\'es quand le
+texte seul \'etait insuffisant). \textbf{174 esp\`eces N-only} (formule +
+\'etat de charge neutre/cation/anion) ont \'et\'e identifi\'ees et
+transcrites fid\`element -- aucune valeur num\'erique n'a \'et\'e
+invent\'ee ou estim\'ee : quand un article ne donnait qu'une description
+qualitative de la topologie sans param\`etre g\'eom\'etrique chiffr\'e,
+l'esp\`ece a \'et\'e catalogu\'ee sans tentative de reconstruction.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lr}
+\toprule
+Esp\`eces N-only extraites & 174 \\
+\quad dont coordonn\'ees cart\'esiennes compl\`etes (\emph{exact\_coords}) & 2 \\
+\quad dont longueurs/angles de liaison (\emph{bond\_params}) & 88 \\
+\quad dont topologie seule, sans chiffre (\emph{topology\_only}) & 83 \\
+\quad dont \'etats de transition / points-selles signal\'es par les auteurs & 34 \\
+\'Etendue de taille couverte & N$_3$ \`a N$_{72}$ \\
+R\'epartition par charge & 149 neutre, 14 cation, 11 anion \\
+\bottomrule
+\end{tabular}
+\caption{Bilan de l'extraction sur les 38 articles de l'archive
+compl\'ementaire.}
+\label{tab:archive-extraction}
+\end{table}
+
+Points notables rencontr\'es lors de cette lecture : une structure
+\textbf{exp\'erimentale} du cation N$_5^{+}$ obtenue par diffraction des
+rayons X sur monocristal (sel N$_5^{+}$Sb$_2$F$_{11}^{-}$) -- rarissime
+dans ce domaine domin\'e par le calcul ; deux nouveaux \'etats de charge
+(N$_7^{+}$, N$_7^{-}$) pour une formule jusqu'ici document\'ee uniquement
+neutre dans le corpus ; et plusieurs esp\`eces explicitement signal\'ees
+\textbf{instables par leurs propres auteurs} \`a un niveau de th\'eorie
+sup\'erieur \`a celui de leur d\'ecouverte (par ex. deux isom\`eres
+cage-like de type cyclooctat\'etra\`ene et barrel\`ene de
+\texttt{N8e.pdf}, minima \`a HF/MP2 mais point-selles en DFT) -- un
+rappel utile que la stabilit\'e d'un isom\`ere est toujours relative au
+niveau de th\'eorie qui l'\'etablit.
+
+\subsection{Construction, relaxation et v\'erification de fr\'equences}
+
+Sur les 174 esp\`eces, \textbf{52 \'etaient directement exploitables}
+(donn\'ees num\'eriques suffisantes, taille $\leq 20$ atomes, non
+signal\'ees comme \'etat de transition). Chacune a \'et\'e reconstruite en
+3D (coordonn\'ees transcrites directement si disponibles ; sinon
+g\'eom\'etrie initiale b\^atie \`a partir des param\`etres de liaison via
+les fonctions de \texttt{biblio\_polyN/build/geom.py}, ou par plongement
+direct du graphe de connectivit\'e quand un tableau de liaisons complet
+\'etait disponible), puis relax\'ee en GFN2-xTB et v\'erifi\'ee en
+fr\'equence (m\^eme protocole que les sections~\ref{sec:freq-verif}
+pr\'ec\'edentes), avant d\'edoublonnage par isomorphisme de graphe contre
+le corpus complet (70 biblio + 408 N\_csp + 50 polyN\_study).
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lr}
+\toprule
+Doublons confirm\'es du corpus existant & 31 \\
+Points-selles confirm\'es (non-minima GFN2-xTB) & 9 \\
+\'Echec de construction (bicyclique 5+4 anneaux, non r\'esolu) & 1 \\
+Famille ``cages \`a anneaux imbriqu\'es'' (\texttt{N\_nanotubes\_06.pdf}) -- non fiable, voir texte & 8 \\
+\textbf{Structures nouvelles retenues} & \textbf{3} \\
+\midrule
+\textbf{Total trait\'e} & \textbf{52} \\
+\bottomrule
+\end{tabular}
+\caption{Bilan de la construction/relaxation/v\'erification sur les 52
+esp\`eces directement exploitables.}
+\label{tab:archive-build-results}
+\end{table}
+
+\textbf{Anomalie identifi\'ee et exclue} : les 8 esp\`eces de la famille
+``cages \`a anneaux imbriqu\'es'' de \texttt{N\_nanotubes\_06.pdf} (N$_6$
+\`a N$_{20}$, groupes ponctuels D$_{3h}$/D$_{4d}$/D$_{5h}$/D$_{6h}$/O$_h$)
+ne donnent, dans l'article, que des longueurs de liaison
+repr\'esentatives par sym\'etrie -- pas la connectivit\'e compl\`ete ; leur
+construction est retomb\'ee sur le repli g\'en\'erique
+\texttt{generic\_guess(shape="cage")}, qui s'av\`ere \textbf{incapable de
+discriminer entre elles} : les 8 relaxations GFN2-xTB convergent vers une
+\'energie quasi identique ($-71{,}016 \pm 0{,}0002$~eV/atome) quelle que
+soit la formule (N$_6$ \`a N$_{20}$) -- signe que le repli g\'en\'erique
+produit un artefact non repr\'esentatif plut\^ot que la cage sp\'ecifique
+vis\'ee, l'algorithme de construction propre \`a l'article
+(``insertion d'anneaux en W imbriqu\'es'', section 2 de
+\texttt{N\_nanotubes\_06.pdf}) n'\'etant pas impl\'ement\'e dans
+\texttt{geom.py}. Ces 8 esp\`eces sont donc \textbf{exclues des r\'esultats}
+et report\'ees en travail futur (tableau~\ref{tab:composes-a-etudier}).
+
+\subsection{Les trois structures nouvelles}
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{@{}p{2.3cm}p{3.6cm}p{2.1cm}r@{\hspace{4pt}}cp{2.4cm}@{}}
+\toprule
+Esp\`ece & Source & M\'ethode & $E$ (eV/at.) & Conf. & Construction \\
+\midrule
+N$_{18}$ (C2v) & Gu \emph{et al.}, J. Mol. Struct. (THEOCHEM) 428 (1998) 183 & B3LYP/6-31G* & $-78{,}6312$ & \textbf{H} & plongement direct du graphe (24 liaisons) \\[4pt]
+N$_7^{-}$ (Cs, boat) & Liu, Zhao, Li, Theor. Chem. Acc. 107 (2002) 140 & B3LYP/6-31G* & $-79{,}7176$ & B & repli g\'en\'erique (ring7) \\[4pt]
+N$_{11}$ (C2v, cha\^ine) & Thompson, Bledson, Strout, J. Phys. Chem. A (2002) & HF/cc-pVDZ & $-78{,}8583$ & B & repli g\'en\'erique (chain) \\
+\bottomrule
+\end{tabular}
+\caption{Les 3 esp\`eces retenues comme nouvelles (absentes du corpus
+biblio+N\_csp+polyN\_study existant), avec niveau de confiance dans la
+fid\'elit\'e de la reconstruction (H = haute, B = basse).}
+\label{tab:archive-new-structures}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\begin{tabular}{ccc}
+\includegraphics[width=4.2cm]{figures/archive_N18_cage.png} &
+\includegraphics[width=4.2cm]{figures/archive_N7anion_boat.png} &
+\includegraphics[width=4.2cm]{figures/archive_N11_chain.png} \\
+\end{tabular}
+\caption{Les 3 nouvelles structures issues de l'archive compl\'ementaire
+(g\'eom\'etrie GFN2-xTB relax\'ee, v\'erifi\'ee en fr\'equence).}
+\label{fig:archive-new-structures}
+\end{figure}
+
+Seule \texttt{N18\_C2v\_cage} b\'en\'eficie d'une confiance \textbf{haute} :
+l'article donne un tableau complet des 24 liaisons index\'ees, ce qui a
+permis un plongement direct du graphe de connectivit\'e (et non un repli
+g\'en\'erique) -- c'est la seule des 3 dont on peut affirmer qu'elle
+repr\'esente fid\`element la topologie N$_{18}$ (C2v) publi\'ee. Les deux
+autres (N$_7^{-}$, N$_{11}$) reposent sur un repli g\'en\'erique faute de
+connectivit\'e compl\`ete dans l'article source : leur \'energie GFN2-xTB
+est physiquement raisonnable et elles constituent bien un minimum
+v\'erifi\'e, mais \textbf{rien ne garantit qu'elles co\"incident avec
+l'isom\`ere pr\'ecis d\'ecrit dans l'article} plut\^ot qu'un autre minimum
+de m\^eme formule/charge -- \`a confirmer par une relecture cibl\'ee de la
+figure originale avant tout usage n\'ecessitant cette identification
+exacte.
+
+\subsection{Doublons \`a valeur ajout\'ee}
+
+Parmi les 31 doublons confirm\'es, un m\'erite mention sp\'eciale :
+l'article de Christe \emph{et al.} rapporte la structure
+\textbf{exp\'erimentale} du cation N$_5^{+}$ (diffraction X sur le sel
+N$_5^{+}$Sb$_2$F$_{11}^{-}$) -- topologiquement isomorphe \`a l'entr\'ee
+\texttt{N5+\_Vchain} d\'ej\`a dans le corpus (calcul\'ee), mais issue d'une
+mesure directe plut\^ot que d'un calcul. Note de m\'ethode : notre
+reconstruction utilise les longueurs/angles de liaison rapport\'es dans le
+texte comme point de d\'epart d'une relaxation GFN2-xTB (le tableau des
+coordonn\'ees cristallographiques compl\`etes n'\'etant pas reproduit dans
+le corps de l'article), donc le fichier obtenu n'est pas une transcription
+litt\'erale des coordonn\'ees cristallines -- mais la confirmation
+topologique par une source exp\'erimentale ind\'ependante reste une
+validation forte de cette famille de structures.
+
+Les 34 esp\`eces signal\'ees comme \'etats de transition ou points-selles
+par leurs propres auteurs (section pr\'ec\'edente) et les 9 points-selles
+confirm\'es ind\'ependamment par notre propre v\'erification de
+fr\'equences ne sont volontairement pas int\'egr\'ees au corpus de minima
+-- elles sont catalogu\'ees dans
+\texttt{biblio\_polyN/archive\_extraction/} et
+\texttt{archive\_new\_structures\_results.csv} pour une \'eventuelle
+discussion future sur les chemins de d\'ecomposition, mais n'apparaissent
+pas comme esp\`eces stables dans ce rapport.
+
+\subsection{Travail report\'e}
+
+Les 83 esp\`eces \emph{topology\_only} (aucune donn\'ee chiffr\'ee dans
+l'article), les 16 grandes cages N$_{24}$--N$_{72}$ (au-del\`a de la
+capacit\'e actuelle de \texttt{geom.py}) et les 8 cages \`a anneaux
+imbriqu\'es de \texttt{N\_nanotubes\_06.pdf} (section pr\'ec\'edente)
+constituent un total de 107 esp\`eces catalogu\'ees mais non
+reconstruites -- \`a traiter par une relecture cibl\'ee des figures
+originales et/ou l'\'ecriture d'un g\'en\'erateur de cage d\'edi\'e,
+prochaine \'etape logique compl\'etant le tableau~\ref{tab:composes-a-etudier}.
+
 \end{document}

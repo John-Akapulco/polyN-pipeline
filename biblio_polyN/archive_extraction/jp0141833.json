@@ -1,0 +1,25 @@
+{
+  "source_file": "jp0141833.pdf",
+  "title": "Theoretical Prediction on the Synthesis Reaction Pathway of N6 (C2h)",
+  "authors": "Wang L.J., Warburton P., Mezey P.G.",
+  "journal_year": "J. Phys. Chem. A 106, 2748-2752 (2002)",
+  "notes_general": "Paper is about a synthesis PATHWAY from HN3 + N3F -> N6 + HF. Reactants/TS/complexes all contain H and/or F (out of scope). Only the final product N6 (C2h, open-chain diazide/hexaazadiazide) is pure-N and in scope -- this is the SAME topology as the existing corpus entry 'N6_C2h_chain'. Figure 1 (last panel, labeled 'N6') shows an atom-labeled 2D diagram with 3 levels of theory per bond (HF/6-31G**, B3LYP/6-31G**, B3LYP/6-311++G**) -- read with moderate confidence given label density; treat bond values below as approximate, not authoritative to 4 sig figs.",
+  "species": [
+    {
+      "id": "N6_C2h_diazide_synthesis_product",
+      "formula": "N6", "charge": 0, "mult": 1, "point_group": "C2h",
+      "method": "B3LYP/6-311++G** (also HF/6-31G**, B3LYP/6-31G** reported)",
+      "source_note": "Figure 1 (N6 panel), text p.2750-2751",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "shape": "open-chain diazide N3-N1=N2...N2'=N1'-N3' (C2h, centrosymmetric)",
+        "approx_bond_lengths_A_B3LYP_6-311ppGss": {"N1-N2": 1.247, "N1-N3": 1.242},
+        "approx_angles_deg": {"N2-N1-N3": 109.5, "chain_dihedral_or_wide_angle": 188.1},
+        "confidence": "moderate -- read from a dense multi-value labeled figure without atom coordinates, not a printed table"
+      },
+      "suggested_build": "DUPLICATE_OF_EXISTING_LIKELY",
+      "is_duplicate_of_existing_id": "N6_C2h_chain",
+      "notes": "Relative energy of N6+HF product = -27.7 kcal/mol (B3LYP/6-311++G**) / -40.3 (CCSD). This is the target product of a proposed synthesis route (HN3 + N3F -> N6 + HF), barrier 21.4-27.0 kcal/mol depending on method -- context for future HEDM synthesis-feasibility discussion, not a new topology."
+    }
+  ]
+}

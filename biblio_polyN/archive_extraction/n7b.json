@@ -1,0 +1,99 @@
+{
+  "source_file": "n7b.pdf",
+  "title": "Structure and stability of new N7 isomers",
+  "authors": "X. Wang, Y. Ren, M.-B. Shuai, N.-B. Wong, W.-K. Li, A.-M. Tian",
+  "journal_year": "J. Mol. Struct. (Theochem) 538 (2001) 145-156",
+  "species": [
+    {
+      "id": "N7_wang_1_Cs_boat",
+      "formula": "N7", "charge": 0, "mult": 2, "point_group": "Cs",
+      "method": "B3LYP/6-31G* (also UHF, MP2, B3LYP/6-311+G* given -- full Z-matrix at all 4 levels in Table 1)",
+      "source_note": "Table 1 (molecule 1, Cs) -- full internal coordinates (bonds+angles+dihedrals) given",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "note": "FULL Z-matrix given (bond lengths R + angles A + dihedrals T), sufficient to reconstruct exact 3D geometry deterministically, not just approximate topology",
+        "bonds_A": {"R12": 1.2490, "R13": 1.3975, "R24": 1.4299, "R35": 1.3975, "R47": 1.2512},
+        "angles_deg": {"A213": 116.4, "A135": 102.6, "A674": 121.1, "A421": 118.8},
+        "dihedrals_deg": {"T2135": 276.9, "T1256": 180.0, "T2467": 0.0},
+        "shape": "boat-shaped 7-membered ring (atoms 1,2,5,6 coplanar); contains N=N double bonds (R12,R47 ~1.25 A)"
+      },
+      "suggested_build": "general_ring or generic_guess(shape=\"ring\", n_atoms=7)",
+      "notes": "Level-dependent stability: genuine local minimum at UHF/6-31G* and UMP2/6-31G*, but a TRANSITION STATE (1 imaginary freq) at B3LYP/6-31G* and B3LYP/6-311+G*. B3LYP total energy -382.9422 au. Flag as method-dependent when using for comparison."
+    },
+    {
+      "id": "N7_wang_2_Cs_5ring4ring",
+      "formula": "N7", "charge": 0, "mult": 2, "point_group": "Cs",
+      "method": "B3LYP/6-31G*",
+      "source_note": "Table 1 (molecule 2, Cs)",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "bonds_A": {"R12": 1.3169, "R13": 1.3779, "R35": 1.4579, "R36": 1.4870, "R67": 1.2455},
+        "angles_deg": {"A213": 106.7, "A124": 114.3, "A135": 105.9, "A536": 85.9, "A367": 94.1},
+        "dihedrals_deg": {"T2135": 4.2, "T2136": 98.0, "T1354": 0.0, "T6357": 0.0},
+        "shape": "fused bicyclic: atoms 1,2,3,4,5 form a 5-membered ring (planar), atoms 3,5,6,7 form a 4-membered ring; similar to the N8(Cs) isomer of Gagliardi. Atom 3 and 5 are each bonded to 3 N atoms."
+      },
+      "suggested_build": "fused_bicyclic (geom.py, 5-ring + 4-ring share an edge/atoms)",
+      "notes": "Genuine local minimum at ALL four levels (UHF, UMP2, B3LYP/6-31G*, B3LYP/6-311+G*) -- 'possible candidate of stable N7 isomers'. B3LYP total energy -382.9579 au (2nd lowest of the 6). Lowest freq 221 cm-1 at B3LYP/6-311+G*."
+    },
+    {
+      "id": "N7_wang_3_C2v_openchain_DUPLICATE",
+      "formula": "N7", "charge": 0, "mult": 2, "point_group": "C2v",
+      "method": "B3LYP/6-31G*",
+      "source_note": "Table 1 (molecule 3, C2v)",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "bonds_A": {"R12": 1.1410, "R23": 1.2557, "R34": 1.3712},
+        "angles_deg": {"A123": 170.2, "A234": 112.1, "A345": 104.2},
+        "dihedrals_deg": {"T1234": 180.0, "T4567": 180.0},
+        "shape": "'w-shaped' twisted open chain; R12/R67~1.14 A close to N2 triple bond, R23/R56 close to N=N double bond"
+      },
+      "suggested_build": "chain (geom.py chain2d)",
+      "notes": "CONFIRMED DUPLICATE: this is explicitly identified by the authors as the SAME structure as the 'twisted open-chain N7' of Li et al. 1998 (= N7_iso7_Cs_chain / N7_iso7_C2_chain in N7.json from N7.pdf) -- paper states 'the final optimized structure was with C2v symmetry... whose energies and geometry parameters are same as the results of Cs and C2 structures in reference [47]'. B3LYP total energy -383.0303 au, IDENTICAL to N7.json's iso7 entries. Genuine minimum at all 4 levels, lowest energy of all 6 here. DO NOT double-count in the new-structures pool -- this is the same global-minimum N7 species reported independently by a second paper as a consistency check."
+    },
+    {
+      "id": "N7_wang_4_C2v",
+      "formula": "N7", "charge": 0, "mult": 2, "point_group": "C2v",
+      "method": "B3LYP/6-31G*",
+      "source_note": "Table 1 (molecule 4, C2v)",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "bonds_A": {"R12": 1.4982, "R13": 1.3157, "R36": 1.3096},
+        "angles_deg": {"A213": 120.3, "A125": 91.3, "A136": 122.4, "A367": 113.3},
+        "dihedrals_deg": {"T1367": 0.0, "T3125": 55.3, "T4136": 35.1},
+        "shape": "atoms 1,3,5,6,7 coplanar; R13/R57/R35/R67 ~1.30-1.32 A (aromatic-like, delocalized)"
+      },
+      "suggested_build": "UNKNOWN",
+      "notes": "NOT a good stable candidate: minimum only at UMP2/6-31G* level; TRANSITION STATE (imaginary freq) at UHF/6-31G*, B3LYP/6-31G*, AND B3LYP/6-311+G*. B3LYP total energy -382.8488 au (highest/least stable of the 6 after structure 5). Include for completeness but flag as method-dependent/mostly unstable."
+    },
+    {
+      "id": "N7_wang_5_Cs_singlebond",
+      "formula": "N7", "charge": 0, "mult": 2, "point_group": "Cs",
+      "method": "B3LYP/6-31G*",
+      "source_note": "Table 1 (molecule 5, Cs)",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "bonds_A": {"R12": 1.4809, "R14": 1.4603, "R24": 1.4779, "R34": 1.4779, "R35": 1.4765, "R56": 1.4527, "R57": 1.4242},
+        "angles_deg": {"A213": 92.7, "A126": 105.4, "A426": 109.2, "A243": 93.0, "A356": 103.5, "A357": 107.2},
+        "dihedrals_deg": {"T3126": 50.2, "T6243": 243.4, "T1265": 233.0, "T3562": 0.0, "T1267": 294.7},
+        "shape": "pure single-bonded N7 cluster (only isomer with no double-bond character); atom 7 bonded to only one other N"
+      },
+      "suggested_build": "UNKNOWN (branched/caged single-bond framework)",
+      "notes": "Genuine local minimum at ALL four levels -- explicitly confirmed stable by the authors. B3LYP total energy -382.8346 au (highest energy = least stable of the 6, expected since no multiple-bond stabilization)."
+    },
+    {
+      "id": "N7_wang_6_C2v_5ring3ring",
+      "formula": "N7", "charge": 0, "mult": 2, "point_group": "C2v",
+      "method": "B3LYP/6-31G*",
+      "source_note": "Table 1 (molecule 6, C2v)",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "bonds_A": {"R12": 1.3494, "R13": 1.3016, "R35": 1.4068, "R57": 1.5144, "R67": 1.2290},
+        "angles_deg": {"A213": 112.1, "A354": 111.7, "A357": 120.9},
+        "dihedrals_deg": {"T1324": 180.0, "T1345": 180.0, "T1357": 151.8},
+        "shape": "fused bicyclic: 5-membered ring + 3-membered ring, atom 5 bonded to 4 other N atoms (highest connectivity)"
+      },
+      "suggested_build": "fused_bicyclic (geom.py, 5-ring + 3-ring)",
+      "notes": "Level-dependent: minimum at UHF/UMP2 but TRANSITION STATE (2 imaginary freqs at B3LYP/6-31G*, 1 at B3LYP/6-311+G*, 843i cm-1) at DFT levels -- authors attribute instability to atom 5's unusually high (4-fold) connectivity. B3LYP total energy -382.9416 au."
+    }
+  ]
+}

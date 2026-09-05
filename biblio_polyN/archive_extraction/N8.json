@@ -1,0 +1,32 @@
+{
+  "source_file": "N8.pdf",
+  "title": "Theoretical Studies on the Potential Energy Surfaces of N8 Clusters",
+  "authors": "Qian Shu Li, Li Jie Wang",
+  "journal_year": "J. Phys. Chem. A, DOI 10.1021/jp003086r (2000/2001)",
+  "species": [
+    {
+      "id": "N8_LiWang_Cs_openchain",
+      "formula": "N8", "charge": 0, "mult": 1, "point_group": "Cs",
+      "method": "B3LYP/6-311+G* (paper's preferred level; also B3LYP/BPW91/BLYP/B3PW91 at 6-31G*)",
+      "source_note": "Fig. 1 (labeled N8(Cs)), Table 1 energy = -437.896230 au (B3LYP/6-311+G*)",
+      "geometry_type": "topology_only",
+      "bond_params": {"shape": "open-chain N8 -- reactant/intermediate for the N8(Cs) -> N5+ + N3- decomposition and N8(Cs) -> N8(C2h) isomerization studied in this paper. Full bond lengths annotated in Fig. 1 (top-right panel) at 5 levels of theory, not transcribed here (multi-level stacked figure numbers, risk of bond-index misattribution) -- re-read Fig. 1 directly if precise values needed."},
+      "suggested_build": "chain (geom.py chain2d) -- likely, pending figure confirmation",
+      "notes": "POSSIBLE DUPLICATE: likely overlaps with an existing open-chain N8 conformer already in biblio_polyN/build/molecules.py (e.g. N8_C2h_ladder, N8_C2h_EEE/ZEZ, N8_Cs_ZEE) -- flag for careful graph-isomorphism check during central dedup rather than assuming new. Genuine local minimum (used as PES stationary point, all-real frequencies implied by its role as reactant)."
+    },
+    {
+      "id": "N8_LiWang_C2h_openchain",
+      "formula": "N8", "charge": 0, "mult": 1, "point_group": "C2h",
+      "method": "B3LYP/6-311+G*",
+      "source_note": "Fig. 1 (labeled N8(C2h)), prose p.C (isomerization section), Table 1 energy = -437.902168 au",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "bonds_A": {"one_bond_type": 1.394, "other_bond_type": 1.252},
+        "shape": "open-chain, C2h; one bond type between single/double (1.394 A), other near N2H2 double-bond length (1.252 A)"
+      },
+      "suggested_build": "chain (geom.py chain2d)",
+      "notes": "POSSIBLE DUPLICATE: likely overlaps with an existing N8_C2h_* entry in molecules.py (chain conformer with double-bond alternation) -- flag for graph-isomorphism dedup check. Slightly more stable than N8(Cs) (isomerization barrier 4.0-5.4 kcal/mol from Cs to C2h, QCISD/B3LYP level). Genuine local minimum (product of the isomerization PES study)."
+    }
+  ],
+  "not_extracted_but_relevant": "Paper's main content is PES/kinetics (barrier heights for N8(Cs)->N5++N3- decomposition: 23.4 kcal/mol forward, 2.0 kcal/mol reverse; N8(Cs)->N8(C2h) isomerization barrier 4.0-5.4 kcal/mol) plus VTST rate constants -- same category as N7d.pdf's decomposition-pathway data, relevant to future kinetic-stability work (see rapport_polyN_biblio.tex roadmap) but not new stable-isomer structures beyond the two N8 entries above. The Complex(Cs), TS(Cs), and TS1(C1) species in Fig. 1 are transition states / van der Waals complexes, not stable isomers -- not extracted as species entries."
+}

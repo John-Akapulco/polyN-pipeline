@@ -1,0 +1,39 @@
+{
+  "source_file": "N7d.pdf",
+  "title": "A Theoretical Study on Decomposition Pathways of N7+ and N7- Clusters",
+  "authors": "Qian Shu Li, Jun Fang Zhao",
+  "journal_year": "J. Phys. Chem. A (2002), DOI 10.1021/jp014402k",
+  "species": [
+    {
+      "id": "N7d_C1_DUPLICATE",
+      "formula": "N7", "charge": 1, "mult": 1, "point_group": "C2v",
+      "method": "MP2/6-31(+)G(d) and B3LYP/6-31(+)G(d)",
+      "source_note": "Fig. 1, referred to as 'C-1'",
+      "geometry_type": "topology_only",
+      "bond_params": {},
+      "suggested_build": "n/a - duplicate",
+      "notes": "DUPLICATE: this is the same open-chain N7+ (C2v) global minimum already captured as N7+_1_C2v_openchain in N7c.json (same authors, companion paper). Lowest vib. freq here: 123 (MP2) / 130 (B3LYP) cm-1, consistent with N7c.json's values. Do not double count."
+    },
+    {
+      "id": "N7d_A1_DUPLICATE",
+      "formula": "N7", "charge": -1, "mult": 1, "point_group": "C2",
+      "method": "MP2/6-31(+)G(d) and B3LYP/6-31(+)G(d)",
+      "source_note": "referred to as 'A-1'",
+      "geometry_type": "topology_only",
+      "bond_params": {},
+      "suggested_build": "n/a - duplicate",
+      "notes": "DUPLICATE of N7-_5_C2v_C2_openchain in N7c.json (same authors). Lowest vib freq: 44 (MP2) / 75 (B3LYP) cm-1."
+    },
+    {
+      "id": "N7d_A2_DUPLICATE",
+      "formula": "N7", "charge": -1, "mult": 1, "point_group": "Cs",
+      "method": "MP2/6-31(+)G(d) and B3LYP/6-31(+)G(d)",
+      "source_note": "referred to as 'A-2', the cyclic anion",
+      "geometry_type": "topology_only",
+      "bond_params": {},
+      "suggested_build": "n/a - duplicate",
+      "notes": "DUPLICATE of N7-_6_Cs_6ring_boat in N7c.json (same authors, 'cyclic anion N7- (Cs)'). Lowest vib freq: 169 (MP2) / 210 (B3LYP) cm-1."
+    }
+  ],
+  "not_extracted_but_relevant": "This paper's actual NEW content is transition-state (TS1, TS2) geometries and decomposition-pathway energetics (IRC-confirmed dissociation barriers, NIMAG=1 saddle points) for N7+ -> N5+ + N2 (stepwise, via stable linear N5+) and N7- -> ... (concerted 2xN2 elimination for the C2 anion). These are NOT local-minimum structures and fall outside the scope of this structure-extraction pass (which targets stable isomers only), but are directly relevant to the 'kinetic stability / barrier height to dissociation' future-work item already flagged in the main report's roadmap (rapport_polyN_biblio.tex, item on TS/IRC as unexplored). Flagging here so the coordinator can revisit this paper specifically when/if a kinetic-stability study is undertaken. Key finding: 'N7 ions do not seem to be stable enough as a metastable species in a practical sense' (paper's own conclusion) -- i.e., low barriers to N2 loss for both the cation and anion global minima."
+}

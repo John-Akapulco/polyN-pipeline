@@ -1,0 +1,53 @@
+id,source_file,formula,charge,mult,point_group,method,geometry_type,build_used,build_confidence,e_xtb_hartree,e_xtb_eV_per_atom,freq_converged,is_true_minimum,hops_needed,is_duplicate_of_existing,is_duplicate_within_new_batch,final_status
+N3+_Dinfh_linear_groundstate,N3+.json,N3,1,3,"Dinfh (linear, centrosymmetric)","MRCI/[5s,4p,3d,2f] (Dunning basis, state-averaged CASSCF reference)",exact_coords,linear,HIGH,-7.995614,-72.52391,True,True,0,biblio:N3+_linear,,DUPLICATE_OF_EXISTING
+N5-_pentagon_D5h_crosscheck,N10.json,N5,-1,1,D5h,RI-MP2-fc/TZVPP,bond_params,regular_ngon,HIGH,-14.760899,-80.33291,True,True,0,biblio:N5-_pentagon,,DUPLICATE_OF_EXISTING
+N4_Td_tetrahedrane_CCSDT,N4-N8.json,N4,0,1,Td,CCSD(T)/TZ2Pf (highest level in paper),bond_params,tetrahedron,HIGH,-11.484332,-78.12615,True,True,0,biblio:N4_D2d_puckered,,DUPLICATE_OF_EXISTING
+N4_Td_singlet_1,N4b.json,N4,0,1,Td,"CCSD(T)/DZP (also B3LYP/DZP, B3LYP/cc-pVTZ, CAS(12,12) reported)",bond_params,tetrahedron,HIGH,-11.484332,-78.12615,True,True,0,biblio:N4_D2d_puckered,,DUPLICATE_OF_EXISTING
+N8_pentalene_dianion_analog_struct11,N4-6-8.json,N8,0,1,not stated numerically,MP2/6-31G*,bond_params,fused_bicyclic,LOW,-23.236426,-79.03692,True,True,0,biblio:N8_C2v_ring,,DUPLICATE_OF_EXISTING
+N4_D2h_rectangle_cyclobutadiene_analog,N4-6-8.json,N4,0,1,D2h,MP2/6-31G*,bond_params,rectangle,HIGH,-11.41798,-77.67477,True,True,1,biblio:N4_D2d_puckered,,DUPLICATE_OF_EXISTING
+N8_Oh_octaazacubane_CCSD,N4-N8.json,N8,0,1,Oh,CCSD/DZP (highest correlated level given for pure N8 in Table 2; no CCSD(T) row for N8 itself),bond_params,cube,HIGH,-22.908623,-77.92192,True,True,0,biblio:N8_Oh_cubane_GS,,DUPLICATE_OF_EXISTING
+N4_Td_tetraazatetrahedrane,N4c.json,N4,0,1,Td,"MP2/6-31G(d) (cross-compared to CASSCF/DZP: 1.471 A, and CCSD/DZP: ~0.020 A shorter)",bond_params,tetrahedron,HIGH,-11.484332,-78.12615,True,True,0,biblio:N4_D2d_puckered,,DUPLICATE_OF_EXISTING
+N4_D2d_triplet_5,N4b.json,N4,0,3,D2d,"CCSD(T)/DZP (also B3LYP/DZP, B3LYP/cc-pVTZ, CAS(12,12)/DZP, CAS(12,12)/cc-pVTZ reported)",bond_params,puckered_4ring_d2d,HIGH,-11.365133,-77.31525,True,True,0,N_csp:N4_0004_bicyclic-3-3,,DUPLICATE_OF_EXISTING
+N4_Cs_triplet_4_openchain,N4b.json,N4,0,3,Cs,"CCSD(T)/DZP (also B3LYP/DZP, B3LYP/cc-pVTZ, CAS(12,12)/DZP, CAS(12,12)/cc-pVTZ reported)",bond_params,chain2d,HIGH,-11.506737,-78.27857,True,True,0,biblio:N4_C2h_chain,,DUPLICATE_OF_EXISTING
+N4_Cs_triplet_5_openchain,N4c.json,N4,0,3,Cs,MP2(full)/6-31G(d); CISD(fc)/6-31G(d) values in parentheses,bond_params,generic_guess:chain,LOW,-11.506737,-78.27857,True,True,0,biblio:N4_C2h_chain,,DUPLICATE_OF_EXISTING
+N8_D4h_cyclooctatetraene,N4-6-8.json,N8,0,1,"D4h (tub-shaped COT analog, exact PG not restated numerically here)",MP2/6-31G*,bond_params,general_ring,LOW,-23.191652,-78.88463,True,True,0,biblio:N8_C1_ZZE,,DUPLICATE_OF_EXISTING
+N6_D6h_hexagon_aromatic,N4-6-8.json,N6,0,1,D6h,not explicitly stated for this value (paper-wide RHF/MP2 6-31G*),bond_params,regular_ngon,HIGH,-17.354949,-78.7087,True,True,2,biblio:N6_C2_book,,DUPLICATE_OF_EXISTING
+N5-_D5h_pentazolate,N5-N6-abinitio.json,N5,-1,1,D5h,"CCSD(T)/6-311+G(d) (also MP2, QCISD, B3LYP with same basis reported: 1.337/1.324/1.334/1.326 A respectively)",bond_params,regular_ngon,HIGH,-14.760899,-80.33291,True,True,0,biblio:N5-_pentagon,,DUPLICATE_OF_EXISTING
+N5_C2v_radical_2A1,N5-N6-abinitio.json,N5,0,2,C2v,"UCCSD(T)/6-31G(d) (also UMP2/6-311+G(d), UMP2/6-311+G(3df), UB3LYP/6-311+G(d) reported)",bond_params,chain2d,HIGH,-14.444393,-78.61039,True,True,0,N_csp:N5_0001_chain,,DUPLICATE_OF_EXISTING
+N5+_C2v_experimental_Xray,N5+.json,N5,1,1,C2v (approximate -- real crystal geometry slightly asymmetric),"Single-crystal X-ray diffraction, N5+Sb2F11- salt (EXPERIMENTAL, not computational)",exact_coords,generic_guess:chain,LOW,-13.985264,-76.11169,True,True,0,biblio:N5+_Vchain,,DUPLICATE_OF_EXISTING
+N5_C2v_radical_2B2,N5-N6-abinitio.json,N5,0,2,C2v,"UB3LYP/6-311+G(d) (UMP2/6-311+G(d) also gives bonds only, no CCSD(T) reported for this state)",bond_params,chain2d,HIGH,-14.444393,-78.61039,True,True,0,N_csp:N5_0001_chain,,DUPLICATE_OF_EXISTING
+N6_C2h_trans_diazide_v2,N6-3N2.json,N6,0,1,C2h,"CASPT2 / 3s2p1d ANO basis (also SCF/vdzp, MP2/vdzp, DFT/vdzp, DFT/vtzp reported)",bond_params,generic_guess:chain,LOW,-17.393331,-78.88277,True,True,0,biblio:N6_C2h_chain,,DUPLICATE_OF_EXISTING
+N7_iso7_Cs_chain,N7.json,N7,0,2,Cs,B3LYP/6-31G*,bond_params,generic_guess:chain,LOW,-20.271965,-78.80404,True,True,0,biblio:N7_C2_linearZZ,,DUPLICATE_OF_EXISTING
+N7+_1_C2v_openchain,N7c.json,N7,1,1,C2v,"B3LYP/6-311(+)G* (paper's preferred level; HF/6-31G*, B3LYP/6-31G*, MP2/6-31G* also given in Fig. 1a/Table 1)",bond_params,generic_guess:chain,LOW,-19.793481,-76.94401,True,True,0,biblio:N7+_chain,,DUPLICATE_OF_EXISTING
+N7_iso7_C2_chain,N7.json,N7,0,2,C2,B3LYP/6-31G*,bond_params,generic_guess:chain,LOW,-20.271965,-78.80404,True,True,0,biblio:N7_C2_linearZZ,,DUPLICATE_OF_EXISTING
+N6_C2v_cis_diazide,N6-3N2.json,N6,0,1,C2v,"CASPT2 / 3s2p1d ANO basis, assumed C2v symmetry",bond_params,generic_guess:cage,LOW,-15.658736,-71.01599,False,,,,,FREQ_UNRESOLVED_SADDLE
+N20_Ih_cage_HaEtAl,N20.json,N20,0,1,Ih,B3LYP/6-31+G(d),bond_params,dodecahedron,HIGH,-57.817373,-78.66454,True,True,0,biblio:N20_Ih_dodecahedrane,,DUPLICATE_OF_EXISTING
+N8_LiWang_C2h_openchain,N8.json,N8,0,1,C2h,B3LYP/6-311+G*,bond_params,generic_guess:chain,LOW,-23.189561,-78.87751,True,True,0,biblio:N8_C1_ZZE,,DUPLICATE_OF_EXISTING
+N8_D2h_octaazapentalene,N8c.json,N8,0,1,D2h,MP2/6-31G*,bond_params,generic_guess:pentalene,LOW,-23.236426,-79.03692,True,True,0,biblio:N8_C2v_ring,,DUPLICATE_OF_EXISTING
+N8_Cs_azidopentazole_v2,N8c.json,N8,0,1,Cs,MP2/6-31G*,bond_params,generic_guess:chain,LOW,-23.189561,-78.87751,True,True,0,biblio:N8_C1_ZZE,,DUPLICATE_OF_EXISTING
+N8_Oh_cubane_v2,N8e.json,N8,0,1,Oh,MP2/(9s5p1d)/[3s2p1d]; also HF and DFT(B3LYP/cc-pVTZ) reported,bond_params,cube,HIGH,-22.908623,-77.92192,True,True,0,biblio:N8_Oh_cubane_GS,,DUPLICATE_OF_EXISTING
+N8_C2h_diazidodiimide_cis_3a,N8c.json,N8,0,1,C2h,MP2/6-31G*,bond_params,generic_guess:chain,LOW,-23.189561,-78.87751,True,True,0,biblio:N8_C1_ZZE,,DUPLICATE_OF_EXISTING
+N7-_6_Cs_6ring_boat,N7c.json,N7,-1,1,Cs,B3LYP/6-31G*,bond_params,generic_guess:ring7,LOW,-20.506983,-79.71763,True,True,1,,,NEW_UNIQUE_MINIMUM
+N8_C2v_diazidodiimide_trans_3b,N8c.json,N8,0,1,C2v,MP2/6-31G*,bond_params,generic_guess:cage,LOW,-20.878333,-71.01605,False,,,,,FREQ_UNRESOLVED_SADDLE
+N8_D2d_cis_cyclooctatetraene,N8e.json,N8,0,1,D2d (per Table 1; not fully confident from image),MP2/(9s5p1d)/[3s2p1d]; also HF and DFT,bond_params,generic_guess:chain,LOW,-23.189561,-78.87751,True,True,0,biblio:N8_C1_ZZE,,DUPLICATE_OF_EXISTING
+N8_D2h_pentacyclooctane,N8e.json,N8,0,1,D2h,MP2/(9s5p1d)/[3s2p1d]; also HF and DFT,bond_params,generic_guess:cage,LOW,-20.878333,-71.01605,False,,,,,FREQ_UNRESOLVED_SADDLE
+N8_C2v_cuneane,N8e.json,N8,0,1,C2v,MP2/(9s5p1d)/[3s2p1d]; also HF and DFT,bond_params,generic_guess:cage,LOW,-20.878333,-71.01605,False,,,,,FREQ_UNRESOLVED_SADDLE
+N4+_Dinfh_linear,N4+.json,N4,1,2,Dinfh,"RCCSD-T (also B3LYP, B97-1 reported, RCCSD-T preferred as most reliable per paper)",bond_params,linear,HIGH,-10.950858,-74.49701,False,,,,,FREQ_UNRESOLVED_SADDLE
+N8_D2h_pentalene_v3,N8e.json,N8,0,1,D2h (paper calls it 'azapentalene'),MP2/(9s5p1d)/[3s2p1d]; also HF and DFT,bond_params,generic_guess:pentalene,LOW,-23.236426,-79.03692,True,True,0,biblio:N8_C2v_ring,,DUPLICATE_OF_EXISTING
+N8_Cs_bicyclooctatriene,N8e.json,N8,0,1,Cs,MP2/(9s5p1d)/[3s2p1d]; also HF and DFT,bond_params,generic_guess:cage,LOW,-20.878333,-71.01605,False,,,,,FREQ_UNRESOLVED_SADDLE
+N8_C2v_cis_tricyclooctadiene,N8e.json,N8,0,1,C2v (per Table 1; OCR confidence medium),MP2/(9s5p1d)/[3s2p1d]; also HF and DFT,bond_params,generic_guess:cage,LOW,-20.878333,-71.01605,False,,,,,FREQ_UNRESOLVED_SADDLE
+N8_trans_tricyclooctadiene,N8e.json,N8,0,1,Cs or C2 (Table 1 label not confidently legible),MP2/(9s5p1d)/[3s2p1d]; also HF and DFT,bond_params,generic_guess:cage,LOW,-20.878333,-71.01605,False,,,,,FREQ_UNRESOLVED_SADDLE
+N6_D3h_cage_3Mset,N_nanotubes_06.json,N6,0,1,D3h,B3LYP/CC-PVDZ,bond_params,generic_guess:cage,LOW,-15.658736,-71.01599,False,,,,,FREQ_UNRESOLVED_SADDLE
+N6_C2h_diazide_synthesis_product,jp0141833.json,N6,0,1,C2h,"B3LYP/6-311++G** (also HF/6-31G**, B3LYP/6-31G** reported)",bond_params,generic_guess:chain,LOW,-17.393331,-78.88277,True,True,0,biblio:N6_C2h_chain,,DUPLICATE_OF_EXISTING
+N8_Oh_cube_multilayer,N_nanotubes_06.json,N8,0,1,Oh,B3LYP/CC-PVDZ,bond_params,generic_guess:cage,LOW,-20.878333,-71.01605,False,,,,,FREQ_UNRESOLVED_SADDLE
+N7_wang_2_Cs_5ring4ring,n7b.json,N7,0,2,Cs,B3LYP/6-31G*,bond_params,fused_bicyclic,LOW,,,False,,,,,BUILD_FAILED
+N7_wang_3_C2v_openchain_DUPLICATE,n7b.json,N7,0,2,C2v,B3LYP/6-31G*,bond_params,generic_guess:chain,LOW,-20.271965,-78.80404,True,True,0,biblio:N7_C2_linearZZ,,DUPLICATE_OF_EXISTING
+N12_D3d_cage_3Mset,N_nanotubes_06.json,N12,0,1,D3d,B3LYP/CC-PVDZ,bond_params,generic_guess:cage,LOW,-31.317512,-71.01608,False,,,,,FREQ_UNRESOLVED_SADDLE
+N12_D6h_cage,N_nanotubes_06.json,N12,0,1,D6h,B3LYP/CC-PVDZ,bond_params,generic_guess:cage,LOW,-31.317512,-71.01608,False,,,,,FREQ_UNRESOLVED_SADDLE
+N7_wang_5_Cs_singlebond,n7b.json,N7,0,2,Cs,B3LYP/6-31G*,bond_params,generic_guess:cage,LOW,-18.268449,-71.01569,False,,,,,FREQ_UNRESOLVED_SADDLE
+N11_C2v_acyclic_chain,jp0208182.json,N11,0,2,C2v,HF/CC-PVDZ (also MP2/CC-PVDZ),bond_params,generic_guess:chain,LOW,-31.87789,-78.85833,True,True,1,,,NEW_UNIQUE_MINIMUM
+N10_D5h_cage_multilayer,N_nanotubes_06.json,N10,0,1,D5h,B3LYP/CC-PVDZ,bond_params,generic_guess:cage,LOW,-26.097868,-71.01592,True,True,0,,,NEW_UNIQUE_MINIMUM
+N18_C2v_cage,N18.json,N18,0,1,C2v,"B3LYP/6-31G* (also reports RHF/4-31G*, RHF/6-31G*, BHLYP/6-31G*, B3P86/6-31G*, MP2/6-31G* -- all levels given per-bond in Table 1)",bond_params,graph_embed:edges_B3LYP_A,HIGH,-52.013593,-78.63122,True,True,0,,,NEW_UNIQUE_MINIMUM
+N18_D3h_cage,N_nanotubes_06.json,N18,0,1,D3h,B3LYP/CC-PVDZ,bond_params,generic_guess:cage,LOW,-46.9761,-71.01582,False,,,,,FREQ_UNRESOLVED_SADDLE
+N16_D4d_cage,N_nanotubes_06.json,N16,0,1,D4d,B3LYP/CC-PVDZ,bond_params,generic_guess:cage,LOW,-41.756456,-71.01569,False,,,,,FREQ_UNRESOLVED_SADDLE
+N20_Ih_cage_multilayer,N_nanotubes_06.json,N20,0,1,Ih,B3LYP/CC-PVDZ,bond_params,generic_guess:cage,LOW,-52.195695,-71.01586,False,,,,,FREQ_UNRESOLVED_SADDLE

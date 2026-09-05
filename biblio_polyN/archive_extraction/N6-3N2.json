@@ -1,0 +1,54 @@
+{
+  "source_file": "N6-3N2.pdf",
+  "title": "On the dissociation of N6 into 3 N2 molecules",
+  "authors": "Gagliardi L., Evangelisti S., Barone V., Roos B.O.",
+  "journal_year": "Chem. Phys. Lett. 320 (2000) 518-522",
+  "species": [
+    {
+      "id": "N6_C2h_trans_diazide_v2",
+      "formula": "N6",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "C2h",
+      "method": "CASPT2 / 3s2p1d ANO basis (also SCF/vdzp, MP2/vdzp, DFT/vdzp, DFT/vtzp reported)",
+      "source_note": "Table 1, row 'CASPT2(C2h)'",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "bonds_angstrom": [
+          1.479,
+          1.266,
+          1.163
+        ],
+        "angle1_deg": 105.3,
+        "angle2_deg": 171.3,
+        "dihedral_deg": 180.0,
+        "description": "Half-molecule internal coordinates (R11'=central bond, R12=middle bond, R23=terminal bond by inferred atom labeling; symmetric other half by C2h). Confirmed genuine minimum: 'harmonic vibrational frequencies confirmed that the linear[sic, likely open-chain] structure is a local minimum, with all the harmonic vibrational frequencies real.'"
+      },
+      "suggested_build": "chain2d",
+      "notes": "LIKELY THE SAME SPECIES as N5-N6-abinitio.pdf's 'N6_C2h_trans_diazide' (independent characterization, different method/basis, reasonably consistent bond lengths -- cross-check both during dedup, may want to keep both as independent literature confirmations rather than merge outright)."
+    },
+    {
+      "id": "N6_C2v_cis_diazide",
+      "formula": "N6",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "C2v",
+      "method": "CASPT2 / 3s2p1d ANO basis, assumed C2v symmetry",
+      "source_note": "Table 1, row 'CASPT2(C2v)'",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "bonds_angstrom": [
+          1.483,
+          1.278,
+          1.172
+        ],
+        "angle1_deg": 118.1,
+        "angle2_deg": 173.1,
+        "dihedral_deg": 180.0,
+        "description": "Footnote a states this row is the 'cis' counterpart to the trans (C2h) row above, from the same CASPT2 calculation series. CAUTION: the table lists dihedral 180.0 for BOTH the C2h and C2v rows, which is not what one would expect if cis vs trans differ by the inter-unit dihedral (should differ from the trans value, e.g. ~0 vs ~180) -- this may be a table-formatting/OCR artifact from pdftotext, or the cis/trans distinction here may refer to something other than that dihedral. FLAG for manual verification against the original PDF table image before using."
+      },
+      "suggested_build": "chain2d",
+      "notes": "Possible NEW distinct stationary point (if genuinely a separate minimum from the trans form) OR may be a stereoisomer/conformer indistinguishable from the trans form under our graph-connectivity-only topology comparison (same caveat already documented in the main report's stereoisomer-blindness discussion) -- same connectivity graph as N6_C2h_trans_diazide either way. Recommend treating as informational/secondary rather than a priority new build target given the dihedral ambiguity noted above."
+    }
+  ]
+}

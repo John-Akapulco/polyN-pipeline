@@ -1,0 +1,62 @@
+{
+  "source_file": "N12-N8.pdf",
+  "title": "The interconversion of N12 to N8 and two equivalents of N2",
+  "species": [
+    {
+      "id": "N12_C2h_diazobispentazole",
+      "formula": "N12",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "C2h",
+      "method": "HF/6-31G(d) and MP2(FC)/6-311G(d) (Table 1)",
+      "source_note": "Fig. 1 (geometry image, not read) + Table 1 (energetics/NIMAG), p. 238-239",
+      "geometry_type": "topology_only",
+      "bond_params": {},
+      "coords": null,
+      "suggested_build": "generic_guess",
+      "notes": "N5-N=N-N5: two aromatic pentazole (N5) rings linked by a diazo (-N=N-) bridge -- confirmed genuine minimum (NIMAG=0) at ALL three levels tested (PM3/VSTO-3G(d), HF/6-31G(d), MP2/6-311G(d)). Global minimum of the N12-N8+2N2 decomposition pathway studied in this paper. Likely a DUPLICATE of the existing biblio_polyN corpus entry N12_C2h_dipentazolyldiazene -- same topology/point-group, cross-check before treating as new."
+    },
+    {
+      "id": "N10_C1_pentaazopentazole",
+      "formula": "N10",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "C1",
+      "method": "HF/6-31G(d) and MP2(FC)/6-311G(d) (Table 1)",
+      "source_note": "Fig. 1 (geometry image, not read) + Table 1, p. 238-240",
+      "geometry_type": "topology_only",
+      "bond_params": {},
+      "coords": null,
+      "suggested_build": "generic_guess",
+      "notes": "N5-N-N-N-N-N (N5-NNNNN): one aromatic pentazole ring + an exocyclic pentaazo (N5) chain substituent. EXPLICITLY NOVEL per the authors: 'the pentaazopentazole N10 isomer ... had not been reported prior to this study'. Confirmed a TRUE MINIMUM (NIMAG=0) at MP2/6-311G(d) and PM3/HF levels EXCEPT it shows NIMAG=1 (one imaginary freq, 233i cm-1) at MP2(FC)/6-311G(d) per Table 1's MP2 block -- i.e. method-dependent minimum status, verify carefully (Table 1 shows NIMAG=0 for 'N10, C1' column at PM3 and HF rows but NIMAG=1 at the MP2 row -- possible transcription ambiguity in the source table layout, flag for manual re-check against the original PDF table). 'Only' ~15 kcal/mol less stable than the global-minimum D2d bispentazole, BUT has a very low decomposition barrier (~2 kcal/mol at MP2/6-311G(d)) -- authors state it is 'more than doubtful if this particular isomer can ever be observed experimentally' (kinetically unstable despite being a genuine local minimum). GENUINELY NEW topology candidate -- prioritize for reconstruction/relaxation."
+    },
+    {
+      "id": "N10_D2d_bispentazole_crosscheck",
+      "formula": "N10",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "D2d",
+      "method": "referenced from prior literature [ref 2 in this paper], reconfirmed context here",
+      "source_note": "p. 237-238, cited as 'previously reported' lowest-energy N10 minimum, ~18 kcal/mol more stable than a C2h open-chain N10 alternative",
+      "geometry_type": "topology_only",
+      "bond_params": {},
+      "coords": null,
+      "suggested_build": "two_rings_orthogonal",
+      "notes": "Almost certainly the SAME structure as N10_D2d_bicyclic_bispentazole already extracted from N10-N60.pdf in this same batch, and as the existing N10_D2d_linked5rings/bispentazole_GS in the corpus -- pure cross-reference, not independently new. Paper notes all attempts to find a stable MONOCYCLIC (single 10-ring) N10 have failed in the literature -- worth keeping as a documented negative result."
+    },
+    {
+      "id": "N8_Cs_azidopentazole_crosscheck",
+      "formula": "N8",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "Cs",
+      "method": "HF/6-31G(d) and MP2(FC)/6-311G(d) (Table 1)",
+      "source_note": "Fig. 1 (geometry image, not read) + Table 1, p. 238-239",
+      "geometry_type": "topology_only",
+      "bond_params": {},
+      "coords": null,
+      "suggested_build": "generic_guess",
+      "notes": "N5-N3 (pentazole ring + exocyclic azide chain) -- reported as the likely GLOBAL MINIMUM of all N8 isomers. IMPORTANT: found VIBRATIONALLY UNSTABLE (NIMAG=1) at HF and even semi-empirical PM3 levels, and only becomes a confirmed true minimum (NIMAG=0) once electron correlation is included (MP2(FC)/6-311G(d), Table 1) -- a clean textbook example of level-of-theory-dependent minimum character, consistent with 'earlier reports on N8 which found the species unstable at HF but stable at B3LYP'. Almost certainly a DUPLICATE of the existing biblio_polyN corpus entry N8_Cs_azidopentazole -- cross-check before treating as new; keep the NIMAG/level-of-theory caveat as useful supporting context regardless."
+    }
+  ]
+}

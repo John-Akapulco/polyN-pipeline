@@ -1,0 +1,518 @@
+{
+  "source_file": "N_nanotubes_06.pdf",
+  "title": "Theoretical Study on \"Multilayer\" Nitrogen Cages",
+  "species": [
+    {
+      "id": "N6_D3h_cage_3Mset",
+      "formula": "N6",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "D3h",
+      "method": "B3LYP/CC-PVDZ",
+      "source_note": "Abstract + Section 2.1 + Table 1, p. 3845-3848",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "selected_bonds_angstrom": {
+          "R1,2": 1.481,
+          "R1,4": 1.524,
+          "R4,5": 1.481
+        },
+        "shape": "nested-ring cage, 3M set (each layer has 3 atoms)"
+      },
+      "coords": null,
+      "suggested_build": "generic_guess",
+      "notes": "generic_guess shape='cage' (n_atoms=6); ONLY symmetry-representative bond lengths given (not full connectivity/all atoms) -- insufficient alone for exact reconstruction, would need the paper's own 'nested W-shape ring insertion' construction algorithm (described in Section 2) or a generic cage embedding + GFN2-xTB relaxation."
+    },
+    {
+      "id": "N12_D3d_cage_3Mset",
+      "formula": "N12",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "D3d",
+      "method": "B3LYP/CC-PVDZ",
+      "source_note": "Abstract + Section 2.1 + Table 1, p. 3845-3848",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "selected_bonds_angstrom": {
+          "R1,2": 1.532,
+          "R1,4": 1.42,
+          "R4,5": 1.494,
+          "R5,10": 1.42,
+          "R10,12": 1.532
+        },
+        "shape": "nested-ring cage, 3M set (each layer has 3 atoms)"
+      },
+      "coords": null,
+      "suggested_build": "generic_guess",
+      "notes": "generic_guess shape='cage' (n_atoms=12); ONLY symmetry-representative bond lengths given (not full connectivity/all atoms) -- insufficient alone for exact reconstruction, would need the paper's own 'nested W-shape ring insertion' construction algorithm (described in Section 2) or a generic cage embedding + GFN2-xTB relaxation."
+    },
+    {
+      "id": "N18_D3h_cage",
+      "formula": "N18",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "D3h",
+      "method": "B3LYP/CC-PVDZ",
+      "source_note": "Abstract + Section 2.1 + Table 1, p. 3845-3848",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "selected_bonds_angstrom": {
+          "R1,2": 1.526,
+          "R1,4": 1.432,
+          "R4,5": 1.477,
+          "R5,10": 1.479,
+          "R10,12": 1.477,
+          "R12,16": 1.432
+        },
+        "shape": "nested-ring cage, 3M set (each layer has 3 atoms)"
+      },
+      "coords": null,
+      "suggested_build": "generic_guess",
+      "notes": "generic_guess shape='cage' (n_atoms=18); ONLY symmetry-representative bond lengths given (not full connectivity/all atoms) -- insufficient alone for exact reconstruction, would need the paper's own 'nested W-shape ring insertion' construction algorithm (described in Section 2) or a generic cage embedding + GFN2-xTB relaxation."
+    },
+    {
+      "id": "N24_D3d_cage",
+      "formula": "N24",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "D3d",
+      "method": "B3LYP/CC-PVDZ",
+      "source_note": "Abstract + Section 2.1 + Table 1, p. 3845-3848",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "selected_bonds_angstrom": {
+          "R1,2": 1.528,
+          "R1,4": 1.428,
+          "R4,5": 1.484,
+          "R5,10": 1.485,
+          "R10,12": 1.46,
+          "R12,16": 1.485
+        },
+        "shape": "nested-ring cage, 3M set (each layer has 3 atoms)"
+      },
+      "coords": null,
+      "suggested_build": "generic_guess",
+      "notes": "generic_guess shape='cage' (n_atoms=24); ONLY symmetry-representative bond lengths given (not full connectivity/all atoms) -- insufficient alone for exact reconstruction, would need the paper's own 'nested W-shape ring insertion' construction algorithm (described in Section 2) or a generic cage embedding + GFN2-xTB relaxation."
+    },
+    {
+      "id": "N30_D3h_cage",
+      "formula": "N30",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "D3h",
+      "method": "B3LYP/CC-PVDZ",
+      "source_note": "Abstract + Section 2.1 + Table 1, p. 3845-3848",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "selected_bonds_angstrom": {
+          "R1,2": 1.527,
+          "R1,4": 1.429,
+          "R4,5": 1.482,
+          "R5,10": 1.483,
+          "R10,12": 1.459,
+          "R12,16": 1.491
+        },
+        "shape": "nested-ring cage, 3M set (each layer has 3 atoms)"
+      },
+      "coords": null,
+      "suggested_build": "generic_guess",
+      "notes": "generic_guess shape='cage' (n_atoms=30); ONLY symmetry-representative bond lengths given (not full connectivity/all atoms) -- insufficient alone for exact reconstruction, would need the paper's own 'nested W-shape ring insertion' construction algorithm (described in Section 2) or a generic cage embedding + GFN2-xTB relaxation."
+    },
+    {
+      "id": "N36_D3d_cage",
+      "formula": "N36",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "D3d",
+      "method": "B3LYP/CC-PVDZ",
+      "source_note": "Abstract + Section 2.1 + Table 1, p. 3845-3848",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "selected_bonds_angstrom": {
+          "R1,2": 1.529,
+          "R1,4": 1.428,
+          "R4,5": 1.483,
+          "R5,10": 1.483,
+          "R10,12": 1.458,
+          "R12,16": 1.492
+        },
+        "shape": "nested-ring cage, 3M set (each layer has 3 atoms)"
+      },
+      "coords": null,
+      "suggested_build": "generic_guess",
+      "notes": "generic_guess shape='cage' (n_atoms=36); ONLY symmetry-representative bond lengths given (not full connectivity/all atoms) -- insufficient alone for exact reconstruction, would need the paper's own 'nested W-shape ring insertion' construction algorithm (described in Section 2) or a generic cage embedding + GFN2-xTB relaxation."
+    },
+    {
+      "id": "N42_D3h_cage",
+      "formula": "N42",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "D3h",
+      "method": "B3LYP/CC-PVDZ",
+      "source_note": "Abstract + Section 2.1 + Table 1, p. 3845-3848",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "selected_bonds_angstrom": {
+          "R1,2": 1.529,
+          "R1,4": 1.428,
+          "R4,5": 1.482,
+          "R5,10": 1.484,
+          "R10,12": 1.459,
+          "R12,16": 1.492
+        },
+        "shape": "nested-ring cage, 3M set (each layer has 3 atoms)"
+      },
+      "coords": null,
+      "suggested_build": "generic_guess",
+      "notes": "generic_guess shape='cage' (n_atoms=42); ONLY symmetry-representative bond lengths given (not full connectivity/all atoms) -- insufficient alone for exact reconstruction, would need the paper's own 'nested W-shape ring insertion' construction algorithm (described in Section 2) or a generic cage embedding + GFN2-xTB relaxation."
+    },
+    {
+      "id": "N48_D3d_cage_3Mset",
+      "formula": "N48",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "D3d",
+      "method": "B3LYP/CC-PVDZ",
+      "source_note": "Abstract + Section 2.1 + Table 1, p. 3845-3848",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "selected_bonds_angstrom": {
+          "R1,2": 1.528,
+          "R1,4": 1.428,
+          "R4,5": 1.483,
+          "R5,10": 1.483,
+          "R10,12": 1.459,
+          "R12,16": 1.492
+        },
+        "shape": "nested-ring cage, 3M set (each layer has 3 atoms)"
+      },
+      "coords": null,
+      "suggested_build": "generic_guess",
+      "notes": "generic_guess shape='cage' (n_atoms=48); ONLY symmetry-representative bond lengths given (not full connectivity/all atoms) -- insufficient alone for exact reconstruction, would need the paper's own 'nested W-shape ring insertion' construction algorithm (described in Section 2) or a generic cage embedding + GFN2-xTB relaxation."
+    },
+    {
+      "id": "N54_D3h_cage",
+      "formula": "N54",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "D3h",
+      "method": "B3LYP/CC-PVDZ",
+      "source_note": "Abstract + Section 2.1 + Table 1, p. 3845-3848",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "selected_bonds_angstrom": {
+          "R1,2": 1.528,
+          "R1,4": 1.428,
+          "R4,5": 1.482,
+          "R5,10": 1.484,
+          "R10,12": 1.459,
+          "R12,16": 1.492
+        },
+        "shape": "nested-ring cage, 3M set (each layer has 3 atoms)"
+      },
+      "coords": null,
+      "suggested_build": "generic_guess",
+      "notes": "generic_guess shape='cage' (n_atoms=54); ONLY symmetry-representative bond lengths given (not full connectivity/all atoms) -- insufficient alone for exact reconstruction, would need the paper's own 'nested W-shape ring insertion' construction algorithm (described in Section 2) or a generic cage embedding + GFN2-xTB relaxation."
+    },
+    {
+      "id": "N60_D3d_cage",
+      "formula": "N60",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "D3d",
+      "method": "B3LYP/CC-PVDZ",
+      "source_note": "Abstract + Section 2.1 + Table 1, p. 3845-3848",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "selected_bonds_angstrom": {
+          "R1,2": 1.529,
+          "R1,4": 1.428,
+          "R4,5": 1.484,
+          "R5,10": 1.484,
+          "R10,12": 1.459,
+          "R12,16": 1.492
+        },
+        "shape": "nested-ring cage, 3M set (each layer has 3 atoms)"
+      },
+      "coords": null,
+      "suggested_build": "generic_guess",
+      "notes": "generic_guess shape='cage' (n_atoms=60); ONLY symmetry-representative bond lengths given (not full connectivity/all atoms) -- insufficient alone for exact reconstruction, would need the paper's own 'nested W-shape ring insertion' construction algorithm (described in Section 2) or a generic cage embedding + GFN2-xTB relaxation."
+    },
+    {
+      "id": "N8_Oh_cube_multilayer",
+      "formula": "N8",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "Oh",
+      "method": "B3LYP/CC-PVDZ",
+      "source_note": "Abstract + Section 2.2 + Table 2, p. 3845-3848",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "selected_bonds_angstrom": {
+          "R1,2": 1.522,
+          "R1,5": 1.523,
+          "R5,6": 1.523
+        },
+        "shape": "nested-ring cage, 4M set (each layer has 4 atoms)"
+      },
+      "coords": null,
+      "suggested_build": "generic_guess",
+      "notes": "generic_guess shape='cage' (n_atoms=8); ONLY symmetry-representative bond lengths given (not full connectivity/all atoms) -- insufficient alone for exact reconstruction, would need the paper's own 'nested W-shape ring insertion' construction algorithm (described in Section 2) or a generic cage embedding + GFN2-xTB relaxation. Note: this is a DIFFERENT paper's own re-derivation of the well-known N8 Oh cubane, already in the existing biblio corpus (N8_Oh_cube) -- likely duplicate, keep for cross-validation of bond length only."
+    },
+    {
+      "id": "N16_D4d_cage",
+      "formula": "N16",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "D4d",
+      "method": "B3LYP/CC-PVDZ",
+      "source_note": "Abstract + Section 2.2 + Table 2, p. 3845-3848",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "selected_bonds_angstrom": {
+          "R1,2": 1.547,
+          "R1,5": 1.437,
+          "R5,6": 1.495,
+          "R6,13": 1.437,
+          "R13,14": 1.547
+        },
+        "shape": "nested-ring cage, 4M set (each layer has 4 atoms)"
+      },
+      "coords": null,
+      "suggested_build": "generic_guess",
+      "notes": "generic_guess shape='cage' (n_atoms=16); ONLY symmetry-representative bond lengths given (not full connectivity/all atoms) -- insufficient alone for exact reconstruction, would need the paper's own 'nested W-shape ring insertion' construction algorithm (described in Section 2) or a generic cage embedding + GFN2-xTB relaxation."
+    },
+    {
+      "id": "N24_D4h_cage",
+      "formula": "N24",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "D4h",
+      "method": "B3LYP/CC-PVDZ",
+      "source_note": "Abstract + Section 2.2 + Table 2, p. 3845-3848",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "selected_bonds_angstrom": {
+          "R1,2": 1.569,
+          "R1,5": 1.427,
+          "R5,6": 1.477,
+          "R6,13": 1.468,
+          "R13,14": 1.477,
+          "R14,21": null
+        },
+        "shape": "nested-ring cage, 4M set (each layer has 4 atoms)"
+      },
+      "coords": null,
+      "suggested_build": "generic_guess",
+      "notes": "generic_guess shape='cage' (n_atoms=24); ONLY symmetry-representative bond lengths given (not full connectivity/all atoms) -- insufficient alone for exact reconstruction, would need the paper's own 'nested W-shape ring insertion' construction algorithm (described in Section 2) or a generic cage embedding + GFN2-xTB relaxation."
+    },
+    {
+      "id": "N32_D4d_cage",
+      "formula": "N32",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "D4d",
+      "method": "B3LYP/CC-PVDZ",
+      "source_note": "Abstract + Section 2.2 + Table 2, p. 3845-3848",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "selected_bonds_angstrom": {
+          "R1,2": 1.574,
+          "R1,5": 1.419,
+          "R5,6": 1.489,
+          "R6,13": 1.47,
+          "R13,14": 1.434
+        },
+        "shape": "nested-ring cage, 4M set (each layer has 4 atoms)"
+      },
+      "coords": null,
+      "suggested_build": "generic_guess",
+      "notes": "generic_guess shape='cage' (n_atoms=32); ONLY symmetry-representative bond lengths given (not full connectivity/all atoms) -- insufficient alone for exact reconstruction, would need the paper's own 'nested W-shape ring insertion' construction algorithm (described in Section 2) or a generic cage embedding + GFN2-xTB relaxation."
+    },
+    {
+      "id": "N40_D4h_cage",
+      "formula": "N40",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "D4h",
+      "method": "B3LYP/CC-PVDZ",
+      "source_note": "Abstract + Section 2.2 + Table 2, p. 3845-3848",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "selected_bonds_angstrom": {
+          "R1,2": 1.574,
+          "R1,5": 1.42,
+          "R5,6": 1.488,
+          "R6,13": 1.468,
+          "R13,14": 1.441
+        },
+        "shape": "nested-ring cage, 4M set (each layer has 4 atoms)"
+      },
+      "coords": null,
+      "suggested_build": "generic_guess",
+      "notes": "generic_guess shape='cage' (n_atoms=40); ONLY symmetry-representative bond lengths given (not full connectivity/all atoms) -- insufficient alone for exact reconstruction, would need the paper's own 'nested W-shape ring insertion' construction algorithm (described in Section 2) or a generic cage embedding + GFN2-xTB relaxation."
+    },
+    {
+      "id": "N48_D4d_cage_4Mset",
+      "formula": "N48",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "D4d",
+      "method": "B3LYP/CC-PVDZ",
+      "source_note": "Abstract + Section 2.2 + Table 2, p. 3845-3848",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "selected_bonds_angstrom": {
+          "R1,2": 1.571,
+          "R1,5": 1.422,
+          "R5,6": 1.488,
+          "R6,13": 1.469,
+          "R13,14": 1.439
+        },
+        "shape": "nested-ring cage, 4M set (each layer has 4 atoms)"
+      },
+      "coords": null,
+      "suggested_build": "generic_guess",
+      "notes": "generic_guess shape='cage' (n_atoms=48); ONLY symmetry-representative bond lengths given (not full connectivity/all atoms) -- insufficient alone for exact reconstruction, would need the paper's own 'nested W-shape ring insertion' construction algorithm (described in Section 2) or a generic cage embedding + GFN2-xTB relaxation."
+    },
+    {
+      "id": "N56_D4h_cage",
+      "formula": "N56",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "D4h",
+      "method": "B3LYP/CC-PVDZ",
+      "source_note": "Abstract + Section 2.2 + Table 2, p. 3845-3848",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "selected_bonds_angstrom": {
+          "R1,2": 1.575,
+          "R1,5": 1.42,
+          "R5,6": 1.488,
+          "R6,13": 1.468,
+          "R13,14": 1.441
+        },
+        "shape": "nested-ring cage, 4M set (each layer has 4 atoms)"
+      },
+      "coords": null,
+      "suggested_build": "generic_guess",
+      "notes": "generic_guess shape='cage' (n_atoms=56); ONLY symmetry-representative bond lengths given (not full connectivity/all atoms) -- insufficient alone for exact reconstruction, would need the paper's own 'nested W-shape ring insertion' construction algorithm (described in Section 2) or a generic cage embedding + GFN2-xTB relaxation."
+    },
+    {
+      "id": "N10_D5h_cage_multilayer",
+      "formula": "N10",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "D5h",
+      "method": "B3LYP/CC-PVDZ",
+      "source_note": "Abstract + Section 2.3 + Table 3, p. 3845-3848",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "selected_bonds_angstrom": {
+          "R1,2": 1.5,
+          "R1,6": 1.52,
+          "R6,7": 1.5,
+          "R7,16": null,
+          "R16,17": null,
+          "R17,26": null
+        },
+        "shape": "nested-ring cage, 5M set (each layer has 5 atoms)"
+      },
+      "coords": null,
+      "suggested_build": "generic_guess",
+      "notes": "generic_guess shape='cage' (n_atoms=10); ONLY symmetry-representative bond lengths given (not full connectivity/all atoms) -- insufficient alone for exact reconstruction, would need the paper's own 'nested W-shape ring insertion' construction algorithm (described in Section 2) or a generic cage embedding + GFN2-xTB relaxation. Likely duplicate of the well-known N10 D5h prism already in existing biblio corpus (N10_D5h_prism) -- cross-validation only."
+    },
+    {
+      "id": "N20_Ih_cage_multilayer",
+      "formula": "N20",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "Ih",
+      "method": "B3LYP/CC-PVDZ",
+      "source_note": "Abstract + Section 2.3 + Table 3, p. 3845-3848",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "selected_bonds_angstrom": {
+          "R1,2": 1.493,
+          "R1,6": 1.494,
+          "R6,7": 1.493,
+          "R7,16": 1.493,
+          "R16,17": 1.493,
+          "R17,26": null
+        },
+        "shape": "nested-ring cage, 5M set (each layer has 5 atoms)"
+      },
+      "coords": null,
+      "suggested_build": "generic_guess",
+      "notes": "generic_guess shape='cage' (n_atoms=20); ONLY symmetry-representative bond lengths given (not full connectivity/all atoms) -- insufficient alone for exact reconstruction, would need the paper's own 'nested W-shape ring insertion' construction algorithm (described in Section 2) or a generic cage embedding + GFN2-xTB relaxation. Likely duplicate of the well-known N20 Ih dodecahedrane already in existing biblio corpus (N20_Ih_dodecahedrane) -- cross-validation only."
+    },
+    {
+      "id": "N30_D5d_or_D5h_cage",
+      "formula": "N30",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "D5d (Section 2.3 text) -- ABSTRACT TEXT SAYS D5h FOR THIS SAME ENTRY, DISCREPANCY UNRESOLVED, FLAG FOR MANUAL CHECK",
+      "method": "B3LYP/CC-PVDZ",
+      "source_note": "Abstract + Section 2.3 + Table 3, p. 3845-3848",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "selected_bonds_angstrom": {
+          "R1,2": 1.559,
+          "R1,6": 1.441,
+          "R6,7": 1.488,
+          "R7,16": 1.476,
+          "R16,17": 1.488,
+          "R17,26": 1.441
+        },
+        "shape": "nested-ring cage, 5M set (each layer has 5 atoms)"
+      },
+      "coords": null,
+      "suggested_build": "generic_guess",
+      "notes": "generic_guess shape='cage' (n_atoms=30); ONLY symmetry-representative bond lengths given (not full connectivity/all atoms) -- insufficient alone for exact reconstruction, would need the paper's own 'nested W-shape ring insertion' construction algorithm (described in Section 2) or a generic cage embedding + GFN2-xTB relaxation. Point-group symbol conflict between abstract ('N30 (D5h)') and Section 2.3 body text ('N30 (D5d)') for the 5M-set N30 species -- could be an OCR/pdftotext h/d confusion in one of the two mentions. Do not trust either blindly; verify against the actual PDF figure/table if this species is pursued further."
+    },
+    {
+      "id": "N12_D6h_cage",
+      "formula": "N12",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "D6h",
+      "method": "B3LYP/CC-PVDZ",
+      "source_note": "Abstract + Section 2.4 + Table 4, p. 3845-3848",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "selected_bonds_angstrom": {
+          "R1,2": 1.507,
+          "R1,7": 1.513,
+          "R7,8": 1.507
+        },
+        "shape": "nested-ring cage, 6M set (each layer has 6 atoms)"
+      },
+      "coords": null,
+      "suggested_build": "generic_guess",
+      "notes": "generic_guess shape='cage' (n_atoms=12); ONLY symmetry-representative bond lengths given (not full connectivity/all atoms) -- insufficient alone for exact reconstruction, would need the paper's own 'nested W-shape ring insertion' construction algorithm (described in Section 2) or a generic cage embedding + GFN2-xTB relaxation."
+    },
+    {
+      "id": "N24_D6d_cage",
+      "formula": "N24",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "D6d",
+      "method": "B3LYP/CC-PVDZ",
+      "source_note": "Abstract + Section 2.4 + Table 4, p. 3845-3848",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "selected_bonds_angstrom": {
+          "R1,2": 1.475,
+          "R1,7": 1.53,
+          "R7,8": 1.471,
+          "R8,19": 1.528,
+          "R19,20": 1.474
+        },
+        "shape": "nested-ring cage, 6M set (each layer has 6 atoms)"
+      },
+      "coords": null,
+      "suggested_build": "generic_guess",
+      "notes": "generic_guess shape='cage' (n_atoms=24); ONLY symmetry-representative bond lengths given (not full connectivity/all atoms) -- insufficient alone for exact reconstruction, would need the paper's own 'nested W-shape ring insertion' construction algorithm (described in Section 2) or a generic cage embedding + GFN2-xTB relaxation."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "source_file": "N10.pdf",
+  "title": "On the Stability of N5+N5-",
+  "species": [
+    {
+      "id": "N10_Cs_N5plus_N5minus_ionpair",
+      "formula": "N10",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "Cs (a C2v isomer '1prime' is only 0.4 kcal/mol higher but has an imaginary freq 123i cm-1, i.e. NOT a genuine minimum, expect vibrationally-averaged C2v appearance)",
+      "method": "RI-MP2-fc/TZVPP (geometry); frequencies same level",
+      "source_note": "p. 4640 -- 'the bond lengths and angles of 1 and 2 are given in the Supporting Information' (SI NOT available in this archive/PDF -- no numeric geometry extractable from the main text)",
+      "geometry_type": "topology_only",
+      "bond_params": {},
+      "coords": null,
+      "suggested_build": "UNKNOWN",
+      "notes": "Non-covalent ion-pair complex: N5+ (cation) + N5- (pentazolate anion), interfragment distance >2 A (no direct N-N bond between the two rings) -- structurally very different from the COVALENT bicyclic N10 in N10-N60.pdf (two rings joined by one strong bridging bond) and from the numbered '1'-'11' N10 isomers in N10_marek_03.pdf's Table 1 (which appear to be the SAME kind of ion-pair complexes, in fact -- structures 1,2,3,4,5 in that other paper are described almost identically as N5+.N5- complexes, likely THE SAME structures as here under different numbering/paper). Cross-check against N10_marek_03.pdf's structures 1-5 before treating as independently new. No usable numeric geometry without the missing SI."
+    },
+    {
+      "id": "N8_Cs_N5plus_N3minus_ionpair",
+      "formula": "N8",
+      "charge": 0,
+      "mult": 1,
+      "point_group": "Cs",
+      "method": "RI-MP2-fc/TZVPP",
+      "source_note": "p. 4640 -- geometry in (missing) Supporting Information only",
+      "geometry_type": "topology_only",
+      "bond_params": {
+        "note": "terminal N-N bond in the N3 fragment is stated to be 0.03 A shorter than in free azide anion -- only this one relative delta is given in text, no absolute value or full geometry"
+      },
+      "coords": null,
+      "suggested_build": "UNKNOWN",
+      "notes": "Non-covalent ion-pair complex N5+ + N3- (azide), interfragment >2 A, no covalent inter-ion bond. A related but DIFFERENT covalently-bonded N8 species ('diazidyldiazene', charge-separated +/-0.3, studied in ref 5 of this paper) is mentioned but not detailed here either. Low priority / thin data."
+    },
+    {
+      "id": "N5_neutral_radical_2Aprime_Cs_questionable",
+      "formula": "N5",
+      "charge": 0,
+      "mult": 2,
+      "point_group": "Cs (2A' state)",
+      "method": "MP2/6-31G(d) geometry (from ref 41); single-point CCSD(T)-fc/aug-cc-pVDZ, CCSD-fc, MBPT(2)-fc scan (Figure 3, this paper)",
+      "source_note": "p. 4640-4641, Figure 3",
+      "geometry_type": "topology_only",
+      "bond_params": {},
+      "coords": null,
+      "suggested_build": "UNKNOWN",
+      "notes": "IMPORTANT CAVEAT explicitly stated by the authors: 'N5-radical is not a minimum at all levels of theory' -- they could not find a minimum at RI-MP2-fc/TZVPP; CCSD and CCSD(T) energies fall MONOTONICALLY with increasing N2-N3 distance (i.e. the ring/chain simply dissociates, no barrier/minimum at their best levels), while only the lower-level MBPT(2) shows a shallow minimum near N2-N3~1.52 A, which the authors themselves suspect is a spin-contamination ARTIFACT of UHF-based MBPT2/MP2. They explicitly say they 'interpret the geometry of ref 41 as a point on the dissociation path', NOT a genuine minimum. RECOMMENDATION: exclude this from the confirmed-minima list, or include only with a prominent flag that its status as a real minimum is actively disputed by the source paper itself."
+    },
+    {
+      "id": "N5-_pentagon_D5h_crosscheck",
+      "formula": "N5",
+      "charge": -1,
+      "mult": 1,
+      "point_group": "D5h",
+      "method": "RI-MP2-fc/TZVPP",
+      "source_note": "p. 4640: 'The bond lengths in the N5 ring of 1 differ by less than 0.02 A from the pentazole anion (1.334 A at RI-MP2-fc/TZVPP)'",
+      "geometry_type": "bond_params",
+      "bond_params": {
+        "ring_bond_angstrom": 1.334,
+        "shape": "regular planar pentagon, D5h, all 5 N-N bonds equal by symmetry"
+      },
+      "coords": null,
+      "suggested_build": "regular_ngon",
+      "notes": "Almost certainly a DUPLICATE of the existing biblio_polyN corpus entry N5-_pentagon (D5h pentazolate anion) -- included here only as a single-number cross-check value (1.334 A at this paper's level of theory), not a new structure."
+    }
+  ]
+}

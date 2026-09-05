@@ -1,0 +1,61 @@
+{
+  "source_file": "ja002253y.pdf",
+  "title": "N6(2+) and N4(2+) Dications and Their N12 and N10 Azido Derivatives: DFT/GIAO-MP2 Theoretical Studies",
+  "authors": "Olah G.A., Prakash G.K.S., Rasul G.",
+  "journal_year": "J. Am. Chem. Soc. 123, 3308-3310 (2001)",
+  "notes_general": "Main subject (N6^2+ structures 1-4, N4^2+ structure 5) is OUT OF SCOPE: charge +2, outside the neutral/+1/-1 pool. Only the azide-adduct products (structures 6-10, from reacting the dications with N3- ions) are in-scope N-only neutral/+1 species. The paper explicitly states 'Calculated structures of 6-10 agree well with those reported[refs 7,8]' where ref 7=Bartlett unpublished polynitrogen report (not in this archive) and ref 8=Glukhovtsev et al. (poly-N.pdf, ALREADY in existing corpus) -- strongly suggesting N12(9,C2h) and possibly N10(7,D2d) duplicate existing corpus topologies. Figure 3 shows bond-length-labeled 2D diagrams for structures 6-10 but WITHOUT atom-index numbering, so precise per-bond transcription was not attempted (topology/point-group/shape only). Full Cartesian coordinates exist in the paper's Supporting Information (referenced in text) but that SI file is not part of this archive.",
+  "species": [
+    {
+      "id": "N7+_6_C2v",
+      "formula": "N7", "charge": 1, "mult": 1, "point_group": "C2v",
+      "method": "B3LYP/aug-cc-pVTZ",
+      "source_note": "Figure 3, text p.3310",
+      "geometry_type": "topology_only",
+      "bond_params": {"shape": "open/bent chain, C2v symmetric; formed from N4(2+) + N3- addition", "partial_bond_lengths_A": [1.104, 1.315, 1.293]},
+      "suggested_build": "chain2d",
+      "notes": "Formation from 5 + N3- computed highly exothermic (422.8 kcal/mol). Possibly the same 'chain' topology as existing N7+_chain entry -- needs central-dedup graph check against existing corpus, not confirmed here."
+    },
+    {
+      "id": "N9+_8_C2v",
+      "formula": "N9", "charge": 1, "mult": 1, "point_group": "C2v",
+      "method": "B3LYP/aug-cc-pVTZ",
+      "source_note": "Figure 3, text p.3310",
+      "geometry_type": "topology_only",
+      "bond_params": {"shape": "open chain, C2v symmetric; formed from N6(2+) + N3- addition", "partial_bond_lengths_A": [1.165, 1.321, 1.310, 1.290]},
+      "suggested_build": "chain2d",
+      "notes": "Formation from 1 + N3- computed highly exothermic (338.4 kcal/mol). Possibly same 'chain' topology as existing N9+_chain entry -- needs central-dedup check."
+    },
+    {
+      "id": "N10_7_D2d",
+      "formula": "N10", "charge": 0, "mult": 1, "point_group": "D2d",
+      "method": "B3LYP/aug-cc-pVTZ",
+      "source_note": "Figure 3, text p.3310",
+      "geometry_type": "topology_only",
+      "bond_params": {"shape": "two five-membered rings connected by a single bond (bispentazole-like)", "partial_bond_lengths_A": [1.275, 1.357, 1.372, 1.350]},
+      "suggested_build": "DUPLICATE_OF_EXISTING_LIKELY",
+      "is_duplicate_of_existing_id": "N10_D2d_linked5rings or N10_D2d_bispentazole_GS (needs central verification)",
+      "notes": "Formation from 5 + 2 N3- computed highly exothermic (585.4 kcal/mol). D2d two-ring topology strongly resembles existing corpus N10 bispentazole entries."
+    },
+    {
+      "id": "N12_9_C2h",
+      "formula": "N12", "charge": 0, "mult": 1, "point_group": "C2h",
+      "method": "B3LYP/aug-cc-pVTZ",
+      "source_note": "Figure 3, Table 1, text p.3310",
+      "geometry_type": "topology_only",
+      "bond_params": {"shape": "two five-membered rings connected by a 2-atom diazo bridge (diazobispentazole)", "partial_bond_lengths_A": [1.374, 1.336, 1.367, 1.235, 1.274]},
+      "suggested_build": "DUPLICATE_OF_EXISTING_LIKELY",
+      "is_duplicate_of_existing_id": "N12_C2h_dipentazolyldiazene",
+      "notes": "Global minimum N12 per this paper (0.0 kcal/mol reference), heat of formation 315.9 kcal/mol. Text explicitly says this agrees with ref 8 (Glukhovtsev, existing corpus) -- treat as validated duplicate."
+    },
+    {
+      "id": "N12_10_C2v",
+      "formula": "N12", "charge": 0, "mult": 1, "point_group": "C2v",
+      "method": "B3LYP/aug-cc-pVTZ",
+      "source_note": "Figure 3, Table 1, text p.3310",
+      "geometry_type": "topology_only",
+      "bond_params": {"shape": "open/zigzag chain, no rings apparent", "partial_bond_lengths_A": [1.258, 1.247, 1.379, 1.234, 1.119]},
+      "suggested_build": "chain2d",
+      "notes": "20.7 kcal/mol less stable than 9 (Table 1). Chain topology, likely distinct from the ring-containing N12_9; check against existing corpus for a matching chain N12 entry (may be genuinely new)."
+    }
+  ]
+}
