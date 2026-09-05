@@ -1,0 +1,103 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage[table]{xcolor}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{parskip}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+\definecolor{accent}{HTML}{1F4E78}
+
+\titleformat{\section}{\color{accent}\Large\bfseries}{\thesection.}{0.5em}{}
+\titleformat{\subsection}{\color{accent}\large\bfseries}{\thesubsection}{0.5em}{}
+\titlespacing*{\section}{0pt}{18pt}{8pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancyhead[L]{\small Compos\'es polyazot\'es -- bibliographie}
+\fancyhead[R]{\small\thepage}
+
+\hypersetup{colorlinks=true, linkcolor=accent, urlcolor=accent, citecolor=accent}
+
+\title{\color{accent}\textbf{Compos\'es polyazot\'es (N$_x$) : neutres, cations et anions\\
+\large Recueil bibliographique des structures et \'energies}}
+\author{Gilles Frapper \\ Professeur des Universit\'es en Chimie Th\'eorique \\ IC2MP UMR 7285 CNRS, Universit\'e de Poitiers \\[2pt] \small \href{mailto:gilles.frapper@univ-poitiers.fr}{gilles.frapper@univ-poitiers.fr}}
+\date{\today}
+
+\begin{document}
+\maketitle
+\thispagestyle{fancy}
+
+\begin{abstract}
+\noindent Ce document recense \textbf{103 compos\'es polyazot\'es}
+(N$_x$, $x=3$ \`a 20, exclusivement des clusters N -- aucun autre
+\'el\'ement) rapport\'es dans \textbf{21 articles} de la litt\'erature,
+organis\'es par \'etat de charge (neutre, cation, anion). Pour chaque
+compos\'e : nom, groupe ponctuel de sym\'etrie, \'energie \'electronique
+GFN2-xTB (\'eV/atome, niveau de th\'eorie commun \`a tout le recueil,
+recalcul\'e ici pour permettre la comparaison malgr\'e l'h\'et\'erog\'en\'eit\'e
+des niveaux de calcul originaux -- CCSD(T), B3LYP, MP2, HF selon
+l'article), \'energie relative au sein du groupe (m\^eme formule, m\^eme
+charge) en kcal/mol, et r\'ef\'erence bibliographique. Toutes les
+g\'eom\'etries ont \'et\'e v\'erifi\'ees comme \'etant de vrais minima
+locaux (analyse de fr\'equences, aucun mode imaginaire significatif).
+\end{abstract}
+
+\section{M\'ethode}
+
+Chaque g\'eom\'etrie a \'et\'e reconstruite \`a partir des param\`etres
+publi\'es (longueurs de liaison, angles, ou coordonn\'ees cart\'esiennes
+selon ce que rapporte chaque article), puis relax\'ee en GFN2-xTB (via le
+binding Python \texttt{tblite}, charge et multiplicit\'e de spin impos\'ees
+telles que rapport\'ees) et v\'erifi\'ee par calcul de fr\'equences
+(Hessienne num\'erique ; tout mode imaginaire significatif est suivi et la
+structure r\'eoptimis\'ee, jusqu'\`a confirmation d'un vrai minimum). Ce
+niveau de th\'eorie commun permet de comparer directement des structures
+initialement rapport\'ees \`a des niveaux de calcul tr\`es diff\'erents --
+un point essentiel puisque les articles sources vont de HF/6-31G* (1990s)
+\`a CCSD(T)/aug-cc-pVTZ.
+
+L'\'energie relative $E_{\mathrm{rel}}$ est calcul\'ee, pour chaque groupe
+(m\^eme formule N$_x$, m\^eme charge), par rapport \`a l'isom\`ere le plus
+stable du groupe ($E_{\mathrm{rel}} = 0$). Elle n'est donc compos\'ee que
+\textbf{dans un m\^eme groupe} -- une comparaison entre formules ou entre
+\'etats de charge diff\'erents n'est pas physiquement significative \`a ce
+niveau (voir la discussion sur les r\'ef\'erences de formation dans le
+rapport m\'ethodologique compagnon).
+
+Sources : les 69 structures purement azot\'ees des r\'ef\'erences [GS] et
+[B] (corpus biblio\_polyN initial, 70 structures moins le pentazole
+N$_5$H qui contient de l'hydrog\`ene), \'etendues par 34 structures
+suppl\'ementaires
+issues de 19 articles ind\'ependants ([A1] \`a [A19]) -- parmi lesquelles 3
+sont de nouvelles topologies absentes du corpus initial, les 31 autres
+\'etant des confirmations ind\'ependantes (\`a un niveau de calcul
+diff\'erent, parfois exp\'erimental) de topologies d\'ej\`a document\'ees.
+
+\section{Compos\'es neutres}
+
+\input{table_neutre.tex}
+
+\section{Compos\'es cationiques}
+
+\input{table_cation.tex}
+
+\section{Compos\'es anioniques}
+
+\input{table_anion.tex}
+
+\section{R\'ef\'erences}
+
+\input{table_references.tex}
+
+\end{document}

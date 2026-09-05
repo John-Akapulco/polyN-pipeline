@@ -1,0 +1,104 @@
+name,formula,charge,n_atoms,point_group,e_eV_per_atom,e_rel_kcalmol,ref,orig_method
+N3-_linear,N3,-1,3,Dinfh,-80.696338,0.0,B,CCSD(T)/aug-cc-pVTZ
+N3-_bent,N3,-1,3,C2v,-79.65293,72.18,B,B3LYP/aug-cc-pVDZ
+N3-_triangle,N3,-1,3,D3h,-79.389153,90.43,B,B3LYP/aug-cc-pVDZ
+N4-_rectangle,N4,-1,4,D2h,-79.603011,0.0,B,B3LYP/aug-cc-pVDZ
+N4-_chain_planar,N4,-1,4,C2h,-79.298499,28.09,B,B3LYP/aug-cc-pVDZ
+N5-_pentagon,N5,-1,5,D5h,-80.332905,0.0,B,CCSD(T)/aug-cc-pVTZ
+N5-_pentagon_D5h_crosscheck,N5,-1,5,D5h,-80.33291,0.0,A2,RI-MP2-fc/TZVPP
+N5-_D5h_pentazolate,N5,-1,5,D5h,-80.33291,0.0,A7,"CCSD(T)/6-311+G(d) (also MP2, QCISD, B3LYP with same basis reported: 1.337/1.324/1.334/1.326 A respectively)"
+N5-_bipyramid,N5,-1,5,D3h,-79.08956,143.36,B,B3LYP/aug-cc-pVDZ
+N6-_Cs_chain,N6,-1,6,Cs,-79.815068,0.0,B,B3LYP/aug-cc-pVDZ
+N6-_C2_linked_triangles,N6,-1,6,C2,-79.056055,105.02,B,B3LYP/aug-cc-pVDZ (topologie)
+N7-_chain,N7,-1,7,C2v,-79.774135,0.0,B,B3LYP/aug-cc-pVDZ
+N7-_6_Cs_6ring_boat,N7,-1,7,Cs,-79.71763,9.12,A11,B3LYP/6-31G*
+N8-_C2h_chain,N8,-1,8,C2h,-79.668084,0.0,B,B3LYP/aug-cc-pVDZ
+N8-_C2h_ZEZ,N8,-1,8,C2h,-79.668084,0.0,B,B3LYP/aug-cc-pVDZ
+N9-_chain_twistedW,N9,-1,9,C2,-79.654589,0.0,B,B3LYP/aug-cc-pVDZ
+N9-_chain,N9,-1,9,C2v,-79.654589,0.0,B,B3LYP/aug-cc-pVDZ
+N9-_ring_chain,N9,-1,9,Cs,-79.641641,2.69,B,B3LYP/aug-cc-pVDZ (topologie)
+N10-_D2h_perp_rings,N10,-1,10,D2h,-79.722801,0.0,B,B3LYP/aug-cc-pVDZ (topologie)
+N2,N2,0,2,Dinfh,-78.422336,0.0,B,CCSD(T)/aug-cc-pVTZ
+N3_radical,N3,0,3,Dinfh,-78.238594,0.0,B,B3LYP/aug-cc-pVDZ
+N4_C2v_butterfly,N4,0,4,C2v,-78.278561,0.0,B,CCSD(T)/aug-cc-pVDZ (topologie)
+N4_C2h_chain,N4,0,4,C2h,-78.278569,0.0,B,CCSD(T)/aug-cc-pVDZ
+N4_Cs_triplet_4_openchain,N4,0,4,Cs,-78.27857,0.0,A4,"CCSD(T)/DZP (also B3LYP/DZP, B3LYP/cc-pVTZ, CAS(12,12)/DZP, CAS(12,12)/cc-pVTZ reported)"
+N4_Cs_triplet_5_openchain,N4,0,4,Cs,-78.27857,0.0,A6,MP2(full)/6-31G(d); CISD(fc)/6-31G(d) values in parentheses
+N4_Td,N4,0,4,Td,-78.126145,14.06,B,CCSD(T)/aug-cc-pVTZ
+N4_Td_tetrahedrane_CCSDT,N4,0,4,Td,-78.12615,14.06,A3,CCSD(T)/TZ2Pf (highest level in paper)
+N4_Td_singlet_1,N4,0,4,Td,-78.12615,14.06,A4,"CCSD(T)/DZP (also B3LYP/DZP, B3LYP/cc-pVTZ, CAS(12,12) reported)"
+N4_Td_tetraazatetrahedrane,N4,0,4,Td,-78.12615,14.06,A6,"MP2/6-31G(d) (cross-compared to CASSCF/DZP: 1.471 A, and CCSD/DZP: ~0.020 A shorter)"
+N4_D2h_rectangle_planar,N4,0,4,D2h,-77.674767,55.7,B,B3LYP/aug-cc-pVDZ
+N4_D2h_rectangle_cyclobutadiene_analog,N4,0,4,D2h,-77.67477,55.7,A5,MP2/6-31G*
+N4_D2d_puckered,N4,0,4,D2d,-77.315254,88.86,B,CCSD(T)/aug-cc-pVDZ
+N4_D2d_triplet_5,N4,0,4,D2d,-77.31525,88.86,A4,"CCSD(T)/DZP (also B3LYP/DZP, B3LYP/cc-pVTZ, CAS(12,12)/DZP, CAS(12,12)/cc-pVTZ reported)"
+N5_C2v_radical_2A1,N5,0,5,C2v,-78.61039,0.0,A7,"UCCSD(T)/6-31G(d) (also UMP2/6-311+G(d), UMP2/6-311+G(3df), UB3LYP/6-311+G(d) reported)"
+N5_C2v_radical_2B2,N5,0,5,C2v,-78.61039,0.0,A7,"UB3LYP/6-311+G(d) (UMP2/6-311+G(d) also gives bonds only, no CCSD(T) reported for this state)"
+N6_C2h_chain,N6,0,6,C2h,-78.882773,0.0,B,CCSD(T)/cc-pVDZ
+N6_C2h_trans_diazide_v2,N6,0,6,C2h,-78.88277,0.0,A9,"CASPT2 / 3s2p1d ANO basis (also SCF/vdzp, MP2/vdzp, DFT/vdzp, DFT/vtzp reported)"
+N6_C2h_diazide_synthesis_product,N6,0,6,C2h,-78.88277,0.0,A16,"B3LYP/6-311++G** (also HF/6-31G**, B3LYP/6-31G** reported)"
+N6_C2_book,N6,0,6,C2,-78.708699,24.09,B,B3LYP/aug-cc-pVDZ (topologie)
+N6_D2_twisted,N6,0,6,D2,-78.708698,24.09,B,B3LYP/aug-cc-pVDZ (topologie)
+N6_D6h_hexagon_aromatic,N6,0,6,D6h,-78.7087,24.09,A5,not explicitly stated for this value (paper-wide RHF/MP2 6-31G*)
+N6_D3h_prism,N6,0,6,D3h,-77.895097,136.66,B,B3LYP/aug-cc-pVDZ
+N7_C2_linearZZ,N7,0,7,C2,-78.80404,0.0,B,B3LYP/aug-cc-pVDZ
+N7_iso7_Cs_chain,N7,0,7,Cs,-78.80404,0.0,A10,B3LYP/6-31G*
+N7_iso7_C2_chain,N7,0,7,C2,-78.80404,0.0,A10,B3LYP/6-31G*
+N7_wang_3_C2v_openchain_DUPLICATE,N7,0,7,C2v,-78.80404,0.0,A17,B3LYP/6-31G*
+N7_Cs_ring_chain,N7,0,7,Cs,-78.699767,16.83,B,B3LYP/aug-cc-pVDZ (topologie)
+N7_C2v_logcarrier,N7,0,7,C2v,-78.572052,37.45,B,B3LYP/aug-cc-pVDZ (topologie)
+N8_C2h_ladder,N8,0,8,C2h,-79.036919,0.0,B,B3LYP/aug-cc-pVDZ (topologie)
+N8_C2v_ring,N8,0,8,C2v,-79.036919,0.0,B,B3LYP/aug-cc-pVDZ (topologie)
+N8_D2h_pentalene,N8,0,8,D2h,-79.036918,0.0,GS,"B3LYP/6-31G* (topologie exacte, geometrie relaxee GFN2-xTB)"
+N8_D2d_octaazacyclooctatetraene,N8,0,8,D2d,-79.036919,0.0,GS,Becke3LYP/6-31G* (topologie)
+N8_pentalene_dianion_analog_struct11,N8,0,8,n.d.,-79.03692,0.0,A5,MP2/6-31G*
+N8_D2h_octaazapentalene,N8,0,8,D2h,-79.03692,0.0,A14,MP2/6-31G*
+N8_D2h_pentalene_v3,N8,0,8,D2h,-79.03692,0.0,A15,MP2/(9s5p1d)/[3s2p1d]; also HF and DFT
+N8_Cs_pentagonal,N8,0,8,Cs,-78.983174,9.92,B,B3LYP/aug-cc-pVDZ (topologie)
+N8_Cs_azidopentazole,N8,0,8,Cs,-78.983174,9.92,GS,Becke3LYP/6-31G* (topologie)
+N8_C2h_ZEZ,N8,0,8,C2h,-78.927079,20.26,B,B3LYP/aug-cc-pVDZ
+N8_C2v_EZE,N8,0,8,C2v,-78.927079,20.26,B,B3LYP/aug-cc-pVDZ
+N8_D4h_cyclooctatetraene,N8,0,8,n.d.,-78.88463,28.1,A5,MP2/6-31G*
+N8_C1_ZZE,N8,0,8,C1,-78.877513,29.41,B,B3LYP/aug-cc-pVDZ
+N8_Cs_ZEE,N8,0,8,Cs,-78.877509,29.41,B,B3LYP/aug-cc-pVDZ (topologie)
+N8_C2h_EEE,N8,0,8,C2h,-78.877513,29.41,B,B3LYP/aug-cc-pVDZ
+N8_LiWang_C2h_openchain,N8,0,8,C2h,-78.87751,29.41,A13,B3LYP/6-311+G*
+N8_Cs_azidopentazole_v2,N8,0,8,Cs,-78.87751,29.41,A14,MP2/6-31G*
+N8_C2h_diazidodiimide_cis_3a,N8,0,8,C2h,-78.87751,29.41,A14,MP2/6-31G*
+N8_D2d_cis_cyclooctatetraene,N8,0,8,D2d,-78.87751,29.41,A15,MP2/(9s5p1d)/[3s2p1d]; also HF and DFT
+N8_D2h_ring_pendant,N8,0,8,D2h,-78.758508,51.36,B,B3LYP/aug-cc-pVDZ (topologie)
+N8_C2v_branched,N8,0,8,C2v,-78.347025,127.27,B,B3LYP/aug-cc-pVDZ (topologie)
+N8_Oh_cube,N8,0,8,Oh,-77.921922,205.7,B,B3LYP/aug-cc-pVDZ
+N8_Oh_cubane_GS,N8,0,8,Oh,-77.921922,205.7,GS,Becke3LYP/6-31G*
+N8_Oh_octaazacubane_CCSD,N8,0,8,Oh,-77.92192,205.7,A3,CCSD/DZP (highest correlated level given for pure N8 in Table 2; no CCSD(T) row for N8 itself)
+N8_Oh_cubane_v2,N8,0,8,Oh,-77.92192,205.7,A15,MP2/(9s5p1d)/[3s2p1d]; also HF and DFT(B3LYP/cc-pVTZ) reported
+N9_chain,N9,0,9,C2v,-78.842642,0.0,B,B3LYP/aug-cc-pVDZ
+N9_fused_rings,N9,0,9,C2v,-78.832388,2.13,B,B3LYP/aug-cc-pVDZ (topologie)
+N10_D2d_linked5rings,N10,0,10,D2d,-79.004302,0.0,B,B3LYP/6-31G*
+N10_D2d_bispentazole_GS,N10,0,10,D2d,-79.004302,0.0,GS,Becke3LYP/6-31G*
+N10_cage_C2v,N10,0,10,C2v,-78.897797,24.56,B,B3LYP/aug-cc-pVDZ (topologie)
+N10_C3_cap,N10,0,10,C3,-78.897797,24.56,B,B3LYP/aug-cc-pVDZ (topologie)
+N10_Cs_ring_chain,N10,0,10,Cs,-78.859332,33.43,B,B3LYP/aug-cc-pVDZ (topologie)
+N10_D10h_ring,N10,0,10,D10h,-78.836892,38.61,GS,Becke3LYP/6-31G*
+N10_D5h_prism,N10,0,10,D5h,-78.20663,183.95,B,B3LYP/aug-cc-pVDZ
+N11_C2v_acyclic_chain,N11,0,11,C2v,-78.85833,0.0,A18,HF/CC-PVDZ (also MP2/CC-PVDZ)
+N12_C2h_dipentazolyldiazene,N12,0,12,C2h,-78.362779,0.0,GS,Becke3LYP/6-31G* (topologie)
+N18_C2v_cage,N18,0,18,C2v,-78.63122,0.0,A19,"B3LYP/6-31G* (also reports RHF/4-31G*, RHF/6-31G*, BHLYP/6-31G*, B3P86/6-31G*, MP2/6-31G* -- all levels given per-bond in Table 1)"
+N20_Ih_dodecahedrane,N20,0,20,Ih,-78.664543,0.0,GS,Becke3LYP/6-31G*
+N20_Ih_cage_HaEtAl,N20,0,20,Ih,-78.66454,0.0,A12,B3LYP/6-31+G(d)
+N2+,N2,1,2,Dinfh,-69.437011,0.0,B,B3LYP/aug-cc-pVDZ
+N3+_linear,N3,1,3,Dinfh,-72.547797,0.0,B,CCSD(T)/cc-pVTZ
+N3+_Dinfh_linear_groundstate,N3,1,3,Dinfh,-72.52391,1.65,A1,"MRCI/[5s,4p,3d,2f] (Dunning basis, state-averaged CASSCF reference)"
+N3+_triangle,N3,1,3,D3h,-72.169198,26.19,B,CCSD(T)/cc-pVTZ
+N4+_rectangle,N4,1,4,D2h,-73.618086,0.0,B,B3LYP/aug-cc-pVDZ
+N5+_Vchain,N5,1,5,C2v,-76.111687,0.0,B,CCSD(T)/6-311+G(2d)
+N5+_C2v_experimental_Xray,N5,1,5,C2v,-76.11169,0.0,A8,"Single-crystal X-ray diffraction, N5+Sb2F11- salt (EXPERIMENTAL, not computational)"
+N6+_C2h_planar,N6,1,6,C2h,-76.495731,0.0,B,B3LYP/aug-cc-pVDZ
+N6+_C2v,N6,1,6,C2v,-76.495731,0.0,B,B3LYP/aug-cc-pVDZ
+N6+_C2h_nonplanar,N6,1,6,C2h,-76.49573,0.0,B,B3LYP/aug-cc-pVDZ (topologie)
+N7+_chain,N7,1,7,C2v,-76.94401,0.0,B,B3LYP/aug-cc-pVDZ
+N7+_1_C2v_openchain,N7,1,7,C2v,-76.94401,0.0,A11,"B3LYP/6-311(+)G* (paper's preferred level; HF/6-31G*, B3LYP/6-31G*, MP2/6-31G* also given in Fig. 1a/Table 1)"
+N9+_chain,N9,1,9,C2v,-77.512195,0.0,B,B3LYP/aug-cc-pVDZ
+N9+_fused_rings,N9,1,9,C2v,-77.328291,38.17,B,B3LYP/aug-cc-pVDZ (topologie)
+N10+_chain,N10,1,10,C1,-77.618327,0.0,B,B3LYP/aug-cc-pVDZ
+N10+_rings,N10,1,10,C1,-77.493817,28.71,B,B3LYP/aug-cc-pVDZ (topologie)

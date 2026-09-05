@@ -1,0 +1,46 @@
+id,formula,charge,mult,pg,method,source,n,status,is_true_minimum,hops_needed,e_xtb_hartree,e_xtb_eV_per_atom
+N2,N2,0,1,Dinfh,CCSD(T)/aug-cc-pVTZ,[B] p.7 (CCSD(T)/aug-cc-pVTZ),2,ok,True,0,-5.763935377335545,-78.422336
+N2+,N2,1,2,Dinfh,B3LYP/aug-cc-pVDZ,[B] p.7 (B3LYP/aug-cc-pVDZ),2,ok,True,0,-5.103526167937918,-69.437011
+N3-_triangle,N3,-1,3,D3h,B3LYP/aug-cc-pVDZ,"[B] p.14 (B3LYP/aug-cc-pVDZ, triplet 3A1')",3,ok,True,0,-8.752492706019654,-79.389153
+N3+_triangle,N3,1,1,D3h,CCSD(T)/cc-pVTZ,[B] p.11 (CCSD(T)/cc-pVTZ),3,ok,True,0,-7.956507307570384,-72.169198
+N3-_bent,N3,-1,1,C2v,B3LYP/aug-cc-pVDZ,[B] p.13 (B3LYP/aug-cc-pVDZ),3,ok,True,0,-8.781573548818603,-79.65293
+N3-_linear,N3,-1,1,Dinfh,CCSD(T)/aug-cc-pVTZ,[B] p.14 (CCSD(T)/aug-cc-pVTZ),3,ok,True,0,-8.896607128072887,-80.696338
+N3_radical,N3,0,2,Dinfh,B3LYP/aug-cc-pVDZ,[B] p.12 (B3LYP/aug-cc-pVDZ),3,ok,True,0,-8.625645883574416,-78.238594
+N3+_linear,N3,1,1,Dinfh,CCSD(T)/cc-pVTZ,[B] p.9 (CCSD(T)/cc-pVTZ),3,ok,True,0,-7.9982471491129195,-72.547797
+N4+_rectangle,N4,1,2,D2h,B3LYP/aug-cc-pVDZ,[B] p.16 (B3LYP/aug-cc-pVDZ),4,ok,True,0,-10.821659107726232,-73.618086
+N4_Td,N4,0,1,Td,CCSD(T)/aug-cc-pVTZ,[B] p.19 (CCSD(T)/aug-cc-pVTZ) - tetraazatetrahedrane,4,ok,True,0,-11.48433156415994,-78.126145
+N4-_chain_planar,N4,-1,4,C2h,B3LYP/aug-cc-pVDZ,"[B] p.23 (B3LYP/aug-cc-pVDZ, 4Bg, 'planar')",4,ok,True,0,-11.656664403137617,-79.298499
+N4_C2h_chain,N4,0,3,C2h,CCSD(T)/aug-cc-pVDZ,"[B] p.22 (CCSD(T)/aug-cc-pVDZ, 3Bu, 'linear E')",4,ok,True,0,-11.506737334131005,-78.278569
+N5-_pentagon,N5,-1,1,D5h,CCSD(T)/aug-cc-pVTZ,[B] p.28 (CCSD(T)/aug-cc-pVTZ) - pentazolate,5,ok,True,0,-14.760899106852104,-80.332905
+N4_D2d_puckered,N4,0,3,D2d,CCSD(T)/aug-cc-pVDZ,"[B] p.18 (CCSD(T)/aug-cc-pVDZ, 3A2)",4,ok,True,0,-11.365132766901285,-77.315254
+N5+_Vchain,N5,1,1,C2v,CCSD(T)/6-311+G(2d),[B] p.24 (CCSD(T)/6-311+G(2d)),5,ok,True,0,-13.985264489279382,-76.111687
+N5H_pentazole,N5H,0,1,C2v,MP2(fc)/6-31G*,[GS] Fig.5 p.7129 (MP2(fc)/6-31G*) - pentazole 2,6,ok,True,0,-15.028854326698081,-68.159327
+N4_D2h_rectangle_planar,N4,0,1,D2h,B3LYP/aug-cc-pVDZ,"[B] p.20 (B3LYP/aug-cc-pVDZ, non-minimum a plus haut niveau)",4,ok,True,1,-11.417980089015307,-77.674767
+N4-_rectangle,N4,-1,2,D2h,B3LYP/aug-cc-pVDZ,[B] p.23 (B3LYP/aug-cc-pVDZ),4,ok,True,1,-11.70142684541139,-79.603011
+N6_D3h_prism,N6,0,1,D3h,B3LYP/aug-cc-pVDZ,[B] p.31 (B3LYP/aug-cc-pVDZ) - prisme trigonal,6,ok,True,0,-17.17555206741317,-77.895097
+N6+_C2v,N6,1,2,C2v,B3LYP/aug-cc-pVDZ,"[B] p.31 (B3LYP/aug-cc-pVDZ, 2Bg)",6,ok,True,0,-16.866997606650337,-76.495731
+N6+_C2h_planar,N6,1,2,C2h,B3LYP/aug-cc-pVDZ,"[B] p.30 (B3LYP/aug-cc-pVDZ, 2Bg, planar)",6,ok,True,0,-16.866997606753593,-76.495731
+N5-_bipyramid,N5,-1,1,D3h,B3LYP/aug-cc-pVDZ,[B] p.26 (B3LYP/aug-cc-pVDZ),5,ok,True,1,-14.532438670259152,-79.08956
+N6_C2h_chain,N6,0,1,C2h,CCSD(T)/cc-pVDZ,[B] p.34 (CCSD(T)/cc-pVDZ) - chaine plane,6,ok,True,0,-17.393330666756114,-78.882773
+N6-_Cs_chain,N6,-1,2,Cs,B3LYP/aug-cc-pVDZ,[B] p.36 (B3LYP/aug-cc-pVDZ) - chaine en W,6,ok,True,0,-17.598897914484414,-79.815068
+N8_Oh_cube,N8,0,1,Oh,B3LYP/aug-cc-pVDZ,[B] p.42 (B3LYP/aug-cc-pVDZ) - cubane N8,8,ok,True,0,-22.908622532444586,-77.921922
+N7+_chain,N7,1,1,C2v,B3LYP/aug-cc-pVDZ,[B] p.37 (B3LYP/aug-cc-pVDZ) - chaine en W,7,ok,True,0,-19.793481500574767,-76.94401
+N7_C2_linearZZ,N7,0,2,C2,B3LYP/aug-cc-pVDZ,[B] p.39 (B3LYP/aug-cc-pVDZ) - chaine ZZ,7,ok,True,0,-20.271965259671628,-78.80404
+N8_C2h_EEE,N8,0,1,C2h,B3LYP/aug-cc-pVDZ,[B] p.51 (B3LYP/aug-cc-pVDZ) - chaine EEE,8,ok,True,0,-23.189560972991586,-78.877513
+N8_C1_ZZE,N8,0,1,C1,B3LYP/aug-cc-pVDZ,[B] p.47 (B3LYP/aug-cc-pVDZ) - chaine ZZE,8,ok,True,0,-23.189560973214917,-78.877513
+N8_C2h_ZEZ,N8,0,1,C2h,B3LYP/aug-cc-pVDZ,[B] p.48 (B3LYP/aug-cc-pVDZ) - chaine ZEZ,8,ok,True,0,-23.204133169469145,-78.927079
+N8_C2v_EZE,N8,0,1,C2v,B3LYP/aug-cc-pVDZ,[B] p.52 (B3LYP/aug-cc-pVDZ) - chaine EZE,8,ok,True,0,-23.20413316903397,-78.927079
+N7-_chain,N7,-1,1,C2v,B3LYP/aug-cc-pVDZ,[B] p.41 (B3LYP/aug-cc-pVDZ) - chaine en W,7,ok,True,1,-20.52151760519237,-79.774135
+N10_D5h_prism,N10,0,1,D5h,B3LYP/aug-cc-pVDZ,[B] p.66 (B3LYP/aug-cc-pVDZ) - prisme pentagonal,10,ok,True,0,-28.740406309984444,-78.20663
+N9-_chain_twistedW,N9,-1,1,C2,B3LYP/aug-cc-pVDZ,[B] p.60 (B3LYP/aug-cc-pVDZ) - 'twisted W',9,ok,True,0,-26.34526934790754,-79.654589
+N9-_chain,N9,-1,1,C2v,B3LYP/aug-cc-pVDZ,[B] p.61 (B3LYP/aug-cc-pVDZ),9,ok,True,0,-26.34526934908744,-79.654589
+N8_Oh_cubane_GS,N8,0,1,Oh,Becke3LYP/6-31G*,"[GS] Fig.3 (11, Oh) - octaazacubane",8,ok,True,0,-22.908622532398823,-77.921922
+N8-_C2h_chain,N8,-1,2,C2h,B3LYP/aug-cc-pVDZ,[B] p.54 (B3LYP/aug-cc-pVDZ),8,ok,True,1,-23.42198470512576,-79.668084
+N8-_C2h_ZEZ,N8,-1,2,C2h,B3LYP/aug-cc-pVDZ,[B] p.55 (B3LYP/aug-cc-pVDZ),8,ok,True,1,-23.421984704507494,-79.668084
+N10_D2d_linked5rings,N10,0,1,D2d,B3LYP/6-31G*,"[B] p.69 + [GS] Fig.6 (21, D2d) - bispentazole",10,ok,True,0,-29.03354548879466,-79.004302
+N9_chain,N9,0,2,C2v,B3LYP/aug-cc-pVDZ,[B] p.59 (B3LYP/aug-cc-pVDZ) - chaine EEEE,9,ok,True,1,-26.076723001189688,-78.842642
+N9+_chain,N9,1,1,C2v,B3LYP/aug-cc-pVDZ,[B] p.57 (B3LYP/aug-cc-pVDZ) - chaine,9,ok,True,1,-25.63668555350648,-77.512195
+N10_D2d_bispentazole_GS,N10,0,1,D2d,Becke3LYP/6-31G*,"[GS] Fig.6 (21, D2d)",10,ok,True,0,-29.03354548879464,-79.004302
+N10+_chain,N10,1,2,C1,B3LYP/aug-cc-pVDZ,[B] p.64 (B3LYP/aug-cc-pVDZ) - chaine,10,ok,True,1,-28.524209231101555,-77.618327
+N20_Ih_dodecahedrane,N20,0,1,Ih,Becke3LYP/6-31G*,"[GS] Fig.7 (27, Ih)",20,ok,True,0,-57.81737252233487,-78.664543
+N10_D10h_ring,N10,0,1,D10h,Becke3LYP/6-31G*,"[GS] Fig.6 (23, D10h)",10,ok,True,0,-28.972023288644763,-78.836892
