@@ -744,4 +744,61 @@ une recherche compl\'ementaire côt\'e code (le pipeline principal ne
 retrouve d'ailleurs pas cette topologie exacte, cf.
 section~\ref{sec:comparaison-code}).
 
+\section{V\'erification des fr\'equences (minima r\'eels)}
+\label{sec:freq-verif}
+
+Une g\'eom\'etrie optimis\'ee par GFN2-xTB a un gradient nul, mais un
+gradient nul n'implique pas un minimum local : une structure sym\'etrique
+peut se trouver \`a un point-selle le long d'une distorsion brisant la
+sym\'etrie (instabilit\'e de type Jahn-Teller), invisible \`a
+l'optimisation de g\'eom\'etrie seule. Les 312 structures import\'ees
+convergées (section~\ref{sec:comparaison-3sources}) ont donc \'et\'e
+repass\'ees par un calcul de Hessienne vibrationnelle (diff\'erences finies
+num\'eriques, m\^eme niveau GFN2-xTB, \texttt{frequency\_check.py}) : tout
+mode imaginaire significatif ($>30$~cm$^{-1}$, au-del\`a du bruit num\'erique
+sur les modes de translation/rotation) est suivi (petit d\'eplacement le
+long du vecteur propre) puis la structure est r\'eoptimis\'ee, r\'ep\'et\'e
+jusqu'\`a 5 fois si n\'ecessaire.
+
+\subsection{R\'esultats}
+
+\begin{center}
+\begin{tabular}{lr}
+\toprule
+Calculs r\'eussis & 311 / 312 \\
+Minima v\'erifi\'es d\`es le premier calcul (0 saut) & 272 \\
+Minima atteints apr\`es correction (1--3 sauts) & 39 \\
+Points-selles non r\'esolus (5 sauts \'epuis\'es) & 0 \\
+\'Echec SCF (g\'eom\'etrie non \'evaluable) & 1 (\texttt{N\_csp\_N7\_0015\_bicyclic-5-5}) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Les 39 corrections changent parfois significativement l'\'energie -- jusqu'\`a
+$-0{,}44$~eV/atome pour \texttt{N\_csp\_N8\_0032\_bicyclic-3-5-6}
+(l'optimisation de gradient seule s'\'etait arr\^et\'ee \`a un point-selle
+nettement au-dessus du vrai minimum voisin). Aucun point-selle n'est reste
+non r\'esolu apr\`es 5 sauts, et le seul \'echec est un \'echec SCF d\`es le
+d\'epart (structure d\'ej\`a probl\'ematique lors de la relaxation
+initiale), pas une limite de la m\'ethode de v\'erification elle-m\^eme.
+
+\subsection{Impact sur le classement de la section~\ref{sec:comparaison-3sources}}
+
+Les six vainqueurs import\'es du tableau comparatif (N$_4$, N$_6$, N$_7$,
+N$_9$, N$_{10}$, N$_{12}$) avaient tous 0 mode imaginaire d\`es le premier
+calcul (aucun saut n\'ecessaire) : leur \'energie et leur rang restent donc
+inchang\'es. Le classement de la section~\ref{sec:comparaison-3sources} est
+\textbf{confirm\'e} par cette v\'erification -- les structures qui
+d\'epassent la meilleure structure biblio de leur groupe sont bien de vrais
+minima locaux, pas des artefacts d'une optimisation de gradient incompl\`ete.
+
+\subsection{Limite}
+
+Cette v\'erification n'a port\'e que sur les structures import\'ees
+(N\_csp, polyN\_study) ; les structures extraites des articles
+(section~\ref{sec:comparaison-code}), relax\'ees ind\'ependamment via le
+binaire \texttt{xtb} en ligne de commande, n'ont pas encore \'et\'e
+repass\'ees par ce m\^eme contr\^ole de Hessienne -- \`a faire pour une
+couverture compl\`ete des trois sources.
+
 \end{document}
